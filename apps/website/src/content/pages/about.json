@@ -1,0 +1,289 @@
+{
+  "slug": "about",
+  "title": "Who We Are",
+  "status": "published", 
+  "seo": {
+    "title": "About Networkk - Executive Search & Leadership Advisory Excellence",
+    "description": "Learn about Networkk's mission to connect exceptional leaders with transformative opportunities across India and Southeast Asia. Meet our team and discover our proven methodology.",
+    "canonical": "https://networkk.com/about/",
+    "noindex": false,
+    "keywords": ["about networkk", "executive search team", "leadership experts", "company history", "our story"]
+  },
+  "blocks": [
+    {
+      "id": "hero-about",
+      "type": "Hero",
+      "props": {
+        "title": "Building Tomorrow's Leadership, Today",
+        "subtitle": "Who We Are",
+        "description": "We're a team of passionate professionals dedicated to connecting exceptional talent with visionary organizations, creating transformative partnerships that shape the future of business.",
+        "media": {
+          "image": "https://images.pexels.com/photos/3184315/pexels-photo-3184315.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "alt": "Networkk leadership team in collaborative discussion",
+          "ratio": "16:9"
+        },
+        "backgroundType": "image",
+        "textAlign": "center",
+        "fullHeight": false,
+        "overlay": true
+      }
+    },
+    {
+      "id": "our-story-journey",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Our Journey",
+        "description": "Founded with the belief that great leadership transforms organizations, we've spent over a decade perfecting the art and science of executive search.",
+        "columns": "2",
+        "items": [
+          {
+            "title": "2013 - The Beginning",
+            "description": "Founded in Mumbai with a vision to transform executive search in India through personalized service and deep industry expertise.",
+            "icon": "🚀",
+            "image": "https://images.pexels.com/photos/3184359/pexels-photo-3184359.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+          },
+          {
+            "title": "2016 - Regional Expansion", 
+            "description": "Expanded across Southeast Asia, establishing partnerships with leading organizations and building our network of exceptional talent.",
+            "icon": "🌏",
+            "image": "https://images.pexels.com/photos/3184425/pexels-photo-3184425.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+          },
+          {
+            "title": "2019 - Technology Integration",
+            "description": "Pioneered the use of AI and data analytics in executive search, enhancing our ability to identify and assess top talent.",
+            "icon": "🤖",
+            "image": "https://images.pexels.com/photos/3184397/pexels-photo-3184397.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+          },
+          {
+            "title": "2022 - Industry Recognition",
+            "description": "Recognized as 'Best Executive Search Firm' by HR Excellence Awards, cementing our position as industry leaders.",
+            "icon": "🏆", 
+            "image": "https://images.pexels.com/photos/3184456/pexels-photo-3184456.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mission-vision-values",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Our Foundation",
+        "description": "The principles that guide everything we do and the vision that drives us forward.",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Our Mission",
+            "description": "To transform organizations by connecting them with leaders who drive sustainable growth, innovation, and positive change in their industries and communities.",
+            "icon": "🎯"
+          },
+          {
+            "title": "Our Vision", 
+            "description": "To be the most trusted partner for exceptional leaders and visionary organizations, creating lasting impact through strategic talent connections.",
+            "icon": "🌟"
+          },
+          {
+            "title": "Our Values",
+            "description": "Integrity, excellence, partnership, and innovation guide everything we do. We believe in building long-term relationships based on trust and mutual success.",
+            "icon": "💎"
+          }
+        ]
+      }
+    },
+    {
+      "id": "leadership-team",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Leadership Team",
+        "description": "Meet the experienced professionals who lead our mission to connect exceptional talent with transformative opportunities.",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Rajesh Kumar",
+            "description": "Founder & Managing Director with 20+ years in executive search. Former consultant at McKinsey, specializing in C-suite placements across technology and financial services.",
+            "image": "https://images.pexels.com/photos/3184340/pexels-photo-3184340.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "href": "#rajesh-kumar"
+          },
+          {
+            "title": "Priya Sharma", 
+            "description": "Director of Executive Search with deep expertise in healthcare and life sciences. Previously led talent acquisition at leading pharmaceutical companies across Asia-Pacific.",
+            "image": "https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "href": "#priya-sharma"
+          },
+          {
+            "title": "Arjun Patel",
+            "description": "Director of Leadership Advisory specializing in organizational development and succession planning. Former partner at global management consulting firm.",
+            "image": "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "href": "#arjun-patel"
+          },
+          {
+            "title": "Sarah Chen",
+            "description": "Head of Technology Practice with expertise in digital transformation and AI leadership. Previously CTO at two successful fintech startups.",
+            "image": "https://images.pexels.com/photos/3184395/pexels-photo-3184395.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "href": "#sarah-chen"
+          },
+          {
+            "title": "Michael Rodriguez",
+            "description": "Director of Diversity & Inclusion initiatives, former CHRO at Fortune 500 companies, passionate about building inclusive leadership teams.",
+            "image": "https://images.pexels.com/photos/3184407/pexels-photo-3184407.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "href": "#michael-rodriguez"
+          },
+          {
+            "title": "Dr. Anita Gupta",
+            "description": "Senior Research Director leading our market intelligence and talent analytics initiatives. PhD in Organizational Psychology from IIM Ahmedabad.",
+            "image": "https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "href": "#anita-gupta"
+          }
+        ]
+      }
+    },
+    {
+      "id": "key-metrics",
+      "type": "Statistics",
+      "props": {
+        "heading": "Our Impact in Numbers",
+        "description": "Measurable results that demonstrate our commitment to excellence and the trust our partners place in us.",
+        "stats": [
+          {
+            "value": "500+",
+            "label": "Leaders Placed",
+            "description": "Across all sectors",
+            "icon": "👥"
+          },
+          {
+            "value": "95%",
+            "label": "Success Rate", 
+            "description": "24-month retention",
+            "icon": "📈"
+          },
+          {
+            "value": "200+",
+            "label": "Partner Companies",
+            "description": "From startups to Fortune 500",
+            "icon": "🤝"
+          },
+          {
+            "value": "15+",
+            "label": "Industries",
+            "description": "Specialized expertise",
+            "icon": "🏭"
+          },
+          {
+            "value": "12+", 
+            "label": "Years",
+            "description": "Market experience",
+            "icon": "⭐"
+          },
+          {
+            "value": "45",
+            "label": "Days Average",
+            "description": "Time to placement",
+            "icon": "⚡"
+          }
+        ],
+        "backgroundType": "light"
+      }
+    },
+    {
+      "id": "awards-recognition",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Awards & Recognition",
+        "description": "Industry acknowledgment of our commitment to excellence and innovation in executive search.",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Best Executive Search Firm 2024",
+            "description": "HR Excellence Awards - India, recognizing our outstanding performance in leadership recruitment and client satisfaction.",
+            "icon": "🏆",
+            "image": "https://images.pexels.com/photos/3184453/pexels-photo-3184453.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+          },
+          {
+            "title": "Top 10 Recruitment Companies",
+            "description": "Business Today Magazine - Leadership Category, highlighting our innovative approach to executive search and talent advisory.",
+            "icon": "⭐",
+            "image": "https://images.pexels.com/photos/3184427/pexels-photo-3184427.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+          },
+          {
+            "title": "Excellence in D&I Hiring",
+            "description": "Diversity & Inclusion Council of India, recognizing our leadership in building diverse executive teams and inclusive cultures.",
+            "icon": "🌟",
+            "image": "https://images.pexels.com/photos/3184366/pexels-photo-3184366.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+          },
+          {
+            "title": "Innovation in Talent Tech",
+            "description": "TechHR Singapore 2023, for our pioneering use of AI and analytics in executive assessment and matching.",
+            "icon": "🚀",
+            "image": "https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+          },
+          {
+            "title": "Client Choice Award",
+            "description": "APAC Executive Search Awards, based on client feedback scores and long-term partnership success rates.",
+            "icon": "❤️",
+            "image": "https://images.pexels.com/photos/3184412/pexels-photo-3184412.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+          },
+          {
+            "title": "Sustainable Business Practice",
+            "description": "Green Business Certification 2024, for our commitment to sustainable recruitment practices and social responsibility.",
+            "icon": "🌱",
+            "image": "https://images.pexels.com/photos/3184450/pexels-photo-3184450.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+          }
+        ]
+      }
+    },
+    {
+      "id": "csr-sustainability",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Corporate Social Responsibility",
+        "description": "Our commitment to creating positive impact beyond business success, contributing to communities and sustainable development.",
+        "columns": "2", 
+        "items": [
+          {
+            "title": "Education & Skill Development",
+            "description": "Partnerships with leading universities and institutions to develop next-generation leaders through mentorship programs, scholarships, and executive education initiatives.",
+            "icon": "🎓",
+            "image": "https://images.pexels.com/photos/3184374/pexels-photo-3184374.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+          },
+          {
+            "title": "Women in Leadership",
+            "description": "Dedicated initiatives to advance women into senior executive roles, including mentorship networks, leadership development programs, and bias-free search processes.",
+            "icon": "👩‍💼",
+            "image": "https://images.pexels.com/photos/3184365/pexels-photo-3184365.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+          },
+          {
+            "title": "Environmental Sustainability", 
+            "description": "Carbon-neutral operations, paperless processes, and partnerships with organizations driving environmental innovation and sustainable business practices.",
+            "icon": "🌍",
+            "image": "https://images.pexels.com/photos/3184386/pexels-photo-3184386.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+          },
+          {
+            "title": "Pro Bono Services",
+            "description": "Free executive search services for non-profit organizations, social enterprises, and startups addressing critical social and environmental challenges.",
+            "icon": "🤲",
+            "image": "https://images.pexels.com/photos/3184379/pexels-photo-3184379.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-cta-about",
+      "type": "CTA", 
+      "props": {
+        "heading": "Partner with Networkk Today",
+        "description": "Ready to transform your leadership team? Let's discuss how our expertise, network, and commitment to excellence can help you find the exceptional leaders who will drive your organization forward.",
+        "primaryCta": {
+          "label": "Start a Conversation",
+          "href": "/contact"
+        },
+        "secondaryCta": {
+          "label": "Explore Our Services",
+          "href": "/services/executive-search"
+        },
+        "backgroundType": "gradient"
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T09:00:00Z", 
+  "updatedAt": "2025-01-15T10:00:00Z"
+}

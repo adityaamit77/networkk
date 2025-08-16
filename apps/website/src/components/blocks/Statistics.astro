@@ -1,0 +1,129 @@
+---
+interface Props {
+  heading?: string;
+  description?: string;
+  stats: Array<{
+    value: string;
+    label: string;
+    description?: string;
+    icon?: string;
+  }>;
+  backgroundType?: 'light' | 'dark' | 'gradient';
+}
+
+const {
+  heading,
+  description,
+  stats,
+  backgroundType = 'gradient'
+} = Astro.props;
+
+const bgClasses: Record<string, string> = {
+  light: 'bg-white',
+  dark: 'bg-gray-900',
+  gradient: 'bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900'
+};
+
+const textClasses: Record<string, string> = {
+  light: 'text-gray-900',
+  dark: 'text-white',
+  gradient: 'text-white'
+};
+---
+
+<section class={`py-20 ${bgClasses[backgroundType]} relative overflow-hidden`}>
+  <!-- Background Elements -->
+  {backgroundType === 'gradient' && (
+    <div class="absolute inset-0">
+      <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-400/10 rounded-full blur-3xl"></div>
+    </div>
+  )}
+
+  <div class="container px-6 relative z-10">
+    {(heading || description) && (
+      <div class="text-center mb-16">
+        {heading && (
+          <h2 class={`text-4xl md:text-5xl font-bold mb-6 ${textClasses[backgroundType]}`}>
+            {heading}
+          </h2>
+        )}
+        {description && (
+          <p class={`text-xl max-w-3xl mx-auto ${backgroundType === 'gradient' ? 'text-blue-100' : backgroundType === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
+            {description}
+          </p>
+        )}
+      </div>
+    )}
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+      {stats.map((stat: Props['stats'][0], index: number) => (
+        <div class="text-center group">
+          {stat.icon && (
+            <div class="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+              {stat.icon}
+            </div>
+          )}
+          <div class={`text-4xl md:text-5xl font-bold mb-2 ${backgroundType === 'gradient' ? 'text-white' : backgroundType === 'dark' ? 'text-white' : 'text-blue-600'}`}>
+            <span class="counter" data-target={stat.value.replace(/[^\d]/g, '')}>
+              0
+            </span>{stat.value.replace(/\d/g, '')}
+          </div>
+          <div class={`font-semibold mb-2 ${backgroundType === 'gradient' ? 'text-blue-200' : backgroundType === 'dark' ? 'text-gray-300' : 'text-gray-900'}`}>
+            {stat.label}
+          </div>
+          {stat.description && (
+            <div class={`text-sm ${backgroundType === 'gradient' ? 'text-blue-300' : backgroundType === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
+              {stat.description}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  // Counter animation
+  function animateCounter(element: HTMLElement, target: number) {
+    let current = 0;
+    const increment = target / 50;
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= target) {
+        current = target;
+        clearInterval(timer);
+      }
+      element.textContent = Math.floor(current).toString();
+    }, 40);
+  }
+
+  // Intersection Observer for counter animation
+  const observerOptions: IntersectionObserverInit = {
+    threshold: 0.5,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const counters = entry.target.querySelectorAll('.counter');
+        counters.forEach(counter => {
+          const target = parseInt((counter as HTMLElement).getAttribute('data-target') || '0');
+          if (target) {
+            animateCounter(counter as HTMLElement, target);
+          }
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Observe stats sections
+  document.addEventListener('DOMContentLoaded', () => {
+    const statsSection = document.querySelector('.grid');
+    if (statsSection) {
+      observer.observe(statsSection);
+    }
+  });
+</script>

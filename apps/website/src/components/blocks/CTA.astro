@@ -1,0 +1,70 @@
+---
+import Heading from '../ui/Heading.astro';
+import Button from '../ui/Button.astro';
+
+export interface Props {
+  heading: string;
+  description?: string;
+  primaryCta: {
+    label: string;
+    href: string;
+  };
+  secondaryCta?: {
+    label: string;
+    href: string;
+  };
+  backgroundType?: 'solid' | 'gradient';
+}
+
+const {
+  heading,
+  description,
+  primaryCta,
+  secondaryCta,
+  backgroundType = 'solid'
+} = Astro.props;
+---
+
+<section class={`section ${backgroundType === 'gradient' ? 'bg-gradient-to-br from-primary-600 via-blue-700 to-indigo-800 text-white relative overflow-hidden' : 'bg-gray-900 text-white'}`}>
+  <!-- Background Elements for gradient -->
+  {backgroundType === 'gradient' && (
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse-soft"></div>
+      <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse-soft animation-delay-400"></div>
+    </div>
+  )}
+  
+  <div class="container text-center relative z-10">
+    <div class="max-w-3xl mx-auto">
+      <Heading level={2} class="mb-4 text-white">
+        {heading}
+      </Heading>
+      
+      {description && (
+        <p class="text-xl leading-relaxed mb-8 text-gray-100">
+          {description}
+        </p>
+      )}
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button
+          href={primaryCta.href}
+          variant="secondary"
+          size="lg"
+        >
+          {primaryCta.label}
+        </Button>
+        
+        {secondaryCta && (
+          <Button
+            href={secondaryCta.href}
+            variant="outline"
+            size="lg"
+          >
+            {secondaryCta.label}
+          </Button>
+        )}
+      </div>
+    </div>
+  </div>
+</section>

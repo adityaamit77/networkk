@@ -1,0 +1,44 @@
+---
+import Heading from '../ui/Heading.astro';
+
+export interface Props {
+  heading: string;
+  items: Array<{
+    value: string;
+    label: string;
+    description?: string;
+  }>;
+}
+
+const { heading, items } = Astro.props;
+---
+
+<section class="section">
+  <div class="container">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <Heading level={2} class="mb-4">
+        {heading}
+      </Heading>
+    </div>
+    
+    <!-- Metrics -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+      {items.map((item: Props['items'][0]) => (
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-bold text-primary-600 mb-2">
+            {item.value}
+          </div>
+          <div class="text-lg font-semibold text-gray-900 mb-1">
+            {item.label}
+          </div>
+          {item.description && (
+            <div class="text-sm text-gray-600">
+              {item.description}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

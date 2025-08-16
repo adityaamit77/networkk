@@ -1,0 +1,89 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Heading from '../components/ui/Heading.astro';
+import BlockRenderer from '../components/blocks/BlockRenderer.astro';
+import JsonLd from '../components/seo/JsonLd.astro';
+import { createOrganizationSchema, createWebsiteSchema, createBreadcrumbSchema } from '../lib/seo';
+
+export interface Props {
+  page: {
+    slug: string;
+    title: string;
+    seo: {
+      title: string;
+      description: string;
+      canonical: string;
+      noindex?: boolean;
+      image?: string;
+      keywords?: string[];
+    };
+    blocks: Array<{
+      id: string;
+      type: string;
+      props: any;
+      layout?: any;
+      children?: any[];
+    }>;
+  };
+  showPageTitle?: boolean;
+}
+
+const { page, showPageTitle = true } = Astro.props;
+
+// Generate JSON-LD structured data
+const organizationSchema = JSON.parse(createOrganizationSchema());
+const websiteSchema = JSON.parse(createWebsiteSchema());
+
+const breadcrumbItems = [
+  { name: 'Home', url: 'https://networkk.com/' }
+];
+
+if (page.slug !== 'home') {
+  breadcrumbItems.push({
+    name: page.title,
+    url: page.seo.canonical
+  });
+}
+
+const breadcrumbSchema = JSON.parse(createBreadcrumbSchema(breadcrumbItems));
+
+const combinedJsonLd = [
+  organizationSchema,
+  websiteSchema,
+  ...(breadcrumbItems.length > 1 ? [breadcrumbSchema] : [])
+];
+---
+
+<BaseLayout
+  title={page.seo.title}
+  description={page.seo.description}
+  canonical={page.seo.canonical}
+  noindex={page.seo.noindex}
+  image={page.seo.image}
+  keywords={page.seo.keywords}
+>
+  <!-- Page-level JSON-LD -->
+  <JsonLd data={combinedJsonLd} />
+  
+  {showPageTitle && page.slug !== 'home' && (
+    <section class="section-sm bg-gray-50">
+      <div class="container">
+        <Heading level={1} class="text-center max-w-4xl mx-auto">
+          {page.title}
+        </Heading>
+      </div>
+    </section>
+  )}
+  
+  {page.slug === 'home' && (
+    <!-- Special case: Home page H1 comes from hero block -->
+    <div class="sr-only">
+      <Heading level={1}>{page.title}</Heading>
+    </div>
+  )}
+  
+  <!-- Render blocks -->
+  {page.blocks.map((block: Props['page']['blocks'][0]) => (
+    <BlockRenderer block={block} />
+  ))}
+</BaseLayout>

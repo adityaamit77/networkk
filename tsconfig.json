@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "checkJs": false,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@networkk/content-bridge": ["./packages/content-bridge/src/index.ts"],
+      "@networkk/content-bridge/*": ["./packages/content-bridge/src/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".astro",
+    ".next"
+  ]
+}

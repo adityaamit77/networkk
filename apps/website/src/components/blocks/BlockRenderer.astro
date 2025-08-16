@@ -1,0 +1,65 @@
+---
+import Hero from './Hero.astro';
+import TilesGrid from './TilesGrid.astro';
+import MetricsBand from './MetricsBand.astro';
+import Testimonials from './Testimonials.astro';
+import CTA from './CTA.astro';
+import Carousel from './Carousel.astro';
+import Statistics from './Statistics.astro';
+import Logos from './Logos.astro';
+
+export interface Props {
+  block: {
+    id: string;
+    type: string;
+    props: any;
+    layout?: {
+      colSpan?: number;
+      rowSpan?: number;
+      order?: number;
+    };
+    children?: any[];
+  };
+}
+
+const { block } = Astro.props;
+
+// Block type mapping
+const blockComponents = {
+  Hero,
+  TilesGrid,
+  MetricsBand,
+  Testimonials,
+  CTA,
+  Carousel,
+  Statistics,
+  Logos,
+  // Add more blocks as they're created
+  InsightsPreview: TilesGrid, // Use TilesGrid for insights preview
+  LogosStrip: Logos, // Use Logos component
+  Timeline: TilesGrid, // Use TilesGrid for timeline
+  FAQ: TilesGrid, // Use TilesGrid for FAQ
+  CaseStudyList: TilesGrid, // Use TilesGrid for case studies
+};
+
+const BlockComponent = blockComponents[block.type as keyof typeof blockComponents];
+
+if (!BlockComponent) {
+  console.error(`Unknown block type: ${block.type}`);
+}
+---
+
+{BlockComponent && (
+  <BlockComponent {...block.props} />
+)}
+
+{!BlockComponent && (
+  <div class="bg-red-50 border border-red-200 rounded-lg p-4 m-4">
+    <p class="text-red-800">
+      <strong>Block Error:</strong> Unknown block type "{block.type}"
+    </p>
+    <pre class="text-red-600 text-sm mt-2">
+      {JSON.stringify(block, null, 2)}
+    </pre>
+  </div>
+)}
