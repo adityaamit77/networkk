@@ -16,10 +16,11 @@ export interface Props {
     href: string;
     variant?: 'primary' | 'secondary' | 'outline';
   }>;
-  backgroundType?: 'image' | 'gradient' | 'solid';
+  backgroundType?: 'image' | 'gradient' | 'solid' | 'split';
   textAlign?: 'left' | 'center' | 'right';
   fullHeight?: boolean;
   overlay?: boolean;
+  theme?: 'default' | 'gold' | 'emerald';
 }
 
 const {
@@ -31,7 +32,8 @@ const {
   backgroundType = 'gradient',
   textAlign = 'center',
   fullHeight = true,
-  overlay = true
+  overlay = true,
+  theme = 'default'
 } = Astro.props;
 
 const alignClasses: Record<string, string> = {
@@ -39,6 +41,38 @@ const alignClasses: Record<string, string> = {
   center: 'text-center',
   right: 'text-right'
 };
+
+const themeConfig = {
+  default: {
+    gradient: 'bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900',
+    accent: 'text-blue-200',
+    decorative: ['bg-blue-400/10', 'bg-indigo-400/10'],
+    button: {
+      primary: 'bg-white text-blue-900 hover:bg-blue-50',
+      outline: 'border-white text-white hover:bg-white hover:text-blue-900'
+    }
+  },
+  gold: {
+    gradient: 'bg-gradient-to-br from-slate-900 via-gray-900 to-amber-900',
+    accent: 'text-amber-200',
+    decorative: ['bg-amber-400/10', 'bg-yellow-400/10'],
+    button: {
+      primary: 'bg-amber-400 text-slate-900 hover:bg-amber-300',
+      outline: 'border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-slate-900'
+    }
+  },
+  emerald: {
+    gradient: 'bg-gradient-to-br from-slate-900 via-emerald-900 to-teal-900',
+    accent: 'text-emerald-200',
+    decorative: ['bg-emerald-400/10', 'bg-teal-400/10'],
+    button: {
+      primary: 'bg-emerald-400 text-slate-900 hover:bg-emerald-300',
+      outline: 'border-emerald-400 text-emerald-400 hover:bg-emerald-400 hover:text-slate-900'
+    }
+  }
+};
+
+const currentTheme = themeConfig[theme as keyof typeof themeConfig];
 
 const heroClasses = [
   'relative overflow-hidden',
@@ -50,7 +84,7 @@ const heroClasses = [
 <section class={heroClasses}>
   <!-- Background -->
   {backgroundType === 'gradient' && (
-    <div class="absolute inset-0 bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900"></div>
+    <div class={`absolute inset-0 ${currentTheme.gradient}`}></div>
   )}
   
   {backgroundType === 'image' && media?.image && (
@@ -67,10 +101,27 @@ const heroClasses = [
     </div>
   )}
   
+  {backgroundType === 'split' && (
+    <>
+      <div class={`absolute inset-0 ${currentTheme.gradient}`}></div>
+      {media?.image && (
+        <div class="absolute right-0 top-0 w-1/2 h-full">
+          <Image
+            src={media.image}
+            alt={media.alt}
+            class="w-full h-full object-cover"
+            loading="eager"
+          />
+          <div class="absolute inset-0 bg-black/20"></div>
+        </div>
+      )}
+    </>
+  )}
+  
   <!-- Decorative Elements -->
   <div class="absolute inset-0 overflow-hidden">
-    <div class="absolute -top-40 -right-40 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
-    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-indigo-400/10 rounded-full blur-3xl"></div>
+    <div class={`absolute -top-40 -right-40 w-96 h-96 ${currentTheme.decorative[0]} rounded-full blur-3xl`}></div>
+    <div class={`absolute -bottom-40 -left-40 w-96 h-96 ${currentTheme.decorative[1]} rounded-full blur-3xl`}></div>
     <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/5 rounded-full blur-3xl"></div>
   </div>
 
@@ -80,7 +131,7 @@ const heroClasses = [
       <div class={`space-y-8 ${alignClasses[textAlign]}`}>
         {subtitle && (
           <div class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-            <span class="text-sm font-medium tracking-wider uppercase text-blue-200">
+            <span class={`text-sm font-medium tracking-wider uppercase ${currentTheme.accent}`}>
               {subtitle}
             </span>
           </div>
@@ -109,7 +160,7 @@ const heroClasses = [
                 size="lg"
                 class={`
                   px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl
-                  ${index === 0 ? 'bg-white text-blue-900 hover:bg-blue-50' : 'border-white text-white hover:bg-white hover:text-blue-900'}
+                  ${index === 0 ? currentTheme.button.primary : currentTheme.button.outline}
                 `}
               >
                 {cta.label}

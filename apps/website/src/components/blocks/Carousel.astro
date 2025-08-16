@@ -11,6 +11,7 @@ interface Props {
   autoplay?: boolean;
   showDots?: boolean;
   showArrows?: boolean;
+  theme?: 'default' | 'gold' | 'emerald';
 }
 
 const {
@@ -19,11 +20,29 @@ const {
   items,
   autoplay = true,
   showDots = true,
-  showArrows = true
+  showArrows = true,
+  theme = 'default'
 } = Astro.props;
+
+const themeConfig = {
+  default: {
+    background: 'bg-gray-50',
+    accent: 'text-blue-600'
+  },
+  gold: {
+    background: 'bg-amber-50',
+    accent: 'text-amber-600'
+  },
+  emerald: {
+    background: 'bg-emerald-50',
+    accent: 'text-emerald-600'
+  }
+};
+
+const currentTheme = themeConfig[theme as keyof typeof themeConfig];
 ---
 
-<section class="py-20 bg-gray-50">
+<section class={`py-20 ${currentTheme.background}`}>
   <div class="container px-6">
     {(heading || description) && (
       <div class="text-center mb-16">

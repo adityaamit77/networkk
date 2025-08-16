@@ -1,0 +1,295 @@
+{
+  "slug": "home-two",
+  "title": "Next-Gen Executive Solutions - Innovation Leadership",
+  "seo": {
+    "title": "Next-Gen Executive Search & Innovation Leadership | Networkk",
+    "description": "Pioneering the future of executive search with innovative solutions for dynamic organizations seeking transformational leadership talent.",
+    "canonical": "https://networkk.com/home-two",
+    "keywords": ["executive search innovation", "next-gen leadership", "startup executives", "tech leadership"],
+    "image": "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop"
+  },
+  "blocks": [
+    {
+      "id": "innovation-hero",
+      "type": "Hero",
+      "props": {
+        "title": "Future-Forward Executive Search",
+        "subtitle": "Innovation Meets Leadership",
+        "description": "Pioneering next-generation executive search through cutting-edge technology and innovative methodologies. We connect disruptive organizations with transformational leaders who thrive in tomorrow's business landscape.",
+        "media": {
+          "image": "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "alt": "Modern innovative office space with cutting-edge technology and sleek design",
+          "ratio": "16:9"
+        },
+        "ctas": [
+          {
+            "label": "Innovate Together",
+            "href": "/contact",
+            "variant": "primary"
+          },
+          {
+            "label": "Future Vision",
+            "href": "/services",
+            "variant": "outline"
+          }
+        ],
+        "backgroundType": "split",
+        "textAlign": "right",
+        "fullHeight": true,
+        "overlay": false,
+        "theme": "emerald"
+      }
+    },
+    {
+      "id": "innovation-services",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Next-Generation Solutions",
+        "description": "Revolutionary approaches to executive search that leverage technology, data insights, and innovative methodologies.",
+        "columns": "3",
+        "backgroundType": "gradient",
+        "theme": "emerald",
+        "items": [
+          {
+            "title": "Startup & Scale-up Leadership",
+            "description": "Identifying dynamic executives who excel in high-growth environments and can navigate rapid scaling challenges.",
+            "image": "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "href": "/services/startup-leadership"
+          },
+          {
+            "title": "Digital Transformation Officers",
+            "description": "Securing leaders who drive digital innovation and transform traditional business models for the digital age.",
+            "image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "href": "/services/digital-transformation"
+          },
+          {
+            "title": "Sustainability & ESG Leadership",
+            "description": "Forward-thinking executives who champion environmental responsibility and sustainable business practices.",
+            "image": "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "href": "/services/sustainability-leadership"
+          }
+        ]
+      }
+    },
+    {
+      "id": "innovation-carousel",
+      "type": "Carousel",
+      "props": {
+        "heading": "Innovation Sectors",
+        "description": "Specialized focus on emerging industries and innovative business models that are shaping the future.",
+        "theme": "emerald",
+        "items": [
+          {
+            "image": "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+            "title": "AI & Machine Learning",
+            "description": "Executive talent for companies leveraging artificial intelligence to revolutionize their industries."
+          },
+          {
+            "image": "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+            "title": "Clean Energy & Climate Tech",
+            "description": "Leadership for sustainable technology companies driving the green energy transition."
+          },
+          {
+            "image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+            "title": "Biotech & Digital Health",
+            "description": "Visionary executives pioneering breakthrough treatments and digital healthcare solutions."
+          },
+          {
+            "image": "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+            "title": "Fintech & Blockchain",
+            "description": "Leaders transforming financial services through innovative technology and decentralized solutions."
+          }
+        ],
+        "autoplay": true,
+        "showDots": true,
+        "showArrows": true
+      }
+    },
+    {
+      "id": "innovation-testimonials",
+      "type": "Testimonials",
+      "props": {
+        "heading": "Innovation Success Stories",
+        "description": "Partners who have achieved breakthrough results with our next-generation executive search approach.",
+        "theme": "emerald",
+        "items": [
+          {
+            "quote": "Networkk found us a CTO who transformed our AI capabilities. Their deep understanding of emerging tech leadership was exactly what our startup needed.",
+            "author": {
+              "name": "Alex Rivera",
+              "title": "Founder & CEO",
+              "company": "NeuralFlow Technologies",
+              "image": "/images/testimonial-rajesh-patel.jpg"
+            },
+            "rating": 5
+          },
+          {
+            "quote": "The sustainability executive they placed helped us achieve carbon neutrality two years ahead of schedule. Outstanding cultural fit and vision alignment.",
+            "author": {
+              "name": "Maya Patel",
+              "title": "Co-Founder",
+              "company": "GreenTech Innovations",
+              "image": "/images/testimonial-priya-sharma.jpg"
+            },
+            "rating": 5
+          },
+          {
+            "quote": "Their approach to executive search is refreshingly modern. They understand the unique challenges of scaling a fintech company in today's regulatory environment.",
+            "author": {
+              "name": "Jordan Kim",
+              "title": "Managing Partner",
+              "company": "Velocity Capital",
+              "image": "/images/testimonial-sarah-chen.jpg"
+            },
+            "rating": 5
+          }
+        ],
+        "layout": "carousel",
+        "slider": true
+      }
+    },
+    {
+      "id": "innovation-metrics",
+      "type": "Statistics",
+      "props": {
+        "heading": "Innovation Impact",
+        "description": "Measurable outcomes from our next-generation approach to executive search and leadership placement.",
+        "backgroundType": "gradient",
+        "theme": "emerald",
+        "stats": [
+          {
+            "value": "800+",
+            "label": "Innovation Leaders",
+            "description": "Placed successfully",
+            "icon": "🚀"
+          },
+          {
+            "value": "97%",
+            "label": "Success Rate",
+            "description": "First-year retention",
+            "icon": "✅"
+          },
+          {
+            "value": "25",
+            "label": "Days Average",
+            "description": "Time to placement",
+            "icon": "⚡"
+          },
+          {
+            "value": "300+",
+            "label": "Startups Served",
+            "description": "Growth companies",
+            "icon": "🌱"
+          },
+          {
+            "value": "20+",
+            "label": "Unicorns Created",
+            "description": "Billion $ valuations",
+            "icon": "🦄"
+          },
+          {
+            "value": "12+",
+            "label": "Years Innovation",
+            "description": "Future-focused",
+            "icon": "🔮"
+          }
+        ]
+      }
+    },
+    {
+      "id": "future-insights",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Future Leadership Insights",
+        "description": "Cutting-edge research and analysis on emerging leadership trends and the future of executive talent.",
+        "columns": "3",
+        "backgroundType": "gradient",
+        "theme": "emerald",
+        "items": [
+          {
+            "title": "Remote-First Executive Teams",
+            "description": "How distributed leadership models are reshaping executive effectiveness and organizational culture in the digital age.",
+            "image": "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "href": "/insights/remote-first-executives"
+          },
+          {
+            "title": "AI-Augmented Leadership",
+            "description": "The integration of artificial intelligence tools in executive decision-making and strategic planning processes.",
+            "image": "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "href": "/insights/ai-augmented-leadership"
+          },
+          {
+            "title": "Purpose-Driven Executive Search",
+            "description": "Aligning executive talent with organizational mission and societal impact for sustainable long-term success.",
+            "image": "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "href": "/insights/purpose-driven-search"
+          }
+        ]
+      }
+    },
+    {
+      "id": "innovation-partners",
+      "type": "Logos",
+      "props": {
+        "heading": "Innovation Ecosystem",
+        "description": "Partnering with the most innovative companies and disruptive organizations shaping tomorrow's business landscape.",
+        "theme": "emerald",
+        "logos": [
+          {
+            "name": "NeuralFlow",
+            "textLogo": true,
+            "color": "#10B981"
+          },
+          {
+            "name": "GreenTech Labs",
+            "textLogo": true,
+            "color": "#059669"
+          },
+          {
+            "name": "Velocity Ventures",
+            "textLogo": true,
+            "color": "#34D399"
+          },
+          {
+            "name": "Future Systems",
+            "textLogo": true,
+            "color": "#6EE7B7"
+          },
+          {
+            "name": "Quantum Dynamics",
+            "textLogo": true,
+            "color": "#A7F3D0"
+          },
+          {
+            "name": "Innovation Hub",
+            "textLogo": true,
+            "color": "#047857"
+          }
+        ],
+        "animated": true,
+        "grayscale": false
+      }
+    },
+    {
+      "id": "future-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Ready to Pioneer the Future of Leadership?",
+        "description": "Join the innovation movement. Let's identify visionary executives who will transform your organization and drive breakthrough results in tomorrow's economy.",
+        "backgroundType": "gradient",
+        "theme": "emerald",
+        "primaryCta": {
+          "label": "Launch Innovation Journey",
+          "href": "/contact"
+        },
+        "secondaryCta": {
+          "label": "Explore Methodologies",
+          "href": "/innovation-approach"
+        }
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T09:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}

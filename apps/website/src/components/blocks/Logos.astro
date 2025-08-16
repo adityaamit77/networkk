@@ -11,6 +11,7 @@ interface Props {
   }>;
   animated?: boolean;
   grayscale?: boolean;
+  theme?: 'default' | 'gold' | 'emerald';
 }
 
 const {
@@ -18,11 +19,29 @@ const {
   description,
   logos,
   animated = true,
-  grayscale = true
+  grayscale = true,
+  theme = 'default'
 } = Astro.props;
+
+const themeConfig = {
+  default: {
+    background: 'bg-white',
+    border: 'border-gray-100'
+  },
+  gold: {
+    background: 'bg-amber-50',
+    border: 'border-amber-100'
+  },
+  emerald: {
+    background: 'bg-emerald-50',
+    border: 'border-emerald-100'
+  }
+};
+
+const currentTheme = themeConfig[theme as keyof typeof themeConfig];
 ---
 
-<section class="py-16 bg-white border-t border-gray-100">
+<section class={`py-16 ${currentTheme.background} border-t ${currentTheme.border}`}>
   <div class="container px-6">
     {(heading || description) && (
       <div class="text-center mb-12">

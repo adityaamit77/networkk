@@ -26,9 +26,10 @@ export interface Props {
     }>;
   };
   showPageTitle?: boolean;
+  theme?: 'default' | 'gold' | 'emerald';
 }
 
-const { page, showPageTitle = true } = Astro.props;
+const { page, showPageTitle = true, theme } = Astro.props;
 
 // Generate JSON-LD structured data
 const organizationSchema = JSON.parse(createOrganizationSchema());
@@ -61,6 +62,7 @@ const combinedJsonLd = [
   noindex={page.seo.noindex}
   image={page.seo.image}
   keywords={page.seo.keywords}
+  footerTheme={theme}
 >
   <!-- Page-level JSON-LD -->
   <JsonLd data={combinedJsonLd} />

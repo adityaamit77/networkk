@@ -17,6 +17,7 @@ export interface Props {
   }>;
   layout?: 'grid' | 'carousel';
   slider?: boolean;
+  theme?: 'default' | 'gold' | 'emerald';
 }
 
 const {
@@ -24,11 +25,29 @@ const {
   description,
   items,
   layout = 'carousel',
-  slider = true
+  slider = true,
+  theme = 'default'
 } = Astro.props;
+
+const themeConfig = {
+  default: {
+    background: 'bg-gradient-to-br from-blue-50 to-indigo-100',
+    accent: 'text-blue-600'
+  },
+  gold: {
+    background: 'bg-gradient-to-br from-amber-50 to-yellow-100',
+    accent: 'text-amber-600'
+  },
+  emerald: {
+    background: 'bg-gradient-to-br from-emerald-50 to-teal-100',
+    accent: 'text-emerald-600'
+  }
+};
+
+const currentTheme = themeConfig[theme as keyof typeof themeConfig];
 ---
 
-<section class="section bg-gradient-to-br from-blue-50 to-indigo-100">
+<section class={`section ${currentTheme.background}`}>
   <div class="container">
     {(heading || description) && (
       <div class="text-center mb-16">
@@ -54,7 +73,7 @@ const {
               <div class="testimonial-slide min-w-full px-4">
                 <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 relative mx-auto max-w-3xl">
                   <!-- Quote Icon -->
-                  <div class="absolute top-6 left-6 text-blue-600 opacity-10">
+                  <div class={`absolute top-6 left-6 ${currentTheme.accent} opacity-10`}>
                     <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
                     </svg>
@@ -65,7 +84,7 @@ const {
                     {testimonial.rating && (
                       <div class="flex justify-center mb-6">
                         {Array.from({ length: 5 }).map((_, i) => (
-                          <svg class={`w-5 h-5 ${i < (testimonial.rating || 0) ? 'text-yellow-400' : 'text-gray-300'}`} fill="currentColor" viewBox="0 0 20 20">
+                          <svg class={`w-5 h-5 ${i < (testimonial.rating || 0) ? currentTheme.accent : 'text-gray-300'}`} fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                           </svg>
                         ))}
@@ -85,7 +104,11 @@ const {
                           alt={testimonial.author.name}
                           width={64}
                           height={64}
-                          class="w-16 h-16 rounded-full object-cover mr-4 ring-4 ring-blue-100"
+                          class={`w-16 h-16 rounded-full object-cover mr-4 ring-4 ${
+                            theme === 'gold' ? 'ring-amber-100' : 
+                            theme === 'emerald' ? 'ring-emerald-100' : 
+                            'ring-blue-100'
+                          }`}
                         />
                       )}
                       <div class="text-left">
@@ -95,7 +118,7 @@ const {
                         <div class="text-gray-600">
                           {testimonial.author.title}
                         </div>
-                        <div class="text-blue-600 font-medium">
+                        <div class={`${currentTheme.accent} font-medium`}>
                           {testimonial.author.company}
                         </div>
                       </div>
@@ -110,7 +133,7 @@ const {
         <!-- Navigation -->
         <div class="flex justify-center items-center mt-8 space-x-4">
           <button class="testimonial-prev w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors group">
-            <svg class="w-6 h-6 text-gray-600 group-hover:text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class={`w-6 h-6 text-gray-600 group-hover:${currentTheme.accent}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
             </svg>
           </button>
@@ -118,14 +141,14 @@ const {
           <div class="flex space-x-2">
             {items.map((_: Props['items'][0], index: number) => (
               <button 
-                class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-blue-600 transition-colors"
+                class={`testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:${currentTheme.accent.replace('text-', 'bg-')} transition-colors`}
                 data-slide={index}
               ></button>
             ))}
           </div>
           
           <button class="testimonial-next w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors group">
-            <svg class="w-6 h-6 text-gray-600 group-hover:text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class={`w-6 h-6 text-gray-600 group-hover:${currentTheme.accent}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
           </button>
@@ -139,7 +162,7 @@ const {
             {testimonial.rating && (
               <div class="flex mb-4">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <svg class={`w-5 h-5 ${i < (testimonial.rating || 0) ? 'text-yellow-400' : 'text-gray-300'}`} fill="currentColor" viewBox="0 0 20 20">
+                  <svg class={`w-5 h-5 ${i < (testimonial.rating || 0) ? currentTheme.accent : 'text-gray-300'}`} fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                   </svg>
                 ))}
@@ -160,7 +183,11 @@ const {
                     alt={`Portrait of ${testimonial.author.name}`}
                     width={48}
                     height={48}
-                    class="w-12 h-12 rounded-full object-cover ring-2 ring-blue-100"
+                    class={`w-12 h-12 rounded-full object-cover ring-2 ${
+                      theme === 'gold' ? 'ring-amber-100' : 
+                      theme === 'emerald' ? 'ring-emerald-100' : 
+                      'ring-blue-100'
+                    }`}
                   />
                 </div>
               )}
@@ -171,7 +198,7 @@ const {
                 <div class="text-gray-600 text-sm">
                   {testimonial.author.title}
                 </div>
-                <div class="text-blue-600 text-sm font-medium">
+                <div class={`${currentTheme.accent} text-sm font-medium`}>
                   {testimonial.author.company}
                 </div>
               </div>
@@ -184,7 +211,7 @@ const {
 </section>
 
 {layout === 'carousel' && slider && (
-  <script is:inline>
+  <script is:inline define:vars={{ theme }}>
     document.addEventListener('DOMContentLoaded', function() {
       const slider = document.querySelector('.testimonial-slider');
       if (!slider) return;
@@ -198,6 +225,14 @@ const {
       let currentSlide = 0;
       const totalSlides = slides.length;
       
+      const themeColors = {
+        default: 'bg-blue-600',
+        gold: 'bg-amber-600',
+        emerald: 'bg-emerald-600'
+      };
+      
+      const activeColor = themeColors[theme] || themeColors.default;
+      
       function updateTestimonial() {
         if (!track || !slides[0]) return;
         const firstSlide = slides[0];
@@ -207,8 +242,12 @@ const {
         // Update dots
         dots.forEach((dot, index) => {
           if (dot) {
-            dot.classList.toggle('bg-blue-600', index === currentSlide);
-            dot.classList.toggle('bg-gray-300', index !== currentSlide);
+            dot.classList.remove('bg-blue-600', 'bg-amber-600', 'bg-emerald-600', 'bg-gray-300');
+            if (index === currentSlide) {
+              dot.classList.add(activeColor);
+            } else {
+              dot.classList.add('bg-gray-300');
+            }
           }
         });
       }

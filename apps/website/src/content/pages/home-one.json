@@ -1,0 +1,290 @@
+{
+  "slug": "home-one",
+  "title": "Elite Executive Search - Transform Your Leadership",
+  "seo": {
+    "title": "Elite Executive Search & Leadership Solutions | Networkk",
+    "description": "Transform your organization with exceptional C-suite talent. Networkk delivers elite executive search services for forward-thinking companies worldwide.",
+    "canonical": "https://networkk.com/home-one",
+    "keywords": ["executive search", "C-suite recruitment", "leadership hiring", "corporate talent acquisition"],
+    "image": "https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop"
+  },
+  "blocks": [
+    {
+      "id": "hero-section",
+      "type": "Hero",
+      "props": {
+        "title": "Redefining Executive Excellence",
+        "subtitle": "Where Vision Meets Leadership",
+        "description": "We curate extraordinary leaders for exceptional organizations. Our bespoke approach connects visionary companies with transformational executives who architect success and drive sustainable growth in the modern business landscape.",
+        "media": {
+          "image": "https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "alt": "Luxurious modern executive boardroom with elegant design",
+          "ratio": "16:9"
+        },
+        "ctas": [
+          {
+            "label": "Discover Excellence",
+            "href": "/contact",
+            "variant": "primary"
+          },
+          {
+            "label": "Our Philosophy",
+            "href": "/our-approach",
+            "variant": "outline"
+          }
+        ],
+        "backgroundType": "gradient",
+        "textAlign": "left",
+        "fullHeight": true,
+        "overlay": false,
+        "theme": "gold"
+      }
+    },
+    {
+      "id": "premium-services",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Premium Executive Services",
+        "description": "Comprehensive leadership solutions tailored for the most discerning organizations seeking transformational talent.",
+        "columns": "3",
+        "backgroundType": "gradient",
+        "theme": "gold",
+        "items": [
+          {
+            "title": "C-Suite Executive Search",
+            "description": "Securing visionary CEOs, CFOs, and board members who redefine industry standards and drive exponential growth through exceptional leadership.",
+            "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "href": "/services/c-suite-search"
+          },
+          {
+            "title": "Board & Governance Advisory",
+            "description": "Strategic board composition and governance expertise to strengthen organizational leadership at the highest levels of corporate excellence.",
+            "image": "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "href": "/services/board-advisory"
+          },
+          {
+            "title": "Leadership Transformation",
+            "description": "Comprehensive organizational restructuring and executive team optimization for maximum performance impact and sustainable competitive advantage.",
+            "image": "https://images.pexels.com/photos/70441/pexels-photo-70441.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "href": "/services/leadership-transformation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "premium-carousel",
+      "type": "Carousel",
+      "props": {
+        "heading": "Industry Leadership Expertise",
+        "description": "Specialized knowledge across high-growth sectors where exceptional leadership makes the difference.",
+        "theme": "gold",
+        "items": [
+          {
+            "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+            "title": "Financial Services Excellence",
+            "description": "Private equity, investment banking, and fintech leadership that navigates complex markets with precision."
+          },
+          {
+            "image": "https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+            "title": "Technology Innovation",
+            "description": "Visionary tech executives who transform industries through breakthrough innovation and strategic execution."
+          },
+          {
+            "image": "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+            "title": "Healthcare & Life Sciences",
+            "description": "Leaders who advance human health through groundbreaking research, development, and patient-centered innovation."
+          }
+        ],
+        "autoplay": true,
+        "showDots": true,
+        "showArrows": true
+      }
+    },
+    {
+      "id": "elite-testimonials",
+      "type": "Testimonials",
+      "props": {
+        "heading": "Trusted by Industry Icons",
+        "description": "Our partners represent the pinnacle of business excellence across diverse industries worldwide.",
+        "theme": "gold",
+        "items": [
+          {
+            "quote": "Networkk's precision in executive search is unmatched. They delivered a CEO who transformed our company culture and tripled our valuation within two years.",
+            "author": {
+              "name": "Victoria Sterling",
+              "title": "Chairman & Founder",
+              "company": "Sterling Capital Partners",
+              "image": "/images/testimonial-sarah-chen.jpg"
+            },
+            "rating": 5
+          },
+          {
+            "quote": "The leadership team they assembled for our IPO journey was exceptional. Every placement exceeded expectations and contributed to our successful $2.5B public offering.",
+            "author": {
+              "name": "Marcus Chen",
+              "title": "Executive Chairman",
+              "company": "InnovateTech Solutions",
+              "image": "/images/testimonial-rajesh-patel.jpg"
+            },
+            "rating": 5
+          },
+          {
+            "quote": "Their deep understanding of our industry and culture resulted in perfect leadership matches. The CTO they placed revolutionized our entire technology infrastructure.",
+            "author": {
+              "name": "Elizabeth Morrison",
+              "title": "CEO & Co-Founder",
+              "company": "Global Health Dynamics",
+              "image": "/images/testimonial-priya-sharma.jpg"
+            },
+            "rating": 5
+          }
+        ],
+        "layout": "carousel",
+        "slider": true
+      }
+    },
+    {
+      "id": "elite-statistics",
+      "type": "Statistics",
+      "props": {
+        "heading": "Excellence in Numbers",
+        "description": "Quantifying our commitment to delivering transformational leadership solutions that drive measurable results.",
+        "backgroundType": "gradient",
+        "theme": "gold",
+        "stats": [
+          {
+            "value": "1000+",
+            "label": "C-Suite Placements",
+            "description": "Executive appointments",
+            "icon": "👑"
+          },
+          {
+            "value": "98%",
+            "label": "Client Satisfaction",
+            "description": "Retention rate",
+            "icon": "⭐"
+          },
+          {
+            "value": "30",
+            "label": "Days Average",
+            "description": "Executive placement",
+            "icon": "🚀"
+          },
+          {
+            "value": "500+",
+            "label": "Global Partners",
+            "description": "Trusted relationships",
+            "icon": "🌟"
+          },
+          {
+            "value": "25+",
+            "label": "Industry Sectors",
+            "description": "Specialized expertise",
+            "icon": "🏆"
+          },
+          {
+            "value": "15+",
+            "label": "Years Experience",
+            "description": "Market leadership",
+            "icon": "💎"
+          }
+        ]
+      }
+    },
+    {
+      "id": "exclusive-insights",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Executive Intelligence",
+        "description": "Strategic insights and market intelligence that inform leadership decisions and shape industry direction.",
+        "columns": "3",
+        "backgroundType": "gradient",
+        "theme": "gold",
+        "items": [
+          {
+            "title": "Future of C-Suite Leadership",
+            "description": "How artificial intelligence and digital transformation are reshaping executive requirements and competencies for tomorrow's leaders.",
+            "image": "https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "href": "/insights/future-c-suite-leadership"
+          },
+          {
+            "title": "Board Diversity Excellence",
+            "description": "Strategic approaches to building high-performance boards that leverage diverse perspectives for competitive advantage.",
+            "image": "https://images.pexels.com/photos/3184432/pexels-photo-3184432.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "href": "/insights/board-diversity-excellence"
+          },
+          {
+            "title": "Executive Compensation Trends",
+            "description": "Comprehensive analysis of executive compensation packages and incentive structures that attract top-tier talent.",
+            "image": "https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "href": "/insights/executive-compensation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "elite-partners",
+      "type": "Logos",
+      "props": {
+        "heading": "Trusted by Global Leaders",
+        "description": "Partnership with the world's most prestigious organizations across industries and continents.",
+        "theme": "gold",
+        "logos": [
+          {
+            "name": "Sterling Capital",
+            "textLogo": true,
+            "color": "#D4AF37"
+          },
+          {
+            "name": "Platinum Ventures",
+            "textLogo": true,
+            "color": "#B8860B"
+          },
+          {
+            "name": "Golden Gate Partners",
+            "textLogo": true,
+            "color": "#DAA520"
+          },
+          {
+            "name": "Elite Holdings",
+            "textLogo": true,
+            "color": "#FFD700"
+          },
+          {
+            "name": "Premier Global",
+            "textLogo": true,
+            "color": "#F4A460"
+          },
+          {
+            "name": "Sovereign Equity",
+            "textLogo": true,
+            "color": "#CD853F"
+          }
+        ],
+        "animated": true,
+        "grayscale": false
+      }
+    },
+    {
+      "id": "premium-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Ready to Transform Your Leadership Excellence?",
+        "description": "Partner with us to secure visionary executives who will elevate your organization to unprecedented heights of success and market dominance.",
+        "backgroundType": "gradient",
+        "theme": "gold",
+        "primaryCta": {
+          "label": "Schedule Executive Consultation",
+          "href": "/contact"
+        },
+        "secondaryCta": {
+          "label": "Discover Our Methodology",
+          "href": "/our-approach"
+        }
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T09:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}

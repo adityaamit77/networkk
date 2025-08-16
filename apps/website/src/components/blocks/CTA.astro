@@ -14,6 +14,7 @@ export interface Props {
     href: string;
   };
   backgroundType?: 'solid' | 'gradient';
+  theme?: 'default' | 'gold' | 'emerald';
 }
 
 const {
@@ -21,16 +22,40 @@ const {
   description,
   primaryCta,
   secondaryCta,
-  backgroundType = 'solid'
+  backgroundType = 'solid',
+  theme = 'default'
 } = Astro.props;
+
+const themeConfig = {
+  default: {
+    gradient: 'bg-gradient-to-br from-blue-600 via-indigo-700 to-purple-800',
+    solid: 'bg-gray-900',
+    accent1: 'bg-blue-400',
+    accent2: 'bg-purple-400'
+  },
+  gold: {
+    gradient: 'bg-gradient-to-br from-amber-600 via-yellow-700 to-orange-800',
+    solid: 'bg-slate-900',
+    accent1: 'bg-amber-400',
+    accent2: 'bg-yellow-400'
+  },
+  emerald: {
+    gradient: 'bg-gradient-to-br from-emerald-600 via-teal-700 to-green-800',
+    solid: 'bg-slate-900',
+    accent1: 'bg-emerald-400',
+    accent2: 'bg-teal-400'
+  }
+};
+
+const currentTheme = themeConfig[theme as keyof typeof themeConfig];
 ---
 
-<section class={`section ${backgroundType === 'gradient' ? 'bg-gradient-to-br from-primary-600 via-blue-700 to-indigo-800 text-white relative overflow-hidden' : 'bg-gray-900 text-white'}`}>
+<section class={`section ${backgroundType === 'gradient' ? `${currentTheme.gradient} text-white relative overflow-hidden` : `${currentTheme.solid} text-white`}`}>
   <!-- Background Elements for gradient -->
   {backgroundType === 'gradient' && (
     <div class="absolute inset-0 opacity-10">
-      <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse-soft"></div>
-      <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse-soft animation-delay-400"></div>
+      <div class={`absolute top-0 left-1/4 w-96 h-96 ${currentTheme.accent1} rounded-full mix-blend-multiply filter blur-3xl animate-pulse-soft`}></div>
+      <div class={`absolute bottom-0 right-1/4 w-96 h-96 ${currentTheme.accent2} rounded-full mix-blend-multiply filter blur-3xl animate-pulse-soft animation-delay-400`}></div>
     </div>
   )}
   
