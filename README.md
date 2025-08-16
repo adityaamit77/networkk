@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Networkk
 
 Executive search and leadership hiring platform built with Astro and Next.js.
@@ -72,3 +73,6 @@ pnpm lint             # Lint all packages
 pnpm type-check       # TypeScript validation
 pnpm clean            # Clean all build artifacts
 ```
+=======
+# networkk
+>>>>>>> 5c4ee12f8f685b54d3229306e8a29ce5d976e66d
