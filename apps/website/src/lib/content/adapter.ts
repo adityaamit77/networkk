@@ -1,23 +1,72 @@
 import type { BlockInstance } from '@networkk/content-bridge';
+import { SEOSchema } from '@networkk/content-bridge';
+import { z } from 'zod';
+
+export type SEO = z.infer<typeof SEOSchema>;
+export interface PageBlock {
+  id: string;
+  type: string;
+  props: any;
+  layout?: any;
+  children?: any[];
+}
+
+export interface PageContent {
+  slug: string;
+  title: string;
+  status?: string;
+  seo: SEO;
+  blocks: PageBlock[];
+  [key: string]: unknown;
+}
+
+export interface InsightContent {
+  slug: string;
+  title: string;
+  excerpt?: string;
+  content?: string;
+  seo: SEO;
+  [key: string]: unknown;
+}
 
 // Simplified content loading for Phase 1
-export async function loadPageBySlug(slug: string) {
+export async function loadPageBySlug(slug: string): Promise<PageContent | null> {
   try {
-    const content = await import(`../../content/pages/${slug}.json`);
-    return content.default;
-  } catch (error) {
+    const contentModule = await import(`../../content/pages/${slug}.json`);
+    const content = contentModule.default;
+    const seoResult = SEOSchema.safeParse(content.seo);
+    if (!seoResult.success) {
+      console.error(`Invalid SEO data for page: ${slug}`, seoResult.error.flatten());
+      throw new Error(`Invalid SEO data for page: ${slug}`);
+    }
+    return { ...content, seo: seoResult.data } as PageContent;
+  } catch (error: any) {
+    if (error?.code === 'MODULE_NOT_FOUND') {
+      console.error(`Failed to load page: ${slug}`, error);
+      return null;
+    }
     console.error(`Failed to load page: ${slug}`, error);
-    return null;
+    throw error;
   }
 }
 
-export async function loadInsightBySlug(slug: string) {
+export async function loadInsightBySlug(slug: string): Promise<InsightContent | null> {
   try {
-    const content = await import(`../../content/insights/${slug}.json`);
-    return content.default;
-  } catch (error) {
+    const contentModule = await import(`../../content/insights/${slug}.json`);
+    const content = contentModule.default;
+    const seoResult = SEOSchema.safeParse(content.seo);
+    if (!seoResult.success) {
+      console.error(`Invalid SEO data for insight: ${slug}`, seoResult.error.flatten());
+      throw new Error(`Invalid SEO data for insight: ${slug}`);
+    }
+    return { ...content, seo: seoResult.data } as InsightContent;
+  } catch (error: any) {
+    if (error?.code === 'MODULE_NOT_FOUND') {
+      console.error(`Failed to load insight: ${slug}`, error);
+      return null;
+    }
     console.error(`Failed to load insight: ${slug}`, error);
-    return null;
+    throw error;
   }
 }
 
