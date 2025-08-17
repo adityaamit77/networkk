@@ -1,5 +1,3 @@
-import { NextConfig } from 'next';
-
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
@@ -7,4 +5,4 @@ const nextConfig = {
   }
 };
 
-export default nextConfig satisfies NextConfig;
+export default nextConfig;
