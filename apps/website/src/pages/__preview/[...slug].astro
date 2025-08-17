@@ -1,0 +1,21 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+
+const slugParam = Astro.params.slug;
+const slug = Array.isArray(slugParam) ? '/' + slugParam.join('/') : '/';
+const cmsUrl = import.meta.env.CMS_API_URL || 'http://localhost:3000';
+const res = await fetch(`${cmsUrl}/api/preview/page?slug=${encodeURIComponent(slug)}&draft=true`);
+if (!res.ok) {
+  return new Response(null, { status: res.status, statusText: res.statusText });
+}
+const page = await res.json();
+Astro.response.headers.set('X-Robots-Tag', 'noindex');
+---
+<div style="background:#fffae6;padding:8px;text-align:center;font-weight:bold;">Preview Mode</div>
+<script is:inline>
+  const cmsUrl = {JSON.stringify(cmsUrl)};
+  const slug = {JSON.stringify(slug)};
+  const es = new EventSource(`${cmsUrl}/api/preview/stream?slug=${encodeURIComponent(slug)}`);
+  es.onmessage = () => window.location.reload();
+</script>
+<PageLayout page={page} />
