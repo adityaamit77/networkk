@@ -45,6 +45,25 @@ pnpm dev:cms      # Next.js CMS (coming in Phase 4)
 - Phase 3: Complete frontend with forms and optimization
 - Phase 4+: Next.js CMS development
 
+## Completed Work
+
+### Website
+- Monorepo structure with PNPM workspaces
+- Shared TypeScript configuration
+- Content bridge package with Zod schemas
+- Basic Astro setup with React integration
+- Design system with Tailwind
+- SEO components with OpenGraph and JSON-LD
+- Block library v1 (Hero, TilesGrid, MetricsBand, Testimonials, CTA)
+- Content adapter pattern
+- Home and About pages with sample content
+
+### CMS
+- _No completed tasks yet — CMS development begins in Phase 4._
+
+### Next CMS Task
+- Scaffold the Next.js CMS app and preview bridge
+
 ## SEO Features
 
 - ✅ One H1 per page with logical hierarchy
