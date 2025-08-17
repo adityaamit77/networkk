@@ -45,6 +45,24 @@ pnpm dev:cms      # Next.js CMS (coming in Phase 4)
 - Phase 3: Complete frontend with forms and optimization
 - Phase 4+: Next.js CMS development
 
+## Completed Tasks
+
+### Website
+- Monorepo setup with PNPM workspaces
+- Astro frontend scaffold under `apps/website`
+- `<SEO />` component with OpenGraph and Twitter tags
+- JSON-LD helper component
+- Heading hierarchy and ARIA landmarks in layouts
+- Block library v1 with core marketing blocks
+- Home and About pages with sample content
+
+### CMS
+- Initial Next.js CMS scaffold under `apps/cms`
+
+## Next CMS Task
+
+Set up Prisma models and database schema for the admin app.
+
 ## SEO Features
 
 - ✅ One H1 per page with logical hierarchy
