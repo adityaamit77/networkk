@@ -1,0 +1,38 @@
+---
+import Heading from '../ui/Heading.astro';
+import { createFAQSchema } from '../../lib/seo';
+
+export interface Props {
+  heading: string;
+  items: Array<{ question: string; answer: string }>;
+  jsonLd?: boolean;
+}
+
+const { heading, items, jsonLd = true } = Astro.props as Props;
+const faqSchema = jsonLd ? createFAQSchema(items) : null;
+---
+<section class="section bg-white">
+  <div class="container">
+    {heading && (
+      <div class="text-center mb-12">
+        <Heading level={2} class="mb-4">{heading}</Heading>
+      </div>
+    )}
+    <div class="max-w-3xl mx-auto divide-y divide-gray-200">
+      {items.map((item) => (
+        <details class="group py-6">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="text-lg font-medium text-gray-900">{item.question}</span>
+            <svg class="w-5 h-5 text-gray-500 transition-transform group-open:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-gray-600">{item.answer}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+  {faqSchema && (
+    <script type="application/ld+json" set:html={faqSchema} />
+  )}
+</section>

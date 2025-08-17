@@ -15,6 +15,8 @@ import ContactForm from './ContactForm.astro';
 import LocationMap from './LocationMap.astro';
 import EventsList from './EventsList.astro';
 import FilterableGrid from './FilterableGrid.astro';
+import FAQ from './FAQ.astro';
+import InsightsPreview from './InsightsPreview.astro';
 
 export interface Props {
   block: {
@@ -50,11 +52,9 @@ const blockComponents = {
   LocationMap,
   EventsList,
   FilterableGrid,
+  FAQ,
+  InsightsPreview,
   // Add more blocks as they're created
-  InsightsPreview: TilesGrid, // Use TilesGrid for insights preview
-  LogosStrip: Logos, // Use Logos component
-  FAQ: TilesGrid, // Use TilesGrid for FAQ
-  CaseStudyList: TilesGrid, // Use TilesGrid for case studies
 };
 
 const BlockComponent = blockComponents[block.type as keyof typeof blockComponents];
