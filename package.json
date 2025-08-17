@@ -14,7 +14,7 @@
     "dev:cms": "npm run dev --workspace=cms",
     "lint": "npm run lint --workspaces",
     "type-check": "npm run type-check --workspaces",
-    "test": "npm run test --workspaces",
+    "test": "npm run test --workspaces --if-present",
     "clean": "npm run clean --workspaces && rm -rf node_modules",
     "setup": "npm install && npm run build"
   },
