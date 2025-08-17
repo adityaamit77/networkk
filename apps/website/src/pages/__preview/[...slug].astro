@@ -12,10 +12,10 @@ const page = await res.json();
 Astro.response.headers.set('X-Robots-Tag', 'noindex');
 ---
 <div style="background:#fffae6;padding:8px;text-align:center;font-weight:bold;">Preview Mode</div>
-<script is:inline>
-  const cmsUrl = {JSON.stringify(cmsUrl)};
-  const slug = {JSON.stringify(slug)};
-  const es = new EventSource(`${cmsUrl}/api/preview/stream?slug=${encodeURIComponent(slug)}`);
+<script is:inline>{`
+  const cmsUrl = ${JSON.stringify(cmsUrl)};
+  const slug = ${JSON.stringify(slug)};
+  const es = new EventSource(cmsUrl + '/api/preview/stream?slug=' + encodeURIComponent(slug));
   es.onmessage = () => window.location.reload();
-</script>
+`}</script>
 <PageLayout page={page} />

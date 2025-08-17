@@ -6,50 +6,30 @@ import { loadPageBySlug } from '../lib/content/adapter';
 import path from 'path';
 import fs from 'fs/promises';
 
-export async function getStaticPaths(): Promise<Array<{ params: { slug: string } }>> {
-  let modules: Array<{ file?: string; default?: { slug?: string; status?: string } }> = await Astro.glob('../content/pages/*.json');
-
-  // Fallback: in some dev environments Astro.glob may return an empty array.
-  // Use import.meta.glob with eager:true to discover files at build time as a fallback.
-  if (!modules || modules.length === 0) {
-    console.debug('[getStaticPaths] Astro.glob returned empty; falling back to import.meta.glob');
-    const eagerModules = import.meta.glob('../content/pages/*.json', { eager: true }) as Record<string, any>;
-    modules = Object.keys(eagerModules).map((file) => ({ file, default: eagerModules[file]?.default ?? eagerModules[file] }));
-  }
-
-  // Final fallback: read files from disk directly (works in dev and build)
-  if (!modules || modules.length === 0) {
-    try {
-      const contentDir = new URL('../content/pages/', import.meta.url);
-      const files = await fs.readdir(contentDir);
-      modules = files.filter((f) => f.endsWith('.json')).map((f) => ({ file: f, default: { slug: undefined, status: undefined } }));
-      console.debug('[getStaticPaths] fs fallback found files:', modules.map((m) => m.file));
-    } catch (err) {
-      console.debug('[getStaticPaths] fs fallback error', err);
-    }
-  }
-
-  const paths: Array<{ params: { slug: string } }> = modules
-    .map((m) => {
-      const file = m.file || '';
-      const base = path.basename(file);
-      const slug = base.replace(/\.json$/, '') || '';
-      const meta = m.default || {};
-      const status = (meta.status as string) || 'published';
-      return { file, slug, status };
-    })
-  // Only include published pages (include 'home' as well if present)
-  .filter((m) => !!m.slug && m.status === 'published')
-    .map((m) => ({ params: { slug: m.slug } }));
-
-  // Helpful debug output while developing
-  try {
-    console.debug('[getStaticPaths] generated slugs:', paths.map((p) => p.params.slug));
-  } catch (e) {
-    /* ignore in production */
-  }
-
-  return paths;
+export async function getStaticPaths() {
+  // Use import.meta.glob as the primary method for more reliable file discovery
+  const modules = import.meta.glob('../content/pages/*.json', { eager: true });
+  
+  const slugsFromGlob = Object.entries(modules).map(([filePath, module]) => {
+    const fileName = filePath.replace('../content/pages/', '').replace('.json', '');
+    return {
+      slug: fileName,
+      status: (module as any).status || 'published',
+      source: 'import.meta.glob',
+      filePath
+    };
+  });
+  
+  const validSlugs = slugsFromGlob.filter(item => {
+    const isPublished = item.status === 'published';
+    return isPublished;
+  });
+  
+  const slugs = validSlugs.map(item => item.slug);
+  
+  return slugs.map(slug => ({
+    params: { slug }
+  }));
 }
 
 // Astro provides params as possibly undefined; cast to string for type safety
