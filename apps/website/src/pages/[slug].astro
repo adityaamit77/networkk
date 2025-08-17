@@ -2,6 +2,21 @@
 import PageLayout from '../layouts/PageLayout.astro';
 import { loadPageBySlug } from '../lib/content/adapter';
 
+// Generate static paths from content files
+export async function getStaticPaths(): Promise<Array<{ params: { slug: string } }>> {
+  const modules: Array<{ file?: string }> = await Astro.glob('../content/pages/*.json');
+  const paths: Array<{ params: { slug: string } }> = modules
+    .map((m) => {
+      const file = m.file || '';
+      const slug = file.split('/').pop()?.replace('.json', '') || '';
+      return { file, slug };
+    })
+    .filter((m) => !!m.slug)
+    .map((m) => ({ params: { slug: m.slug } }));
+
+  return paths;
+}
+
 // Astro provides params as possibly undefined; cast to string for type safety
 const slug = Astro.params.slug as string;
 const page = await loadPageBySlug(slug);
