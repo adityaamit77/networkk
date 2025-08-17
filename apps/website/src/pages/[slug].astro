@@ -3,16 +3,51 @@ import PageLayout from '../layouts/PageLayout.astro';
 import { loadPageBySlug } from '../lib/content/adapter';
 
 // Generate static paths from content files
+import path from 'path';
+import fs from 'fs/promises';
+
 export async function getStaticPaths(): Promise<Array<{ params: { slug: string } }>> {
-  const modules: Array<{ file?: string }> = await Astro.glob('../content/pages/*.json');
+  let modules: Array<{ file?: string; default?: { slug?: string; status?: string } }> = await Astro.glob('../content/pages/*.json');
+
+  // Fallback: in some dev environments Astro.glob may return an empty array.
+  // Use import.meta.glob with eager:true to discover files at build time as a fallback.
+  if (!modules || modules.length === 0) {
+    console.debug('[getStaticPaths] Astro.glob returned empty; falling back to import.meta.glob');
+    const eagerModules = import.meta.glob('../content/pages/*.json', { eager: true }) as Record<string, any>;
+    modules = Object.keys(eagerModules).map((file) => ({ file, default: eagerModules[file]?.default ?? eagerModules[file] }));
+  }
+
+  // Final fallback: read files from disk directly (works in dev and build)
+  if (!modules || modules.length === 0) {
+    try {
+      const contentDir = new URL('../content/pages/', import.meta.url);
+      const files = await fs.readdir(contentDir);
+      modules = files.filter((f) => f.endsWith('.json')).map((f) => ({ file: f, default: { slug: undefined, status: undefined } }));
+      console.debug('[getStaticPaths] fs fallback found files:', modules.map((m) => m.file));
+    } catch (err) {
+      console.debug('[getStaticPaths] fs fallback error', err);
+    }
+  }
+
   const paths: Array<{ params: { slug: string } }> = modules
     .map((m) => {
       const file = m.file || '';
-      const slug = file.split('/').pop()?.replace('.json', '') || '';
-      return { file, slug };
+      const base = path.basename(file);
+      const slug = base.replace(/\.json$/, '') || '';
+      const meta = m.default || {};
+      const status = (meta.status as string) || 'published';
+      return { file, slug, status };
     })
-    .filter((m) => !!m.slug)
+  // Only include published pages (include 'home' as well if present)
+  .filter((m) => !!m.slug && m.status === 'published')
     .map((m) => ({ params: { slug: m.slug } }));
+
+  // Helpful debug output while developing
+  try {
+    console.debug('[getStaticPaths] generated slugs:', paths.map((p) => p.params.slug));
+  } catch (e) {
+    /* ignore in production */
+  }
 
   return paths;
 }
