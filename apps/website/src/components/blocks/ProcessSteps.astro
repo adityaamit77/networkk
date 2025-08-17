@@ -1,0 +1,96 @@
+---
+import Heading from '../ui/Heading.astro';
+
+export interface Props {
+  heading: string;
+  description?: string;
+  steps: Array<{
+    number: number;
+    title: string;
+    description: string;
+    icon?: string;
+  }>;
+  layout?: 'horizontal' | 'vertical';
+}
+
+const {
+  heading,
+  description,
+  steps,
+  layout = 'horizontal'
+} = Astro.props;
+
+const isHorizontal = layout === 'horizontal';
+---
+
+<section class="section bg-white py-16 md:py-24">
+  <div class="container">
+    <!-- Header -->
+    {(heading || description) && (
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        {heading && (
+          <Heading level={2} class="mb-4">
+            {heading}
+          </Heading>
+        )}
+        {description && (
+          <p class="text-xl text-gray-600">
+            {description}
+          </p>
+        )}
+      </div>
+    )}
+    
+    <!-- Process Steps -->
+    {isHorizontal ? (
+      <div class="relative">
+        <!-- Connector Line -->
+        <div class="absolute top-24 left-0 w-full h-0.5 bg-blue-200 hidden md:block"></div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 md:gap-12">
+          {steps.map((step) => (
+            <div class="relative flex flex-col items-center text-center">
+              <!-- Step Number -->
+              <div class="w-16 h-16 rounded-full bg-blue-500 text-white flex items-center justify-center text-2xl font-bold mb-6 z-10">
+                {step.number}
+              </div>
+              
+              <!-- Content -->
+              <Heading level={3} class="mb-3">{step.title}</Heading>
+              <p class="text-gray-600">{step.description}</p>
+              
+              {step.icon && (
+                <div class="mt-4 text-blue-500 text-3xl">
+                  <span>{step.icon}</span>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    ) : (
+      <div class="space-y-12 max-w-3xl mx-auto">
+        {steps.map((step) => (
+          <div class="flex items-start">
+            <!-- Step Number -->
+            <div class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center text-xl font-bold mr-6 flex-shrink-0">
+              {step.number}
+            </div>
+            
+            <!-- Content -->
+            <div>
+              <Heading level={3} class="mb-3">{step.title}</Heading>
+              <p class="text-gray-600">{step.description}</p>
+              
+              {step.icon && (
+                <div class="mt-4 text-blue-500 text-2xl">
+                  <span>{step.icon}</span>
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
+</section>

@@ -7,6 +7,14 @@ import CTA from './CTA.astro';
 import Carousel from './Carousel.astro';
 import Statistics from './Statistics.astro';
 import Logos from './Logos.astro';
+import Timeline from './Timeline.astro';
+import TeamProfiles from './TeamProfiles.astro';
+import ProcessSteps from './ProcessSteps.astro';
+import CaseStudy from './CaseStudy.astro';
+import ContactForm from './ContactForm.astro';
+import LocationMap from './LocationMap.astro';
+import EventsList from './EventsList.astro';
+import FilterableGrid from './FilterableGrid.astro';
 
 export interface Props {
   block: {
@@ -34,10 +42,17 @@ const blockComponents = {
   Carousel,
   Statistics,
   Logos,
+  Timeline,
+  TeamProfiles,
+  ProcessSteps,
+  CaseStudy,
+  ContactForm,
+  LocationMap,
+  EventsList,
+  FilterableGrid,
   // Add more blocks as they're created
   InsightsPreview: TilesGrid, // Use TilesGrid for insights preview
   LogosStrip: Logos, // Use Logos component
-  Timeline: TilesGrid, // Use TilesGrid for timeline
   FAQ: TilesGrid, // Use TilesGrid for FAQ
   CaseStudyList: TilesGrid, // Use TilesGrid for case studies
 };

@@ -1,0 +1,144 @@
+---
+import Heading from '../ui/Heading.astro';
+
+export interface Props {
+  heading?: string;
+  locations: Array<{
+    name: string;
+    address: string;
+    coordinates: {
+      lat: number;
+      lng: number;
+    };
+    phone?: string;
+    email?: string;
+  }>;
+  mapHeight?: string;
+}
+
+const {
+  heading,
+  locations,
+  mapHeight = '400px'
+} = Astro.props;
+
+// Generate a unique ID for the map
+const mapId = `map-${Math.random().toString(36).substring(2, 9)}`;
+---
+
+<section class="section bg-white py-16 md:py-24">
+  <div class="container">
+    <!-- Header -->
+    {heading && (
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <Heading level={2} class="mb-4">
+          {heading}
+        </Heading>
+      </div>
+    )}
+    
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Locations List -->
+      <div class="lg:col-span-1">
+        <div class="space-y-6">
+          {locations.map((location, index) => (
+            <div class="bg-gray-50 p-6 rounded-lg hover:bg-blue-50 transition-colors cursor-pointer location-item" data-index={index}>
+              <h3 class="font-semibold text-lg mb-2">{location.name}</h3>
+              <p class="text-gray-600 mb-4">{location.address}</p>
+              
+              <div class="space-y-2">
+                {location.phone && (
+                  <div class="flex items-center">
+                    <svg class="w-4 h-4 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                    <a href={`tel:${location.phone}`} class="text-gray-700 hover:text-blue-600">{location.phone}</a>
+                  </div>
+                )}
+                
+                {location.email && (
+                  <div class="flex items-center">
+                    <svg class="w-4 h-4 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    <a href={`mailto:${location.email}`} class="text-gray-700 hover:text-blue-600">{location.email}</a>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <!-- Map -->
+      <div class="lg:col-span-2">
+        <div id={mapId} class="rounded-lg overflow-hidden shadow-md" style={`height: ${mapHeight};`}></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script define:vars={{ locations, mapId }}>
+  // Initialize the map when the page loads
+  window.initMap = function() {
+    if (locations.length === 0) return;
+    
+    // Create the map centered on the first location
+    const map = new google.maps.Map(document.getElementById(mapId), {
+      zoom: 12,
+      center: { lat: locations[0].coordinates.lat, lng: locations[0].coordinates.lng },
+    });
+    
+    // Add markers for each location
+    const markers = locations.map((location, index) => {
+      const marker = new google.maps.Marker({
+        position: { lat: location.coordinates.lat, lng: location.coordinates.lng },
+        map: map,
+        title: location.name,
+      });
+      
+      // Create info window
+      const infoWindow = new google.maps.InfoWindow({
+        content: `
+          <div class="p-2">
+            <h3 class="font-semibold">${location.name}</h3>
+            <p>${location.address}</p>
+          </div>
+        `,
+      });
+      
+      // Show info window when marker is clicked
+      marker.addListener('click', () => {
+        infoWindow.open(map, marker);
+      });
+      
+      return { marker, infoWindow };
+    });
+    
+    // Add click handlers to location items
+    document.querySelectorAll('.location-item').forEach((item, index) => {
+      item.addEventListener('click', () => {
+        // Center map on the selected location
+        map.setCenter({ 
+          lat: locations[index].coordinates.lat, 
+          lng: locations[index].coordinates.lng 
+        });
+        map.setZoom(15);
+        
+        // Open the info window
+        markers[index].infoWindow.open(map, markers[index].marker);
+      });
+    });
+  };
+  
+  // Load Google Maps API
+  if (typeof google === 'undefined' || typeof google.maps === 'undefined') {
+    const script = document.createElement('script');
+    script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`;
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+  } else {
+    window.initMap();
+  }
+</script>

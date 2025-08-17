@@ -1,0 +1,217 @@
+{
+  "slug": "contact",
+  "title": "Contact Networkk",
+  "status": "published",
+  "seo": {
+    "title": "Contact Us - Networkk Executive Search",
+    "description": "Get in touch with Networkk's executive search and leadership advisory team. Schedule a consultation or learn more about our services.",
+    "canonical": "https://networkk.com/contact/",
+    "noindex": false,
+    "keywords": ["contact networkk", "executive search consultation", "leadership advisory contact", "schedule meeting"]
+  },
+  "blocks": [
+    {
+      "id": "hero-contact",
+      "type": "Hero",
+      "props": {
+        "title": "Let's Start a Conversation",
+        "subtitle": "Contact Us",
+        "description": "Reach out to discuss your leadership needs and how we can help you find exceptional talent that drives organizational success.",
+        "media": {
+          "image": "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "alt": "Professional team in modern office environment",
+          "ratio": "16:9"
+        },
+        "backgroundType": "image",
+        "textAlign": "center",
+        "fullHeight": false,
+        "overlay": true
+      }
+    },
+    {
+      "id": "contact-form-section",
+      "type": "ContactForm",
+      "props": {
+        "heading": "Get in Touch",
+        "description": "Fill out the form below and one of our executive search consultants will contact you within 24 hours.",
+        "fields": [
+          {
+            "name": "name",
+            "label": "Full Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "email",
+            "label": "Email Address",
+            "type": "email",
+            "required": true
+          },
+          {
+            "name": "phone",
+            "label": "Phone Number",
+            "type": "tel",
+            "required": false
+          },
+          {
+            "name": "company",
+            "label": "Company Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "jobTitle",
+            "label": "Job Title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "service",
+            "label": "Service of Interest",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "label": "Executive Search",
+                "value": "executive-search"
+              },
+              {
+                "label": "Leadership Advisory",
+                "value": "leadership-advisory"
+              },
+              {
+                "label": "Board Services",
+                "value": "board-services"
+              },
+              {
+                "label": "Diversity & Inclusion",
+                "value": "diversity-inclusion"
+              },
+              {
+                "label": "Other",
+                "value": "other"
+              }
+            ]
+          },
+          {
+            "name": "message",
+            "label": "How can we help?",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "name": "consent",
+            "label": "I consent to Networkk processing my data in accordance with the Privacy Policy.",
+            "type": "checkbox",
+            "required": true
+          }
+        ],
+        "submitLabel": "Submit Inquiry",
+        "successMessage": "Thank you for contacting Networkk. One of our consultants will be in touch with you shortly."
+      }
+    },
+    {
+      "id": "office-locations",
+      "type": "LocationMap",
+      "props": {
+        "heading": "Our Offices",
+        "locations": [
+          {
+            "name": "Mumbai Headquarters",
+            "address": "Level 30, One World Center, Lower Parel, Mumbai 400013, India",
+            "coordinates": {
+              "lat": 19.0128,
+              "lng": 72.8154
+            },
+            "phone": "+91 22 4123 4567",
+            "email": "mumbai@networkk.com"
+          },
+          {
+            "name": "Singapore Office",
+            "address": "One Raffles Place, #20-61, Singapore 048616",
+            "coordinates": {
+              "lat": 1.2847,
+              "lng": 103.8509
+            },
+            "phone": "+65 6812 7890",
+            "email": "singapore@networkk.com"
+          },
+          {
+            "name": "Dubai Office",
+            "address": "Emirates Towers, Level 41, Sheikh Zayed Road, Dubai, UAE",
+            "coordinates": {
+              "lat": 25.2182,
+              "lng": 55.2816
+            },
+            "phone": "+971 4 319 7800",
+            "email": "dubai@networkk.com"
+          }
+        ],
+        "mapHeight": "500px"
+      }
+    },
+    {
+      "id": "contact-options",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Additional Ways to Connect",
+        "description": "Reach out through your preferred channel or connect with a specific practice area.",
+        "columns": "3",
+        "items": [
+          {
+            "title": "General Inquiries",
+            "description": "For general questions about our services and approach.\nEmail: info@networkk.com\nPhone: +91 22 4123 4567",
+            "icon": "📧",
+            "href": "mailto:info@networkk.com"
+          },
+          {
+            "title": "Media Relations",
+            "description": "For press inquiries, interview requests, and media opportunities.\nEmail: media@networkk.com\nPhone: +91 22 4123 4568",
+            "icon": "📰",
+            "href": "mailto:media@networkk.com"
+          },
+          {
+            "title": "Careers at Networkk",
+            "description": "Interested in joining our team? Explore current opportunities.\nEmail: careers@networkk.com\nCareers Page: networkk.com/careers",
+            "icon": "💼",
+            "href": "/careers"
+          }
+        ]
+      }
+    },
+    {
+      "id": "faq-section",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Frequently Asked Questions",
+        "description": "Quick answers to common questions about our services and process.",
+        "columns": "2",
+        "items": [
+          {
+            "title": "What is your typical executive search timeline?",
+            "description": "Our typical executive search process takes 8-12 weeks from initial briefing to offer acceptance, though this can vary based on position seniority and market conditions.",
+            "icon": "⏱️"
+          },
+          {
+            "title": "Do you work internationally?",
+            "description": "Yes, we conduct executive searches globally with particular expertise in Asia-Pacific, Middle East, and European markets through our office network and global partners.",
+            "icon": "🌎"
+          },
+          {
+            "title": "What industries do you specialize in?",
+            "description": "We have dedicated practice areas in Technology, Financial Services, Healthcare, Industrial, Consumer & Retail, and Energy & Sustainability sectors.",
+            "icon": "🏭"
+          },
+          {
+            "title": "How do you ensure candidate quality?",
+            "description": "We employ a rigorous assessment methodology including structured interviews, psychometric assessments, reference checks, and cultural fit evaluation.",
+            "icon": "✓"
+          }
+        ]
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T09:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}

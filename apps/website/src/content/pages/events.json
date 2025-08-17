@@ -1,0 +1,185 @@
+{
+  "slug": "events",
+  "title": "Events & Webinars", 
+  "status": "published",
+  "seo": {
+    "title": "Executive Leadership Events & Webinars - Networkk",
+    "description": "Join Networkk's executive leadership events, webinars, and roundtables. Connect with industry leaders and gain insights on talent strategy and leadership trends.",
+    "canonical": "https://networkk.com/events/",
+    "noindex": false,
+    "keywords": ["executive leadership events", "talent webinars", "C-suite roundtables", "leadership conferences"]
+  },
+  "blocks": [
+    {
+      "id": "hero-events",
+      "type": "Hero",
+      "props": {
+        "title": "Connect, Learn, and Grow",
+        "subtitle": "Events & Webinars",
+        "description": "Join our executive leadership events and webinars to gain valuable insights, connect with industry peers, and stay ahead of emerging leadership trends.",
+        "media": {
+          "image": "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "alt": "Professional networking event with executive leaders",
+          "ratio": "16:9"
+        },
+        "backgroundType": "image",
+        "textAlign": "center",
+        "fullHeight": false,
+        "overlay": true
+      }
+    },
+    {
+      "id": "upcoming-events",
+      "type": "EventsList",
+      "props": {
+        "heading": "Upcoming Events",
+        "description": "Register for our upcoming executive leadership events, webinars, and roundtables.",
+        "events": [
+          {
+            "title": "Future of Work: Leadership in the Age of AI",
+            "date": "2025-03-15",
+            "time": "10:00 AM - 12:00 PM IST",
+            "location": "Virtual Webinar",
+            "description": "Join our panel of AI experts and C-suite leaders as they discuss how artificial intelligence is transforming leadership roles and organizational structures. Learn practical strategies for leading in an AI-augmented workplace.",
+            "speakers": [
+              {
+                "name": "Dr. Rajesh Kumar",
+                "title": "CEO, Networkk",
+                "image": "/images/speakers/rajesh-kumar.jpg"
+              },
+              {
+                "name": "Sarah Chen",
+                "title": "CTO, Future Systems",
+                "image": "/images/speakers/sarah-chen.jpg"
+              },
+              {
+                "name": "Prof. Amit Sharma",
+                "title": "AI Research Director, Tech University",
+                "image": "/images/speakers/amit-sharma.jpg"
+              }
+            ],
+            "registrationLink": "https://networkk.com/events/future-of-work-ai",
+            "isPast": false
+          },
+          {
+            "title": "Executive Roundtable: Diversity in Leadership",
+            "date": "2025-04-05", 
+            "time": "3:00 PM - 5:00 PM SGT",
+            "location": "Networkk Singapore Office, One Raffles Place",
+            "description": "An exclusive roundtable discussion for C-suite executives on building diverse leadership teams. Share challenges, best practices, and innovative approaches to fostering inclusive leadership in your organization.",
+            "speakers": [
+              {
+                "name": "Michael Rodriguez",
+                "title": "Director of D&I, Networkk",
+                "image": "/images/speakers/michael-rodriguez.jpg"
+              },
+              {
+                "name": "Priya Sharma",
+                "title": "CHRO, Global Innovations",
+                "image": "/images/speakers/priya-sharma.jpg"
+              }
+            ],
+            "registrationLink": "https://networkk.com/events/diversity-roundtable",
+            "isPast": false
+          },
+          {
+            "title": "Leadership Summit 2025: Navigating Uncertainty",
+            "date": "2025-05-20",
+            "time": "9:00 AM - 5:00 PM IST", 
+            "location": "Taj Lands End, Mumbai",
+            "description": "Our annual leadership summit brings together 200+ C-suite executives, board members, and thought leaders for a day of insights, networking, and inspiration. This year's theme focuses on leading through uncertainty and building resilient organizations.",
+            "speakers": [
+              {
+                "name": "Rajesh Kumar",
+                "title": "CEO, Networkk",
+                "image": "/images/speakers/rajesh-kumar.jpg"
+              },
+              {
+                "name": "Indra Nooyi",
+                "title": "Former CEO, PepsiCo",
+                "image": "/images/speakers/indra-nooyi.jpg"
+              },
+              {
+                "name": "Satya Nadella",
+                "title": "CEO, Microsoft",
+                "image": "/images/speakers/satya-nadella.jpg"
+              },
+              {
+                "name": "Leena Nair",
+                "title": "Global CHRO, Unilever",
+                "image": "/images/speakers/leena-nair.jpg"
+              }
+            ],
+            "registrationLink": "https://networkk.com/events/leadership-summit-2025",
+            "isPast": false
+          },
+          {
+            "title": "Webinar: Succession Planning for the Digital Age",
+            "date": "2025-06-10",
+            "time": "11:00 AM - 12:30 PM IST",
+            "location": "Virtual Webinar",
+            "description": "Learn how to develop robust succession plans that account for rapidly evolving digital skills and leadership requirements. This webinar will provide practical frameworks for identifying and developing next-generation leaders.",
+            "speakers": [
+              {
+                "name": "Arjun Patel",
+                "title": "Director of Leadership Advisory, Networkk",
+                "image": "/images/speakers/arjun-patel.jpg"
+              },
+              {
+                "name": "Dr. Anita Gupta",
+                "title": "Senior Research Director, Networkk",
+                "image": "/images/speakers/anita-gupta.jpg"
+              }
+            ],
+            "registrationLink": "https://networkk.com/events/succession-planning-webinar",
+            "isPast": false
+          }
+        ],
+        "showPastEvents": false
+      }
+    },
+    {
+      "id": "past-events",
+      "type": "EventsList", 
+      "props": {
+        "heading": "Past Events",
+        "description": "Explore recordings and resources from our previous events and webinars.",
+        "events": [
+          {
+            "title": "C-Suite Compensation Trends 2025",
+            "date": "2025-01-20",
+            "time": "10:00 AM - 11:30 AM IST",
+            "location": "Virtual Webinar",
+            "description": "This webinar explored emerging trends in executive compensation, including equity structures, performance metrics, and regulatory considerations. Includes Q&A with compensation committee chairs from leading organizations.",
+            "speakers": [
+              {
+                "name": "David Chen",
+                "title": "CFO, Networkk",
+                "image": "/images/speakers/david-chen.jpg"
+              },
+              {
+                "name": "Sanjay Gupta",
+                "title": "Partner, Global Compensation Advisors",
+                "image": "/images/speakers/sanjay-gupta.jpg"
+              }
+            ],
+            "registrationLink": "https://networkk.com/events/compensation-trends-2025",
+            "isPast": true,
+            "recordingUrl": "https://networkk.com/events/compensation-trends-2025/recording",
+            "resources": [
+              {
+                "title": "Presentation Slides",
+                "url": "https://networkk.com/events/compensation-trends-2025/slides.pdf"
+              },
+              {
+                "title": "Executive Summary",
+                "url": "https://networkk.com/events/compensation-trends-2025/summary.pdf"
+              }
+            ]
+          }
+        ],
+        "showPastEvents": true
+      }
+    }
+  ]
+}

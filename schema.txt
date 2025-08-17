@@ -1,0 +1,97 @@
+// Schema for dynamic content management
+
+model Page {
+  id          String      @id @default(cuid())
+  slug        String      @unique
+  title       String
+  status      PageStatus  @default(DRAFT)
+  seo         SEO         @relation(fields: [seoId], references: [id])
+  seoId       String      @unique
+  blocks      Block[]     
+  publishedAt DateTime?
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+}
+
+enum PageStatus {
+  DRAFT
+  REVIEW
+  PUBLISHED
+  ARCHIVED
+}
+
+model SEO {
+  id          String    @id @default(cuid())
+  title       String
+  description String
+  canonical   String
+  noindex     Boolean    @default(false)
+  image       String?
+  keywords    String[]   @default([])
+  page        Page?
+  insight     Insight?
+}
+
+model Block {
+  id          String    @id @default(cuid())
+  type        String
+  props       Json
+  layout      Json?
+  order       Int
+  page        Page      @relation(fields: [pageId], references: [id], onDelete: Cascade)
+  pageId      String
+  parentId    String?
+  parent      Block?    @relation("BlockToBlock", fields: [parentId], references: [id])
+  children    Block[]   @relation("BlockToBlock")
+}
+
+model Insight {
+  id          String    @id @default(cuid())
+  slug        String    @unique
+  title       String
+  excerpt     String
+  content     String    @db.Text
+  author      User      @relation(fields: [authorId], references: [id])
+  authorId    String
+  publishedAt DateTime?
+  category    Category  @relation(fields: [categoryId], references: [id])
+  categoryId  String
+  tags        Tag[]
+  readingTime Int
+  seo         SEO       @relation(fields: [seoId], references: [id])
+  seoId       String    @unique
+  featuredImage String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  name        String    @unique
+  slug        String    @unique
+  insights    Insight[]
+}
+
+model Tag {
+  id          String    @id @default(cuid())
+  name        String    @unique
+  slug        String    @unique
+  insights    Insight[]
+}
+
+model User {
+  id          String    @id @default(cuid())
+  name        String
+  email       String    @unique
+  password    String
+  role        UserRole  @default(EDITOR)
+  insights    Insight[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+enum UserRole {
+  ADMIN
+  EDITOR
+  AUTHOR
+}

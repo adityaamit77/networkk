@@ -1,0 +1,233 @@
+{
+  "slug": "team",
+  "title": "Our Leadership Team",
+  "status": "published",
+  "seo": {
+    "title": "Meet Our Leadership Team - Networkk",
+    "description": "Meet the experienced professionals behind Networkk's executive search excellence. Our leadership team brings decades of industry expertise to every client engagement.",
+    "canonical": "https://networkk.com/team/",
+    "noindex": false,
+    "keywords": ["leadership team", "executive search experts", "talent advisors", "recruitment leadership"]
+  },
+  "blocks": [
+    {
+      "id": "hero-team",
+      "type": "Hero",
+      "props": {
+        "title": "Meet the Team Behind Your Success",
+        "subtitle": "Our Leadership",
+        "description": "Experienced professionals with deep industry knowledge and a passion for connecting exceptional talent with transformative opportunities.",
+        "media": {
+          "image": "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "alt": "Networkk leadership team in collaborative discussion",
+          "ratio": "16:9"
+        },
+        "backgroundType": "image",
+        "textAlign": "center",
+        "fullHeight": false,
+        "overlay": true
+      }
+    },
+    {
+      "id": "team-intro",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Who We Are",
+        "description": "Our leadership team brings together diverse expertise from executive search, management consulting, and industry leadership roles to deliver exceptional results for our clients.",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Industry Expertise",
+            "description": "Our team includes former C-suite executives and industry leaders who understand the unique challenges and opportunities in your sector.",
+            "icon": "🏭"
+          },
+          {
+            "title": "Global Perspective",
+            "description": "With experience across international markets, we bring a global perspective to leadership search and development.",
+            "icon": "🌎"
+          },
+          {
+            "title": "Proven Track Record",
+            "description": "Our leadership team has collectively placed over 1,000 executives in organizations ranging from startups to Fortune 500 companies.",
+            "icon": "🏆"
+          }
+        ]
+      }
+    },
+    {
+      "id": "executive-team",
+      "type": "TeamProfiles",
+      "props": {
+        "heading": "Executive Leadership",
+        "description": "Meet the experienced professionals who guide our mission and strategy.",
+        "members": [
+          {
+            "name": "Rajesh Kumar",
+            "title": "Founder & CEO",
+            "bio": "With over 25 years in executive search and leadership advisory, Rajesh founded Networkk with a vision to transform how organizations build exceptional leadership teams. Former Partner at a global executive search firm and advisor to numerous Fortune 500 CEOs.",
+            "image": "https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "socialLinks": {
+              "linkedin": "https://linkedin.com/in/rajeshkumar",
+              "twitter": "https://twitter.com/rajeshkumar",
+              "email": "rajesh@networkk.com"
+            }
+          },
+          {
+            "name": "Priya Sharma",
+            "title": "Managing Director",
+            "bio": "Priya leads our global operations and client strategy. With a background in management consulting at McKinsey and leadership roles at Fortune 100 companies, she brings strategic insight and operational excellence to our executive search practice.",
+            "image": "https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "socialLinks": {
+              "linkedin": "https://linkedin.com/in/priyasharma",
+              "email": "priya@networkk.com"
+            }
+          },
+          {
+            "name": "David Chen",
+            "title": "Chief Financial Officer",
+            "bio": "David oversees Networkk's financial strategy and operations. Former investment banker and CFO at high-growth technology companies, he brings financial acumen and strategic planning expertise to our leadership team.",
+            "image": "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "socialLinks": {
+              "linkedin": "https://linkedin.com/in/davidchen",
+              "email": "david@networkk.com"
+            }
+          }
+        ],
+        "layout": "grid"
+      }
+    },
+    {
+      "id": "practice-leaders",
+      "type": "TeamProfiles",
+      "props": {
+        "heading": "Practice Leaders",
+        "description": "Specialized experts who lead our industry and functional practice areas.",
+        "members": [
+          {
+            "name": "Sarah Wong",
+            "title": "Technology Practice Leader",
+            "bio": "Sarah leads our Technology Practice, specializing in C-suite placements for software, fintech, and digital transformation companies. Former CTO and advisor to multiple tech unicorns.",
+            "image": "https://images.pexels.com/photos/3184397/pexels-photo-3184397.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "socialLinks": {
+              "linkedin": "https://linkedin.com/in/sarahwong",
+              "email": "sarah@networkk.com"
+            }
+          },
+          {
+            "name": "Michael Rodriguez",
+            "title": "Financial Services Practice Leader",
+            "bio": "Michael specializes in executive search for banking, asset management, and fintech organizations. Former investment banker and board advisor with deep expertise in financial leadership.",
+            "image": "https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "socialLinks": {
+              "linkedin": "https://linkedin.com/in/michaelrodriguez",
+              "email": "michael@networkk.com"
+            }
+          },
+          {
+            "name": "Dr. Anita Gupta",
+            "title": "Healthcare & Life Sciences Practice Leader",
+            "bio": "Dr. Gupta leads our Healthcare Practice, focusing on leadership for hospitals, pharmaceutical companies, and health tech organizations. MD with executive experience in global healthcare organizations.",
+            "image": "https://images.pexels.com/photos/3184396/pexels-photo-3184396.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "socialLinks": {
+              "linkedin": "https://linkedin.com/in/anitagupta",
+              "email": "anita@networkk.com"
+            }
+          },
+          {
+            "name": "James Wilson",
+            "title": "Industrial & Manufacturing Practice Leader",
+            "bio": "James specializes in executive search for manufacturing, automotive, and industrial technology companies. Former COO with extensive operational leadership experience in global manufacturing.",
+            "image": "https://images.pexels.com/photos/3184399/pexels-photo-3184399.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "socialLinks": {
+              "linkedin": "https://linkedin.com/in/jameswilson",
+              "email": "james@networkk.com"
+            }
+          },
+          {
+            "name": "Elena Martinez",
+            "title": "Consumer & Retail Practice Leader",
+            "bio": "Elena leads executive search for consumer products, retail, and e-commerce companies. Former CMO with expertise in digital transformation and consumer-centric leadership.",
+            "image": "https://images.pexels.com/photos/3184400/pexels-photo-3184400.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "socialLinks": {
+              "linkedin": "https://linkedin.com/in/elenamartinez",
+              "email": "elena@networkk.com"
+            }
+          },
+          {
+            "name": "Robert Kim",
+            "title": "Board Services Practice Leader",
+            "bio": "Robert specializes in board director placements and board effectiveness consulting. Former board member of multiple public companies and governance expert.",
+            "image": "https://images.pexels.com/photos/3184401/pexels-photo-3184401.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "socialLinks": {
+              "linkedin": "https://linkedin.com/in/robertkim",
+              "email": "robert@networkk.com"
+            }
+          }
+        ],
+        "layout": "grid"
+      }
+    },
+    {
+      "id": "team-values",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Our Values",
+        "description": "The principles that guide our team and define our approach to executive search and leadership advisory.",
+        "columns": "3",
+        "backgroundType": "light",
+        "items": [
+          {
+            "title": "Excellence",
+            "description": "We are committed to delivering exceptional results that exceed expectations in every client engagement.",
+            "icon": "⭐"
+          },
+          {
+            "title": "Integrity",
+            "description": "We operate with transparency, honesty, and ethical standards in all our interactions and decisions.",
+            "icon": "🤝"
+          },
+          {
+            "title": "Partnership",
+            "description": "We build long-term relationships based on trust, collaboration, and mutual success with clients and candidates.",
+            "icon": "🔄"
+          },
+          {
+            "title": "Innovation",
+            "description": "We continuously evolve our approach, leveraging new technologies and methodologies to deliver better results.",
+            "icon": "💡"
+          },
+          {
+            "title": "Diversity",
+            "description": "We champion inclusive leadership and diverse perspectives as essential elements of organizational success.",
+            "icon": "🌈"
+          },
+          {
+            "title": "Impact",
+            "description": "We measure our success by the positive transformation we create for organizations, leaders, and communities.",
+            "icon": "🎯"
+          }
+        ]
+      }
+    },
+    {
+      "id": "join-team-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Join Our Team",
+        "description": "Passionate about connecting exceptional talent with transformative opportunities? Explore career opportunities at Networkk.",
+        "primaryCta": {
+          "label": "View Open Positions",
+          "href": "/careers"
+        },
+        "secondaryCta": {
+          "label": "Learn About Our Culture",
+          "href": "/careers#culture"
+        },
+        "backgroundType": "gradient"
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T09:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}

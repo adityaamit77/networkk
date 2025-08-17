@@ -1,0 +1,162 @@
+---
+import Heading from '../ui/Heading.astro';
+
+export interface Props {
+  heading: string;
+  description?: string;
+  fields: Array<{
+    name: string;
+    label: string;
+    type: 'text' | 'email' | 'tel' | 'textarea' | 'select' | 'checkbox';
+    required: boolean;
+    options?: Array<{
+      label: string;
+      value: string;
+    }>;
+  }>;
+  submitLabel?: string;
+  successMessage?: string;
+}
+
+const {
+  heading,
+  description,
+  fields,
+  submitLabel = 'Submit',
+  successMessage = 'Thank you for your message. We will get back to you shortly.'
+} = Astro.props;
+---
+
+<section class="section bg-white py-16 md:py-24">
+  <div class="container max-w-4xl">
+    <!-- Header -->
+    {(heading || description) && (
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        {heading && (
+          <Heading level={2} class="mb-4">
+            {heading}
+          </Heading>
+        )}
+        {description && (
+          <p class="text-xl text-gray-600">
+            {description}
+          </p>
+        )}
+      </div>
+    )}
+    
+    <!-- Form -->
+    <form id="contact-form" class="bg-white rounded-xl shadow-sm p-8 md:p-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {fields.map((field) => (
+          <div class={field.type === 'textarea' ? 'md:col-span-2' : ''}>
+            <label for={field.name} class="block text-sm font-medium text-gray-700 mb-1">
+              {field.label} {field.required && <span class="text-red-500">*</span>}
+            </label>
+            
+            {field.type === 'text' && (
+              <input 
+                type="text" 
+                id={field.name} 
+                name={field.name} 
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                required={field.required}
+              />
+            )}
+            
+            {field.type === 'email' && (
+              <input 
+                type="email" 
+                id={field.name} 
+                name={field.name} 
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                required={field.required}
+              />
+            )}
+            
+            {field.type === 'tel' && (
+              <input 
+                type="tel" 
+                id={field.name} 
+                name={field.name} 
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                required={field.required}
+              />
+            )}
+            
+            {field.type === 'textarea' && (
+              <textarea 
+                id={field.name} 
+                name={field.name} 
+                rows="5"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                required={field.required}
+              ></textarea>
+            )}
+            
+            {field.type === 'select' && field.options && (
+              <select 
+                id={field.name} 
+                name={field.name} 
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                required={field.required}
+              >
+                <option value="">Please select</option>
+                {field.options.map((option) => (
+                  <option value={option.value}>{option.label}</option>
+                ))}
+              </select>
+            )}
+            
+            {field.type === 'checkbox' && (
+              <div class="flex items-start mt-2">
+                <input 
+                  type="checkbox" 
+                  id={field.name} 
+                  name={field.name} 
+                  class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded mt-1"
+                  required={field.required}
+                />
+                <label for={field.name} class="ml-2 block text-sm text-gray-700">
+                  {field.label}
+                </label>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+      
+      <div class="mt-8 text-center">
+        <button 
+          type="submit"
+          class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+        >
+          {submitLabel}
+        </button>
+      </div>
+      
+      <div id="form-success" class="hidden mt-6 p-4 bg-green-50 text-green-800 rounded-md text-center">
+        {successMessage}
+      </div>
+    </form>
+  </div>
+</section>
+
+<script>
+  // Simple form handling
+  const form = document.getElementById('contact-form');
+  const successMessage = document.getElementById('form-success');
+  
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      // In a real implementation, you would send the form data to your backend
+      // For now, we'll just show the success message
+      if (successMessage) {
+        successMessage.classList.remove('hidden');
+        (form as HTMLFormElement).reset();
+      }
+    });
+  }
+</script>

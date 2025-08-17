@@ -1,8 +1,0 @@
----
-import PageLayout from '../layouts/PageLayout.astro';
-import { loadPageBySlug } from '../lib/content/adapter';
-
-const page = await loadPageBySlug('home-two');
----
-
-<PageLayout page={page} showPageTitle={false} theme="emerald" />

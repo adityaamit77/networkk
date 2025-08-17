@@ -1,0 +1,293 @@
+{
+  "slug": "case-studies",
+  "title": "Client Success Stories",
+  "status": "published",
+  "seo": {
+    "title": "Executive Search Case Studies - Networkk",
+    "description": "Explore real-world examples of how Networkk's executive search and leadership advisory services have transformed organizations across industries.",
+    "canonical": "https://networkk.com/case-studies/",
+    "noindex": false,
+    "keywords": ["executive search case studies", "leadership transformation", "talent acquisition success", "C-suite recruitment examples"]
+  },
+  "blocks": [
+    {
+      "id": "hero-case-studies",
+      "type": "Hero",
+      "props": {
+        "title": "Transformative Leadership Solutions",
+        "subtitle": "Client Success Stories",
+        "description": "Real-world examples of how our executive search and leadership advisory services have helped organizations achieve their strategic objectives.",
+        "media": {
+          "image": "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "alt": "Business executives in strategic discussion",
+          "ratio": "16:9"
+        },
+        "backgroundType": "image",
+        "textAlign": "center",
+        "fullHeight": false,
+        "overlay": true
+      }
+    },
+    {
+      "id": "featured-case-studies",
+      "type": "CaseStudy",
+      "props": {
+        "heading": "Featured Success Stories",
+        "description": "Explore how our executive search and leadership advisory services have transformed organizations across industries.",
+        "studies": [
+          {
+            "title": "Digital Transformation Leadership for Global Bank",
+            "industry": "Financial Services",
+            "challenge": "A leading international bank needed to build a digital leadership team to drive their transformation from traditional banking to digital-first financial services provider.",
+            "solution": "Comprehensive C-suite search strategy focusing on leaders with both financial services expertise and digital transformation experience. Placed Chief Digital Officer, Chief Technology Officer, and Chief Innovation Officer.",
+            "results": "New leadership team implemented digital banking initiatives that increased mobile engagement by 45%, reduced operational costs by 28%, and launched three innovative fintech products within 18 months.",
+            "testimonial": {
+              "quote": "Networkk's understanding of both banking and technology leadership was instrumental in finding executives who could bridge traditional finance with digital innovation.",
+              "author": "Chairman",
+              "title": "Global Banking Group"
+            },
+            "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+          },
+          {
+            "title": "Healthcare Leadership for Post-Merger Integration",
+            "industry": "Healthcare",
+            "challenge": "Following the merger of two regional hospital systems, the organization needed a unified leadership team to integrate operations, cultures, and strategic direction.",
+            "solution": "Comprehensive leadership assessment of existing executives from both organizations, followed by targeted searches for key positions including CEO, COO, and Chief Medical Officer.",
+            "results": "Successful integration completed 3 months ahead of schedule, with $45M in synergy savings identified. Patient satisfaction scores improved by 18% across the combined network.",
+            "testimonial": {
+              "quote": "The leadership team Networkk helped us build has been transformative in bringing together our organizations and creating a shared vision for the future.",
+              "author": "Board Chair",
+              "title": "Integrated Health Network"
+            },
+            "image": "https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+          },
+          {
+            "title": "Tech Startup Scale-up Leadership",
+            "industry": "Technology",
+            "challenge": "A Series B SaaS startup needed to evolve its leadership team from founder-led to professional management to support rapid international growth.",
+            "solution": "Developed a phased leadership acquisition strategy, placing CEO, CFO, CRO, and VP International while retaining founders in strategic innovation roles.",
+            "results": "Company successfully expanded into 12 new markets, grew revenue by 215% in 18 months, and secured Series C funding at 3x valuation increase.",
+            "testimonial": {
+              "quote": "Networkk understood exactly what kind of leaders we needed at this critical growth stage and found executives who respected our startup culture while bringing scale-up expertise.",
+              "author": "Founder",
+              "title": "Enterprise SaaS Platform"
+            },
+            "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+          }
+        ],
+        "layout": "grid"
+      }
+    },
+    {
+      "id": "industry-case-studies",
+      "type": "FilterableGrid",
+      "props": {
+        "heading": "Success Stories by Industry",
+        "description": "Filter our case studies by industry to see how we've helped organizations like yours.",
+        "filters": [
+          {
+            "name": "industry",
+            "options": [
+              {
+                "label": "All Industries",
+                "value": "all"
+              },
+              {
+                "label": "Technology",
+                "value": "technology"
+              },
+              {
+                "label": "Financial Services",
+                "value": "financial-services"
+              },
+              {
+                "label": "Healthcare",
+                "value": "healthcare"
+              },
+              {
+                "label": "Manufacturing",
+                "value": "manufacturing"
+              },
+              {
+                "label": "Consumer & Retail",
+                "value": "consumer-retail"
+              }
+            ]
+          }
+        ],
+        "items": [
+          {
+            "title": "E-commerce Leadership Transformation",
+            "description": "Building a digital-first leadership team for a traditional retailer's e-commerce transformation.",
+            "image": "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "link": "/case-studies/ecommerce-transformation",
+            "tags": ["digital transformation", "retail"],
+            "category": "consumer-retail"
+          },
+          {
+            "title": "Fintech Innovation Leadership",
+            "description": "Assembling a visionary leadership team for a fintech startup disrupting traditional banking.",
+            "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "link": "/case-studies/fintech-innovation",
+            "tags": ["fintech", "innovation"],
+            "category": "financial-services"
+          },
+          {
+            "title": "Pharmaceutical R&D Leadership",
+            "description": "Recruiting scientific leadership to accelerate drug development and innovation pipeline.",
+            "image": "https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "link": "/case-studies/pharma-rd-leadership",
+            "tags": ["pharmaceutical", "R&D"],
+            "category": "healthcare"
+          },
+          {
+            "title": "AI Startup Executive Team",
+            "description": "Building a complete C-suite for an AI startup preparing for rapid scale and Series B funding.",
+            "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "link": "/case-studies/ai-startup-team",
+            "tags": ["AI", "startup"],
+            "category": "technology"
+          },
+          {
+            "title": "Manufacturing Digital Transformation",
+            "description": "Recruiting Industry 4.0 leaders to drive smart manufacturing transformation.",
+            "image": "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "link": "/case-studies/manufacturing-digital",
+            "tags": ["Industry 4.0", "digital transformation"],
+            "category": "manufacturing"
+          },
+          {
+            "title": "Global Bank Leadership Succession",
+            "description": "Implementing a comprehensive succession strategy for C-suite transitions at a global bank.",
+            "image": "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "link": "/case-studies/bank-succession",
+            "tags": ["succession planning", "banking"],
+            "category": "financial-services"
+          },
+          {
+            "title": "Healthcare Tech Innovation",
+            "description": "Building a leadership team for a healthcare technology company revolutionizing patient care.",
+            "image": "https://images.pexels.com/photos/3184415/pexels-photo-3184415.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "link": "/case-studies/healthcare-tech",
+            "tags": ["healthtech", "innovation"],
+            "category": "healthcare"
+          },
+          {
+            "title": "SaaS Growth Leadership",
+            "description": "Recruiting a global leadership team to drive international expansion for enterprise SaaS platform.",
+            "image": "https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "link": "/case-studies/saas-growth",
+            "tags": ["SaaS", "growth"],
+            "category": "technology"
+          },
+          {
+            "title": "Luxury Retail Digital Transformation",
+            "description": "Building a digital leadership team to transform customer experience for luxury retailer.",
+            "image": "https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "link": "/case-studies/luxury-retail-digital",
+            "tags": ["luxury", "digital transformation"],
+            "category": "consumer-retail"
+          }
+        ],
+        "layout": "grid",
+        "itemsPerPage": 6
+      }
+    },
+    {
+      "id": "results-metrics",
+      "type": "Statistics",
+      "props": {
+        "heading": "Our Impact by the Numbers",
+        "description": "Measurable results that demonstrate the value of our executive search and leadership advisory services.",
+        "stats": [
+          {
+            "value": "94%",
+            "label": "Success Rate",
+            "description": "Executives still in role after 2 years",
+            "icon": "📈"
+          },
+          {
+            "value": "45",
+            "label": "Days Average",
+            "description": "Time to successful placement",
+            "icon": "⏱️"
+          },
+          {
+            "value": "35%",
+            "label": "Performance Increase",
+            "description": "Average improvement in team performance",
+            "icon": "⭐"
+          },
+          {
+            "value": "28%",
+            "label": "Revenue Growth",
+            "description": "Average increase post-placement",
+            "icon": "💰"
+          }
+        ],
+        "backgroundType": "gradient"
+      }
+    },
+    {
+      "id": "methodology-overview",
+      "type": "ProcessSteps",
+      "props": {
+        "heading": "Our Approach to Success",
+        "description": "The proven methodology behind our successful executive placements and leadership transformations.",
+        "steps": [
+          {
+            "number": 1,
+            "title": "Deep Discovery",
+            "description": "We begin with a comprehensive understanding of your organization, culture, and strategic objectives to define precise leadership requirements.",
+            "icon": "🔍"
+          },
+          {
+            "number": 2,
+            "title": "Strategic Search",
+            "description": "Our research team conducts extensive market mapping to identify potential candidates who match your specific requirements.",
+            "icon": "🎯"
+          },
+          {
+            "number": 3,
+            "title": "Rigorous Assessment",
+            "description": "Candidates undergo comprehensive evaluation through structured interviews, psychometric assessments, and reference checks.",
+            "icon": "✓"
+          },
+          {
+            "number": 4,
+            "title": "Precise Matching",
+            "description": "We present only candidates who demonstrate the right combination of skills, experience, leadership qualities, and cultural fit.",
+            "icon": "🤝"
+          },
+          {
+            "number": 5,
+            "title": "Successful Integration",
+            "description": "Our onboarding support ensures new leaders integrate effectively and deliver impact quickly within your organization.",
+            "icon": "🚀"
+          }
+        ],
+        "layout": "horizontal"
+      }
+    },
+    {
+      "id": "case-studies-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Ready to Write Your Success Story?",
+        "description": "Let's discuss how our executive search and leadership advisory services can help you achieve your strategic objectives.",
+        "primaryCta": {
+          "label": "Schedule a Consultation",
+          "href": "/contact"
+        },
+        "secondaryCta": {
+          "label": "Explore Our Services",
+          "href": "/services"
+        },
+        "backgroundType": "gradient"
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T09:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}
