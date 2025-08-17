@@ -1,0 +1,43 @@
+{
+  "slug": "diversity-inclusion",
+  "title": "Diversity & Inclusion Consulting",
+  "status": "published",
+  "seo": {
+    "title": "Diversity & Inclusion Consulting - Networkk",
+    "description": "Build a diverse, inclusive workforce with strategic D&I programs.",
+    "canonical": "https://networkk.com/diversity-inclusion/",
+    "noindex": false,
+    "keywords": ["diversity", "inclusion", "DEI consulting"]
+  },
+  "blocks": [
+    {
+      "id": "hero-diversity-inclusion",
+      "type": "Hero",
+      "props": {
+        "title": "Build a Diverse, Inclusive Workforce",
+        "subtitle": "Diversity & Inclusion Consulting",
+        "description": "Inclusive strategies that drive innovation and performance.",
+        "backgroundType": "gradient",
+        "textAlign": "center",
+        "fullHeight": false
+      }
+    },
+    {
+      "id": "final-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Start Your D&I Journey",
+        "description": "Partner with us to embed inclusion across your organization.",
+        "backgroundType": "gradient",
+        "primaryCta": {
+          "label": "Request Consultation",
+          "href": "/contact"
+        }
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T10:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}
+

@@ -1,0 +1,43 @@
+{
+  "slug": "leadership-hiring",
+  "title": "Leadership Hiring",
+  "status": "published",
+  "seo": {
+    "title": "Leadership Hiring - Networkk",
+    "description": "Find your next generation of leaders across industries and functions.",
+    "canonical": "https://networkk.com/leadership-hiring/",
+    "noindex": false,
+    "keywords": ["leadership hiring", "senior recruitment", "talent acquisition"]
+  },
+  "blocks": [
+    {
+      "id": "hero-leadership-hiring",
+      "type": "Hero",
+      "props": {
+        "title": "Find Your Next Leaders",
+        "subtitle": "Leadership Hiring",
+        "description": "Targeted recruitment for directors, VPs and high-potential talent.",
+        "backgroundType": "gradient",
+        "textAlign": "center",
+        "fullHeight": false
+      }
+    },
+    {
+      "id": "final-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Get Started with Leadership Hiring",
+        "description": "Partner with us to build a strong leadership pipeline.",
+        "backgroundType": "gradient",
+        "primaryCta": {
+          "label": "Request Consultation",
+          "href": "/contact"
+        }
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T10:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}
+
