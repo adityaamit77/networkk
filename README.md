@@ -33,10 +33,10 @@ pnpm dev:cms      # Next.js CMS (coming in Phase 4)
 ### 🚧 Phase 1 - Frontend Foundation (IN PROGRESS)
 - [x] Design system with Tailwind
 - [x] SEO components with OpenGraph, JSON-LD
-- [x] Block library v1 (Hero, TilesGrid, MetricsBand, Testimonials, CTA)
-- [x] Content adapter pattern
+- [x] Block library v1 (Hero, TilesGrid, MetricsBand, Testimonials, CTA, FAQ, Carousel, etc.)
+- [ ] Content adapter pattern (add Zod validation)
 - [x] Home and About pages with sample content
-- [ ] Remaining UI components
+- [x] Remaining UI components
 - [ ] Performance optimization
 - [ ] Accessibility audit
 
@@ -53,8 +53,9 @@ pnpm dev:cms      # Next.js CMS (coming in Phase 4)
 - `<SEO />` component with OpenGraph and Twitter tags
 - JSON-LD helper component
 - Heading hierarchy and ARIA landmarks in layouts
-- Block library v1 with core marketing blocks
+- Block library v1 with core marketing blocks (Hero, TilesGrid, MetricsBand, Testimonials, CTA, FAQ, Carousel, etc.)
 - Home and About pages with sample content
+- JSON content stubs for Services, Industries, Insights, and more pages
 
 ### CMS
 - Initial Next.js CMS scaffold under `apps/cms`
