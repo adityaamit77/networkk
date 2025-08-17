@@ -1,0 +1,43 @@
+{
+  "slug": "our-approach",
+  "title": "Our Approach",
+  "status": "published",
+  "seo": {
+    "title": "Our Approach - Networkk",
+    "description": "Discover our proven methodology for connecting leaders with opportunities.",
+    "canonical": "https://networkk.com/our-approach/",
+    "noindex": false,
+    "keywords": ["recruitment process", "executive search methodology"]
+  },
+  "blocks": [
+    {
+      "id": "hero-our-approach",
+      "type": "Hero",
+      "props": {
+        "title": "Our Proven Methodology",
+        "subtitle": "Our Approach",
+        "description": "Transparent processes built on research, evaluation and partnership.",
+        "backgroundType": "gradient",
+        "textAlign": "center",
+        "fullHeight": false
+      }
+    },
+    {
+      "id": "final-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Experience the Networkk Difference",
+        "description": "Partner with us for a collaborative hiring journey.",
+        "backgroundType": "gradient",
+        "primaryCta": {
+          "label": "Get in Touch",
+          "href": "/contact"
+        }
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T10:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}
+

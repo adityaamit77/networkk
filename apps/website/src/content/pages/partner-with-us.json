@@ -1,0 +1,43 @@
+{
+  "slug": "partner-with-us",
+  "title": "Partner With Us",
+  "status": "published",
+  "seo": {
+    "title": "Partner With Networkk",
+    "description": "Explore partnership models and the benefits of collaborating with Networkk.",
+    "canonical": "https://networkk.com/partner-with-us/",
+    "noindex": false,
+    "keywords": ["partnership", "engagement models", "talent partner"]
+  },
+  "blocks": [
+    {
+      "id": "hero-partner-with-us",
+      "type": "Hero",
+      "props": {
+        "title": "Collaborate with Networkk",
+        "subtitle": "Partner With Us",
+        "description": "Flexible engagement models designed for shared success.",
+        "backgroundType": "gradient",
+        "textAlign": "center",
+        "fullHeight": false
+      }
+    },
+    {
+      "id": "final-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Become a Networkk Partner",
+        "description": "Let's discuss the right partnership model for your organization.",
+        "backgroundType": "gradient",
+        "primaryCta": {
+          "label": "Contact Us",
+          "href": "/contact"
+        }
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T10:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}
+

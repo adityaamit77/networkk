@@ -1,0 +1,43 @@
+{
+  "slug": "careers",
+  "title": "Careers at Networkk",
+  "status": "published",
+  "seo": {
+    "title": "Careers at Networkk",
+    "description": "Join our team and help shape the future of leadership.",
+    "canonical": "https://networkk.com/careers/",
+    "noindex": false,
+    "keywords": ["careers", "jobs", "networkk team"]
+  },
+  "blocks": [
+    {
+      "id": "hero-careers",
+      "type": "Hero",
+      "props": {
+        "title": "Join Our Team",
+        "subtitle": "Careers at Networkk",
+        "description": "Explore opportunities to grow your career with us.",
+        "backgroundType": "gradient",
+        "textAlign": "center",
+        "fullHeight": false
+      }
+    },
+    {
+      "id": "final-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Apply Now",
+        "description": "Interested in working with Networkk? Let's connect.",
+        "backgroundType": "gradient",
+        "primaryCta": {
+          "label": "Contact HR",
+          "href": "/contact"
+        }
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T10:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}
+

@@ -1,0 +1,43 @@
+{
+  "slug": "why-choose-us",
+  "title": "Why Choose Us",
+  "status": "published",
+  "seo": {
+    "title": "Why Choose Networkk",
+    "description": "Learn what sets Networkk apart in executive search and leadership hiring.",
+    "canonical": "https://networkk.com/why-choose-us/",
+    "noindex": false,
+    "keywords": ["why choose us", "networkk difference", "recruitment metrics"]
+  },
+  "blocks": [
+    {
+      "id": "hero-why-choose-us",
+      "type": "Hero",
+      "props": {
+        "title": "Why Leading Brands Choose Networkk",
+        "subtitle": "Why Choose Us",
+        "description": "Performance metrics and client satisfaction that speak for themselves.",
+        "backgroundType": "gradient",
+        "textAlign": "center",
+        "fullHeight": false
+      }
+    },
+    {
+      "id": "final-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Let's Work Together",
+        "description": "Discover how we can help you secure top leadership talent.",
+        "backgroundType": "gradient",
+        "primaryCta": {
+          "label": "Contact Us",
+          "href": "/contact"
+        }
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T10:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}
+

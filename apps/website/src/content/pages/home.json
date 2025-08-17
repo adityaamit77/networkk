@@ -25,7 +25,7 @@
         "ctas": [
           {
             "label": "Explore Our Services",
-            "href": "/services/executive-search",
+            "href": "/executive-search",
             "variant": "primary"
           },
           {
@@ -52,28 +52,28 @@
             "title": "Executive Search",
             "description": "Find C-suite and senior leadership talent who align with your vision and drive transformational growth through proven methodologies.",
             "icon": "🎯",
-            "href": "/services/executive-search",
+            "href": "/executive-search",
             "image": "https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
           },
           {
             "title": "Leadership Hiring",
             "description": "Strategic recruitment for directors, VPs, and emerging leaders who will shape your organization's future and cultural evolution.",
             "icon": "👥",
-            "href": "/services/leadership-hiring",
+            "href": "/leadership-hiring",
             "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
           },
           {
             "title": "Talent Advisory",
             "description": "Strategic guidance on leadership development, succession planning, and organizational design for sustainable competitive advantage.",
             "icon": "💡",
-            "href": "/services/talent-advisory",
+            "href": "/talent-advisory",
             "image": "https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
           },
           {
             "title": "D&I Consulting",
             "description": "Build diverse, inclusive leadership teams that reflect your values, drive innovation, and create lasting organizational change.",
             "icon": "🌟",
-            "href": "/services/diversity-inclusion",
+            "href": "/diversity-inclusion",
             "image": "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
           }
         ]
