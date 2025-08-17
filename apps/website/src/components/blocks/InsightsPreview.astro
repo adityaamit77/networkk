@@ -1,0 +1,61 @@
+---
+import Heading from '../ui/Heading.astro';
+import Image from '../ui/Image.astro';
+
+export interface Props {
+  heading?: string;
+  description?: string;
+  limit?: number;
+}
+
+const { heading, description, limit = 3 } = Astro.props as Props;
+const modules = await Astro.glob('../../content/insights/*.json');
+const posts = modules
+  .map(m => ({ ...(m.default || {}), slug: m.file?.split('/').pop()?.replace('.json', '') }))
+  .sort((a, b) => new Date(b.publishedAt || 0).getTime() - new Date(a.publishedAt || 0).getTime())
+  .slice(0, limit);
+---
+<section class="section bg-white">
+  <div class="container">
+    {(heading || description) && (
+      <div class="text-center mb-12 max-w-3xl mx-auto">
+        {heading && (
+          <Heading level={2} class="mb-4">{heading}</Heading>
+        )}
+        {description && (
+          <p class="text-xl text-gray-600">{description}</p>
+        )}
+      </div>
+    )}
+
+    {posts.length > 0 ? (
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {posts.map(post => (
+          <article class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            {post.image && (
+              <a href={post.href || `/insights/${post.slug}` }>
+                <Image src={post.image} alt={post.title} width={400} height={200} class="w-full h-48 object-cover" />
+              </a>
+            )}
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">
+                <a href={post.href || `/insights/${post.slug}` } class="hover:text-blue-600 transition-colors">{post.title}</a>
+              </h3>
+              {post.excerpt && (
+                <p class="text-gray-600 mb-4">{post.excerpt}</p>
+              )}
+              <a href={post.href || `/insights/${post.slug}` } class="text-blue-600 font-medium inline-flex items-center group">
+                Read more
+                <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <p class="text-center text-gray-600">No insights available.</p>
+    )}
+  </div>
+</section>
