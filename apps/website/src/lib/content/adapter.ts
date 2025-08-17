@@ -1,20 +1,43 @@
-import type { BlockInstance } from '@networkk/content-bridge';
+import type { BlockInstance, Page, Insight } from '@networkk/content-bridge';
+import {
+  BlockInstanceSchema,
+  PageSchema,
+  InsightSchema,
+} from '@networkk/content-bridge';
 
 // Simplified content loading for Phase 1
-export async function loadPageBySlug(slug: string) {
+export async function loadPageBySlug(slug: string): Promise<Page | null> {
   try {
     const content = await import(`../../content/pages/${slug}.json`);
-    return content.default;
+    const parsed = PageSchema.safeParse(content.default);
+    if (!parsed.success) {
+      console.error(
+        `Content for page "${slug}" failed validation`,
+        parsed.error.flatten(),
+      );
+      return null;
+    }
+    return parsed.data;
   } catch (error) {
     console.error(`Failed to load page: ${slug}`, error);
     return null;
   }
 }
 
-export async function loadInsightBySlug(slug: string) {
+export async function loadInsightBySlug(
+  slug: string,
+): Promise<Insight | null> {
   try {
     const content = await import(`../../content/insights/${slug}.json`);
-    return content.default;
+    const parsed = InsightSchema.safeParse(content.default);
+    if (!parsed.success) {
+      console.error(
+        `Content for insight "${slug}" failed validation`,
+        parsed.error.flatten(),
+      );
+      return null;
+    }
+    return parsed.data;
   } catch (error) {
     console.error(`Failed to load insight: ${slug}`, error);
     return null;
@@ -23,9 +46,11 @@ export async function loadInsightBySlug(slug: string) {
 
 // Validate block data against schemas
 export function validateBlockData(block: BlockInstance): boolean {
-  // TODO: Add Zod validation here
-  // For now, just basic validation
-  return !!(block.id && block.type && block.props);
+  const result = BlockInstanceSchema.safeParse(block);
+  if (!result.success) {
+    console.error('Block validation failed', result.error.flatten());
+  }
+  return result.success;
 }
 
 // Get site configuration
