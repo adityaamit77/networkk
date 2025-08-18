@@ -1,0 +1,81 @@
+---
+import Heading from '../ui/Heading.astro';
+import Image from '../ui/Image.astro';
+
+export interface Props {
+  heading?: string;
+}
+
+const { heading = 'Success Stories' } = Astro.props;
+
+const modules = import.meta.glob('../../content/case-studies/*.mdx', { eager: true });
+const caseStudies = Object.values(modules).map((mod: any) => mod.frontmatter);
+
+const industries = Array.from(new Set(caseStudies.map((cs: any) => cs.industry)));
+const services = Array.from(new Set(caseStudies.map((cs: any) => cs.service)));
+
+const url = Astro.url;
+const currentIndustry = url.searchParams.get('industry') || 'all';
+const currentService = url.searchParams.get('service') || 'all';
+
+function buildUrl(industry: string, service: string) {
+  const params = new URLSearchParams();
+  if (industry && industry !== 'all') params.set('industry', industry);
+  if (service && service !== 'all') params.set('service', service);
+  const query = params.toString();
+  return `/success-stories${query ? `?${query}` : ''}`;
+}
+
+const filtered = caseStudies.filter((cs: any) =>
+  (currentIndustry === 'all' || cs.industry === currentIndustry) &&
+  (currentService === 'all' || cs.service === currentService)
+);
+---
+<section class="section">
+  <div class="container">
+    <div class="text-center mb-12">
+      <Heading level={2}>{heading}</Heading>
+    </div>
+
+    <!-- Filters -->
+    <div class="flex flex-wrap gap-6 justify-center mb-8">
+      <div>
+        <p class="text-sm font-medium mb-2">Industry</p>
+        <div class="flex flex-wrap gap-2">
+          <a href={buildUrl('all', currentService)} class={`px-3 py-1 rounded-full text-sm ${currentIndustry === 'all' ? 'bg-primary-600 text-white' : 'bg-gray-100 text-gray-800'}`}>All</a>
+          {industries.map(ind => (
+            <a href={buildUrl(ind, currentService)} class={`px-3 py-1 rounded-full text-sm ${currentIndustry === ind ? 'bg-primary-600 text-white' : 'bg-gray-100 text-gray-800'}`}>{ind}</a>
+          ))}
+        </div>
+      </div>
+      <div>
+        <p class="text-sm font-medium mb-2">Service</p>
+        <div class="flex flex-wrap gap-2">
+          <a href={buildUrl(currentIndustry, 'all')} class={`px-3 py-1 rounded-full text-sm ${currentService === 'all' ? 'bg-primary-600 text-white' : 'bg-gray-100 text-gray-800'}`}>All</a>
+          {services.map(svc => (
+            <a href={buildUrl(currentIndustry, svc)} class={`px-3 py-1 rounded-full text-sm ${currentService === svc ? 'bg-primary-600 text-white' : 'bg-gray-100 text-gray-800'}`}>{svc}</a>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- List -->
+    <div class="grid md:grid-cols-2 gap-8">
+      {filtered.map(cs => (
+        <a href={`/success-stories/${cs.slug}`} class="block border rounded-lg overflow-hidden hover:shadow-lg transition">
+          {cs.hero?.image && (
+            <Image src={cs.hero.image} alt={cs.title} width={600} height={300} class="w-full h-48 object-cover" />
+          )}
+          <div class="p-6">
+            <Heading level={3} class="mb-2">{cs.title}</Heading>
+            <div class="flex gap-4 text-sm mb-4">
+              <a href={`/industries/${cs.industry}`} class="text-primary-600 hover:underline capitalize">{cs.industry.replace('-', ' ')}</a>
+              <a href={`/services/${cs.service}`} class="text-primary-600 hover:underline capitalize">{cs.service.replace('-', ' ')}</a>
+            </div>
+            <p class="text-gray-600">{cs.challenge}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
