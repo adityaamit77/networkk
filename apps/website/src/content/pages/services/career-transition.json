@@ -1,0 +1,99 @@
+{
+  "slug": "career-transition",
+  "title": "Career Transition & Outplacement",
+  "status": "published",
+  "seo": {
+    "title": "Career Transition Services - Networkk",
+    "description": "Support your workforce through change with tailored transition programs that protect employer brand and ensure dignified departures.",
+    "canonical": "https://networkk.com/services/career-transition/",
+    "noindex": false,
+    "keywords": ["career transition", "outplacement", "workforce support"]
+  },
+  "blocks": [
+    {
+      "id": "hero-career-transition",
+      "type": "Hero",
+      "props": {
+        "title": "Support Your Workforce in Transition",
+        "subtitle": "Career Transition & Outplacement",
+        "description": "Structured programs that guide employees to new opportunities while protecting employer brand.",
+        "backgroundType": "gradient",
+        "textAlign": "center",
+        "fullHeight": false
+      }
+    },
+    {
+      "id": "why-career-transition",
+      "type": "RichText",
+      "props": {
+        "heading": "Why Provide Transition Support?",
+        "content": "<p>Thoughtful outplacement demonstrates care for departing employees and preserves morale among those who remain. We offer personalized coaching and resources that help individuals move forward confidently.</p>"
+      }
+    },
+    {
+      "id": "methodology-career-transition",
+      "type": "ProcessSteps",
+      "props": {
+        "heading": "Program Methodology",
+        "steps": [
+          {"number": 1, "title": "Planning", "description": "Coordinate timing and communication with leadership."},
+          {"number": 2, "title": "Support", "description": "Provide immediate emotional and logistical assistance."},
+          {"number": 3, "title": "Coaching", "description": "Offer career coaching, resume guidance, and interview preparation."},
+          {"number": 4, "title": "Transition", "description": "Connect participants with opportunities and networking resources."}
+        ]
+      }
+    },
+    {
+      "id": "confidentiality-career-transition",
+      "type": "FAQ",
+      "props": {
+        "heading": "Confidentiality & Ethics",
+        "items": [
+          {"question": "Are participant details shared?", "answer": "No, individual progress remains confidential unless permission is granted."},
+          {"question": "How is dignity maintained?", "answer": "We deliver programs with empathy and respect for every individual."}
+        ]
+      }
+    },
+    {
+      "id": "metrics-career-transition",
+      "type": "MetricsBand",
+      "props": {
+        "heading": "Program Outcomes",
+        "items": [
+          {"value": "85%", "label": "Land New Roles"},
+          {"value": "3 mo", "label": "Average Transition"},
+          {"value": "500+", "label": "Participants Supported"}
+        ]
+      }
+    },
+    {
+      "id": "testimonials-career-transition",
+      "type": "Testimonials",
+      "props": {
+        "heading": "Participant Feedback",
+        "items": [
+          {
+            "quote": "The coaching gave me clarity and confidence to pursue a new direction.",
+            "author": {"name": "Priya Desai", "title": "Former Manager", "company": "RetailCo"},
+            "rating": 5
+          }
+        ],
+        "layout": "carousel",
+        "slider": true
+      }
+    },
+    {
+      "id": "final-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Plan a Transition Program",
+        "description": "Learn how we can assist with compassionate workforce transitions.",
+        "backgroundType": "gradient",
+        "primaryCta": {"label": "Request Consultation", "href": "/contact"}
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T10:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}

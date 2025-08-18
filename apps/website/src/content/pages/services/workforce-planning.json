@@ -1,0 +1,99 @@
+{
+  "slug": "workforce-planning",
+  "title": "Workforce Planning & Market Mapping",
+  "status": "published",
+  "seo": {
+    "title": "Workforce Planning & Market Mapping - Networkk",
+    "description": "Plan future talent needs with strategic workforce insights and comprehensive market intelligence.",
+    "canonical": "https://networkk.com/services/workforce-planning/",
+    "noindex": false,
+    "keywords": ["workforce planning", "market mapping", "talent forecasting"]
+  },
+  "blocks": [
+    {
+      "id": "hero-workforce-planning",
+      "type": "Hero",
+      "props": {
+        "title": "Plan Your Future Talent Needs",
+        "subtitle": "Workforce Planning & Market Mapping",
+        "description": "Data-driven insights to forecast talent demand and understand market dynamics.",
+        "backgroundType": "gradient",
+        "textAlign": "center",
+        "fullHeight": false
+      }
+    },
+    {
+      "id": "why-workforce-planning",
+      "type": "RichText",
+      "props": {
+        "heading": "Why Workforce Planning?",
+        "content": "<p>Anticipating talent needs reduces hiring risk and accelerates growth. Our market intelligence helps you stay ahead of competitors and build proactive talent pipelines.</p>"
+      }
+    },
+    {
+      "id": "methodology-workforce-planning",
+      "type": "ProcessSteps",
+      "props": {
+        "heading": "Our Process",
+        "steps": [
+          {"number": 1, "title": "Discovery", "description": "Understand strategic objectives and current workforce."},
+          {"number": 2, "title": "Market Mapping", "description": "Analyze talent availability and competitor structures."},
+          {"number": 3, "title": "Forecasting", "description": "Model future requirements and skill gaps."},
+          {"number": 4, "title": "Action Plan", "description": "Deliver insights to guide recruitment and development."}
+        ]
+      }
+    },
+    {
+      "id": "confidentiality-workforce-planning",
+      "type": "FAQ",
+      "props": {
+        "heading": "Confidentiality & Ethics",
+        "items": [
+          {"question": "How is market data collected?", "answer": "We use ethical research methods and publicly available information."},
+          {"question": "Is company information secure?", "answer": "All proprietary data is protected under strict confidentiality agreements."}
+        ]
+      }
+    },
+    {
+      "id": "metrics-workforce-planning",
+      "type": "MetricsBand",
+      "props": {
+        "heading": "Planning Metrics",
+        "items": [
+          {"value": "30%", "label": "Hiring Cost Saved"},
+          {"value": "50+", "label": "Markets Analyzed"},
+          {"value": "10 yrs", "label": "Average Data Span"}
+        ]
+      }
+    },
+    {
+      "id": "testimonials-workforce-planning",
+      "type": "Testimonials",
+      "props": {
+        "heading": "Client Stories",
+        "items": [
+          {
+            "quote": "Their mapping gave us clarity on where to open our next engineering hub.",
+            "author": {"name": "Lena Fischer", "title": "VP Talent", "company": "AutoMotion"},
+            "rating": 5
+          }
+        ],
+        "layout": "carousel",
+        "slider": true
+      }
+    },
+    {
+      "id": "final-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Request Workforce Insights",
+        "description": "Speak with our consultants about strategic workforce planning.",
+        "backgroundType": "gradient",
+        "primaryCta": {"label": "Request Insights", "href": "/contact"}
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T10:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}

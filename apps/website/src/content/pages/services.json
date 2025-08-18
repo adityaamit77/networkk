@@ -16,16 +16,24 @@
       "props": {
         "title": "Comprehensive Leadership Solutions",
         "subtitle": "Our Services",
-        "description": "Strategic talent acquisition and leadership advisory services tailored to your organization's unique needs and objectives.",
+        "description": "Strategic talent acquisition and advisory support tailored to your organization.",
+        "backgroundType": "image",
         "media": {
           "image": "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
           "alt": "Professional team collaborating on executive search strategy",
           "ratio": "16:9"
         },
-        "backgroundType": "image",
         "textAlign": "center",
         "fullHeight": false,
         "overlay": true
+      }
+    },
+    {
+      "id": "intro-services",
+      "type": "RichText",
+      "props": {
+        "heading": "Strategic Talent Solutions",
+        "content": "<p>Networkk offers end-to-end services that help organizations identify, attract, and develop the leaders they need to thrive.</p>"
       }
     },
     {
@@ -33,193 +41,67 @@
       "type": "TilesGrid",
       "props": {
         "heading": "Our Core Services",
-        "description": "Comprehensive talent solutions designed to meet your organization's unique leadership needs and strategic objectives.",
-        "columns": "2",
+        "description": "Explore our suite of offerings designed to meet every leadership challenge.",
+        "columns": "3",
         "items": [
+          {"title": "Executive Search", "description": "Identify and secure C-suite leaders who align with your vision.", "href": "/services/executive-search", "icon": "🎯"},
+          {"title": "Leadership Hiring", "description": "Recruit directors and VPs positioned for growth.", "href": "/services/leadership-hiring", "icon": "👥"},
+          {"title": "Talent Advisory", "description": "Assess and develop leadership capabilities across the organization.", "href": "/services/talent-advisory", "icon": "💡"},
+          {"title": "Career Transition", "description": "Provide dignified support for employees in transition.", "href": "/services/career-transition", "icon": "🔄"},
+          {"title": "Workforce Planning", "description": "Forecast talent needs with market intelligence.", "href": "/services/workforce-planning", "icon": "📊"},
+          {"title": "D&I Consulting", "description": "Build inclusive cultures that drive innovation.", "href": "/services/diversity-inclusion", "icon": "🌟"}
+        ]
+      }
+    },
+    {
+      "id": "process-overview",
+      "type": "ProcessSteps",
+      "props": {
+        "heading": "How We Partner",
+        "description": "A collaborative approach that delivers measurable results.",
+        "steps": [
+          {"number": 1, "title": "Assess Needs", "description": "We align on goals and leadership requirements."},
+          {"number": 2, "title": "Design Strategy", "description": "A tailored search or advisory plan is crafted."},
+          {"number": 3, "title": "Engage & Evaluate", "description": "Our consultants identify and assess top talent."},
+          {"number": 4, "title": "Deliver & Support", "description": "We present finalists and support successful integration."}
+        ]
+      }
+    },
+    {
+      "id": "case-studies",
+      "type": "CaseStudy",
+      "props": {
+        "heading": "Success Stories",
+        "description": "A snapshot of how we have helped clients build leadership strength.",
+        "studies": [
           {
-            "title": "Executive Search",
-            "description": "Identifying and securing C-suite and senior leadership talent who align with your vision and drive transformational growth.",
-            "icon": "🎯",
-            "href": "/executive-search",
-            "image": "https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "title": "Global Retail Expansion",
+            "industry": "Retail",
+            "challenge": "Needed regional CEOs for rapid Asia growth.",
+            "solution": "Targeted search across emerging markets.",
+            "results": "Placed three leaders who opened 50+ stores in 18 months.",
+            "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
           },
           {
-            "title": "Leadership Hiring",
-            "description": "Strategic recruitment for directors, VPs, and emerging leaders who will shape your organization's future and cultural evolution.",
-            "icon": "👥",
-            "href": "/leadership-hiring",
-            "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-          },
-          {
-            "title": "Talent Advisory",
-            "description": "Strategic guidance on leadership development, succession planning, and organizational design for sustainable competitive advantage.",
-            "icon": "💡",
-            "href": "/talent-advisory",
+            "title": "Healthcare Digital Pivot",
+            "industry": "Healthcare",
+            "challenge": "Required technology leadership to drive digital transformation.",
+            "solution": "Sourced CIO and CTO with hospital systems expertise.",
+            "results": "Enabled rollout of telehealth platform adopted by 70% of patients.",
             "image": "https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-          },
-          {
-            "title": "D&I Consulting",
-            "description": "Build diverse, inclusive leadership teams that reflect your values, drive innovation, and create lasting organizational change.",
-            "icon": "🌟",
-            "href": "/diversity-inclusion",
-            "image": "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
           }
         ]
       }
     },
     {
-      "id": "executive-search-process",
-      "type": "ProcessSteps",
+      "id": "services-faq",
+      "type": "FAQ",
       "props": {
-        "heading": "Our Executive Search Process",
-        "description": "A proven methodology that combines deep industry knowledge, extensive networks, and rigorous assessment to identify exceptional leaders.",
-        "steps": [
-          {
-            "number": 1,
-            "title": "Discovery & Strategy",
-            "description": "We begin with a comprehensive understanding of your organization, culture, and leadership requirements to develop a tailored search strategy.",
-            "icon": "🔍"
-          },
-          {
-            "number": 2,
-            "title": "Research & Identification",
-            "description": "Our research team conducts extensive market mapping to identify potential candidates who match your specific requirements and organizational culture.",
-            "icon": "📊"
-          },
-          {
-            "number": 3,
-            "title": "Assessment & Selection",
-            "description": "Rigorous evaluation through structured interviews, psychometric assessments, and reference checks to ensure candidates have the right skills and cultural fit.",
-            "icon": "✓"
-          },
-          {
-            "number": 4,
-            "title": "Presentation & Decision",
-            "description": "We present a shortlist of exceptional candidates with detailed assessments, facilitate interviews, and support your decision-making process.",
-            "icon": "👥"
-          },
-          {
-            "number": 5,
-            "title": "Offer & Onboarding",
-            "description": "We manage negotiations, facilitate the offer process, and provide onboarding support to ensure a successful integration into your organization.",
-            "icon": "🤝"
-          }
-        ],
-        "layout": "horizontal"
-      }
-    },
-    {
-      "id": "client-testimonials",
-      "type": "Testimonials",
-      "props": {
-        "heading": "Client Success Stories",
-        "description": "Hear from organizations that have transformed their leadership through our executive search and advisory services.",
+        "heading": "Service FAQs",
         "items": [
-          {
-            "quote": "Networkk's executive search process was thorough and efficient. They took the time to understand our unique culture and found us a CFO who has been instrumental in our international expansion.",
-            "author": {
-              "name": "David Chen",
-              "title": "CEO",
-              "company": "Global Tech Innovations",
-              "image": "/images/testimonial-david-chen.jpg"
-            },
-            "rating": 5
-          },
-          {
-            "quote": "The leadership advisory team provided invaluable guidance during our merger. Their succession planning framework helped us retain key talent and maintain business continuity during a challenging transition.",
-            "author": {
-              "name": "Anita Patel",
-              "title": "CHRO",
-              "company": "Meridian Healthcare",
-              "image": "/images/testimonial-anita-patel.jpg"
-            },
-            "rating": 5
-          },
-          {
-            "quote": "Working with Networkk transformed our approach to diversity in leadership. They helped us build an inclusive executive team that better represents our global customer base and has driven innovation across the organization.",
-            "author": {
-              "name": "Michael Wong",
-              "title": "Managing Director",
-              "company": "Horizon Financial",
-              "image": "/images/testimonial-michael-wong.jpg"
-            },
-            "rating": 5
-          }
-        ],
-        "layout": "carousel",
-        "slider": true
-      }
-    },
-    {
-      "id": "case-study-highlight",
-      "type": "CaseStudy",
-      "props": {
-        "heading": "Featured Success Stories",
-        "description": "Real-world examples of how our services have transformed organizations through exceptional leadership.",
-        "studies": [
-          {
-            "title": "Scaling Leadership for a High-Growth Tech Unicorn",
-            "industry": "Technology",
-            "challenge": "A rapidly growing SaaS company needed to build out their executive team to support international expansion and prepare for IPO.",
-            "solution": "Comprehensive C-suite search strategy focusing on leaders with scale-up experience and public company readiness.",
-            "results": "Successfully placed CEO, CFO, and CTO within 4 months, enabling successful expansion into 3 new markets and 40% year-over-year growth.",
-            "testimonial": {
-              "quote": "Networkk understood exactly what we needed at this critical growth stage.",
-              "author": "Board Chair",
-              "title": "SaaS Innovators"
-            },
-            "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-          },
-          {
-            "title": "Healthcare Leadership Transformation",
-            "industry": "Healthcare",
-            "challenge": "A leading hospital network needed to revitalize leadership to drive digital transformation and improve patient outcomes.",
-            "solution": "Comprehensive leadership assessment and targeted executive search for key positions, including Chief Digital Officer and Chief Medical Officer.",
-            "results": "New leadership team implemented digital health initiatives that reduced wait times by 35% and improved patient satisfaction scores by 28%.",
-            "testimonial": {
-              "quote": "The leaders Networkk brought to our organization have revolutionized our approach to healthcare delivery.",
-              "author": "CEO",
-              "title": "Metropolitan Health Network"
-            },
-            "image": "https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-          }
-        ],
-        "layout": "grid"
-      }
-    },
-    {
-      "id": "service-statistics",
-      "type": "Statistics",
-      "props": {
-        "heading": "Our Impact",
-        "description": "Measurable results that demonstrate our commitment to excellence in executive search and leadership advisory.",
-        "stats": [
-          {
-            "value": "98%",
-            "label": "Client Satisfaction",
-            "description": "Based on post-placement surveys",
-            "icon": "😊"
-          },
-          {
-            "value": "45",
-            "label": "Days Average",
-            "description": "Time to successful placement",
-            "icon": "⏱️"
-          },
-          {
-            "value": "95%",
-            "label": "Retention Rate",
-            "description": "After 24 months",
-            "icon": "🔒"
-          },
-          {
-            "value": "500+",
-            "label": "Executives Placed",
-            "description": "Across all industries",
-            "icon": "👥"
-          }
-        ],
-        "backgroundType": "gradient"
+          {"question": "Which service should we start with?", "answer": "Our advisors help you evaluate needs and recommend the best engagement."},
+          {"question": "Do you work globally?", "answer": "Yes, our network spans major markets worldwide."}
+        ]
       }
     },
     {
@@ -227,15 +109,9 @@
       "type": "CTA",
       "props": {
         "heading": "Ready to Transform Your Leadership?",
-        "description": "Let's discuss your specific needs and how our executive search and leadership advisory services can help you achieve your strategic objectives.",
-        "primaryCta": {
-          "label": "Schedule a Consultation",
-          "href": "/contact"
-        },
-        "secondaryCta": {
-          "label": "Explore Case Studies",
-          "href": "/case-studies"
-        },
+        "description": "Let's discuss how our services can support your strategic objectives.",
+        "primaryCta": {"label": "Schedule a Consultation", "href": "/contact"},
+        "secondaryCta": {"label": "Explore Case Studies", "href": "/success-stories"},
         "backgroundType": "gradient"
       }
     }
