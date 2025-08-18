@@ -86,9 +86,13 @@ const currentTheme = themeConfig[theme as keyof typeof themeConfig];
               <span class={`w-2 h-2 ${currentTheme.dotColor} rounded-full mr-4 group-hover:bg-white transition-colors group-hover:scale-110`}></span>
               Talent Advisory
             </a></li>
-            <li><a href="/services/consulting" class={`text-${currentTheme.accent}-200 hover:text-white hover:translate-x-1 transition-all duration-200 flex items-center group text-lg`}>
+            <li><a href="/services/diversity-inclusion" class={`text-${currentTheme.accent}-200 hover:text-white hover:translate-x-1 transition-all duration-200 flex items-center group text-lg`}>
               <span class={`w-2 h-2 ${currentTheme.dotColor} rounded-full mr-4 group-hover:bg-white transition-colors group-hover:scale-110`}></span>
               D&I Consulting
+            </a></li>
+            <li><a href="/services/career-transition" class={`text-${currentTheme.accent}-200 hover:text-white hover:translate-x-1 transition-all duration-200 flex items-center group text-lg`}>
+              <span class={`w-2 h-2 ${currentTheme.dotColor} rounded-full mr-4 group-hover:bg-white transition-colors group-hover:scale-110`}></span>
+              Career Transition
             </a></li>
           </ul>
         </div>
@@ -97,17 +101,21 @@ const currentTheme = themeConfig[theme as keyof typeof themeConfig];
         <div class="lg:col-span-2">
           <h3 class="font-semibold text-white mb-8 text-xl">Company</h3>
           <ul class="space-y-4">
-            <li><a href="/about" class={`text-${currentTheme.accent}-200 hover:text-white hover:translate-x-1 transition-all duration-200 flex items-center group text-lg`}>
-              <span class={`w-2 h-2 ${currentTheme.companyDotColor} rounded-full mr-4 group-hover:bg-white transition-colors group-hover:scale-110`}></span>
-              About Us
-            </a></li>
-            <li><a href="/approach" class={`text-${currentTheme.accent}-200 hover:text-white hover:translate-x-1 transition-all duration-200 flex items-center group text-lg`}>
+            <li><a href="/our-approach" class={`text-${currentTheme.accent}-200 hover:text-white hover:translate-x-1 transition-all duration-200 flex items-center group text-lg`}>
               <span class={`w-2 h-2 ${currentTheme.companyDotColor} rounded-full mr-4 group-hover:bg-white transition-colors group-hover:scale-110`}></span>
               Our Approach
             </a></li>
-            <li><a href="/success-stories" class={`text-${currentTheme.accent}-200 hover:text-white hover:translate-x-1 transition-all duration-200 flex items-center group text-lg`}>
+            <li><a href="/why-choose-us" class={`text-${currentTheme.accent}-200 hover:text-white hover:translate-x-1 transition-all duration-200 flex items-center group text-lg`}>
               <span class={`w-2 h-2 ${currentTheme.companyDotColor} rounded-full mr-4 group-hover:bg-white transition-colors group-hover:scale-110`}></span>
-              Success Stories
+              Why Choose Us
+            </a></li>
+            <li><a href="/events" class={`text-${currentTheme.accent}-200 hover:text-white hover:translate-x-1 transition-all duration-200 flex items-center group text-lg`}>
+              <span class={`w-2 h-2 ${currentTheme.companyDotColor} rounded-full mr-4 group-hover:bg-white transition-colors group-hover:scale-110`}></span>
+              Events
+            </a></li>
+            <li><a href="/partner-with-us" class={`text-${currentTheme.accent}-200 hover:text-white hover:translate-x-1 transition-all duration-200 flex items-center group text-lg`}>
+              <span class={`w-2 h-2 ${currentTheme.companyDotColor} rounded-full mr-4 group-hover:bg-white transition-colors group-hover:scale-110`}></span>
+              Partner With Us
             </a></li>
             <li><a href="/careers" class={`text-${currentTheme.accent}-200 hover:text-white hover:translate-x-1 transition-all duration-200 flex items-center group text-lg`}>
               <span class={`w-2 h-2 ${currentTheme.companyDotColor} rounded-full mr-4 group-hover:bg-white transition-colors group-hover:scale-110`}></span>
@@ -172,9 +180,10 @@ const currentTheme = themeConfig[theme as keyof typeof themeConfig];
       <div class="container py-6">
         <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
           <p class={`text-${currentTheme.accent}-200 text-sm`}>
-            &copy; 2025 Networkk. All rights reserved. | 
-            <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> | 
-            <a href="/terms" class="hover:text-white transition-colors">Terms of Service</a>
+            &copy; 2025 Networkk. All rights reserved. |
+            <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a> |
+            <a href="/terms" class="hover:text-white transition-colors">Terms of Service</a> |
+            <a href="/sitemap" class="hover:text-white transition-colors">Sitemap</a>
           </p>
           <div class={`flex items-center space-x-4 text-sm text-${currentTheme.accent}-200`}>
             <span>Made with</span>
