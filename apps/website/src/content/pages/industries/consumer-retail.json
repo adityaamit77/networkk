@@ -1,0 +1,29 @@
+{
+  "slug": "industries/consumer-retail",
+  "title": "Consumer & Retail",
+  "status": "published",
+  "seo": {
+    "title": "Consumer & Retail Industry - Networkk",
+    "description": "Executive talent for consumer brands and retailers.",
+    "canonical": "https://networkk.com/industries/consumer-retail/",
+    "noindex": false,
+    "keywords": ["consumer", "retail", "ecommerce"]
+  },
+  "blocks": [
+    {
+      "id": "hero-industry",
+      "type": "Hero",
+      "props": {
+        "title": "Consumer & Retail",
+        "subtitle": "Industry Expertise",
+        "description": "Leaders who navigate evolving consumer expectations.",
+        "backgroundType": "gradient",
+        "textAlign": "center",
+        "fullHeight": false
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T10:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}

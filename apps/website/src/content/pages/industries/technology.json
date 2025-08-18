@@ -1,0 +1,29 @@
+{
+  "slug": "industries/technology",
+  "title": "Technology & Software",
+  "status": "published",
+  "seo": {
+    "title": "Technology & Software Industry - Networkk",
+    "description": "Talent solutions for software and digital innovators.",
+    "canonical": "https://networkk.com/industries/technology/",
+    "noindex": false,
+    "keywords": ["technology", "software", "digital"]
+  },
+  "blocks": [
+    {
+      "id": "hero-industry",
+      "type": "Hero",
+      "props": {
+        "title": "Technology & Software",
+        "subtitle": "Industry Expertise",
+        "description": "We connect tech innovators with transformative leaders.",
+        "backgroundType": "gradient",
+        "textAlign": "center",
+        "fullHeight": false
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T10:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}
