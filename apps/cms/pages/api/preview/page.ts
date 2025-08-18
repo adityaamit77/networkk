@@ -8,6 +8,8 @@ const querySchema = z.object({
 });
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  res.setHeader('X-Robots-Tag', 'noindex');
+  res.setHeader('Cache-Control', 'no-store');
   const { slug } = querySchema.parse(req.query);
   const page = await prisma.page.findUnique({ where: { slug } });
   if (!page) {
