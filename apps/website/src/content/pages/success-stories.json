@@ -18,6 +18,46 @@
         "backgroundType": "gradient",
         "textAlign": "center"
       }
+    },
+    {
+      "id": "case-study-list",
+      "type": "CaseStudyList",
+      "props": {
+        "heading": "Recent Success Stories"
+      }
+    },
+    {
+      "id": "success-testimonials",
+      "type": "Testimonials",
+      "props": {
+        "heading": "What Clients Say",
+        "items": [
+          {
+            "quote": "Networkk rapidly delivered executives who fit our culture perfectly.",
+            "author": {
+              "name": "R. Menon",
+              "title": "CEO",
+              "company": "RetailCo"
+            },
+            "rating": 5
+          }
+        ],
+        "layout": "grid",
+        "slider": false
+      }
+    },
+    {
+      "id": "success-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Need leadership that delivers?",
+        "description": "Talk to us about finding executive talent that drives growth.",
+        "primaryCta": {
+          "label": "Contact Us",
+          "href": "/contact"
+        },
+        "backgroundType": "gradient"
+      }
     }
   ],
   "publishedAt": "2025-01-15T10:00:00Z",
