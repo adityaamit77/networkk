@@ -1,0 +1,46 @@
+---
+import Heading from '../ui/Heading.astro';
+import Image from '../ui/Image.astro';
+
+export interface Props {
+  heading?: string;
+}
+
+const { heading } = Astro.props as Props;
+
+let modules: Record<string, any> = await Astro.glob('../../content/insights/*.{json,mdx}', { eager: true });
+
+const posts = Object.entries(modules).map(([path, mod]) => {
+  const slug = path.replace('../../content/insights/', '').replace(/\.(json|mdx)$/,'');
+  const data = path.endsWith('.mdx') ? mod.frontmatter : mod.default || mod;
+  return { ...data, slug };
+}).filter(Boolean);
+
+let post = posts.find(p => p.featured);
+if (!post && posts.length) {
+  post = posts.sort((a,b)=> new Date(b.publishedAt || 0).getTime() - new Date(a.publishedAt || 0).getTime())[0];
+}
+---
+{post && (
+<section class="section bg-white">
+  <div class="container">
+    {heading && (
+      <div class="text-center mb-8">
+        <Heading level={2}>{heading}</Heading>
+      </div>
+    )}
+    <article class="grid md:grid-cols-2 gap-8 items-center">
+      {post.image && (
+        <a href={`/insights/${post.slug}`} class="block">
+          <Image src={post.image} alt={post.title} class="w-full h-64 object-cover rounded-lg" width={600} height={400}/>
+        </a>
+      )}
+      <div>
+        <Heading level={3} class="mb-4">{post.title}</Heading>
+        {post.excerpt && (<p class="text-gray-600 mb-4">{post.excerpt}</p>)}
+        <a href={`/insights/${post.slug}`} class="text-blue-600 font-medium">Read more →</a>
+      </div>
+    </article>
+  </div>
+</section>
+)}

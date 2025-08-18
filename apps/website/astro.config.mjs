@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
+import mdx from '@astrojs/mdx';
 
 export default defineConfig({
   site: 'https://networkk.com',
@@ -11,6 +12,7 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
     sitemap(),
+    mdx(),
   ],
   output: 'static',
   build: {

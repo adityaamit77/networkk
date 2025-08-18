@@ -1,0 +1,40 @@
+---
+import FilterableGrid from './FilterableGrid.astro';
+
+export interface Props {
+  heading?: string;
+  description?: string;
+}
+
+const { heading = 'All Insights', description } = Astro.props as Props;
+
+let modules: Record<string, any> = await Astro.glob('../../content/insights/*.{json,mdx}', { eager: true });
+
+const posts = Object.entries(modules).map(([path, mod]) => {
+  const slug = path.replace('../../content/insights/', '').replace(/\.(json|mdx)$/,'');
+  const data = path.endsWith('.mdx') ? mod.frontmatter : mod.default || mod;
+  return { ...data, slug };
+}).filter(Boolean).sort((a,b)=> new Date(b.publishedAt||0).getTime() - new Date(a.publishedAt||0).getTime());
+
+const categories = Array.from(new Set(posts.map(p => p.category).filter(Boolean)));
+const filters = categories.length ? [{
+  name: 'category',
+  options: categories.map(c => ({ label: c, value: c }))
+}] : [];
+
+const items = posts.map(p => ({
+  title: p.title,
+  description: p.excerpt,
+  image: p.image,
+  link: `/insights/${p.slug}`,
+  category: p.category,
+  tags: p.tags
+}));
+---
+<FilterableGrid
+  heading={heading}
+  description={description}
+  filters={filters}
+  items={items}
+  itemsPerPage={12}
+/>
