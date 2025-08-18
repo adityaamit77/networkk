@@ -89,11 +89,11 @@ export async function getSiteConfig() {
     navigation: {
       header: [
         { label: 'Services', href: '/services' },
-        { label: 'Executive Search', href: '/executive-search' },
-        { label: 'Leadership Hiring', href: '/leadership-hiring' },
-        { label: 'Talent Advisory', href: '/talent-advisory' },
-        { label: 'D&I Consulting', href: '/diversity-inclusion' },
-        { label: 'Career Transition', href: '/career-transition' },
+        // { label: 'Executive Search', href: '/executive-search' },
+        // { label: 'Leadership Hiring', href: '/leadership-hiring' },
+        // { label: 'Talent Advisory', href: '/talent-advisory' },
+        // { label: 'D&I Consulting', href: '/diversity-inclusion' },
+        // { label: 'Career Transition', href: '/career-transition' },
         { label: 'Industries', href: '/industries' },
         { label: 'Insights', href: '/insights' },
         { label: 'Our Approach', href: '/our-approach' },
