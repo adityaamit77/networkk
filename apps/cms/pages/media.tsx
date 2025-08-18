@@ -8,6 +8,11 @@ interface MediaItem {
   id: number;
   title: string;
   url: string;
+  alt: string;
+  caption?: string;
+  credit?: string;
+  license?: string;
+  focal: { x: number; y: number };
 }
 
 export default function Media() {
@@ -24,7 +29,18 @@ export default function Media() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setItems([{ id: 1, title: 'logo.png', url: '/logo.png' }]);
+      setItems([
+        {
+          id: 1,
+          title: 'logo.png',
+          url: '/logo.png',
+          alt: 'Networkk logo',
+          caption: '',
+          credit: '',
+          license: '',
+          focal: { x: 50, y: 50 }
+        }
+      ]);
       setLoading(false);
     }, 600);
     return () => clearTimeout(timer);
@@ -72,7 +88,16 @@ export default function Media() {
     await Promise.all([convert(file, 'image/webp'), convert(file, 'image/avif')]);
     setItems((prev) => [
       ...prev,
-      { id: prev.length + 1, title: filename || file.name, url: URL.createObjectURL(file) }
+      {
+        id: prev.length + 1,
+        title: filename || file.name,
+        url: URL.createObjectURL(file),
+        alt,
+        caption,
+        credit,
+        license,
+        focal
+      }
     ]);
     setTitle('');
     setFilename('');
@@ -160,7 +185,10 @@ export default function Media() {
       <DataState loading={loading} items={items} error={null}>
         <ul>
           {items.map((p) => (
-            <li key={p.id}>{p.title}</li>
+            <li key={p.id}>
+              {p.title}
+              <span className="ml-2 text-sm text-gray-600">{p.alt}</span>
+            </li>
           ))}
         </ul>
       </DataState>
