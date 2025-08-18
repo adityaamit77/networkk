@@ -7,6 +7,7 @@ export interface Props {
   class?: string;
   loading?: 'lazy' | 'eager';
   decoding?: 'async' | 'sync' | 'auto';
+  sizes?: string;
 }
 
 const {
@@ -16,16 +17,30 @@ const {
   height,
   class: className = '',
   loading = 'lazy',
-  decoding = 'async'
+  decoding = 'async',
+  sizes
 } = Astro.props;
----
 
-<img
-  src={src}
-  alt={alt}
-  width={width}
-  height={height}
-  loading={loading}
-  decoding={decoding}
-  class={className}
-/>
+if (alt === undefined) {
+  throw new Error('Image alt text is required. Use alt="" for decorative images.');
+}
+
+const base = src.replace(/\.[^/.]+$/, '');
+const avif = `${base}.avif`;
+const webp = `${base}.webp`;
+---
+<picture>
+  <source srcset={avif} type="image/avif" />
+  <source srcset={webp} type="image/webp" />
+  <img
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    loading={loading}
+    decoding={decoding}
+    sizes={sizes}
+    class={className}
+    fetchpriority={loading === 'eager' ? 'high' : undefined}
+  />
+</picture>
