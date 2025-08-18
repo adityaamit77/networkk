@@ -1,7 +1,6 @@
 ---
 import Heading from '../ui/Heading.astro';
 import Image from '../ui/Image.astro';
-import { getCollection } from 'astro:content';
 
 export interface Props {
   heading?: string;
@@ -11,22 +10,39 @@ export interface Props {
 
 const { heading, description, limit = 3 } = Astro.props as Props;
 
-// Use Astro content collections to get insights
-let posts: any[] = [];
-try {
-  const insights = await getCollection('insights');
-  posts = insights
-    .map(entry => ({
-      ...entry.data,
-      slug: entry.slug,
-      href: `/insights/${entry.slug}`
-    }))
-    .sort((a, b) => new Date(b.publishedAt || 0).getTime() - new Date(a.publishedAt || 0).getTime())
-    .slice(0, limit);
-} catch (e) {
-  console.error('Error loading insights:', e);
-  posts = [];
-}
+// Static insights data as fallback
+const posts = [
+  {
+    slug: 'cxo-trends-2025',
+    title: 'CXO Hiring Trends for 2025',
+    excerpt: 'Key trends shaping executive recruitment in the coming year.',
+    image: '/images/insight-cxo-trends.avif',
+    author: 'A. Sharma',
+    category: 'Leadership',
+    publishedAt: '2025-01-15T10:00:00Z',
+    href: '/insights/cxo-trends-2025'
+  },
+  {
+    slug: 'diversity-hiring-strategies',
+    title: 'Diversity Hiring Strategies',
+    excerpt: 'Building inclusive leadership teams with purpose.',
+    image: '/images/insight-diversity-hiring.avif',
+    author: 'Networkk Research Team',
+    category: 'Diversity',
+    publishedAt: '2025-01-15T10:00:00Z',
+    href: '/insights/diversity-hiring-strategies'
+  },
+  {
+    slug: 'resilient-teams-leadership',
+    title: 'Building Resilient Leadership Teams',
+    excerpt: 'How leaders can foster resilience in uncertain times.',
+    image: '/images/insight-resilient-teams.avif',
+    author: 'Networkk Research Team',
+    category: 'Leadership',
+    publishedAt: '2025-01-15T10:00:00Z',
+    href: '/insights/resilient-teams-leadership'
+  }
+].slice(0, limit);
 ---
 <section class="section bg-white">
   <div class="container">
