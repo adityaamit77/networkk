@@ -7,7 +7,12 @@
     "description": "Get in touch with Networkk's executive search and leadership advisory team. Schedule a consultation or learn more about our services.",
     "canonical": "https://networkk.com/contact/",
     "noindex": false,
-    "keywords": ["contact networkk", "executive search consultation", "leadership advisory contact", "schedule meeting"]
+    "keywords": [
+      "contact networkk",
+      "executive search consultation",
+      "leadership advisory contact",
+      "schedule meeting"
+    ]
   },
   "blocks": [
     {
@@ -26,88 +31,6 @@
         "textAlign": "center",
         "fullHeight": false,
         "overlay": true
-      }
-    },
-    {
-      "id": "contact-form-section",
-      "type": "ContactForm",
-      "props": {
-        "heading": "Get in Touch",
-        "description": "Fill out the form below and one of our executive search consultants will contact you within 24 hours.",
-        "fields": [
-          {
-            "name": "name",
-            "label": "Full Name",
-            "type": "text",
-            "required": true
-          },
-          {
-            "name": "email",
-            "label": "Email Address",
-            "type": "email",
-            "required": true
-          },
-          {
-            "name": "phone",
-            "label": "Phone Number",
-            "type": "tel",
-            "required": false
-          },
-          {
-            "name": "company",
-            "label": "Company Name",
-            "type": "text",
-            "required": true
-          },
-          {
-            "name": "jobTitle",
-            "label": "Job Title",
-            "type": "text",
-            "required": true
-          },
-          {
-            "name": "service",
-            "label": "Service of Interest",
-            "type": "select",
-            "required": true,
-            "options": [
-              {
-                "label": "Executive Search",
-                "value": "executive-search"
-              },
-              {
-                "label": "Leadership Advisory",
-                "value": "leadership-advisory"
-              },
-              {
-                "label": "Board Services",
-                "value": "board-services"
-              },
-              {
-                "label": "Diversity & Inclusion",
-                "value": "diversity-inclusion"
-              },
-              {
-                "label": "Other",
-                "value": "other"
-              }
-            ]
-          },
-          {
-            "name": "message",
-            "label": "How can we help?",
-            "type": "textarea",
-            "required": true
-          },
-          {
-            "name": "consent",
-            "label": "I consent to Networkk processing my data in accordance with the Privacy Policy.",
-            "type": "checkbox",
-            "required": true
-          }
-        ],
-        "submitLabel": "Submit Inquiry",
-        "successMessage": "Thank you for contacting Networkk. One of our consultants will be in touch with you shortly."
       }
     },
     {
@@ -180,6 +103,80 @@
       }
     },
     {
+      "id": "contact-form-section",
+      "type": "ContactForm",
+      "props": {
+        "heading": "Get in Touch",
+        "description": "Fill out the form below and one of our executive search consultants will contact you within 24 hours.",
+        "fields": [
+          {
+            "name": "name",
+            "label": "Full Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "email",
+            "label": "Email Address",
+            "type": "email",
+            "required": true
+          },
+          {
+            "name": "phone",
+            "label": "Phone Number",
+            "type": "tel",
+            "required": false
+          },
+          {
+            "name": "company",
+            "label": "Company Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "jobTitle",
+            "label": "Job Title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "service",
+            "label": "Service of Interest",
+            "type": "select",
+            "required": true,
+            "options": [
+              { "label": "Executive Search", "value": "executive-search" },
+              {
+                "label": "Leadership Advisory",
+                "value": "leadership-advisory"
+              },
+              { "label": "Board Services", "value": "board-services" },
+              {
+                "label": "Diversity & Inclusion",
+                "value": "diversity-inclusion"
+              },
+              { "label": "Other", "value": "other" }
+            ]
+          },
+          {
+            "name": "message",
+            "label": "How can we help?",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "name": "consent",
+            "label": "I consent to Networkk processing my data in accordance with the Privacy Policy.",
+            "type": "checkbox",
+            "required": true
+          }
+        ],
+        "submitLabel": "Submit Inquiry",
+        "successMessage": "Thank you for contacting Networkk. One of our consultants will be in touch with you shortly.",
+        "redirectTo": "/thank-you"
+      }
+    },
+    {
       "id": "faq-section",
       "type": "TilesGrid",
       "props": {
@@ -208,6 +205,17 @@
             "icon": "✓"
           }
         ]
+      }
+    },
+    {
+      "id": "final-cta-contact",
+      "type": "CTA",
+      "props": {
+        "heading": "Start Your Leadership Journey",
+        "description": "Discover how our services can help you build an exceptional team.",
+        "backgroundType": "gradient",
+        "primaryCta": { "label": "Explore Services", "href": "/services" },
+        "secondaryCta": { "label": "Why Choose Us", "href": "/why-choose-us" }
       }
     }
   ],

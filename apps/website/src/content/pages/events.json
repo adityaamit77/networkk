@@ -1,13 +1,18 @@
 {
   "slug": "events",
-  "title": "Events & Webinars", 
+  "title": "Events & Webinars",
   "status": "published",
   "seo": {
     "title": "Executive Leadership Events & Webinars - Networkk",
     "description": "Join Networkk's executive leadership events, webinars, and roundtables. Connect with industry leaders and gain insights on talent strategy.",
     "canonical": "https://networkk.com/events/",
     "noindex": false,
-    "keywords": ["executive leadership events", "talent webinars", "C-suite roundtables", "leadership conferences"]
+    "keywords": [
+      "executive leadership events",
+      "talent webinars",
+      "C-suite roundtables",
+      "leadership conferences"
+    ]
   },
   "blocks": [
     {
@@ -63,7 +68,7 @@
           },
           {
             "title": "Executive Roundtable: Diversity in Leadership",
-            "date": "2025-04-05", 
+            "date": "2025-04-05",
             "time": "3:00 PM - 5:00 PM SGT",
             "location": "Networkk Singapore Office, One Raffles Place",
             "description": "An exclusive roundtable discussion for C-suite executives on building diverse leadership teams. Share challenges, best practices, and innovative approaches to fostering inclusive leadership in your organization.",
@@ -85,7 +90,7 @@
           {
             "title": "Leadership Summit 2025: Navigating Uncertainty",
             "date": "2025-05-20",
-            "time": "9:00 AM - 5:00 PM IST", 
+            "time": "9:00 AM - 5:00 PM IST",
             "location": "Taj Lands End, Mumbai",
             "description": "Our annual leadership summit brings together 200+ C-suite executives, board members, and thought leaders for a day of insights, networking, and inspiration. This year's theme focuses on leading through uncertainty and building resilient organizations.",
             "speakers": [
@@ -140,7 +145,7 @@
     },
     {
       "id": "past-events",
-      "type": "EventsList", 
+      "type": "EventsList",
       "props": {
         "heading": "Past Events",
         "description": "Explore recordings and resources from our previous events and webinars.",
@@ -179,6 +184,17 @@
           }
         ],
         "showPastEvents": true
+      }
+    },
+    {
+      "id": "events-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Stay Informed",
+        "description": "Subscribe to our latest insights or reach out for custom events.",
+        "backgroundType": "gradient",
+        "primaryCta": { "label": "Subscribe", "href": "/insights" },
+        "secondaryCta": { "label": "Contact Us", "href": "/contact" }
       }
     }
   ]

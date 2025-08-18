@@ -23,15 +23,34 @@
       }
     },
     {
-      "id": "approach-timeline",
-      "type": "Timeline",
+      "id": "approach-intro",
+      "type": "RichText",
+      "props": {
+        "content": "<p>Our approach blends research, technology and human insight to deliver leadership that lasts. Learn more about <a href=\"/why-choose-us\">why clients trust us</a> and explore our latest <a href=\"/insights\">insights</a>.</p>"
+      }
+    },
+    {
+      "id": "approach-steps",
+      "type": "ProcessSteps",
       "props": {
         "heading": "How We Work",
-        "items": [
-          { "date": "Phase 1", "title": "Discovery", "description": "Align on goals, culture and role requirements." },
-          { "date": "Phase 2", "title": "Research", "description": "Map the market and identify qualified leaders." },
-          { "date": "Phase 3", "title": "Evaluation", "description": "Assess candidates through structured interviews." },
-          { "date": "Phase 4", "title": "Selection", "description": "Present shortlist and guide final selection." }
+        "steps": [
+          {
+            "title": "Discovery",
+            "description": "Align on goals, culture and role requirements."
+          },
+          {
+            "title": "Research",
+            "description": "Map the market and identify qualified leaders."
+          },
+          {
+            "title": "Evaluation",
+            "description": "Assess candidates through structured interviews."
+          },
+          {
+            "title": "Selection",
+            "description": "Present shortlist and guide final selection."
+          }
         ]
       }
     },
@@ -54,10 +73,8 @@
         "heading": "Experience the Networkk Difference",
         "description": "Partner with us for a collaborative hiring journey.",
         "backgroundType": "gradient",
-        "primaryCta": {
-          "label": "Get in Touch",
-          "href": "/contact"
-        }
+        "primaryCta": { "label": "Get in Touch", "href": "/contact" },
+        "secondaryCta": { "label": "Explore Services", "href": "/services" }
       }
     }
   ],
@@ -65,4 +82,3 @@
   "createdAt": "2025-01-15T10:00:00Z",
   "updatedAt": "2025-01-15T10:00:00Z"
 }
-
