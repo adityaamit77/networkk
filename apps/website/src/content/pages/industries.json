@@ -22,50 +22,70 @@
         "fullHeight": false
       }
     },
-    {
-      "id": "industry-grid",
-      "type": "TilesGrid",
-      "props": {
-        "heading": "Sector Coverage",
-        "description": "Specialized expertise across markets.",
-        "columns": "3",
-        "items": [
-          { "title": "Technology", "description": "Software, SaaS and digital platforms.", "icon": "\uD83D\uDCBB" },
-          { "title": "Healthcare", "description": "Hospitals, biotech and life sciences.", "icon": "\uD83E\uDDEA" },
-          { "title": "Financial Services", "description": "Banking, fintech and insurance.", "icon": "\uD83D\uDCB0" },
-          { "title": "Industrial", "description": "Manufacturing and automotive.", "icon": "\uD83D\uDEE0\uFE0F" },
-          { "title": "Consumer & Retail", "description": "Omnichannel and D2C brands.", "icon": "\uD83D\uDED2" },
-          { "title": "Energy", "description": "Traditional and renewable players.", "icon": "\u26A1\uFE0F" }
-        ]
-      }
-    },
-    {
-      "id": "client-logos",
-      "type": "LogosStrip",
-      "props": {
-        "heading": "Trusted by Leading Organizations",
-        "logos": [
-          { "name": "Client A", "image": "/images/placeholder.svg" },
-          { "name": "Client B", "image": "/images/placeholder.svg" },
-          { "name": "Client C", "image": "/images/placeholder.svg" },
-          { "name": "Client D", "image": "/images/placeholder.svg" }
-        ]
-      }
-    },
-    {
-      "id": "final-cta",
-      "type": "CTA",
-      "props": {
-        "heading": "Talk to an Industry Specialist",
-        "description": "Connect with our team for sector-specific insights.",
-        "backgroundType": "gradient",
-        "primaryCta": {
-          "label": "Contact Us",
-          "href": "/contact"
+      {
+        "id": "industry-grid",
+        "type": "TilesGrid",
+        "props": {
+          "heading": "Sector Coverage",
+          "description": "Specialized expertise across markets.",
+          "columns": "3",
+          "items": [
+            { "title": "Technology", "description": "Software, SaaS and digital platforms.", "icon": "\uD83D\uDCBB", "href": "/industries/technology" },
+            { "title": "Healthcare", "description": "Hospitals, biotech and life sciences.", "icon": "\uD83E\uDDEA", "href": "/industries/healthcare" },
+            { "title": "Financial Services", "description": "Banking, fintech and insurance.", "icon": "\uD83D\uDCB0", "href": "/industries/financial-services" },
+            { "title": "Industrial", "description": "Manufacturing and automotive.", "icon": "\uD83D\uDEE0\uFE0F", "href": "/industries/manufacturing" },
+            { "title": "Consumer & Retail", "description": "Omnichannel and D2C brands.", "icon": "\uD83D\uDED2", "href": "/industries/consumer-retail" },
+            { "title": "Energy", "description": "Traditional and renewable players.", "icon": "\u26A1\uFE0F", "href": "/industries/energy" },
+            { "title": "Education", "description": "Higher education and edtech providers.", "icon": "\uD83C\uDF93" },
+            { "title": "Government", "description": "Public sector agencies and PSUs.", "icon": "\uD83C\uDFDB\uFE0F" }
+          ]
+        }
+      },
+      {
+        "id": "industry-highlights",
+        "type": "RichText",
+        "props": {
+          "heading": "Highlights",
+          "content": "<ul><li>Deep sector expertise across 8+ industries</li><li>Specialist consultants with local and global networks</li><li>Proven track record with growth-stage and enterprise clients</li></ul>"
+        }
+      },
+      {
+        "id": "industry-casestudies",
+        "type": "CaseStudy",
+        "props": {
+          "heading": "Representative Success Stories",
+          "studies": [
+            {
+              "title": "Scaling a SaaS Unicorn",
+              "industry": "Technology",
+              "challenge": "Rapid global expansion required seasoned leadership.",
+              "solution": "Placed a VP Engineering with hyper-growth experience.",
+              "results": "Accelerated product delivery and doubled R&D capacity."
+            },
+            {
+              "title": "Digital Transformation in Healthcare",
+              "industry": "Healthcare",
+              "challenge": "Hospital network needed to modernize patient systems.",
+              "solution": "Recruited a CTO to lead multi-year transformation.",
+              "results": "Improved patient engagement and operational efficiency."
+            }
+          ]
+        }
+      },
+      {
+        "id": "final-cta",
+        "type": "CTA",
+        "props": {
+          "heading": "Talk to an Industry Specialist",
+          "description": "Connect with our team for sector-specific insights.",
+          "backgroundType": "gradient",
+          "primaryCta": {
+            "label": "Contact Us",
+            "href": "/contact"
+          }
         }
       }
-    }
-  ],
+    ],
   "publishedAt": "2025-01-15T10:00:00Z",
   "createdAt": "2025-01-15T10:00:00Z",
   "updatedAt": "2025-01-15T10:00:00Z"

@@ -2,13 +2,13 @@
   "slug": "industries/energy",
   "title": "Energy & Sustainability",
   "status": "published",
-  "seo": {
-    "title": "Energy & Sustainability Industry - Networkk",
-    "description": "Leaders driving the transition to a sustainable future.",
-    "canonical": "https://networkk.com/industries/energy/",
-    "noindex": false,
-    "keywords": ["energy", "sustainability", "renewables"]
-  },
+    "seo": {
+      "title": "Energy & Sustainability Industry - Networkk",
+      "description": "Strategic leadership for oil & gas, utilities and renewable innovators navigating the transition to a sustainable, low-carbon future across global markets.",
+      "canonical": "https://networkk.com/industries/energy/",
+      "noindex": false,
+      "keywords": ["energy", "sustainability", "renewables"]
+    },
   "blocks": [
     {
       "id": "hero-industry",

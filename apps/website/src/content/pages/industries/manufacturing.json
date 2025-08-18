@@ -2,13 +2,13 @@
   "slug": "industries/manufacturing",
   "title": "Manufacturing & Industrial",
   "status": "published",
-  "seo": {
-    "title": "Manufacturing & Industrial Industry - Networkk",
-    "description": "Leadership for advanced manufacturing and industrial firms.",
-    "canonical": "https://networkk.com/industries/manufacturing/",
-    "noindex": false,
-    "keywords": ["manufacturing", "industrial", "industry"]
-  },
+    "seo": {
+      "title": "Manufacturing & Industrial Industry - Networkk",
+      "description": "Executive talent for manufacturers and industrial enterprises optimizing supply chains, embracing automation and driving operational excellence.",
+      "canonical": "https://networkk.com/industries/manufacturing/",
+      "noindex": false,
+      "keywords": ["manufacturing", "industrial", "industry"]
+    },
   "blocks": [
     {
       "id": "hero-industry",
