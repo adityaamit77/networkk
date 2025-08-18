@@ -6,7 +6,7 @@
   "scripts": {
     "predev": "npm run prisma:generate",
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/seo-lint.mjs",
     "start": "next start",
     "lint": "next lint",
     "prisma": "prisma",
