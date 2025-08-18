@@ -65,3 +65,5 @@ uploads/
 # Generated files
 sitemap*.xml
 robots.txt
+!apps/website/public/robots.txt
+!apps/cms/public/robots.txt
