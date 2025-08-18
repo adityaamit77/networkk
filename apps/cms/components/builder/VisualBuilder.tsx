@@ -254,6 +254,51 @@ export default function VisualBuilder() {
     }
   };
 
+  const exportJSON = () => {
+    const json = JSON.stringify(blocks, null, 2);
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'content.json';
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const blocksToMDX = (items: BlockInstance[]) =>
+    items
+      .map((b) => {
+        switch (b.type) {
+          case 'image':
+            return `![${b.data.alt}](${b.data.url})`;
+          case 'text':
+            return b.data.asList
+              ? b.data.text
+                  .split('\n')
+                  .map((t: string) => `- ${t}`)
+                  .join('\n')
+              : b.data.text;
+          case 'cta':
+            return `[${b.data.text}](${b.data.url})`;
+          case 'hero':
+            return `## ${b.data.heading}\n${b.data.content ?? ''}`;
+          default:
+            return '';
+        }
+      })
+      .join('\n\n');
+
+  const exportMDX = () => {
+    const mdx = blocksToMDX(blocks);
+    const blob = new Blob([mdx], { type: 'text/markdown' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'content.mdx';
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
   const validateSEO = (items: BlockInstance[]) => {
     const errors: string[] = [];
     items.forEach((b, idx) => {
@@ -297,6 +342,20 @@ export default function VisualBuilder() {
             className="mt-2 w-full rounded bg-gray-200 px-2 py-1"
           >
             Load Snippet
+          </button>
+          <button
+            type="button"
+            onClick={exportJSON}
+            className="mt-2 w-full rounded bg-gray-200 px-2 py-1"
+          >
+            Export JSON
+          </button>
+          <button
+            type="button"
+            onClick={exportMDX}
+            className="mt-2 w-full rounded bg-gray-200 px-2 py-1"
+          >
+            Export MDX
           </button>
         </aside>
         <div className="flex-1" aria-label="Canvas" ref={setCanvasRef}>

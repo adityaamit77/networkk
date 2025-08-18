@@ -14,6 +14,8 @@ model User {
   passwordHash String
   role         String   @default("EDITOR") // ADMIN, EDITOR, AUTHOR, VIEWER
   createdAt    DateTime @default(now())
+  notifications          Notification[]
+  notificationPreferences NotificationPreference[]
 }
 
 model Page {
@@ -47,4 +49,48 @@ model Revision {
   snapshot   String   // JSON as string
   editorId   Int?
   createdAt  DateTime @default(now())
+}
+
+model NotificationTemplate {
+  id        Int      @id @default(autoincrement())
+  event     String   // PUBLISH_SUCCESS, PUBLISH_FAILURE, DUPLICATE_TITLE, BROKEN_LINK_REPORT, DAILY_DIGEST
+  channel   String   // EMAIL, SMS, WEBHOOK, IN_APP
+  subject   String?
+  body      String
+  createdAt DateTime @default(now())
+  notifications Notification[]
+}
+
+model Notification {
+  id          Int      @id @default(autoincrement())
+  userId      Int?
+  templateId  Int
+  event       String   // PUBLISH_SUCCESS, PUBLISH_FAILURE, DUPLICATE_TITLE, BROKEN_LINK_REPORT, DAILY_DIGEST
+  channel     String   // EMAIL, SMS, WEBHOOK, IN_APP
+  data        String   // JSON as string
+  sentAt      DateTime @default(now())
+  readAt      DateTime?
+  status      String?
+  user        User?    @relation(fields: [userId], references: [id])
+  template    NotificationTemplate @relation(fields: [templateId], references: [id])
+  audits      NotificationAudit[]
+}
+
+model NotificationPreference {
+  id       Int     @id @default(autoincrement())
+  userId   Int
+  event    String  // PUBLISH_SUCCESS, PUBLISH_FAILURE, DUPLICATE_TITLE, BROKEN_LINK_REPORT, DAILY_DIGEST
+  channel  String  // EMAIL, SMS, WEBHOOK, IN_APP
+  enabled  Boolean @default(true)
+  user     User    @relation(fields: [userId], references: [id])
+  @@unique([userId, event, channel])
+}
+
+model NotificationAudit {
+  id             Int      @id @default(autoincrement())
+  notificationId Int?
+  event          String   // PUBLISH_SUCCESS, PUBLISH_FAILURE, DUPLICATE_TITLE, BROKEN_LINK_REPORT, DAILY_DIGEST
+  message        String
+  createdAt      DateTime @default(now())
+  notification   Notification? @relation(fields: [notificationId], references: [id])
 }
