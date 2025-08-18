@@ -42,6 +42,18 @@ This document tracks the implementation progress of the Networkk platform. Statu
 ## Phases 4–11 – CMS Development
 - Next.js CMS application, Prisma models, API contracts, admin UI, visual builder, media management, publishing pipeline, workflow & QA ⏳
 
+### Phase 7 – Visual Builder (Drag-and-Drop)
+- Ensure blocks cannot output `<h1>`; page templates own the primary heading.
+- Block inspector requires a section heading (`<h2>`) unless decorative.
+- Images require descriptive alt text; caption/credit fields remain optional.
+- Provide semantic toggles for rich text (e.g., list vs paragraph).
+- Add pre-publish SEO validation (“SEO Gate”).
+
+### Phase 8 – Media Management
+- Transform uploads to modern formats (AVIF/WebP) and support focal point selection.
+- Pre-fill descriptive filenames from titles with ability to edit.
+- Image metadata fields: **alt** (required), caption, credit, and license.
+
 ## Phase 12 – Notifications System
 - Notification templates, delivery channels, preferences, audit trail ⏳
 
