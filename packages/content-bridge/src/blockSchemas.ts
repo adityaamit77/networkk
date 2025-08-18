@@ -8,6 +8,13 @@ export const SEOSchema = z.object({
   noindex: z.boolean().default(false),
   image: z.string().url().optional(),
   keywords: z.array(z.string()).optional(),
+  og: z
+    .object({
+      title: z.string().optional(),
+      description: z.string().optional(),
+      image: z.string().url().optional(),
+    })
+    .optional(),
 });
 
 // Block Layout Schema
@@ -105,30 +112,23 @@ export const CTASchema = z.object({
   backgroundType: z.enum(['solid', 'gradient']).default('solid'),
 });
 
-// Block Instance Schema
-export const BlockInstanceSchemaBase: z.ZodType<any> = BaseBlockSchema.extend({
-  type: z.enum([
-    'Hero',
-    'TilesGrid', 
-    'Testimonials',
-    'MetricsBand',
-    'FAQ',
-    'CTA',
-    'InsightsPreview',
-    'LogosStrip',
-    'Timeline',
-    'CaseStudyList',
-  ]),
-  props: z.any(), // Will be validated by specific block schema
-  children: z.array(z.lazy(() => BlockInstanceSchema)).optional(),
-});
-
 // Page Schema
 export const PageSchema = z.object({
   slug: z.string().regex(/^[a-z0-9-]+$/),
   title: z.string().min(10).max(90),
   status: z.enum(['draft', 'review', 'published', 'archived']).default('draft'),
   seo: SEOSchema,
+  breadcrumbs: z
+    .array(
+      z.object({ label: z.string(), href: z.string().url() })
+    )
+    .default([]),
+  robots: z
+    .object({
+      index: z.boolean().default(true),
+      follow: z.boolean().default(true),
+    })
+    .optional(),
   blocks: z.array(z.lazy(() => BlockInstanceSchema)),
   publishedAt: z.date().optional(),
   createdAt: z.date(),
@@ -322,7 +322,7 @@ export const FilterableGridSchema = z.object({
 export const BlockInstanceSchema: z.ZodType = BaseBlockSchema.extend({
   type: z.enum([
     'Hero',
-    'TilesGrid', 
+    'TilesGrid',
     'Testimonials',
     'MetricsBand',
     'FAQ',
@@ -339,7 +339,25 @@ export const BlockInstanceSchema: z.ZodType = BaseBlockSchema.extend({
     'EventsList',
     'FilterableGrid'
   ]),
+  heading: z.string().optional(),
   props: z.any(), // Will be validated by specific block schema
+  media: z
+    .object({
+      image: z.string().url(),
+      alt: z.string(),
+      caption: z.string().optional(),
+      credit: z.string().optional(),
+    })
+    .optional(),
+  ctas: z
+    .array(
+      z.object({
+        label: z.string(),
+        href: z.string(),
+      })
+    )
+    .optional(),
+  analyticsId: z.string().optional(),
   children: z.array(z.lazy(() => BlockInstanceSchema)).optional(),
 });
 

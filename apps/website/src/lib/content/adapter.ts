@@ -88,26 +88,27 @@ export async function getSiteConfig() {
     favicon: '/favicon.svg',
     navigation: {
       header: [
+        { label: 'Home', href: '/' },
         { label: 'Services', href: '/services' },
-        // { label: 'Executive Search', href: '/executive-search' },
-        // { label: 'Leadership Hiring', href: '/leadership-hiring' },
-        // { label: 'Talent Advisory', href: '/talent-advisory' },
-        // { label: 'D&I Consulting', href: '/diversity-inclusion' },
-        // { label: 'Career Transition', href: '/career-transition' },
         { label: 'Industries', href: '/industries' },
         { label: 'Insights', href: '/insights' },
-        { label: 'Our Approach', href: '/our-approach' },
-        { label: 'Case Studies', href: '/case-studies' },
-        { label: 'Team', href: '/team' },
-        { label: 'Careers', href: '/careers' },
+        { label: 'Success Stories', href: '/success-stories' },
+        { label: 'About', href: '/about' },
         { label: 'Contact', href: '/contact', cta: true }
       ],
       footer: [
         { label: 'Executive Search', href: '/services/executive-search' },
         { label: 'Leadership Hiring', href: '/services/leadership-hiring' },
+        { label: 'Talent Advisory', href: '/services/talent-advisory' },
+        { label: 'Career Transition', href: '/services/career-transition' },
         { label: 'Our Approach', href: '/our-approach' },
-        { label: 'Success Stories', href: '/success-stories' },
-        { label: 'Careers', href: '/careers' }
+        { label: 'Why Choose Us', href: '/why-choose-us' },
+        { label: 'Events', href: '/events' },
+        { label: 'Partner With Us', href: '/partner-with-us' },
+        { label: 'Careers', href: '/careers' },
+        { label: 'Privacy', href: '/privacy' },
+        { label: 'Terms', href: '/terms' },
+        { label: 'Sitemap', href: '/sitemap' }
       ]
     },
     social: {

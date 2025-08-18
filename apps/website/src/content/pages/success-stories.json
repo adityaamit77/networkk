@@ -1,0 +1,26 @@
+{
+  "slug": "success-stories",
+  "title": "Success Stories",
+  "status": "published",
+  "seo": {
+    "title": "Success Stories - Networkk",
+    "description": "Real-world leadership hires delivering measurable impact across industries.",
+    "canonical": "https://networkk.com/success-stories/",
+    "noindex": false
+  },
+  "blocks": [
+    {
+      "id": "hero-success",
+      "type": "Hero",
+      "props": {
+        "title": "See How We've Delivered Success",
+        "subtitle": "Client Success Stories",
+        "backgroundType": "gradient",
+        "textAlign": "center"
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T10:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}
