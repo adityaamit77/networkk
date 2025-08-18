@@ -25,13 +25,31 @@ if (alt === undefined) {
   throw new Error('Image alt text is required. Use alt="" for decorative images.');
 }
 
+// Check if this is a local image that should be optimized
+const isLocalImage = src.startsWith('/') && !src.startsWith('//');
+
 const base = src.replace(/\.[^/.]+$/, '');
 const avif = `${base}.avif`;
 const webp = `${base}.webp`;
 ---
-<picture>
-  <source srcset={avif} type="image/avif" />
-  <source srcset={webp} type="image/webp" />
+
+{isLocalImage ? (
+  <picture>
+    <source srcset={avif} type="image/avif" />
+    <source srcset={webp} type="image/webp" />
+    <img
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      loading={loading}
+      decoding={decoding}
+      sizes={sizes}
+      class={className}
+      fetchpriority={loading === 'eager' ? 'high' : undefined}
+    />
+  </picture>
+) : (
   <img
     src={src}
     alt={alt}
@@ -43,4 +61,4 @@ const webp = `${base}.webp`;
     class={className}
     fetchpriority={loading === 'eager' ? 'high' : undefined}
   />
-</picture>
+)}

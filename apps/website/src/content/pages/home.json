@@ -18,7 +18,7 @@
         "subtitle": "Executive Search Excellence",
         "description": "We connect forward-thinking companies with visionary executives who drive sustainable growth, innovation, and lasting change across industries.",
         "media": {
-          "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "image": "/images/hero-main.jpg",
           "alt": "Professional executive team meeting in contemporary office",
           "ratio": "16:9"
         },
@@ -53,28 +53,28 @@
             "description": "Find C-suite and senior leadership talent who align with your vision and drive transformational growth through proven methodologies.",
             "icon": "🎯",
             "href": "/executive-search",
-            "image": "https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/service-executive-search.jpg"
           },
           {
             "title": "Leadership Hiring",
             "description": "Strategic recruitment for directors, VPs, and emerging leaders who will shape your organization's future and cultural evolution.",
             "icon": "👥",
             "href": "/leadership-hiring",
-            "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/service-leadership-hiring.jpg"
           },
           {
             "title": "Talent Advisory",
             "description": "Strategic guidance on leadership development, succession planning, and organizational design for sustainable competitive advantage.",
             "icon": "💡",
             "href": "/talent-advisory",
-            "image": "https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/service-talent-advisory.jpg"
           },
           {
             "title": "D&I Consulting",
             "description": "Build diverse, inclusive leadership teams that reflect your values, drive innovation, and create lasting organizational change.",
             "icon": "🌟",
             "href": "/diversity-inclusion",
-            "image": "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/service-diversity-inclusion.jpg"
           }
         ]
       }
@@ -89,37 +89,37 @@
           {
             "title": "Technology & Software",
             "description": "From AI pioneers to established tech giants, we understand the unique leadership challenges in rapidly evolving digital landscapes.",
-            "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "image": "/images/hero-main.jpg",
             "href": "/industries/technology"
           },
           {
             "title": "Financial Services",
             "description": "Banking, fintech, investment management, and insurance leaders who navigate complex regulatory environments with vision.",
-            "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "image": "/images/service-leadership-hiring.jpg",
             "href": "/industries/financial-services"
           },
           {
             "title": "Healthcare & Life Sciences",
             "description": "Pharmaceutical, biotech, medical device, and healthcare service leaders driving innovation in patient care and outcomes.",
-            "image": "https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "image": "/images/service-talent-advisory.jpg",
             "href": "/industries/healthcare"
           },
           {
             "title": "Manufacturing & Industrial",
             "description": "Leaders who transform traditional manufacturing through Industry 4.0, sustainability, and operational excellence.",
-            "image": "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "image": "/images/service-diversity-inclusion.jpg",
             "href": "/industries/manufacturing"
           },
           {
             "title": "Consumer & Retail",
             "description": "E-commerce, traditional retail, and consumer goods leaders navigating omnichannel transformations and evolving consumer behavior.",
-            "image": "https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "image": "/images/service-executive-search.jpg",
             "href": "/industries/consumer-retail"
           },
           {
             "title": "Energy & Sustainability",
             "description": "Renewable energy, oil & gas, and sustainability leaders driving the transition to a more sustainable future.",
-            "image": "https://images.pexels.com/photos/3184432/pexels-photo-3184432.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "image": "/images/industry-energy.jpg",
             "href": "/industries/energy"
           }
         ],
@@ -229,19 +229,19 @@
           {
             "title": "2025 CXO Hiring Trends",
             "description": "What top firms are doing differently in executive recruitment and the skills that matter most in the next decade.",
-            "image": "https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "image": "/images/insight-cxo-trends.jpg",
             "href": "/insights/cxo-hiring-trends-2025"
           },
           {
             "title": "Building Resilient Leadership Teams",
             "description": "How forward-thinking organizations are structuring leadership for uncertainty and rapid change.",
-            "image": "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "image": "/images/insight-resilient-teams.jpg",
             "href": "/insights/resilient-leadership-teams"
           },
           {
             "title": "Diversity in Executive Hiring",
             "description": "Best practices for building inclusive leadership teams that drive innovation and performance.",
-            "image": "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+            "image": "/images/insight-diversity-hiring.jpg",
             "href": "/insights/diversity-executive-hiring"
           }
         ]
