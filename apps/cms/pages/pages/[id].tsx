@@ -10,7 +10,7 @@ import { requireAuth } from '../../lib/auth';
 interface PageData {
   title: string;
   content: string;
-  seo: { title: string; description: string };
+  seo: { title: string; description: string; canonical: string };
 }
 
 export default function PageEditor() {
@@ -20,7 +20,7 @@ export default function PageEditor() {
   const [data, setData] = useState<PageData>({
     title: '',
     content: '',
-    seo: { title: '', description: '' }
+    seo: { title: '', description: '', canonical: '' }
   });
 
   useEffect(() => {
@@ -33,7 +33,8 @@ export default function PageEditor() {
           content: json.blocks ? JSON.stringify(json.blocks, null, 2) : '',
           seo: {
             title: json.seo?.title ?? '',
-            description: json.seo?.description ?? ''
+            description: json.seo?.description ?? '',
+            canonical: json.seo?.canonical ?? ''
           }
         });
         setLoading(false);
