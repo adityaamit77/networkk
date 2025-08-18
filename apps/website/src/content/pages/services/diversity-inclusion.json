@@ -36,10 +36,26 @@
       "props": {
         "heading": "Consulting Methodology",
         "steps": [
-          {"number": 1, "title": "Audit", "description": "Review current policies and representation."},
-          {"number": 2, "title": "Strategy", "description": "Set goals and define measurable outcomes."},
-          {"number": 3, "title": "Implementation", "description": "Launch programs and inclusive hiring practices."},
-          {"number": 4, "title": "Measurement", "description": "Track progress and refine initiatives."}
+          {
+            "number": 1,
+            "title": "Audit",
+            "description": "Review current policies and representation."
+          },
+          {
+            "number": 2,
+            "title": "Strategy",
+            "description": "Set goals and define measurable outcomes."
+          },
+          {
+            "number": 3,
+            "title": "Implementation",
+            "description": "Launch programs and inclusive hiring practices."
+          },
+          {
+            "number": 4,
+            "title": "Measurement",
+            "description": "Track progress and refine initiatives."
+          }
         ]
       }
     },
@@ -49,8 +65,14 @@
       "props": {
         "heading": "Confidentiality & Ethics",
         "items": [
-          {"question": "Is employee feedback anonymous?", "answer": "Yes, survey responses and interviews are aggregated to protect identities."},
-          {"question": "Do you ensure unbiased research?", "answer": "Our consultants follow strict protocols to minimize bias in data collection."}
+          {
+            "question": "Is employee feedback anonymous?",
+            "answer": "Yes, survey responses and interviews are aggregated to protect identities."
+          },
+          {
+            "question": "Do you ensure unbiased research?",
+            "answer": "Our consultants follow strict protocols to minimize bias in data collection."
+          }
         ]
       }
     },
@@ -60,9 +82,9 @@
       "props": {
         "heading": "Impact Metrics",
         "items": [
-          {"value": "40%", "label": "Leadership Diversity Increase"},
-          {"value": "3x", "label": "Retention Improvement"},
-          {"value": "25", "label": "Countries Served"}
+          { "value": "40%", "label": "Leadership Diversity Increase" },
+          { "value": "3x", "label": "Retention Improvement" },
+          { "value": "25", "label": "Countries Served" }
         ]
       }
     },
@@ -74,12 +96,24 @@
         "items": [
           {
             "quote": "Working with Networkk transformed our approach to inclusion across the leadership team.",
-            "author": {"name": "Michael Wong", "title": "Managing Director", "company": "Horizon Financial"},
+            "author": {
+              "name": "Michael Wong",
+              "title": "Managing Director",
+              "company": "Horizon Financial"
+            },
             "rating": 5
           }
         ],
         "layout": "carousel",
         "slider": true
+      }
+    },
+    {
+      "id": "related-links",
+      "type": "RichText",
+      "props": {
+        "heading": "Explore More",
+        "content": "<p>See how we helped a <a href='/success-stories/tech-scale-up'>tech scale-up</a> accelerate growth and discover our <a href='/industries/technology'>technology industry expertise</a>. Ready to start? <a href='/contact'>Contact us</a>.</p>"
       }
     },
     {
@@ -89,7 +123,7 @@
         "heading": "Start Your D&I Journey",
         "description": "Partner with us to embed inclusion across your organization.",
         "backgroundType": "gradient",
-        "primaryCta": {"label": "Request Consultation", "href": "/contact"}
+        "primaryCta": { "label": "Request Consultation", "href": "/contact" }
       }
     }
   ],

@@ -36,10 +36,26 @@
       "props": {
         "heading": "Methodology",
         "steps": [
-          {"number": 1, "title": "Briefing", "description": "Deep dive into organizational goals and role requirements."},
-          {"number": 2, "title": "Research", "description": "Comprehensive market mapping and candidate outreach."},
-          {"number": 3, "title": "Assessment", "description": "Behavioral and competency-based evaluation of shortlisted leaders."},
-          {"number": 4, "title": "Selection", "description": "Presentation of finalists and support through offer negotiation."}
+          {
+            "number": 1,
+            "title": "Briefing",
+            "description": "Deep dive into organizational goals and role requirements."
+          },
+          {
+            "number": 2,
+            "title": "Research",
+            "description": "Comprehensive market mapping and candidate outreach."
+          },
+          {
+            "number": 3,
+            "title": "Assessment",
+            "description": "Behavioral and competency-based evaluation of shortlisted leaders."
+          },
+          {
+            "number": 4,
+            "title": "Selection",
+            "description": "Presentation of finalists and support through offer negotiation."
+          }
         ]
       }
     },
@@ -49,8 +65,14 @@
       "props": {
         "heading": "Confidentiality & Ethics",
         "items": [
-          {"question": "How do you ensure confidentiality?", "answer": "We approach candidates discreetly and protect client identity throughout the process."},
-          {"question": "Do you recruit from existing clients?", "answer": "No. We maintain off-limits agreements to avoid conflicts of interest."}
+          {
+            "question": "How do you ensure confidentiality?",
+            "answer": "We approach candidates discreetly and protect client identity throughout the process."
+          },
+          {
+            "question": "Do you recruit from existing clients?",
+            "answer": "No. We maintain off-limits agreements to avoid conflicts of interest."
+          }
         ]
       }
     },
@@ -60,9 +82,9 @@
       "props": {
         "heading": "Search Success Metrics",
         "items": [
-          {"value": "98%", "label": "Placement Completion"},
-          {"value": "45", "label": "Days to Shortlist"},
-          {"value": "95%", "label": "Two-Year Retention"}
+          { "value": "98%", "label": "Placement Completion" },
+          { "value": "45", "label": "Days to Shortlist" },
+          { "value": "95%", "label": "Two-Year Retention" }
         ]
       }
     },
@@ -74,12 +96,24 @@
         "items": [
           {
             "quote": "Networkk delivered exceptional candidates quickly and professionally.",
-            "author": {"name": "Anita Patel", "title": "CEO", "company": "TechNova"},
+            "author": {
+              "name": "Anita Patel",
+              "title": "CEO",
+              "company": "TechNova"
+            },
             "rating": 5
           }
         ],
         "layout": "carousel",
         "slider": true
+      }
+    },
+    {
+      "id": "related-links",
+      "type": "RichText",
+      "props": {
+        "heading": "Explore More",
+        "content": "<p>See how we helped a <a href='/success-stories/tech-scale-up'>tech scale-up</a> accelerate growth and discover our <a href='/industries/technology'>technology industry expertise</a>. Ready to start? <a href='/contact'>Contact us</a>.</p>"
       }
     },
     {
@@ -89,7 +123,7 @@
         "heading": "Request a Search Consultation",
         "description": "Connect with our team to begin your executive search journey.",
         "backgroundType": "gradient",
-        "primaryCta": {"label": "Request Consultation", "href": "/contact"}
+        "primaryCta": { "label": "Request Consultation", "href": "/contact" }
       }
     }
   ],

@@ -7,7 +7,11 @@
     "description": "Strategic guidance on leadership development, succession planning, and organizational capability building to ensure sustainable business growth.",
     "canonical": "https://networkk.com/services/talent-advisory/",
     "noindex": false,
-    "keywords": ["talent advisory", "succession planning", "leadership development"]
+    "keywords": [
+      "talent advisory",
+      "succession planning",
+      "leadership development"
+    ]
   },
   "blocks": [
     {
@@ -36,10 +40,26 @@
       "props": {
         "heading": "Our Methodology",
         "steps": [
-          {"number": 1, "title": "Assessment", "description": "Analyze existing leadership strengths and gaps."},
-          {"number": 2, "title": "Planning", "description": "Design succession and development roadmaps."},
-          {"number": 3, "title": "Implementation", "description": "Facilitate coaching and training programs."},
-          {"number": 4, "title": "Review", "description": "Measure progress and refine strategy."}
+          {
+            "number": 1,
+            "title": "Assessment",
+            "description": "Analyze existing leadership strengths and gaps."
+          },
+          {
+            "number": 2,
+            "title": "Planning",
+            "description": "Design succession and development roadmaps."
+          },
+          {
+            "number": 3,
+            "title": "Implementation",
+            "description": "Facilitate coaching and training programs."
+          },
+          {
+            "number": 4,
+            "title": "Review",
+            "description": "Measure progress and refine strategy."
+          }
         ]
       }
     },
@@ -49,8 +69,14 @@
       "props": {
         "heading": "Confidentiality & Ethics",
         "items": [
-          {"question": "Are assessments private?", "answer": "Yes, individual results are shared only with authorized stakeholders."},
-          {"question": "Do you use standardized tools?", "answer": "We combine validated instruments with bespoke evaluation."}
+          {
+            "question": "Are assessments private?",
+            "answer": "Yes, individual results are shared only with authorized stakeholders."
+          },
+          {
+            "question": "Do you use standardized tools?",
+            "answer": "We combine validated instruments with bespoke evaluation."
+          }
         ]
       }
     },
@@ -60,9 +86,9 @@
       "props": {
         "heading": "Advisory Impact",
         "items": [
-          {"value": "80%", "label": "Bench Strength Improved"},
-          {"value": "150", "label": "Leaders Assessed"},
-          {"value": "12", "label": "Weeks Avg. Engagement"}
+          { "value": "80%", "label": "Bench Strength Improved" },
+          { "value": "150", "label": "Leaders Assessed" },
+          { "value": "12", "label": "Weeks Avg. Engagement" }
         ]
       }
     },
@@ -74,12 +100,24 @@
         "items": [
           {
             "quote": "Their insights reshaped our succession planning and leadership culture.",
-            "author": {"name": "Elena Garcia", "title": "COO", "company": "MedSys"},
+            "author": {
+              "name": "Elena Garcia",
+              "title": "COO",
+              "company": "MedSys"
+            },
             "rating": 5
           }
         ],
         "layout": "carousel",
         "slider": true
+      }
+    },
+    {
+      "id": "related-links",
+      "type": "RichText",
+      "props": {
+        "heading": "Explore More",
+        "content": "<p>See how we helped a <a href='/success-stories/tech-scale-up'>tech scale-up</a> accelerate growth and discover our <a href='/industries/technology'>technology industry expertise</a>. Ready to start? <a href='/contact'>Contact us</a>.</p>"
       }
     },
     {
@@ -89,7 +127,7 @@
         "heading": "Explore Advisory Services",
         "description": "See how strategic guidance can strengthen your leadership.",
         "backgroundType": "gradient",
-        "primaryCta": {"label": "Talk to an Advisor", "href": "/contact"}
+        "primaryCta": { "label": "Talk to an Advisor", "href": "/contact" }
       }
     }
   ],

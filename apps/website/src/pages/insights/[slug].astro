@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { loadInsightBySlug } from '../../lib/content/adapter';
-import { createArticleSchema } from '../../lib/seo';
+import { createArticleSchema, createBreadcrumbSchema } from '../../lib/seo';
+import { trackEvent } from '../../lib/analytics';
 
 export async function getStaticPaths() {
   const modules = import.meta.glob('../../content/insights/*.{json,mdx}', { eager: true });
@@ -50,6 +51,12 @@ const relatedServices = Object.entries(serviceModules)
   })
   .slice(0, 2);
 
+const csModules = import.meta.glob('../../content/case-studies/*.mdx', { eager: true });
+const csEntry = Object.entries(csModules)[0];
+const relatedCaseStudy = csEntry
+  ? { title: (csEntry[1] as any).frontmatter.title, slug: csEntry[0].replace('../../content/case-studies/', '').replace('.mdx','') }
+  : null;
+
 const articleSchema = createArticleSchema({
   headline: insight.title,
   description: insight.seo.description,
@@ -59,6 +66,12 @@ const articleSchema = createArticleSchema({
   url: insight.seo.canonical,
   image: insight.image
 });
+
+const breadcrumbSchema = createBreadcrumbSchema([
+  { name: 'Home', url: 'https://networkk.com/' },
+  { name: 'Insights', url: 'https://networkk.com/insights/' },
+  { name: insight.title, url: insight.seo.canonical }
+]);
 ---
 <BaseLayout
   title={insight.seo.title}
@@ -77,7 +90,11 @@ const articleSchema = createArticleSchema({
     <h2 class="text-2xl font-bold mb-6">Related Insights</h2>
     <div class="grid gap-8 md:grid-cols-3">
       {relatedInsights.map(ri => (
-        <a href={`/insights/${ri.slug}`} class="block border rounded-lg p-4 hover:shadow">
+        <a
+          href={`/insights/${ri.slug}`}
+          class="block border rounded-lg p-4 hover:shadow"
+          on:click={() => trackEvent('insight_card_click', { slug: ri.slug })}
+        >
           <h3 class="font-semibold mb-2">{ri.title}</h3>
           {ri.excerpt && <p class="text-sm text-gray-600">{ri.excerpt}</p>}
         </a>
@@ -94,9 +111,28 @@ const articleSchema = createArticleSchema({
     </ul>
   </section>
 
+  {relatedCaseStudy && (
+    <section class="container mx-auto px-4 py-12">
+      <h2 class="text-2xl font-bold mb-6">Case Study</h2>
+      <a
+        href={`/success-stories/${relatedCaseStudy.slug}`}
+        class="text-blue-600 hover:underline"
+      >
+        {relatedCaseStudy.title}
+      </a>
+    </section>
+  )}
+
   <section class="container mx-auto px-4 py-12 text-center">
-    <a href="/contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-md">Talk to Us</a>
+    <a
+      href="/contact"
+      class="inline-block bg-blue-600 text-white px-6 py-3 rounded-md"
+      on:click={() => trackEvent('cta_click', { label: 'Talk to Us', href: '/contact' })}
+    >
+      Talk to Us
+    </a>
   </section>
 
   <script type="application/ld+json">{articleSchema}</script>
+  <script type="application/ld+json">{breadcrumbSchema}</script>
 </BaseLayout>
