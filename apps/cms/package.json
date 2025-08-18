@@ -13,6 +13,7 @@
     "prisma:migrate": "prisma migrate dev",
     "prisma:generate": "prisma generate",
     "type-check": "tsc --noEmit",
+    "digest": "node scripts/daily-digest.mjs",
     "clean": "rmdir /s /q .next 2>nul || echo .next directory cleaned"
   },
   "dependencies": {
