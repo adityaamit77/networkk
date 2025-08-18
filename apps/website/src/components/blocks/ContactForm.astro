@@ -149,26 +149,23 @@ const {
   </div>
 </section>
 
-<script>
+<script is:inline>
   // Simple form handling
-  const form = document.getElementById('contact-form');
-  const successMessage = document.getElementById('form-success');
-  const redirectTo = {JSON.stringify(redirectTo)};
-  
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      
-      // In a real implementation, you would send the form data to your backend
-      if (redirectTo) {
-        window.location.href = redirectTo;
-        return;
-      }
-      // For now, we'll just show the success message
-      if (successMessage) {
-        successMessage.classList.remove('hidden');
-        (form as HTMLFormElement).reset();
-      }
-    });
-  }
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contact-form');
+    const successMessage = document.getElementById('form-success');
+    
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // In a real implementation, you would send the form data to your backend
+        // For now, we'll just show the success message
+        if (successMessage) {
+          successMessage.classList.remove('hidden');
+          form.reset();
+        }
+      });
+    }
+  });
 </script>
