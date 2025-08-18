@@ -1,6 +1,7 @@
 ---
 import Heading from '../ui/Heading.astro';
 import Image from '../ui/Image.astro';
+import { getCollection } from 'astro:content';
 
 export interface Props {
   heading?: string;
@@ -9,22 +10,23 @@ export interface Props {
 }
 
 const { heading, description, limit = 3 } = Astro.props as Props;
-let modules: Record<string, any> = {};
-try {
-  modules = await Astro.glob('../../content/insights/*.{json,mdx}');
-} catch (e) {
-  modules = {};
-}
 
-const posts = Object.entries(modules)
-  .map(([path, mod]) => {
-    const slug = path.replace('../../content/insights/', '').replace(/\.(json|mdx)$/,'');
-    const data = path.endsWith('.mdx') ? mod.frontmatter : mod.default || mod;
-    return { ...data, slug };
-  })
-  .filter(Boolean)
-  .sort((a, b) => new Date(b.publishedAt || 0).getTime() - new Date(a.publishedAt || 0).getTime())
-  .slice(0, limit);
+// Use Astro content collections to get insights
+let posts: any[] = [];
+try {
+  const insights = await getCollection('insights');
+  posts = insights
+    .map(entry => ({
+      ...entry.data,
+      slug: entry.slug,
+      href: `/insights/${entry.slug}`
+    }))
+    .sort((a, b) => new Date(b.publishedAt || 0).getTime() - new Date(a.publishedAt || 0).getTime())
+    .slice(0, limit);
+} catch (e) {
+  console.error('Error loading insights:', e);
+  posts = [];
+}
 ---
 <section class="section bg-white">
   <div class="container">
