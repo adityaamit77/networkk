@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/blocks/Hero.astro';
+import MetricsBand from '../../components/blocks/MetricsBand.astro';
+import CTA from '../../components/blocks/CTA.astro';
+
+export async function getStaticPaths() {
+  const modules = import.meta.glob('../../content/case-studies/*.mdx', { eager: true });
+  return Object.keys(modules).map((path) => ({
+    params: { slug: path.replace('../../content/case-studies/', '').replace('.mdx', '') }
+  }));
+}
+
+const slug = Astro.params.slug as string;
+const module = await import(`../../content/case-studies/${slug}.mdx`);
+const { frontmatter } = module as any;
+const Content = module.default;
+const cs = frontmatter;
+---
+<BaseLayout
+  title={cs.seo.title}
+  description={cs.seo.description}
+  canonical={cs.seo.canonical}
+  noindex={cs.seo.noindex}
+  image={cs.hero?.image}
+>
+  <Hero
+    title={cs.hero?.title || cs.title}
+    subtitle={cs.title}
+    media={cs.hero?.image && { image: cs.hero.image, alt: cs.hero.title }}
+    backgroundType="image"
+    textAlign="left"
+    fullHeight={false}
+  />
+  <h1 class="sr-only">{cs.title}</h1>
+
+  <section class="section">
+    <div class="container max-w-3xl">
+      <div class="flex gap-4 text-sm mb-6">
+        <a href={`/industries/${cs.industry}`} class="text-primary-600 hover:underline capitalize">{cs.industry.replace('-', ' ')}</a>
+        <a href={`/services/${cs.service}`} class="text-primary-600 hover:underline capitalize">{cs.service.replace('-', ' ')}</a>
+      </div>
+      <h2 class="text-2xl font-bold mb-4">Challenge</h2>
+      <p class="text-gray-700">{cs.challenge}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container prose max-w-3xl">
+      <h2>Approach</h2>
+      <Content />
+    </div>
+  </section>
+
+  <MetricsBand heading="Results" items={cs.results} />
+
+  {cs.quote && (
+    <section class="section bg-gray-50">
+      <div class="container max-w-3xl text-center">
+        <blockquote class="text-xl italic mb-4">"{cs.quote.text}"</blockquote>
+        <p class="font-semibold text-gray-900">{cs.quote.author}</p>
+      </div>
+    </section>
+  )}
+
+  <CTA
+    heading="Ready to build your leadership team?"
+    primaryCta={{ label: 'Contact Us', href: '/contact' }}
+    backgroundType="gradient"
+  />
+</BaseLayout>
