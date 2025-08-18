@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /api/chat
+Disallow: /api/upload
+Disallow: /transcripts
