@@ -23,22 +23,18 @@
       }
     },
     {
-      "id": "insights-preview",
-      "type": "InsightsPreview",
+      "id": "featured-insight",
+      "type": "FeaturedInsight",
       "props": {
-        "heading": "Latest Articles",
-        "description": "Research and perspectives from our consultants."
+        "heading": "Featured Insight"
       }
     },
     {
-      "id": "insights-faq",
-      "type": "FAQ",
+      "id": "insights-grid",
+      "type": "InsightsGrid",
       "props": {
-        "heading": "Insights FAQ",
-        "items": [
-          { "question": "How often do you publish new insights?", "answer": "We share fresh perspectives every month across industries and leadership topics." },
-          { "question": "Can I contribute an article?", "answer": "We welcome guest contributions from industry leaders. Contact us with your idea." }
-        ]
+        "heading": "All Insights",
+        "description": "Browse our latest articles and research."
       }
     },
     {

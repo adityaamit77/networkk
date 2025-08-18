@@ -9,18 +9,19 @@ export interface Props {
 }
 
 const { heading, description, limit = 3 } = Astro.props as Props;
-let modules: Array<{ file?: string; default?: any }> = [];
+let modules: Record<string, any> = {};
 try {
-  // Use an explicit relative path from this component to the content folder.
-  // If the folder is empty this will simply return an empty array.
-  modules = await Astro.glob('../../content/insights/*.json');
+  modules = await Astro.glob('../../content/insights/*.{json,mdx}');
 } catch (e) {
-  // In some build environments Astro.glob can throw; silently fall back to empty
-  modules = [];
+  modules = {};
 }
 
-const posts = (modules || [])
-  .map((m) => ({ ...(m.default || {}), slug: (m.file || '').split('/').pop()?.replace('.json', '') }))
+const posts = Object.entries(modules)
+  .map(([path, mod]) => {
+    const slug = path.replace('../../content/insights/', '').replace(/\.(json|mdx)$/,'');
+    const data = path.endsWith('.mdx') ? mod.frontmatter : mod.default || mod;
+    return { ...data, slug };
+  })
   .filter(Boolean)
   .sort((a, b) => new Date(b.publishedAt || 0).getTime() - new Date(a.publishedAt || 0).getTime())
   .slice(0, limit);

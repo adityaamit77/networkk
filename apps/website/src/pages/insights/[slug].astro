@@ -1,13 +1,14 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { loadInsightBySlug } from '../../lib/content/adapter';
+import { createArticleSchema } from '../../lib/seo';
 
 export async function getStaticPaths() {
-  const modules = import.meta.glob('../../content/insights/*.json', { eager: true });
+  const modules = import.meta.glob('../../content/insights/*.{json,mdx}', { eager: true });
   return Object.entries(modules)
     .map(([path, mod]) => {
-      const slug = path.replace('../../content/insights/', '').replace('.json', '');
-      const data: any = (mod as any).default ?? mod;
+      const slug = path.replace('../../content/insights/', '').replace(/\.(json|mdx)$/,'');
+      const data: any = path.endsWith('.mdx') ? (mod as any).frontmatter : (mod as any).default ?? mod;
       const status = data?.status ?? 'published';
       if (status !== 'published') return null;
       return { params: { slug } };
@@ -16,10 +17,48 @@ export async function getStaticPaths() {
 }
 
 const slug = Astro.params.slug as string;
-const insight = await loadInsightBySlug(slug);
+let insight: any;
+let Content: any = null;
+try {
+  const mdxModule = await import(`../../content/insights/${slug}.mdx`);
+  insight = mdxModule.frontmatter;
+  Content = mdxModule.default;
+} catch (e) {
+  insight = await loadInsightBySlug(slug);
+}
+
 if (!insight) {
   return new Response(null, { status: 404, statusText: 'Insight not found' });
 }
+
+const allModules = import.meta.glob('../../content/insights/*.{json,mdx}', { eager: true });
+const relatedInsights = Object.entries(allModules)
+  .map(([path, mod]) => {
+    const rslug = path.replace('../../content/insights/', '').replace(/\.(json|mdx)$/,'');
+    const data: any = path.endsWith('.mdx') ? mod.frontmatter : mod.default || mod;
+    return { ...data, slug: rslug };
+  })
+  .filter(post => post.slug !== slug)
+  .slice(0, 3);
+
+const serviceModules = import.meta.glob('../../content/pages/services/*.json', { eager: true });
+const relatedServices = Object.entries(serviceModules)
+  .map(([path, mod]) => {
+    const sslug = path.replace('../../content/pages/services/', '').replace('.json','');
+    const data: any = (mod as any).default || mod;
+    return { title: data.title, slug: sslug };
+  })
+  .slice(0, 2);
+
+const articleSchema = createArticleSchema({
+  headline: insight.title,
+  description: insight.seo.description,
+  author: insight.author || 'Networkk',
+  datePublished: insight.publishedAt,
+  dateModified: insight.updatedAt || insight.publishedAt,
+  url: insight.seo.canonical,
+  image: insight.image
+});
 ---
 <BaseLayout
   title={insight.seo.title}
@@ -31,6 +70,33 @@ if (!insight) {
 >
   <article class="container mx-auto px-4 py-12 prose lg:prose-lg">
     <h1>{insight.title}</h1>
-    {insight.content && <div set:html={insight.content} />}
+    {Content ? <Content /> : (insight.content && <div set:html={insight.content} />)}
   </article>
+
+  <section class="container mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-6">Related Insights</h2>
+    <div class="grid gap-8 md:grid-cols-3">
+      {relatedInsights.map(ri => (
+        <a href={`/insights/${ri.slug}`} class="block border rounded-lg p-4 hover:shadow">
+          <h3 class="font-semibold mb-2">{ri.title}</h3>
+          {ri.excerpt && <p class="text-sm text-gray-600">{ri.excerpt}</p>}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="container mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-6">Related Services</h2>
+    <ul class="grid gap-4 md:grid-cols-2">
+      {relatedServices.map(rs => (
+        <li><a href={`/services/${rs.slug}`} class="text-blue-600 hover:underline">{rs.title}</a></li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="container mx-auto px-4 py-12 text-center">
+    <a href="/contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-md">Talk to Us</a>
+  </section>
+
+  <script type="application/ld+json">{articleSchema}</script>
 </BaseLayout>
