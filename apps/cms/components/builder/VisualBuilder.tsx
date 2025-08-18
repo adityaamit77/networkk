@@ -28,15 +28,34 @@ interface BlockDefinition<T extends z.ZodTypeAny = z.ZodTypeAny> {
   preview: (data: z.infer<T>) => JSX.Element;
 }
 
-const heroSchema = z.object({
-  heading: z.string().min(1, 'Required'),
-  subheading: z.string().optional(),
-  content: z.string().optional()
-});
+const heroSchema = z
+  .object({
+    decorative: z.boolean().default(false),
+    heading: z.string().optional(),
+    subheading: z.string().optional(),
+    content: z.string().optional()
+  })
+  .refine((data) => data.decorative || !!data.heading, {
+    message: 'Required',
+    path: ['heading']
+  });
 
 const ctaSchema = z.object({
   text: z.string().min(1),
   url: z.string().url()
+});
+
+const imageSchema = z.object({
+  url: z.string().url(),
+  alt: z.string().min(1, 'Alt text required'),
+  caption: z.string().optional(),
+  credit: z.string().optional(),
+  license: z.string().optional()
+});
+
+const textSchema = z.object({
+  text: z.string().min(1),
+  asList: z.boolean().default(false)
 });
 
 const blockDefinitions: Record<string, BlockDefinition> = {
@@ -44,7 +63,7 @@ const blockDefinitions: Record<string, BlockDefinition> = {
     type: 'hero',
     title: 'Hero',
     schema: heroSchema,
-    defaultValue: { heading: 'Heading', subheading: '', content: '' },
+    defaultValue: { decorative: false, heading: 'Heading', subheading: '', content: '' },
     preview: (data) => (
       <section className="rounded border p-4">
         <h2 className="text-xl font-bold">{data.heading}</h2>
@@ -62,6 +81,45 @@ const blockDefinitions: Record<string, BlockDefinition> = {
         {data.text}
       </a>
     )
+  },
+  image: {
+    type: 'image',
+    title: 'Image',
+    schema: imageSchema,
+    defaultValue: {
+      url: '',
+      alt: '',
+      caption: '',
+      credit: '',
+      license: ''
+    },
+    preview: (data) => (
+      <figure className="rounded border p-2">
+        {data.url && (
+          <img src={data.url} alt={data.alt} className="max-w-full" />
+        )}
+        {data.caption && <figcaption>{data.caption}</figcaption>}
+        {data.credit && (
+          <small className="block text-xs text-gray-500">{data.credit}</small>
+        )}
+      </figure>
+    )
+  },
+  text: {
+    type: 'text',
+    title: 'Text',
+    schema: textSchema,
+    defaultValue: { text: 'Paragraph', asList: false },
+    preview: (data) =>
+      data.asList ? (
+        <ul className="list-disc pl-4">
+          {data.text.split('\n').map((t: string, i: number) => (
+            <li key={i}>{t}</li>
+          ))}
+        </ul>
+      ) : (
+        <p>{data.text}</p>
+      )
   }
 };
 
@@ -196,7 +254,25 @@ export default function VisualBuilder() {
     }
   };
 
+  const validateSEO = (items: BlockInstance[]) => {
+    const errors: string[] = [];
+    items.forEach((b, idx) => {
+      if (b.type === 'image' && !b.data.alt) {
+        errors.push(`Image block #${idx + 1} requires alt text`);
+      }
+      if (b.type === 'hero' && !b.data.decorative && !b.data.heading) {
+        errors.push(`Hero block #${idx + 1} requires a heading`);
+      }
+    });
+    return errors;
+  };
+
   const preview = () => {
+    const errors = validateSEO(blocks);
+    if (errors.length) {
+      alert(`SEO issues:\n${errors.join('\n')}`);
+      return;
+    }
     const data = encodeURIComponent(JSON.stringify(blocks));
     window.open(`/__preview/${data}`, '_blank');
   };
