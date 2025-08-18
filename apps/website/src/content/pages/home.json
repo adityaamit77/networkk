@@ -25,7 +25,7 @@
         "ctas": [
           {
             "label": "Explore Our Services",
-            "href": "/executive-search",
+            "href": "/services/executive-search",
             "variant": "primary"
           },
           {
@@ -52,28 +52,28 @@
             "title": "Executive Search",
             "description": "Find C-suite and senior leadership talent who align with your vision and drive transformational growth through proven methodologies.",
             "icon": "🎯",
-            "href": "/executive-search",
+            "href": "/services/executive-search",
             "image": "/images/service-executive-search.avif"
           },
           {
             "title": "Leadership Hiring",
             "description": "Strategic recruitment for directors, VPs, and emerging leaders who will shape your organization's future and cultural evolution.",
             "icon": "👥",
-            "href": "/leadership-hiring",
+            "href": "/services/leadership-hiring",
             "image": "/images/service-leadership-hiring.avif"
           },
           {
             "title": "Talent Advisory",
             "description": "Strategic guidance on leadership development, succession planning, and organizational design for sustainable competitive advantage.",
             "icon": "💡",
-            "href": "/talent-advisory",
+            "href": "/services/talent-advisory",
             "image": "/images/service-talent-advisory.avif"
           },
           {
             "title": "D&I Consulting",
             "description": "Build diverse, inclusive leadership teams that reflect your values, drive innovation, and create lasting organizational change.",
             "icon": "🌟",
-            "href": "/diversity-inclusion",
+            "href": "/services/diversity-inclusion",
             "image": "/images/service-diversity-inclusion.avif"
           }
         ]
