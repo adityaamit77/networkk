@@ -44,6 +44,8 @@ pnpm dev:cms      # Next.js CMS (coming in Phase 4)
 - Phase 2: Services, Industries, Insights pages
 - Phase 3: Complete frontend with forms and optimization
 - Phase 4+: Next.js CMS development
+- Phase 7: Visual builder with drag-and-drop blocks and SEO validation
+- Phase 8: Media management with image transforms and metadata fields
 
 ## Completed Tasks
 
