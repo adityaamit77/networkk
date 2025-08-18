@@ -23,27 +23,66 @@
       }
     },
     {
-      "id": "careers-benefits",
-      "type": "TilesGrid",
+      "id": "life-at-networkk",
+      "type": "RichText",
       "props": {
-        "heading": "Why Work With Us",
-        "description": "A culture built for growth and flexibility.",
-        "columns": "3",
+        "content": "<p>At Networkk, collaboration and continuous learning drive everything we do. Discover more about our culture on the <a href=\"/about\">About page</a>.</p>"
+      }
+    },
+    {
+      "id": "employee-testimonials",
+      "type": "Testimonials",
+      "props": {
+        "heading": "Employee Testimonials",
         "items": [
-          { "title": "Hybrid Workplace", "description": "Work from anywhere with collaborative hubs.", "icon": "\uD83C\uDF10" },
-          { "title": "Learning Budget", "description": "Annual stipend for courses and conferences.", "icon": "\uD83D\uDCDA" },
-          { "title": "Wellness First", "description": "Comprehensive health plans and recharge days.", "icon": "\uD83D\uDECC" }
+          {
+            "quote": "The mentorship culture here accelerated my growth.",
+            "name": "Rohan S.",
+            "title": "Consultant"
+          },
+          {
+            "quote": "Working on global searches keeps me challenged and inspired.",
+            "name": "Meera P.",
+            "title": "Research Analyst"
+          }
         ]
       }
     },
     {
-      "id": "careers-faq",
-      "type": "FAQ",
+      "id": "open-roles",
+      "type": "TilesGrid",
       "props": {
-        "heading": "Hiring FAQs",
+        "heading": "Current Openings",
+        "columns": "2",
         "items": [
-          { "question": "How do I apply?", "answer": "Send your resume and a brief cover note via our contact form." },
-          { "question": "Do you offer remote roles?", "answer": "Yes, many roles are remote-friendly with flexible schedules." }
+          {
+            "title": "Senior Consultant",
+            "description": "Mumbai",
+            "href": "/contact"
+          },
+          {
+            "title": "Research Associate",
+            "description": "Singapore",
+            "href": "/contact"
+          }
+        ]
+      }
+    },
+    {
+      "id": "apply-steps",
+      "type": "ProcessSteps",
+      "props": {
+        "heading": "How to Apply",
+        "steps": [
+          {
+            "title": "Submit",
+            "description": "Send your resume and cover note."
+          },
+          {
+            "title": "Interview",
+            "description": "Meet our team and discuss your goals."
+          },
+          { "title": "Offer", "description": "Receive a tailored offer." }
         ]
       }
     },
@@ -54,10 +93,8 @@
         "heading": "Apply Now",
         "description": "Interested in working with Networkk? Let's connect.",
         "backgroundType": "gradient",
-        "primaryCta": {
-          "label": "Contact HR",
-          "href": "/contact"
-        }
+        "primaryCta": { "label": "Contact HR", "href": "/contact" },
+        "secondaryCta": { "label": "Our Approach", "href": "/our-approach" }
       }
     }
   ],
@@ -65,4 +102,3 @@
   "createdAt": "2025-01-15T10:00:00Z",
   "updatedAt": "2025-01-15T10:00:00Z"
 }
-

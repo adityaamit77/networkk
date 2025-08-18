@@ -23,16 +23,102 @@
       }
     },
     {
+      "id": "engagement-models",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Engagement Models",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Retained Search",
+            "description": "Dedicated partnership with priority access."
+          },
+          {
+            "title": "Project-Based",
+            "description": "Focused support for specific initiatives."
+          },
+          {
+            "title": "Advisory",
+            "description": "Ongoing talent strategy collaboration."
+          }
+        ]
+      }
+    },
+    {
+      "id": "onboarding-steps",
+      "type": "ProcessSteps",
+      "props": {
+        "heading": "Onboarding Steps",
+        "steps": [
+          {
+            "title": "Align",
+            "description": "Define goals and success metrics."
+          },
+          {
+            "title": "Kickoff",
+            "description": "Set timelines and communication cadence."
+          },
+          {
+            "title": "Deliver",
+            "description": "Execute search with transparent updates."
+          },
+          { "title": "Review", "description": "Evaluate results and refine." }
+        ]
+      }
+    },
+    {
+      "id": "partner-benefits",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Benefits",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Dedicated Advisor",
+            "description": "Single point of contact for every engagement.",
+            "icon": "🤝"
+          },
+          {
+            "title": "Market Insights",
+            "description": "Access to proprietary talent data.",
+            "icon": "📊"
+          },
+          {
+            "title": "Global Network",
+            "description": "Connections across emerging markets.",
+            "icon": "🌍"
+          }
+        ]
+      }
+    },
+    {
+      "id": "partner-testimonials",
+      "type": "Testimonials",
+      "props": {
+        "heading": "Partner Success Stories",
+        "items": [
+          {
+            "quote": "Networkk has been instrumental in scaling our leadership team across Asia.",
+            "name": "Anita Desai",
+            "title": "HR Director, TechWave"
+          },
+          {
+            "quote": "Their consultative approach made them a true extension of our HR function.",
+            "name": "Hassan Ali",
+            "title": "COO, FinServe"
+          }
+        ]
+      }
+    },
+    {
       "id": "final-cta",
       "type": "CTA",
       "props": {
         "heading": "Become a Networkk Partner",
         "description": "Let's discuss the right partnership model for your organization.",
         "backgroundType": "gradient",
-        "primaryCta": {
-          "label": "Contact Us",
-          "href": "/contact"
-        }
+        "primaryCta": { "label": "Contact Us", "href": "/contact" },
+        "secondaryCta": { "label": "Our Services", "href": "/services" }
       }
     }
   ],
@@ -40,4 +126,3 @@
   "createdAt": "2025-01-15T10:00:00Z",
   "updatedAt": "2025-01-15T10:00:00Z"
 }
-

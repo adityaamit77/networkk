@@ -23,16 +23,73 @@
       }
     },
     {
+      "id": "differentiators",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "What Sets Us Apart",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Deep Industry Expertise",
+            "description": "Specialised consultants in key sectors."
+          },
+          {
+            "title": "Data-Driven Search",
+            "description": "Proprietary analytics and assessment tools."
+          },
+          {
+            "title": "Global Reach",
+            "description": "Extensive network across 3 continents."
+          }
+        ]
+      }
+    },
+    {
+      "id": "why-metrics",
+      "type": "MetricsBand",
+      "props": {
+        "heading": "Results That Matter",
+        "items": [
+          { "value": "92%", "label": "C-suite retention" },
+          { "value": "150+", "label": "Leadership hires yearly" },
+          { "value": "4.9/5", "label": "Client satisfaction" }
+        ]
+      }
+    },
+    {
+      "id": "awards-grid",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Awards & Recognition",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Best Exec Search 2024",
+            "description": "HR Excellence Awards",
+            "icon": "🏆"
+          },
+          {
+            "title": "Top 10 Recruiters",
+            "description": "Business Today",
+            "icon": "⭐"
+          },
+          {
+            "title": "D&I Champion",
+            "description": "Diversity Council",
+            "icon": "🌈"
+          }
+        ]
+      }
+    },
+    {
       "id": "final-cta",
       "type": "CTA",
       "props": {
         "heading": "Let's Work Together",
         "description": "Discover how we can help you secure top leadership talent.",
         "backgroundType": "gradient",
-        "primaryCta": {
-          "label": "Contact Us",
-          "href": "/contact"
-        }
+        "primaryCta": { "label": "Contact Us", "href": "/contact" },
+        "secondaryCta": { "label": "Our Approach", "href": "/our-approach" }
       }
     }
   ],
@@ -40,4 +97,3 @@
   "createdAt": "2025-01-15T10:00:00Z",
   "updatedAt": "2025-01-15T10:00:00Z"
 }
-

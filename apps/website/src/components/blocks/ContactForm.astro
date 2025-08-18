@@ -16,6 +16,7 @@ export interface Props {
   }>;
   submitLabel?: string;
   successMessage?: string;
+  redirectTo?: string;
 }
 
 const {
@@ -23,7 +24,8 @@ const {
   description,
   fields,
   submitLabel = 'Submit',
-  successMessage = 'Thank you for your message. We will get back to you shortly.'
+  successMessage = 'Thank you for your message. We will get back to you shortly.',
+  redirectTo,
 } = Astro.props;
 ---
 
@@ -46,7 +48,12 @@ const {
     )}
     
     <!-- Form -->
-    <form id="contact-form" class="bg-white rounded-xl shadow-sm p-8 md:p-10">
+    <form
+      id="contact-form"
+      method="post"
+      action="/api/contact"
+      class="bg-white rounded-xl shadow-sm p-8 md:p-10"
+    >
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         {fields.map((field) => (
           <div class={field.type === 'textarea' ? 'md:col-span-2' : ''}>
@@ -146,12 +153,17 @@ const {
   // Simple form handling
   const form = document.getElementById('contact-form');
   const successMessage = document.getElementById('form-success');
+  const redirectTo = {JSON.stringify(redirectTo)};
   
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       
       // In a real implementation, you would send the form data to your backend
+      if (redirectTo) {
+        window.location.href = redirectTo;
+        return;
+      }
       // For now, we'll just show the success message
       if (successMessage) {
         successMessage.classList.remove('hidden');
