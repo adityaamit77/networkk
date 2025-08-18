@@ -70,7 +70,7 @@ const navItems: NavItem[] = siteConfig.navigation.header;
         <nav class="container" aria-label="Main navigation">
           <div class="flex items-center justify-between py-4">
             <!-- Logo -->
-            <a href="/" class="flex items-center space-x-3 group">
+            <a href="/" class="flex items-center space-x-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-600">
               <div class="relative">
                 <img src="/logo.png" alt="Networkk Logo" class="h-12 w-auto transition-transform group-hover:scale-105" />
                 <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity -z-10"></div>
@@ -83,14 +83,14 @@ const navItems: NavItem[] = siteConfig.navigation.header;
                 item.cta ? (
                   <a
                     href={item.href}
-                    class="bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 transition-all duration-200 font-medium shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                    class="bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 transition-all duration-200 font-medium shadow-lg hover:shadow-xl hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-600"
                   >
                     {item.label}
                   </a>
                 ) : (
                   <a
                     href={item.href}
-                    class="text-gray-700 hover:text-blue-600 font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all hover:after:w-full"
+                    class="text-gray-700 hover:text-blue-600 font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all hover:after:w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-600"
                   >
                     {item.label}
                   </a>
@@ -99,7 +99,7 @@ const navItems: NavItem[] = siteConfig.navigation.header;
             </div>
             
             <!-- Mobile Menu Button -->
-            <button class="lg:hidden p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors" aria-label="Toggle mobile menu">
+            <button class="lg:hidden p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-600" aria-label="Toggle mobile menu">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
