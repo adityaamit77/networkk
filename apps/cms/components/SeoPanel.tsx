@@ -3,6 +3,7 @@ import { ChangeEvent } from 'react';
 interface SeoValues {
   title: string;
   description: string;
+  canonical: string;
 }
 
 interface Props {
@@ -19,6 +20,8 @@ export default function SeoPanel({ value, onChange }: Props) {
     onChange({ ...value, title: e.target.value });
   const handleDescription = (e: ChangeEvent<HTMLTextAreaElement>) =>
     onChange({ ...value, description: e.target.value });
+  const handleCanonical = (e: ChangeEvent<HTMLInputElement>) =>
+    onChange({ ...value, canonical: e.target.value });
   return (
     <div className="space-y-2 rounded border p-4">
       <h2 className="font-semibold">SEO</h2>
@@ -43,6 +46,14 @@ export default function SeoPanel({ value, onChange }: Props) {
         <p className="text-xs text-gray-500">
           {value.description.length} characters (~{pixelWidth(value.description)}px)
         </p>
+      </div>
+      <div>
+        <label className="block text-sm font-medium">Canonical URL</label>
+        <input
+          className="w-full rounded border px-2 py-1"
+          value={value.canonical}
+          onChange={handleCanonical}
+        />
       </div>
     </div>
   );
