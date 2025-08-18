@@ -1,0 +1,27 @@
+---
+import Heading from '../ui/Heading.astro';
+
+export interface Props {
+  heading?: string;
+  content: string;
+  align?: 'left' | 'center' | 'right';
+}
+
+const { heading, content, align = 'left' } = Astro.props;
+
+const alignClasses: Record<string, string> = {
+  left: 'text-left',
+  center: 'text-center mx-auto',
+  right: 'text-right ml-auto'
+};
+---
+<section class="py-16">
+  <div class="container">
+    {heading && (
+      <Heading level={2} class={`mb-6 ${alignClasses[align]}`}>
+        {heading}
+      </Heading>
+    )}
+    <div class={`prose max-w-3xl ${alignClasses[align]}`} set:html={content}></div>
+  </div>
+</section>

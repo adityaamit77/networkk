@@ -41,14 +41,14 @@
     },
     {
       "id": "client-logos",
-      "type": "Logos",
+      "type": "LogosStrip",
       "props": {
         "heading": "Trusted by Leading Organizations",
         "logos": [
-          { "src": "/images/placeholder.svg", "alt": "Client A" },
-          { "src": "/images/placeholder.svg", "alt": "Client B" },
-          { "src": "/images/placeholder.svg", "alt": "Client C" },
-          { "src": "/images/placeholder.svg", "alt": "Client D" }
+          { "name": "Client A", "image": "/images/placeholder.svg" },
+          { "name": "Client B", "image": "/images/placeholder.svg" },
+          { "name": "Client C", "image": "/images/placeholder.svg" },
+          { "name": "Client D", "image": "/images/placeholder.svg" }
         ]
       }
     },
