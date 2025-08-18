@@ -31,6 +31,14 @@ export interface Props {
 
 const { page, showPageTitle = true, theme } = Astro.props;
 
+const themeStyles = {
+  default: { headingBg: 'bg-gray-50', headingText: 'text-gray-900' },
+  gold: { headingBg: 'bg-amber-50', headingText: 'text-amber-900' },
+  emerald: { headingBg: 'bg-emerald-50', headingText: 'text-emerald-900' }
+};
+
+const currentTheme = themeStyles[theme ?? 'default'];
+
 // Generate JSON-LD structured data
 const organizationSchema = JSON.parse(createOrganizationSchema());
 const websiteSchema = JSON.parse(createWebsiteSchema());
@@ -68,9 +76,12 @@ const combinedJsonLd = [
   <JsonLd data={combinedJsonLd} />
   
   {showPageTitle && page.slug !== 'home' && (
-    <section class="section-sm bg-gray-50">
+    <section class={`section-sm ${currentTheme.headingBg}`}>
       <div class="container">
-        <Heading level={1} class="text-center max-w-4xl mx-auto">
+        <Heading
+          level={1}
+          class={`text-center max-w-4xl mx-auto ${currentTheme.headingText}`}
+        >
           {page.title}
         </Heading>
       </div>
