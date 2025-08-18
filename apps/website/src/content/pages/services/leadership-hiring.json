@@ -36,10 +36,26 @@
       "props": {
         "heading": "Our Approach",
         "steps": [
-          {"number": 1, "title": "Role Scoping", "description": "Clarify success profiles and competencies."},
-          {"number": 2, "title": "Candidate Sourcing", "description": "Blend database research with targeted outreach."},
-          {"number": 3, "title": "Evaluation", "description": "Structured interviews and reference checks."},
-          {"number": 4, "title": "Onboarding Support", "description": "Guidance through offer and integration."}
+          {
+            "number": 1,
+            "title": "Role Scoping",
+            "description": "Clarify success profiles and competencies."
+          },
+          {
+            "number": 2,
+            "title": "Candidate Sourcing",
+            "description": "Blend database research with targeted outreach."
+          },
+          {
+            "number": 3,
+            "title": "Evaluation",
+            "description": "Structured interviews and reference checks."
+          },
+          {
+            "number": 4,
+            "title": "Onboarding Support",
+            "description": "Guidance through offer and integration."
+          }
         ]
       }
     },
@@ -49,8 +65,14 @@
       "props": {
         "heading": "Ethics & Confidentiality",
         "items": [
-          {"question": "How are candidates vetted?", "answer": "We conduct thorough background and reference checks before recommendation."},
-          {"question": "Is the search confidential?", "answer": "Yes, we keep both client and candidate information protected."}
+          {
+            "question": "How are candidates vetted?",
+            "answer": "We conduct thorough background and reference checks before recommendation."
+          },
+          {
+            "question": "Is the search confidential?",
+            "answer": "Yes, we keep both client and candidate information protected."
+          }
         ]
       }
     },
@@ -60,9 +82,9 @@
       "props": {
         "heading": "Hiring Metrics",
         "items": [
-          {"value": "90%", "label": "First-Year Retention"},
-          {"value": "60", "label": "Days to Placement"},
-          {"value": "200+", "label": "Leaders Hired"}
+          { "value": "90%", "label": "First-Year Retention" },
+          { "value": "60", "label": "Days to Placement" },
+          { "value": "200+", "label": "Leaders Hired" }
         ]
       }
     },
@@ -74,12 +96,24 @@
         "items": [
           {
             "quote": "Their understanding of our culture made every hire a perfect fit.",
-            "author": {"name": "Ravi Shah", "title": "HR Director", "company": "FinEdge"},
+            "author": {
+              "name": "Ravi Shah",
+              "title": "HR Director",
+              "company": "FinEdge"
+            },
             "rating": 5
           }
         ],
         "layout": "carousel",
         "slider": true
+      }
+    },
+    {
+      "id": "related-links",
+      "type": "RichText",
+      "props": {
+        "heading": "Explore More",
+        "content": "<p>See how we helped a <a href='/success-stories/tech-scale-up'>tech scale-up</a> accelerate growth and discover our <a href='/industries/technology'>technology industry expertise</a>. Ready to start? <a href='/contact'>Contact us</a>.</p>"
       }
     },
     {
@@ -89,7 +123,7 @@
         "heading": "Discuss Your Leadership Needs",
         "description": "Speak with our specialists about upcoming leadership roles.",
         "backgroundType": "gradient",
-        "primaryCta": {"label": "Start Hiring", "href": "/contact"}
+        "primaryCta": { "label": "Start Hiring", "href": "/contact" }
       }
     }
   ],

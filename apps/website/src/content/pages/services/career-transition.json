@@ -36,10 +36,26 @@
       "props": {
         "heading": "Program Methodology",
         "steps": [
-          {"number": 1, "title": "Planning", "description": "Coordinate timing and communication with leadership."},
-          {"number": 2, "title": "Support", "description": "Provide immediate emotional and logistical assistance."},
-          {"number": 3, "title": "Coaching", "description": "Offer career coaching, resume guidance, and interview preparation."},
-          {"number": 4, "title": "Transition", "description": "Connect participants with opportunities and networking resources."}
+          {
+            "number": 1,
+            "title": "Planning",
+            "description": "Coordinate timing and communication with leadership."
+          },
+          {
+            "number": 2,
+            "title": "Support",
+            "description": "Provide immediate emotional and logistical assistance."
+          },
+          {
+            "number": 3,
+            "title": "Coaching",
+            "description": "Offer career coaching, resume guidance, and interview preparation."
+          },
+          {
+            "number": 4,
+            "title": "Transition",
+            "description": "Connect participants with opportunities and networking resources."
+          }
         ]
       }
     },
@@ -49,8 +65,14 @@
       "props": {
         "heading": "Confidentiality & Ethics",
         "items": [
-          {"question": "Are participant details shared?", "answer": "No, individual progress remains confidential unless permission is granted."},
-          {"question": "How is dignity maintained?", "answer": "We deliver programs with empathy and respect for every individual."}
+          {
+            "question": "Are participant details shared?",
+            "answer": "No, individual progress remains confidential unless permission is granted."
+          },
+          {
+            "question": "How is dignity maintained?",
+            "answer": "We deliver programs with empathy and respect for every individual."
+          }
         ]
       }
     },
@@ -60,9 +82,9 @@
       "props": {
         "heading": "Program Outcomes",
         "items": [
-          {"value": "85%", "label": "Land New Roles"},
-          {"value": "3 mo", "label": "Average Transition"},
-          {"value": "500+", "label": "Participants Supported"}
+          { "value": "85%", "label": "Land New Roles" },
+          { "value": "3 mo", "label": "Average Transition" },
+          { "value": "500+", "label": "Participants Supported" }
         ]
       }
     },
@@ -74,12 +96,24 @@
         "items": [
           {
             "quote": "The coaching gave me clarity and confidence to pursue a new direction.",
-            "author": {"name": "Priya Desai", "title": "Former Manager", "company": "RetailCo"},
+            "author": {
+              "name": "Priya Desai",
+              "title": "Former Manager",
+              "company": "RetailCo"
+            },
             "rating": 5
           }
         ],
         "layout": "carousel",
         "slider": true
+      }
+    },
+    {
+      "id": "related-links",
+      "type": "RichText",
+      "props": {
+        "heading": "Explore More",
+        "content": "<p>See how we helped a <a href='/success-stories/tech-scale-up'>tech scale-up</a> accelerate growth and discover our <a href='/industries/technology'>technology industry expertise</a>. Ready to start? <a href='/contact'>Contact us</a>.</p>"
       }
     },
     {
@@ -89,7 +123,7 @@
         "heading": "Plan a Transition Program",
         "description": "Learn how we can assist with compassionate workforce transitions.",
         "backgroundType": "gradient",
-        "primaryCta": {"label": "Request Consultation", "href": "/contact"}
+        "primaryCta": { "label": "Request Consultation", "href": "/contact" }
       }
     }
   ],

@@ -1,6 +1,7 @@
 ---
 import Heading from '../ui/Heading.astro';
 import Button from '../ui/Button.astro';
+import { trackEvent } from '../../lib/analytics';
 
 export interface Props {
   heading: string;
@@ -76,15 +77,17 @@ const currentTheme = themeConfig[theme as keyof typeof themeConfig];
           href={primaryCta.href}
           variant="secondary"
           size="lg"
+          onClick={() => trackEvent('cta_click', { label: primaryCta.label, href: primaryCta.href })}
         >
           {primaryCta.label}
         </Button>
-        
+
         {secondaryCta && (
           <Button
             href={secondaryCta.href}
             variant="outline"
             size="lg"
+            onClick={() => trackEvent('cta_click', { label: secondaryCta.label, href: secondaryCta.href })}
           >
             {secondaryCta.label}
           </Button>

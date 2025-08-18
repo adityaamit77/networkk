@@ -36,10 +36,26 @@
       "props": {
         "heading": "Our Process",
         "steps": [
-          {"number": 1, "title": "Discovery", "description": "Understand strategic objectives and current workforce."},
-          {"number": 2, "title": "Market Mapping", "description": "Analyze talent availability and competitor structures."},
-          {"number": 3, "title": "Forecasting", "description": "Model future requirements and skill gaps."},
-          {"number": 4, "title": "Action Plan", "description": "Deliver insights to guide recruitment and development."}
+          {
+            "number": 1,
+            "title": "Discovery",
+            "description": "Understand strategic objectives and current workforce."
+          },
+          {
+            "number": 2,
+            "title": "Market Mapping",
+            "description": "Analyze talent availability and competitor structures."
+          },
+          {
+            "number": 3,
+            "title": "Forecasting",
+            "description": "Model future requirements and skill gaps."
+          },
+          {
+            "number": 4,
+            "title": "Action Plan",
+            "description": "Deliver insights to guide recruitment and development."
+          }
         ]
       }
     },
@@ -49,8 +65,14 @@
       "props": {
         "heading": "Confidentiality & Ethics",
         "items": [
-          {"question": "How is market data collected?", "answer": "We use ethical research methods and publicly available information."},
-          {"question": "Is company information secure?", "answer": "All proprietary data is protected under strict confidentiality agreements."}
+          {
+            "question": "How is market data collected?",
+            "answer": "We use ethical research methods and publicly available information."
+          },
+          {
+            "question": "Is company information secure?",
+            "answer": "All proprietary data is protected under strict confidentiality agreements."
+          }
         ]
       }
     },
@@ -60,9 +82,9 @@
       "props": {
         "heading": "Planning Metrics",
         "items": [
-          {"value": "30%", "label": "Hiring Cost Saved"},
-          {"value": "50+", "label": "Markets Analyzed"},
-          {"value": "10 yrs", "label": "Average Data Span"}
+          { "value": "30%", "label": "Hiring Cost Saved" },
+          { "value": "50+", "label": "Markets Analyzed" },
+          { "value": "10 yrs", "label": "Average Data Span" }
         ]
       }
     },
@@ -74,12 +96,24 @@
         "items": [
           {
             "quote": "Their mapping gave us clarity on where to open our next engineering hub.",
-            "author": {"name": "Lena Fischer", "title": "VP Talent", "company": "AutoMotion"},
+            "author": {
+              "name": "Lena Fischer",
+              "title": "VP Talent",
+              "company": "AutoMotion"
+            },
             "rating": 5
           }
         ],
         "layout": "carousel",
         "slider": true
+      }
+    },
+    {
+      "id": "related-links",
+      "type": "RichText",
+      "props": {
+        "heading": "Explore More",
+        "content": "<p>See how we helped a <a href='/success-stories/tech-scale-up'>tech scale-up</a> accelerate growth and discover our <a href='/industries/technology'>technology industry expertise</a>. Ready to start? <a href='/contact'>Contact us</a>.</p>"
       }
     },
     {
@@ -89,7 +123,7 @@
         "heading": "Request Workforce Insights",
         "description": "Speak with our consultants about strategic workforce planning.",
         "backgroundType": "gradient",
-        "primaryCta": {"label": "Request Insights", "href": "/contact"}
+        "primaryCta": { "label": "Request Insights", "href": "/contact" }
       }
     }
   ],

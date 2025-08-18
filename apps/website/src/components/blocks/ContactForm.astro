@@ -148,24 +148,28 @@ const {
     </form>
   </div>
 </section>
-
-<script is:inline>
+<script>
+  import { trackEvent } from '../../lib/analytics';
   // Simple form handling
-  document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('contact-form');
-    const successMessage = document.getElementById('form-success');
-    
-    if (form) {
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // In a real implementation, you would send the form data to your backend
-        // For now, we'll just show the success message
-        if (successMessage) {
-          successMessage.classList.remove('hidden');
-          form.reset();
-        }
-      });
-    }
-  });
+  const form = document.getElementById('contact-form');
+  const successMessage = document.getElementById('form-success');
+  const redirectTo = {JSON.stringify(redirectTo)};
+  
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      trackEvent('form_submit', { form: 'contact' });
+
+      // In a real implementation, you would send the form data to your backend
+      if (redirectTo) {
+        window.location.href = redirectTo;
+        return;
+      }
+      // For now, we'll just show the success message
+      if (successMessage) {
+        successMessage.classList.remove('hidden');
+        (form as HTMLFormElement).reset();
+      }
+    });
+  }
 </script>

@@ -136,6 +136,7 @@ const currentTheme = themeConfig[theme as keyof typeof themeConfig];
 </section>
 
 <script>
+  import { trackEvent } from '../../lib/analytics';
   // Simple carousel functionality
   document.addEventListener('DOMContentLoaded', function() {
     const carousels = document.querySelectorAll('.carousel-container');
@@ -156,12 +157,14 @@ const currentTheme = themeConfig[theme as keyof typeof themeConfig];
       function updateCarousel() {
         const slideWidth = (slides[0] as HTMLElement).offsetWidth;
         track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-        
+
         // Update dots
         dots.forEach((dot, index) => {
           dot.classList.toggle('bg-blue-600', index === currentSlide);
           dot.classList.toggle('bg-gray-300', index !== currentSlide);
         });
+
+        trackEvent('carousel_slide', { index: currentSlide });
       }
       
       function nextSlide() {
