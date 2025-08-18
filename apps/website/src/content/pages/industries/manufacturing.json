@@ -1,0 +1,29 @@
+{
+  "slug": "industries/manufacturing",
+  "title": "Manufacturing & Industrial",
+  "status": "published",
+  "seo": {
+    "title": "Manufacturing & Industrial Industry - Networkk",
+    "description": "Leadership for advanced manufacturing and industrial firms.",
+    "canonical": "https://networkk.com/industries/manufacturing/",
+    "noindex": false,
+    "keywords": ["manufacturing", "industrial", "industry"]
+  },
+  "blocks": [
+    {
+      "id": "hero-industry",
+      "type": "Hero",
+      "props": {
+        "title": "Manufacturing & Industrial",
+        "subtitle": "Industry Expertise",
+        "description": "Leaders who drive operational excellence and innovation.",
+        "backgroundType": "gradient",
+        "textAlign": "center",
+        "fullHeight": false
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T10:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}

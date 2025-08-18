@@ -176,24 +176,7 @@
       "props": {
         "heading": "Insights Preview",
         "description": "Explore our latest thinking on leadership and talent.",
-        "columns": "3",
-        "items": [
-          {
-            "title": "Placeholder Insight One",
-            "description": "Coming soon: in-depth analysis and perspectives.",
-            "href": "/insights/placeholder-one"
-          },
-          {
-            "title": "Placeholder Insight Two",
-            "description": "Insights on executive search and leadership hiring.",
-            "href": "/insights/placeholder-two"
-          },
-          {
-            "title": "Placeholder Insight Three",
-            "description": "Thought leadership articles coming shortly.",
-            "href": "/insights/placeholder-three"
-          }
-        ]
+        "limit": 3
       }
     },
     {
