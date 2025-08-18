@@ -23,6 +23,34 @@
       }
     },
     {
+      "id": "pillars-di",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Our Inclusion Pillars",
+        "description": "Frameworks that create lasting cultural change.",
+        "columns": "3",
+        "items": [
+          { "title": "Inclusive Leadership", "description": "Coaching programs that build equitable decision making.", "icon": "\uD83E\uDDD1\u200D\uD83E\uDDB0" },
+          { "title": "Bias-Free Hiring", "description": "Structured processes that remove unconscious bias.", "icon": "\u2696\uFE0F" },
+          { "title": "Belonging Culture", "description": "Employee initiatives that celebrate diverse perspectives.", "icon": "\uD83E\uDD1D" }
+        ]
+      }
+    },
+    {
+      "id": "metrics-di",
+      "type": "Statistics",
+      "props": {
+        "heading": "Impact Metrics",
+        "description": "Measured outcomes from our D&I engagements.",
+        "stats": [
+          { "value": "40%", "label": "Leadership Diversity", "description": "Average increase in diverse leadership hires", "icon": "\uD83C\uDF0D" },
+          { "value": "3x", "label": "Retention", "description": "Higher retention for inclusive cultures", "icon": "\uD83D\uDCC8" },
+          { "value": "25", "label": "Countries", "description": "Global D&I projects delivered", "icon": "\uD83C\uDF10" }
+        ],
+        "backgroundType": "light"
+      }
+    },
+    {
       "id": "final-cta",
       "type": "CTA",
       "props": {

@@ -37,7 +37,6 @@ interface NavItem {
   label: string;
   href: string;
   cta?: boolean;
-  children?: Array<{ label: string; href: string }>;
 }
 
 const siteConfig = await getSiteConfig();
@@ -81,24 +80,20 @@ const navItems: NavItem[] = siteConfig.navigation.header;
             <!-- Desktop Navigation -->
             <div class="hidden lg:flex items-center space-x-8">
               {navItems.map((item) => (
-                item.children ? (
-                  <div class="relative group">
-                    <a href={item.href} class="flex items-center space-x-1 text-gray-700 hover:text-blue-600 font-medium transition-colors">
-                      <span>{item.label}</span>
-                      <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                      </svg>
-                    </a>
-                    <div class="absolute left-0 mt-2 hidden group-hover:block bg-white border border-gray-100 rounded-lg shadow-lg py-2 min-w-[12rem]">
-                      {item.children.map((child) => (
-                        <a href={child.href} class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors">{child.label}</a>
-                      ))}
-                    </div>
-                  </div>
-                ) : item.cta ? (
-                  <a href={item.href} class="bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 transition-all duration-200 font-medium shadow-lg hover:shadow-xl hover:-translate-y-0.5">{item.label}</a>
+                item.cta ? (
+                  <a
+                    href={item.href}
+                    class="bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 transition-all duration-200 font-medium shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                  >
+                    {item.label}
+                  </a>
                 ) : (
-                  <a href={item.href} class="text-gray-700 hover:text-blue-600 font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all hover:after:w-full">{item.label}</a>
+                  <a
+                    href={item.href}
+                    class="text-gray-700 hover:text-blue-600 font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all hover:after:w-full"
+                  >
+                    {item.label}
+                  </a>
                 )
               ))}
             </div>

@@ -23,6 +23,25 @@
       }
     },
     {
+      "id": "insights-preview",
+      "type": "InsightsPreview",
+      "props": {
+        "heading": "Latest Articles",
+        "description": "Research and perspectives from our consultants."
+      }
+    },
+    {
+      "id": "insights-faq",
+      "type": "FAQ",
+      "props": {
+        "heading": "Insights FAQ",
+        "items": [
+          { "question": "How often do you publish new insights?", "answer": "We share fresh perspectives every month across industries and leadership topics." },
+          { "question": "Can I contribute an article?", "answer": "We welcome guest contributions from industry leaders. Contact us with your idea." }
+        ]
+      }
+    },
+    {
       "id": "final-cta",
       "type": "CTA",
       "props": {

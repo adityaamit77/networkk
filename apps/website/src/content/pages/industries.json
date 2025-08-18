@@ -23,6 +23,36 @@
       }
     },
     {
+      "id": "industry-grid",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Sector Coverage",
+        "description": "Specialized expertise across markets.",
+        "columns": "3",
+        "items": [
+          { "title": "Technology", "description": "Software, SaaS and digital platforms.", "icon": "\uD83D\uDCBB" },
+          { "title": "Healthcare", "description": "Hospitals, biotech and life sciences.", "icon": "\uD83E\uDDEA" },
+          { "title": "Financial Services", "description": "Banking, fintech and insurance.", "icon": "\uD83D\uDCB0" },
+          { "title": "Industrial", "description": "Manufacturing and automotive.", "icon": "\uD83D\uDEE0\uFE0F" },
+          { "title": "Consumer & Retail", "description": "Omnichannel and D2C brands.", "icon": "\uD83D\uDED2" },
+          { "title": "Energy", "description": "Traditional and renewable players.", "icon": "\u26A1\uFE0F" }
+        ]
+      }
+    },
+    {
+      "id": "client-logos",
+      "type": "Logos",
+      "props": {
+        "heading": "Trusted by Leading Organizations",
+        "logos": [
+          { "src": "/images/placeholder.svg", "alt": "Client A" },
+          { "src": "/images/placeholder.svg", "alt": "Client B" },
+          { "src": "/images/placeholder.svg", "alt": "Client C" },
+          { "src": "/images/placeholder.svg", "alt": "Client D" }
+        ]
+      }
+    },
+    {
       "id": "final-cta",
       "type": "CTA",
       "props": {

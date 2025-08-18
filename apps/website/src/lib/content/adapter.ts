@@ -88,29 +88,18 @@ export async function getSiteConfig() {
     favicon: '/favicon.svg',
     navigation: {
       header: [
-        {
-          label: 'Services',
-          href: '/services',
-          children: [
-            { label: 'Executive Search', href: '/executive-search' },
-            { label: 'Leadership Hiring', href: '/leadership-hiring' },
-            { label: 'Talent Advisory', href: '/talent-advisory' },
-            { label: 'D&I Consulting', href: '/diversity-inclusion' },
-            { label: 'Career Transition', href: '/career-transition' }
-          ]
-        },
+        { label: 'Services', href: '/services' },
+        { label: 'Executive Search', href: '/executive-search' },
+        { label: 'Leadership Hiring', href: '/leadership-hiring' },
+        { label: 'Talent Advisory', href: '/talent-advisory' },
+        { label: 'D&I Consulting', href: '/diversity-inclusion' },
+        { label: 'Career Transition', href: '/career-transition' },
         { label: 'Industries', href: '/industries' },
         { label: 'Insights', href: '/insights' },
-        {
-          label: 'About',
-          href: '/about',
-          children: [
-            { label: 'Our Approach', href: '/our-approach' },
-            { label: 'Case Studies', href: '/case-studies' },
-            { label: 'Team', href: '/team' },
-            { label: 'Careers', href: '/careers' }
-          ]
-        },
+        { label: 'Our Approach', href: '/our-approach' },
+        { label: 'Case Studies', href: '/case-studies' },
+        { label: 'Team', href: '/team' },
+        { label: 'Careers', href: '/careers' },
         { label: 'Contact', href: '/contact', cta: true }
       ],
       footer: [

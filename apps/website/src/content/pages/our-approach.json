@@ -23,6 +23,31 @@
       }
     },
     {
+      "id": "approach-timeline",
+      "type": "Timeline",
+      "props": {
+        "heading": "How We Work",
+        "items": [
+          { "date": "Phase 1", "title": "Discovery", "description": "Align on goals, culture and role requirements." },
+          { "date": "Phase 2", "title": "Research", "description": "Map the market and identify qualified leaders." },
+          { "date": "Phase 3", "title": "Evaluation", "description": "Assess candidates through structured interviews." },
+          { "date": "Phase 4", "title": "Selection", "description": "Present shortlist and guide final selection." }
+        ]
+      }
+    },
+    {
+      "id": "approach-metrics",
+      "type": "MetricsBand",
+      "props": {
+        "heading": "Proven Results",
+        "items": [
+          { "value": "95%", "label": "Retention after 2 years" },
+          { "value": "30%", "label": "Faster Hiring Cycles" },
+          { "value": "80+", "label": "Searches annually" }
+        ]
+      }
+    },
+    {
       "id": "final-cta",
       "type": "CTA",
       "props": {
