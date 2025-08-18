@@ -1,0 +1,99 @@
+{
+  "slug": "executive-search",
+  "title": "Executive Search",
+  "status": "published",
+  "seo": {
+    "title": "Executive Search - Networkk",
+    "description": "Partner with Networkk to recruit transformative C-suite and senior leaders.",
+    "canonical": "https://networkk.com/services/executive-search/",
+    "noindex": false,
+    "keywords": ["executive search", "c-suite hiring", "leadership recruitment"]
+  },
+  "blocks": [
+    {
+      "id": "hero-executive-search",
+      "type": "Hero",
+      "props": {
+        "title": "Start Your Executive Search",
+        "subtitle": "Find transformative leaders",
+        "description": "We identify and secure top-tier executives who drive strategic growth.",
+        "backgroundType": "gradient",
+        "textAlign": "center",
+        "fullHeight": false
+      }
+    },
+    {
+      "id": "why-executive-search",
+      "type": "RichText",
+      "props": {
+        "heading": "Why Executive Search?",
+        "content": "<p>Our dedicated researchers and consultants map the market to uncover leaders others overlook. We tailor every search to your culture, strategy, and growth goals.</p>"
+      }
+    },
+    {
+      "id": "methodology-executive-search",
+      "type": "ProcessSteps",
+      "props": {
+        "heading": "Methodology",
+        "steps": [
+          {"number": 1, "title": "Briefing", "description": "Deep dive into organizational goals and role requirements."},
+          {"number": 2, "title": "Research", "description": "Comprehensive market mapping and candidate outreach."},
+          {"number": 3, "title": "Assessment", "description": "Behavioral and competency-based evaluation of shortlisted leaders."},
+          {"number": 4, "title": "Selection", "description": "Presentation of finalists and support through offer negotiation."}
+        ]
+      }
+    },
+    {
+      "id": "confidentiality-executive-search",
+      "type": "FAQ",
+      "props": {
+        "heading": "Confidentiality & Ethics",
+        "items": [
+          {"question": "How do you ensure confidentiality?", "answer": "We approach candidates discreetly and protect client identity throughout the process."},
+          {"question": "Do you recruit from existing clients?", "answer": "No. We maintain off-limits agreements to avoid conflicts of interest."}
+        ]
+      }
+    },
+    {
+      "id": "metrics-executive-search",
+      "type": "MetricsBand",
+      "props": {
+        "heading": "Search Success Metrics",
+        "items": [
+          {"value": "98%", "label": "Placement Completion"},
+          {"value": "45", "label": "Days to Shortlist"},
+          {"value": "95%", "label": "Two-Year Retention"}
+        ]
+      }
+    },
+    {
+      "id": "testimonials-executive-search",
+      "type": "Testimonials",
+      "props": {
+        "heading": "Client Feedback",
+        "items": [
+          {
+            "quote": "Networkk delivered exceptional candidates quickly and professionally.",
+            "author": {"name": "Anita Patel", "title": "CEO", "company": "TechNova"},
+            "rating": 5
+          }
+        ],
+        "layout": "carousel",
+        "slider": true
+      }
+    },
+    {
+      "id": "final-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Request a Search Consultation",
+        "description": "Connect with our team to begin your executive search journey.",
+        "backgroundType": "gradient",
+        "primaryCta": {"label": "Request Consultation", "href": "/contact"}
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T10:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}

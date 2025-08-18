@@ -1,0 +1,99 @@
+{
+  "slug": "diversity-inclusion",
+  "title": "Diversity & Inclusion Consulting",
+  "status": "published",
+  "seo": {
+    "title": "Diversity & Inclusion Services - Networkk",
+    "description": "Build a diverse, inclusive workforce with strategic D&I programs that create equitable hiring practices and foster inclusive leadership cultures.",
+    "canonical": "https://networkk.com/services/diversity-inclusion/",
+    "noindex": false,
+    "keywords": ["diversity", "inclusion", "D&I programs"]
+  },
+  "blocks": [
+    {
+      "id": "hero-diversity-inclusion",
+      "type": "Hero",
+      "props": {
+        "title": "Build a Diverse, Inclusive Workforce",
+        "subtitle": "Diversity & Inclusion Consulting",
+        "description": "Inclusive strategies that drive innovation and performance.",
+        "backgroundType": "gradient",
+        "textAlign": "center",
+        "fullHeight": false
+      }
+    },
+    {
+      "id": "why-di",
+      "type": "RichText",
+      "props": {
+        "heading": "Why D&I Matters",
+        "content": "<p>Inclusive organizations outperform peers. We design initiatives that embed equity into hiring, development, and culture.</p>"
+      }
+    },
+    {
+      "id": "methodology-di",
+      "type": "ProcessSteps",
+      "props": {
+        "heading": "Consulting Methodology",
+        "steps": [
+          {"number": 1, "title": "Audit", "description": "Review current policies and representation."},
+          {"number": 2, "title": "Strategy", "description": "Set goals and define measurable outcomes."},
+          {"number": 3, "title": "Implementation", "description": "Launch programs and inclusive hiring practices."},
+          {"number": 4, "title": "Measurement", "description": "Track progress and refine initiatives."}
+        ]
+      }
+    },
+    {
+      "id": "confidentiality-di",
+      "type": "FAQ",
+      "props": {
+        "heading": "Confidentiality & Ethics",
+        "items": [
+          {"question": "Is employee feedback anonymous?", "answer": "Yes, survey responses and interviews are aggregated to protect identities."},
+          {"question": "Do you ensure unbiased research?", "answer": "Our consultants follow strict protocols to minimize bias in data collection."}
+        ]
+      }
+    },
+    {
+      "id": "metrics-di",
+      "type": "MetricsBand",
+      "props": {
+        "heading": "Impact Metrics",
+        "items": [
+          {"value": "40%", "label": "Leadership Diversity Increase"},
+          {"value": "3x", "label": "Retention Improvement"},
+          {"value": "25", "label": "Countries Served"}
+        ]
+      }
+    },
+    {
+      "id": "testimonials-di",
+      "type": "Testimonials",
+      "props": {
+        "heading": "Client Feedback",
+        "items": [
+          {
+            "quote": "Working with Networkk transformed our approach to inclusion across the leadership team.",
+            "author": {"name": "Michael Wong", "title": "Managing Director", "company": "Horizon Financial"},
+            "rating": 5
+          }
+        ],
+        "layout": "carousel",
+        "slider": true
+      }
+    },
+    {
+      "id": "final-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Start Your D&I Journey",
+        "description": "Partner with us to embed inclusion across your organization.",
+        "backgroundType": "gradient",
+        "primaryCta": {"label": "Request Consultation", "href": "/contact"}
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T10:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}

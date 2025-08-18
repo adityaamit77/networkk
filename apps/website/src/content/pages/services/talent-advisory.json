@@ -1,0 +1,99 @@
+{
+  "slug": "talent-advisory",
+  "title": "Talent Advisory",
+  "status": "published",
+  "seo": {
+    "title": "Talent Advisory - Networkk",
+    "description": "Strategic guidance on leadership development and succession planning.",
+    "canonical": "https://networkk.com/services/talent-advisory/",
+    "noindex": false,
+    "keywords": ["talent advisory", "succession planning", "leadership development"]
+  },
+  "blocks": [
+    {
+      "id": "hero-talent-advisory",
+      "type": "Hero",
+      "props": {
+        "title": "Align Talent With Strategy",
+        "subtitle": "Talent Advisory",
+        "description": "Insightful assessments and guidance to develop resilient leadership pipelines.",
+        "backgroundType": "gradient",
+        "textAlign": "center",
+        "fullHeight": false
+      }
+    },
+    {
+      "id": "why-talent-advisory",
+      "type": "RichText",
+      "props": {
+        "heading": "What We Do",
+        "content": "<p>We evaluate current capabilities, identify gaps, and advise on development to ensure you have the right leaders in place for future growth.</p>"
+      }
+    },
+    {
+      "id": "methodology-talent-advisory",
+      "type": "ProcessSteps",
+      "props": {
+        "heading": "Our Methodology",
+        "steps": [
+          {"number": 1, "title": "Assessment", "description": "Analyze existing leadership strengths and gaps."},
+          {"number": 2, "title": "Planning", "description": "Design succession and development roadmaps."},
+          {"number": 3, "title": "Implementation", "description": "Facilitate coaching and training programs."},
+          {"number": 4, "title": "Review", "description": "Measure progress and refine strategy."}
+        ]
+      }
+    },
+    {
+      "id": "confidentiality-talent-advisory",
+      "type": "FAQ",
+      "props": {
+        "heading": "Confidentiality & Ethics",
+        "items": [
+          {"question": "Are assessments private?", "answer": "Yes, individual results are shared only with authorized stakeholders."},
+          {"question": "Do you use standardized tools?", "answer": "We combine validated instruments with bespoke evaluation."}
+        ]
+      }
+    },
+    {
+      "id": "metrics-talent-advisory",
+      "type": "MetricsBand",
+      "props": {
+        "heading": "Advisory Impact",
+        "items": [
+          {"value": "80%", "label": "Bench Strength Improved"},
+          {"value": "150", "label": "Leaders Assessed"},
+          {"value": "12", "label": "Weeks Avg. Engagement"}
+        ]
+      }
+    },
+    {
+      "id": "testimonials-talent-advisory",
+      "type": "Testimonials",
+      "props": {
+        "heading": "Client Feedback",
+        "items": [
+          {
+            "quote": "Their insights reshaped our succession planning and leadership culture.",
+            "author": {"name": "Elena Garcia", "title": "COO", "company": "MedSys"},
+            "rating": 5
+          }
+        ],
+        "layout": "carousel",
+        "slider": true
+      }
+    },
+    {
+      "id": "final-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Explore Advisory Services",
+        "description": "See how strategic guidance can strengthen your leadership.",
+        "backgroundType": "gradient",
+        "primaryCta": {"label": "Talk to an Advisor", "href": "/contact"}
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T10:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}

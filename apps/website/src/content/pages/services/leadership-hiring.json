@@ -1,0 +1,99 @@
+{
+  "slug": "leadership-hiring",
+  "title": "Leadership Hiring",
+  "status": "published",
+  "seo": {
+    "title": "Leadership Hiring - Networkk",
+    "description": "Strategic recruitment for directors, VPs, and future executives.",
+    "canonical": "https://networkk.com/services/leadership-hiring/",
+    "noindex": false,
+    "keywords": ["leadership hiring", "senior recruitment", "director search"]
+  },
+  "blocks": [
+    {
+      "id": "hero-leadership-hiring",
+      "type": "Hero",
+      "props": {
+        "title": "Build Your Leadership Bench",
+        "subtitle": "Leadership Hiring",
+        "description": "We help you recruit high-potential leaders across functions.",
+        "backgroundType": "gradient",
+        "textAlign": "center",
+        "fullHeight": false
+      }
+    },
+    {
+      "id": "why-leadership-hiring",
+      "type": "RichText",
+      "props": {
+        "heading": "Why It Matters",
+        "content": "<p>Strong mid-level and senior leaders create the pipeline for tomorrow's executives. Our team identifies talent that aligns with your culture and future vision.</p>"
+      }
+    },
+    {
+      "id": "methodology-leadership-hiring",
+      "type": "ProcessSteps",
+      "props": {
+        "heading": "Our Approach",
+        "steps": [
+          {"number": 1, "title": "Role Scoping", "description": "Clarify success profiles and competencies."},
+          {"number": 2, "title": "Candidate Sourcing", "description": "Blend database research with targeted outreach."},
+          {"number": 3, "title": "Evaluation", "description": "Structured interviews and reference checks."},
+          {"number": 4, "title": "Onboarding Support", "description": "Guidance through offer and integration."}
+        ]
+      }
+    },
+    {
+      "id": "confidentiality-leadership-hiring",
+      "type": "FAQ",
+      "props": {
+        "heading": "Ethics & Confidentiality",
+        "items": [
+          {"question": "How are candidates vetted?", "answer": "We conduct thorough background and reference checks before recommendation."},
+          {"question": "Is the search confidential?", "answer": "Yes, we keep both client and candidate information protected."}
+        ]
+      }
+    },
+    {
+      "id": "metrics-leadership-hiring",
+      "type": "MetricsBand",
+      "props": {
+        "heading": "Hiring Metrics",
+        "items": [
+          {"value": "90%", "label": "First-Year Retention"},
+          {"value": "60", "label": "Days to Placement"},
+          {"value": "200+", "label": "Leaders Hired"}
+        ]
+      }
+    },
+    {
+      "id": "testimonials-leadership-hiring",
+      "type": "Testimonials",
+      "props": {
+        "heading": "Success Stories",
+        "items": [
+          {
+            "quote": "Their understanding of our culture made every hire a perfect fit.",
+            "author": {"name": "Ravi Shah", "title": "HR Director", "company": "FinEdge"},
+            "rating": 5
+          }
+        ],
+        "layout": "carousel",
+        "slider": true
+      }
+    },
+    {
+      "id": "final-cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Discuss Your Leadership Needs",
+        "description": "Speak with our specialists about upcoming leadership roles.",
+        "backgroundType": "gradient",
+        "primaryCta": {"label": "Start Hiring", "href": "/contact"}
+      }
+    }
+  ],
+  "publishedAt": "2025-01-15T10:00:00Z",
+  "createdAt": "2025-01-15T10:00:00Z",
+  "updatedAt": "2025-01-15T10:00:00Z"
+}
