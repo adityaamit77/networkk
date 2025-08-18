@@ -36,7 +36,7 @@ const allModules = import.meta.glob('../../content/insights/*.{json,mdx}', { eag
 const relatedInsights = Object.entries(allModules)
   .map(([path, mod]) => {
     const rslug = path.replace('../../content/insights/', '').replace(/\.(json|mdx)$/,'');
-    const data: any = path.endsWith('.mdx') ? mod.frontmatter : mod.default || mod;
+    const data: any = path.endsWith('.mdx') ? (mod as any).frontmatter : (mod as any).default || mod;
     return { ...data, slug: rslug };
   })
   .filter(post => post.slug !== slug)

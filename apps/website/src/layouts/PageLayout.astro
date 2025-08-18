@@ -72,17 +72,28 @@ const combinedJsonLd = [
   websiteSchema,
   ...(breadcrumbItems.length > 1 ? [breadcrumbSchema] : [])
 ];
+
+// Debug logging
+console.log('Page object:', page);
+console.log('Page SEO:', page?.seo);
+console.log('Page SEO image:', page?.seo?.image);
+console.log('Page SEO keywords:', page?.seo?.keywords);
+
+// Build props for BaseLayout conditionally
+const baseLayoutProps = {
+  title: page.seo.title,
+  description: page.seo.description,
+  canonical: page.seo.canonical,
+  noindex: page.seo.noindex,
+  footerTheme: theme,
+  ...(page.seo?.keywords && { keywords: page.seo.keywords }),
+  ...(page.seo?.image && { image: page.seo.image })
+};
+
+console.log('BaseLayout props:', baseLayoutProps);
 ---
 
-<BaseLayout
-  title={page.seo.title}
-  description={page.seo.description}
-  canonical={page.seo.canonical}
-  noindex={page.seo.noindex}
-  image={page.seo.image}
-  keywords={page.seo.keywords}
-  footerTheme={theme}
->
+<BaseLayout {...baseLayoutProps}>
   <!-- Page-level JSON-LD -->
   <JsonLd data={combinedJsonLd} />
   
