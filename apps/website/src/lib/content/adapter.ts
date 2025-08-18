@@ -32,19 +32,25 @@ export interface InsightContent {
 // Simplified content loading for Phase 1
 export async function loadPageBySlug(slug: string): Promise<PageContent | null> {
   try {
-    const contentModule = await import(`../../content/pages/${slug}.json`);
-    const content = contentModule.default;
+    const modules = import.meta.glob('../../content/pages/**/*.json', { eager: true }) as Record<string, any>;
+    const match = Object.entries(modules).find(([path]) =>
+      path.replace('../../content/pages/', '').replace('.json', '') === slug
+    );
+
+    if (!match) {
+      console.error(`Failed to load page: ${slug}`, 'Module not found');
+      return null;
+    }
+
+    const [, module] = match;
+    const content = module.default || module;
     const seoResult = SEOSchema.safeParse(content.seo);
     if (!seoResult.success) {
       console.error(`Invalid SEO data for page: ${slug}`, seoResult.error.flatten());
       throw new Error(`Invalid SEO data for page: ${slug}`);
     }
     return { ...content, seo: seoResult.data } as PageContent;
-  } catch (error: any) {
-    if (error?.code === 'MODULE_NOT_FOUND') {
-      console.error(`Failed to load page: ${slug}`, error);
-      return null;
-    }
+  } catch (error) {
     console.error(`Failed to load page: ${slug}`, error);
     throw error;
   }

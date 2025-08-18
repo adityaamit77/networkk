@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { loadInsightBySlug } from '../../lib/content/adapter';
+
+export async function getStaticPaths() {
+  const modules = import.meta.glob('../../content/insights/*.json', { eager: true });
+  return Object.entries(modules)
+    .map(([path, mod]) => {
+      const slug = path.replace('../../content/insights/', '').replace('.json', '');
+      const data: any = (mod as any).default ?? mod;
+      const status = data?.status ?? 'published';
+      if (status !== 'published') return null;
+      return { params: { slug } };
+    })
+    .filter(Boolean);
+}
+
+const slug = Astro.params.slug as string;
+const insight = await loadInsightBySlug(slug);
+if (!insight) {
+  return new Response(null, { status: 404, statusText: 'Insight not found' });
+}
+---
+<BaseLayout
+  title={insight.seo.title}
+  description={insight.seo.description}
+  canonical={insight.seo.canonical}
+  noindex={insight.seo.noindex}
+  keywords={insight.seo.keywords}
+  image={insight.image}
+>
+  <article class="container mx-auto px-4 py-12 prose lg:prose-lg">
+    <h1>{insight.title}</h1>
+    {insight.content && <div set:html={insight.content} />}
+  </article>
+</BaseLayout>
