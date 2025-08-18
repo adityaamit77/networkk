@@ -23,6 +23,31 @@
       }
     },
     {
+      "id": "careers-benefits",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Why Work With Us",
+        "description": "A culture built for growth and flexibility.",
+        "columns": "3",
+        "items": [
+          { "title": "Hybrid Workplace", "description": "Work from anywhere with collaborative hubs.", "icon": "\uD83C\uDF10" },
+          { "title": "Learning Budget", "description": "Annual stipend for courses and conferences.", "icon": "\uD83D\uDCDA" },
+          { "title": "Wellness First", "description": "Comprehensive health plans and recharge days.", "icon": "\uD83D\uDECC" }
+        ]
+      }
+    },
+    {
+      "id": "careers-faq",
+      "type": "FAQ",
+      "props": {
+        "heading": "Hiring FAQs",
+        "items": [
+          { "question": "How do I apply?", "answer": "Send your resume and a brief cover note via our contact form." },
+          { "question": "Do you offer remote roles?", "answer": "Yes, many roles are remote-friendly with flexible schedules." }
+        ]
+      }
+    },
+    {
       "id": "final-cta",
       "type": "CTA",
       "props": {

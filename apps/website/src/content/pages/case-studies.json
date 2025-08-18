@@ -270,6 +270,23 @@
       }
     },
     {
+      "id": "case-testimonials",
+      "type": "Testimonials",
+      "props": {
+        "heading": "Client Voices",
+        "items": [
+          {
+            "quote": "The leaders we hired through Networkk delivered immediate impact.",
+            "author": { "name": "Lena Matthews", "title": "COO", "company": "RetailCo" }
+          },
+          {
+            "quote": "Their understanding of our culture made the search effortless.",
+            "author": { "name": "Arjun Rao", "title": "Chairman", "company": "TechStart" }
+          }
+        ]
+      }
+    },
+    {
       "id": "case-studies-cta",
       "type": "CTA",
       "props": {

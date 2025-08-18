@@ -210,6 +210,20 @@
       }
     },
     {
+      "id": "team-stats",
+      "type": "Statistics",
+      "props": {
+        "heading": "Team by the Numbers",
+        "stats": [
+          { "value": "12", "label": "Partners", "icon": "\uD83D\uDC65" },
+          { "value": "8", "label": "Countries", "icon": "\uD83C\uDF0E" },
+          { "value": "25+", "label": "Years Avg Experience", "icon": "\uD83C\uDF93" }
+        ],
+        "backgroundType": "light",
+        "theme": "emerald"
+      }
+    },
+    {
       "id": "join-team-cta",
       "type": "CTA",
       "props": {
