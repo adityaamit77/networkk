@@ -18,7 +18,7 @@
         "subtitle": "Executive Search Excellence",
         "description": "We connect forward-thinking companies with visionary executives who drive sustainable growth, innovation, and lasting change across industries.",
         "media": {
-          "image": "/images/hero-main.jpg",
+          "image": "/images/hero-main.avif",
           "alt": "Professional executive team meeting in contemporary office",
           "ratio": "16:9"
         },
@@ -53,28 +53,28 @@
             "description": "Find C-suite and senior leadership talent who align with your vision and drive transformational growth through proven methodologies.",
             "icon": "🎯",
             "href": "/executive-search",
-            "image": "/images/service-executive-search.jpg"
+            "image": "/images/service-executive-search.avif"
           },
           {
             "title": "Leadership Hiring",
             "description": "Strategic recruitment for directors, VPs, and emerging leaders who will shape your organization's future and cultural evolution.",
             "icon": "👥",
             "href": "/leadership-hiring",
-            "image": "/images/service-leadership-hiring.jpg"
+            "image": "/images/service-leadership-hiring.avif"
           },
           {
             "title": "Talent Advisory",
             "description": "Strategic guidance on leadership development, succession planning, and organizational design for sustainable competitive advantage.",
             "icon": "💡",
             "href": "/talent-advisory",
-            "image": "/images/service-talent-advisory.jpg"
+            "image": "/images/service-talent-advisory.avif"
           },
           {
             "title": "D&I Consulting",
             "description": "Build diverse, inclusive leadership teams that reflect your values, drive innovation, and create lasting organizational change.",
             "icon": "🌟",
             "href": "/diversity-inclusion",
-            "image": "/images/service-diversity-inclusion.jpg"
+            "image": "/images/service-diversity-inclusion.avif"
           }
         ]
       }
@@ -89,37 +89,37 @@
           {
             "title": "Technology & Software",
             "description": "From AI pioneers to established tech giants, we understand the unique leadership challenges in rapidly evolving digital landscapes.",
-            "image": "/images/hero-main.jpg",
+            "image": "/images/hero-main.avif",
             "href": "/industries/technology"
           },
           {
             "title": "Financial Services",
             "description": "Banking, fintech, investment management, and insurance leaders who navigate complex regulatory environments with vision.",
-            "image": "/images/service-leadership-hiring.jpg",
+            "image": "/images/service-leadership-hiring.avif",
             "href": "/industries/financial-services"
           },
           {
             "title": "Healthcare & Life Sciences",
             "description": "Pharmaceutical, biotech, medical device, and healthcare service leaders driving innovation in patient care and outcomes.",
-            "image": "/images/service-talent-advisory.jpg",
+            "image": "/images/service-talent-advisory.avif",
             "href": "/industries/healthcare"
           },
           {
             "title": "Manufacturing & Industrial",
             "description": "Leaders who transform traditional manufacturing through Industry 4.0, sustainability, and operational excellence.",
-            "image": "/images/service-diversity-inclusion.jpg",
+            "image": "/images/service-diversity-inclusion.avif",
             "href": "/industries/manufacturing"
           },
           {
             "title": "Consumer & Retail",
             "description": "E-commerce, traditional retail, and consumer goods leaders navigating omnichannel transformations and evolving consumer behavior.",
-            "image": "/images/service-executive-search.jpg",
+            "image": "/images/service-executive-search.avif",
             "href": "/industries/consumer-retail"
           },
           {
             "title": "Energy & Sustainability",
             "description": "Renewable energy, oil & gas, and sustainability leaders driving the transition to a more sustainable future.",
-            "image": "/images/industry-energy.jpg",
+            "image": "/images/industry-energy.avif",
             "href": "/industries/energy"
           }
         ],
@@ -141,7 +141,7 @@
               "name": "Priya Sharma",
               "title": "Board Chair & Co-Founder",
               "company": "TechForward Solutions",
-              "image": "/images/testimonial-priya-sharma.jpg"
+              "image": "/images/testimonial-priya-sharma.avif"
             },
             "rating": 5
           },
@@ -151,7 +151,7 @@
               "name": "Rajesh Patel", 
               "title": "Founder & CEO",
               "company": "DataFlow Analytics",
-              "image": "/images/testimonial-rajesh-patel.jpg"
+              "image": "/images/testimonial-rajesh-patel.avif"
             },
             "rating": 5
           },
@@ -161,90 +161,13 @@
               "name": "Sarah Chen",
               "title": "Chief Human Resources Officer",
               "company": "Global Innovations Inc",
-              "image": "/images/testimonial-sarah-chen.jpg"
+              "image": "/images/testimonial-sarah-chen.avif"
             },
             "rating": 5
           }
         ],
         "layout": "carousel",
         "slider": true
-      }
-    },
-    {
-      "id": "key-statistics",
-      "type": "Statistics",
-      "props": {
-        "heading": "Our Impact",
-        "description": "Numbers that demonstrate our commitment to excellence and the trust our partners place in us.",
-        "stats": [
-          {
-            "value": "500+",
-            "label": "Executives Placed",
-            "description": "Across all industries",
-            "icon": "🎯"
-          },
-          {
-            "value": "95%",
-            "label": "Retention Rate", 
-            "description": "After 24 months",
-            "icon": "💼"
-          },
-          {
-            "value": "45",
-            "label": "Days Average",
-            "description": "Time to placement",
-            "icon": "⚡"
-          },
-          {
-            "value": "200+",
-            "label": "Organizations",
-            "description": "Trusted partners",
-            "icon": "🤝"
-          },
-          {
-            "value": "15+",
-            "label": "Industries",
-            "description": "Specialized sectors",
-            "icon": "🏭"
-          },
-          {
-            "value": "10+",
-            "label": "Years",
-            "description": "Market expertise",
-            "icon": "📈"
-          }
-        ],
-        "backgroundType": "gradient"
-      }
-    },
-    {
-      "id": "featured-insights",
-      "type": "TilesGrid",
-      "props": {
-        "heading": "Latest Insights", 
-        "description": "Stay ahead with our research, market analysis, and thought leadership on the evolving landscape of executive leadership.",
-        "columns": "3",
-        "backgroundType": "gradient",
-        "items": [
-          {
-            "title": "2025 CXO Hiring Trends",
-            "description": "What top firms are doing differently in executive recruitment and the skills that matter most in the next decade.",
-            "image": "/images/insight-cxo-trends.jpg",
-            "href": "/insights/cxo-hiring-trends-2025"
-          },
-          {
-            "title": "Building Resilient Leadership Teams",
-            "description": "How forward-thinking organizations are structuring leadership for uncertainty and rapid change.",
-            "image": "/images/insight-resilient-teams.jpg",
-            "href": "/insights/resilient-leadership-teams"
-          },
-          {
-            "title": "Diversity in Executive Hiring",
-            "description": "Best practices for building inclusive leadership teams that drive innovation and performance.",
-            "image": "/images/insight-diversity-hiring.jpg",
-            "href": "/insights/diversity-executive-hiring"
-          }
-        ]
       }
     },
     {
@@ -274,8 +197,23 @@
       }
     },
     {
+      "id": "key-metrics",
+      "type": "MetricsBand",
+      "props": {
+        "heading": "Our Impact",
+        "items": [
+          { "value": "500+", "label": "Executives Placed", "description": "Across all industries" },
+          { "value": "95%", "label": "Retention Rate", "description": "After 24 months" },
+          { "value": "45", "label": "Days Average", "description": "Time to placement" },
+          { "value": "200+", "label": "Organizations", "description": "Trusted partners" },
+          { "value": "15+", "label": "Industries", "description": "Specialized sectors" },
+          { "value": "10+", "label": "Years", "description": "Market expertise" }
+        ]
+      }
+    },
+    {
       "id": "partner-logos",
-      "type": "Logos",
+      "type": "LogosStrip",
       "props": {
         "heading": "Trusted by Industry Leaders",
         "description": "We're proud to partner with some of the world's most innovative and successful organizations.",

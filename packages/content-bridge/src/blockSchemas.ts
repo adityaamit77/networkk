@@ -112,6 +112,13 @@ export const CTASchema = z.object({
   backgroundType: z.enum(['solid', 'gradient']).default('solid'),
 });
 
+// Rich Text Schema
+export const RichTextSchema = z.object({
+  heading: z.string().min(5).max(80).optional(),
+  content: z.string().min(20),
+  align: z.enum(['left', 'center', 'right']).default('left'),
+});
+
 // Page Schema
 export const PageSchema = z.object({
   slug: z.string().regex(/^[a-z0-9-]+$/),
@@ -328,6 +335,7 @@ export const BlockInstanceSchema: z.ZodType = BaseBlockSchema.extend({
     'FAQ',
     'CTA',
     'InsightsPreview',
+    'RichText',
     'LogosStrip',
     'Timeline',
     'CaseStudyList',
@@ -387,3 +395,4 @@ export type TestimonialsProps = z.infer<typeof TestimonialsSchema>;
 export type MetricsBandProps = z.infer<typeof MetricsBandSchema>;
 export type FAQProps = z.infer<typeof FAQSchema>;
 export type CTAProps = z.infer<typeof CTASchema>;
+export type RichTextProps = z.infer<typeof RichTextSchema>;
