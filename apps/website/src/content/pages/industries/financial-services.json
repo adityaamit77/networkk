@@ -4,25 +4,80 @@
   "status": "published",
   "seo": {
     "title": "Financial Services Industry - Networkk",
-    "description": "Executive talent for banking, fintech and insurance.",
+      "description": "Leadership recruitment for banks, insurers and fintech startups focused on governance, digital transformation and customer trust across regulated markets.",
     "canonical": "https://networkk.com/industries/financial-services/",
     "noindex": false,
     "keywords": ["finance", "fintech", "banking"]
   },
-  "blocks": [
-    {
-      "id": "hero-industry",
-      "type": "Hero",
-      "props": {
-        "title": "Financial Services",
-        "subtitle": "Industry Expertise",
-        "description": "Leaders who navigate complex financial landscapes.",
-        "backgroundType": "gradient",
-        "textAlign": "center",
-        "fullHeight": false
+    "blocks": [
+      {
+        "id": "hero-industry",
+        "type": "Hero",
+        "props": {
+          "title": "Financial Services",
+          "subtitle": "Industry Expertise",
+          "description": "Leaders who navigate complex financial landscapes.",
+          "backgroundType": "gradient",
+          "textAlign": "center",
+          "fullHeight": false
+        }
+      },
+      {
+        "id": "overview",
+        "type": "RichText",
+        "props": {
+          "heading": "Overview",
+          "content": "<p>We advise banks, insurers and fintechs on building leadership for growth and governance. Through <a href=\"/services/executive-search\">Executive Search</a> and <a href=\"/services/talent-advisory\">Talent Advisory</a>, clients secure leaders who deliver trust and innovation.</p>"
+        }
+      },
+      {
+        "id": "trends",
+        "type": "RichText",
+        "props": {
+          "heading": "Trends",
+          "content": "<ul><li>Fintech disruption challenging legacy models</li><li>Regulatory scrutiny elevating compliance roles</li><li>Digital channels reshaping customer experience</li></ul>"
+        }
+      },
+      {
+        "id": "roles",
+        "type": "TilesGrid",
+        "props": {
+          "heading": "Typical Mandates",
+          "columns": "3",
+          "items": [
+            { "title": "CFO", "description": "Drive financial stewardship and strategy." },
+            { "title": "Chief Risk Officer", "description": "Manage enterprise and regulatory risk." },
+            { "title": "Head of Digital Banking", "description": "Lead fintech partnerships and channels." }
+          ]
+        }
+      },
+      {
+        "id": "case-studies",
+        "type": "CaseStudy",
+        "props": {
+          "heading": "Representative Case Studies",
+          "studies": [
+            {
+              "title": "Fintech Expansion",
+              "industry": "Financial Services",
+              "challenge": "Neobank required experienced compliance leadership for new markets.",
+              "solution": "Secured a Chief Risk Officer with global regulatory expertise.",
+              "results": "Enabled launch in three countries while meeting all regulatory standards."
+            }
+          ]
+        }
+      },
+      {
+        "id": "cta",
+        "type": "CTA",
+        "props": {
+          "heading": "Build Financial Leadership",
+          "description": "Find executives who move capital markets.",
+          "backgroundType": "gradient",
+          "primaryCta": { "label": "Connect With Us", "href": "/contact" }
+        }
       }
-    }
-  ],
+    ],
   "publishedAt": "2025-01-15T10:00:00Z",
   "createdAt": "2025-01-15T10:00:00Z",
   "updatedAt": "2025-01-15T10:00:00Z"

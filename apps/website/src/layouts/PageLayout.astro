@@ -4,6 +4,7 @@ import Heading from '../components/ui/Heading.astro';
 import BlockRenderer from '../components/blocks/BlockRenderer.astro';
 import JsonLd from '../components/seo/JsonLd.astro';
 import { createOrganizationSchema, createWebsiteSchema, createBreadcrumbSchema } from '../lib/seo';
+import { loadPageBySlug } from '../lib/content/adapter';
 
 export interface Props {
   page: {
@@ -48,6 +49,16 @@ const breadcrumbItems = [
 ];
 
 if (page.slug !== 'home') {
+  const segments = page.slug.split('/');
+  let accumulated = '';
+  for (let i = 0; i < segments.length - 1; i++) {
+    accumulated += (i > 0 ? '/' : '') + segments[i];
+    const parent = await loadPageBySlug(accumulated);
+    if (parent) {
+      breadcrumbItems.push({ name: parent.title, url: parent.seo.canonical });
+    }
+  }
+
   breadcrumbItems.push({
     name: page.title,
     url: page.seo.canonical

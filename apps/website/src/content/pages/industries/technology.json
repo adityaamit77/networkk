@@ -4,7 +4,7 @@
   "status": "published",
   "seo": {
     "title": "Technology & Software Industry - Networkk",
-    "description": "Talent solutions for software and digital innovators.",
+      "description": "Executive talent solutions for software developers, SaaS providers and digital innovators seeking experienced leadership to scale products and teams globally.",
     "canonical": "https://networkk.com/industries/technology/",
     "noindex": false,
     "keywords": ["technology", "software", "digital"]
@@ -20,6 +20,61 @@
         "backgroundType": "gradient",
         "textAlign": "center",
         "fullHeight": false
+      }
+    },
+    {
+      "id": "overview",
+      "type": "RichText",
+      "props": {
+        "heading": "Overview",
+        "content": "<p>From early-stage disruptors to global platforms, we help technology companies secure leadership that drives innovation. Our services span <a href=\"/services/executive-search\">Executive Search</a> and <a href=\"/services/leadership-hiring\">Leadership Hiring</a> to build resilient teams.</p>"
+      }
+    },
+    {
+      "id": "trends",
+      "type": "RichText",
+      "props": {
+        "heading": "Trends",
+        "content": "<ul><li>AI and automation reshaping product roadmaps</li><li>Global competition for engineering leadership</li><li>Focus on scalable, secure cloud infrastructure</li></ul>"
+      }
+    },
+    {
+      "id": "roles",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Typical Mandates",
+        "columns": "3",
+        "items": [
+          { "title": "CTO", "description": "Technology vision and architecture." },
+          { "title": "VP Engineering", "description": "Scale development teams and processes." },
+          { "title": "Product Head", "description": "Lead product strategy and execution." }
+        ]
+      }
+    },
+    {
+      "id": "case-studies",
+      "type": "CaseStudy",
+      "props": {
+        "heading": "Representative Case Studies",
+        "studies": [
+          {
+            "title": "Scaling a SaaS Unicorn",
+            "industry": "Technology",
+            "challenge": "Series D startup needed seasoned leadership to manage hyper-growth.",
+            "solution": "Delivered a VP Engineering with global scaling experience.",
+            "results": "Reduced release cycles and doubled engineering capacity within a year."
+          }
+        ]
+      }
+    },
+    {
+      "id": "cta",
+      "type": "CTA",
+      "props": {
+        "heading": "Need Tech Talent?",
+        "description": "Let's discuss your next strategic hire.",
+        "backgroundType": "gradient",
+        "primaryCta": { "label": "Start a Search", "href": "/contact" }
       }
     }
   ],
