@@ -111,7 +111,7 @@ export async function getSiteConfig() {
     description: 'Transform your business with top-tier executive talent',
     url: 'https://networkk.com',
     logo: '/logo.png',
-    favicon: '/favicon.svg',
+    favicon: '/favicon.ico',
     navigation: {
       header: [
         { label: 'Home', href: '/' },
