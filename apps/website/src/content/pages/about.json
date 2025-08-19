@@ -18,7 +18,7 @@
         "subtitle": "Who We Are",
         "description": "We're a team of passionate professionals dedicated to connecting exceptional talent with visionary organizations, creating transformative partnerships that shape the future of business.",
         "media": {
-          "image": "https://images.pexels.com/photos/3184315/pexels-photo-3184315.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "image": "/images/hero-main.avif",
           "alt": "Networkk leadership team in collaborative discussion",
           "ratio": "16:9"
         },
@@ -40,25 +40,25 @@
             "title": "2013 - The Beginning",
             "description": "Founded in Mumbai with a vision to transform executive search in India through personalized service and deep industry expertise.",
             "icon": "🚀",
-            "image": "https://images.pexels.com/photos/3184359/pexels-photo-3184359.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/service-executive-search.avif"
           },
           {
             "title": "2016 - Regional Expansion", 
             "description": "Expanded across Southeast Asia, establishing partnerships with leading organizations and building our network of exceptional talent.",
             "icon": "🌏",
-            "image": "https://images.pexels.com/photos/3184425/pexels-photo-3184425.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/service-leadership-hiring.avif"
           },
           {
             "title": "2019 - Technology Integration",
             "description": "Pioneered the use of AI and data analytics in executive search, enhancing our ability to identify and assess top talent.",
             "icon": "🤖",
-            "image": "https://images.pexels.com/photos/3184397/pexels-photo-3184397.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/service-talent-advisory.avif"
           },
           {
             "title": "2022 - Industry Recognition",
             "description": "Recognized as 'Best Executive Search Firm' by HR Excellence Awards, cementing our position as industry leaders.",
             "icon": "🏆", 
-            "image": "https://images.pexels.com/photos/3184456/pexels-photo-3184456.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/service-diversity-inclusion.avif"
           }
         ]
       }
@@ -100,38 +100,38 @@
           {
             "title": "Rajesh Kumar",
             "description": "Founder & Managing Director with 20+ years in executive search. Former consultant at McKinsey, specializing in C-suite placements across technology and financial services.",
-            "image": "https://images.pexels.com/photos/3184340/pexels-photo-3184340.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
-            "href": "#rajesh-kumar"
+            "image": "/images/testimonial-rajesh-patel.avif",
+            "href": "/contact"
           },
           {
             "title": "Priya Sharma", 
             "description": "Director of Executive Search with deep expertise in healthcare and life sciences. Previously led talent acquisition at leading pharmaceutical companies across Asia-Pacific.",
-            "image": "https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
-            "href": "#priya-sharma"
+            "image": "/images/testimonial-priya-sharma.avif",
+            "href": "/contact"
           },
           {
             "title": "Arjun Patel",
             "description": "Director of Leadership Advisory specializing in organizational development and succession planning. Former partner at global management consulting firm.",
-            "image": "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
-            "href": "#arjun-patel"
+            "image": "/images/testimonial-rajesh-patel.avif",
+            "href": "/contact"
           },
           {
             "title": "Sarah Chen",
             "description": "Head of Technology Practice with expertise in digital transformation and AI leadership. Previously CTO at two successful fintech startups.",
-            "image": "https://images.pexels.com/photos/3184395/pexels-photo-3184395.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
-            "href": "#sarah-chen"
+            "image": "/images/testimonial-sarah-chen.avif",
+            "href": "/contact"
           },
           {
             "title": "Michael Rodriguez",
             "description": "Director of Diversity & Inclusion initiatives, former CHRO at Fortune 500 companies, passionate about building inclusive leadership teams.",
-            "image": "https://images.pexels.com/photos/3184407/pexels-photo-3184407.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
-            "href": "#michael-rodriguez"
+            "image": "/images/testimonial-rajesh-patel.avif",
+            "href": "/contact"
           },
           {
             "title": "Dr. Anita Gupta",
             "description": "Senior Research Director leading our market intelligence and talent analytics initiatives. PhD in Organizational Psychology from IIM Ahmedabad.",
-            "image": "https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
-            "href": "#anita-gupta"
+            "image": "/images/testimonial-priya-sharma.avif",
+            "href": "/contact"
           }
         ]
       }
@@ -195,37 +195,37 @@
             "title": "Best Executive Search Firm 2024",
             "description": "HR Excellence Awards - India, recognizing our outstanding performance in leadership recruitment and client satisfaction.",
             "icon": "🏆",
-            "image": "https://images.pexels.com/photos/3184453/pexels-photo-3184453.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/service-executive-search.avif"
           },
           {
             "title": "Top 10 Recruitment Companies",
             "description": "Business Today Magazine - Leadership Category, highlighting our innovative approach to executive search and talent advisory.",
             "icon": "⭐",
-            "image": "https://images.pexels.com/photos/3184427/pexels-photo-3184427.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/service-leadership-hiring.avif"
           },
           {
             "title": "Excellence in D&I Hiring",
             "description": "Diversity & Inclusion Council of India, recognizing our leadership in building diverse executive teams and inclusive cultures.",
             "icon": "🌟",
-            "image": "https://images.pexels.com/photos/3184366/pexels-photo-3184366.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/service-diversity-inclusion.avif"
           },
           {
             "title": "Innovation in Talent Tech",
             "description": "TechHR Singapore 2023, for our pioneering use of AI and analytics in executive assessment and matching.",
             "icon": "🚀",
-            "image": "https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/service-talent-advisory.avif"
           },
           {
             "title": "Client Choice Award",
             "description": "APAC Executive Search Awards, based on client feedback scores and long-term partnership success rates.",
             "icon": "❤️",
-            "image": "https://images.pexels.com/photos/3184412/pexels-photo-3184412.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/testimonial-priya-sharma.avif"
           },
           {
             "title": "Sustainable Business Practice",
             "description": "Green Business Certification 2024, for our commitment to sustainable recruitment practices and social responsibility.",
             "icon": "🌱",
-            "image": "https://images.pexels.com/photos/3184450/pexels-photo-3184450.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/industry-energy.avif"
           }
         ]
       }
@@ -242,25 +242,25 @@
             "title": "Education & Skill Development",
             "description": "Partnerships with leading universities and institutions to develop next-generation leaders through mentorship programs, scholarships, and executive education initiatives.",
             "icon": "🎓",
-            "image": "https://images.pexels.com/photos/3184374/pexels-photo-3184374.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/service-executive-search.avif"
           },
           {
             "title": "Women in Leadership",
             "description": "Dedicated initiatives to advance women into senior executive roles, including mentorship networks, leadership development programs, and bias-free search processes.",
             "icon": "👩‍💼",
-            "image": "https://images.pexels.com/photos/3184365/pexels-photo-3184365.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/testimonial-priya-sharma.avif"
           },
           {
             "title": "Environmental Sustainability", 
             "description": "Carbon-neutral operations, paperless processes, and partnerships with organizations driving environmental innovation and sustainable business practices.",
             "icon": "🌍",
-            "image": "https://images.pexels.com/photos/3184386/pexels-photo-3184386.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/industry-energy.avif"
           },
           {
             "title": "Pro Bono Services",
             "description": "Free executive search services for non-profit organizations, social enterprises, and startups addressing critical social and environmental challenges.",
             "icon": "🤲",
-            "image": "https://images.pexels.com/photos/3184379/pexels-photo-3184379.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/service-diversity-inclusion.avif"
           }
         ]
       }

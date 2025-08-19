@@ -18,7 +18,7 @@
         "subtitle": "Our Leadership",
         "description": "Experienced professionals with deep industry knowledge and a passion for connecting exceptional talent with transformative opportunities.",
         "media": {
-          "image": "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "image": "/images/hero-main.avif",
           "alt": "Networkk leadership team in collaborative discussion",
           "ratio": "16:9"
         },
@@ -65,31 +65,31 @@
             "name": "Rajesh Kumar",
             "title": "Founder & CEO",
             "bio": "With over 25 years in executive search and leadership advisory, Rajesh founded Networkk with a vision to transform how organizations build exceptional leadership teams. Former Partner at a global executive search firm and advisor to numerous Fortune 500 CEOs.",
-            "image": "https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "image": "/images/testimonial-rajesh-patel.avif",
             "socialLinks": {
-              "linkedin": "https://linkedin.com/in/rajeshkumar",
-              "twitter": "https://twitter.com/rajeshkumar",
-              "email": "rajesh@networkk.com"
+              "linkedin": "#",
+              "twitter": "#",
+              "email": "/contact"
             }
           },
           {
             "name": "Priya Sharma",
             "title": "Managing Director",
             "bio": "Priya leads our global operations and client strategy. With a background in management consulting at McKinsey and leadership roles at Fortune 100 companies, she brings strategic insight and operational excellence to our executive search practice.",
-            "image": "https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "image": "/images/testimonial-priya-sharma.avif",
             "socialLinks": {
-              "linkedin": "https://linkedin.com/in/priyasharma",
-              "email": "priya@networkk.com"
+              "linkedin": "#",
+              "email": "/contact"
             }
           },
           {
             "name": "David Chen",
             "title": "Chief Financial Officer",
             "bio": "David oversees Networkk's financial strategy and operations. Former investment banker and CFO at high-growth technology companies, he brings financial acumen and strategic planning expertise to our leadership team.",
-            "image": "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "image": "/images/testimonial-sarah-chen.avif",
             "socialLinks": {
-              "linkedin": "https://linkedin.com/in/davidchen",
-              "email": "david@networkk.com"
+              "linkedin": "#",
+              "email": "/contact"
             }
           }
         ],
@@ -107,60 +107,60 @@
             "name": "Sarah Wong",
             "title": "Technology Practice Leader",
             "bio": "Sarah leads our Technology Practice, specializing in C-suite placements for software, fintech, and digital transformation companies. Former CTO and advisor to multiple tech unicorns.",
-            "image": "https://images.pexels.com/photos/3184397/pexels-photo-3184397.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "image": "/images/testimonial-sarah-chen.avif",
             "socialLinks": {
-              "linkedin": "https://linkedin.com/in/sarahwong",
-              "email": "sarah@networkk.com"
+              "linkedin": "#",
+              "email": "/contact"
             }
           },
           {
             "name": "Michael Rodriguez",
             "title": "Financial Services Practice Leader",
             "bio": "Michael specializes in executive search for banking, asset management, and fintech organizations. Former investment banker and board advisor with deep expertise in financial leadership.",
-            "image": "https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "image": "/images/testimonial-rajesh-patel.avif",
             "socialLinks": {
-              "linkedin": "https://linkedin.com/in/michaelrodriguez",
-              "email": "michael@networkk.com"
+              "linkedin": "#",
+              "email": "/contact"
             }
           },
           {
             "name": "Dr. Anita Gupta",
             "title": "Healthcare & Life Sciences Practice Leader",
             "bio": "Dr. Gupta leads our Healthcare Practice, focusing on leadership for hospitals, pharmaceutical companies, and health tech organizations. MD with executive experience in global healthcare organizations.",
-            "image": "https://images.pexels.com/photos/3184396/pexels-photo-3184396.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "image": "/images/testimonial-priya-sharma.avif",
             "socialLinks": {
-              "linkedin": "https://linkedin.com/in/anitagupta",
-              "email": "anita@networkk.com"
+              "linkedin": "#",
+              "email": "/contact"
             }
           },
           {
             "name": "James Wilson",
             "title": "Industrial & Manufacturing Practice Leader",
             "bio": "James specializes in executive search for manufacturing, automotive, and industrial technology companies. Former COO with extensive operational leadership experience in global manufacturing.",
-            "image": "https://images.pexels.com/photos/3184399/pexels-photo-3184399.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "image": "/images/testimonial-rajesh-patel.avif",
             "socialLinks": {
-              "linkedin": "https://linkedin.com/in/jameswilson",
-              "email": "james@networkk.com"
+              "linkedin": "#",
+              "email": "/contact"
             }
           },
           {
             "name": "Elena Martinez",
             "title": "Consumer & Retail Practice Leader",
             "bio": "Elena leads executive search for consumer products, retail, and e-commerce companies. Former CMO with expertise in digital transformation and consumer-centric leadership.",
-            "image": "https://images.pexels.com/photos/3184400/pexels-photo-3184400.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "image": "/images/testimonial-sarah-chen.avif",
             "socialLinks": {
-              "linkedin": "https://linkedin.com/in/elenamartinez",
-              "email": "elena@networkk.com"
+              "linkedin": "#",
+              "email": "/contact"
             }
           },
           {
             "name": "Robert Kim",
             "title": "Board Services Practice Leader",
             "bio": "Robert specializes in board director placements and board effectiveness consulting. Former board member of multiple public companies and governance expert.",
-            "image": "https://images.pexels.com/photos/3184401/pexels-photo-3184401.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop&face",
+            "image": "/images/testimonial-priya-sharma.avif",
             "socialLinks": {
-              "linkedin": "https://linkedin.com/in/robertkim",
-              "email": "robert@networkk.com"
+              "linkedin": "#",
+              "email": "/contact"
             }
           }
         ],

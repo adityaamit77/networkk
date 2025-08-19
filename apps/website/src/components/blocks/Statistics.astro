@@ -87,24 +87,24 @@ const textClasses: Record<string, string> = {
       </div>
     )}
 
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+    <div class="flex flex-wrap justify-center items-start gap-4 lg:gap-8">
       {stats.map((stat: Props['stats'][0], index: number) => (
-        <div class="text-center group">
+        <div class="text-center group max-w-[200px] flex-shrink-0">
           {stat.icon && (
-            <div class="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">
               {stat.icon}
             </div>
           )}
-          <div class={`text-4xl md:text-5xl font-bold mb-2 ${backgroundType === 'gradient' ? currentTheme.statValue : backgroundType === 'dark' ? 'text-white' : 'text-blue-600'}`}>
-            <span class="counter" data-target={stat.value.replace(/[^\d]/g, '')}>
-              0
-            </span>{stat.value.replace(/\d/g, '')}
+          <div class={`text-3xl md:text-4xl font-bold mb-3 ${backgroundType === 'gradient' ? currentTheme.statValue : backgroundType === 'dark' ? 'text-white' : 'text-blue-600'}`}>
+            <span class="counter" data-value={stat.value}>
+              {stat.value}
+            </span>
           </div>
-          <div class={`font-semibold mb-2 ${backgroundType === 'gradient' ? currentTheme.statLabel : backgroundType === 'dark' ? 'text-gray-300' : 'text-gray-900'}`}>
+          <div class={`text-base font-semibold mb-2 ${backgroundType === 'gradient' ? currentTheme.statLabel : backgroundType === 'dark' ? 'text-gray-300' : 'text-gray-900'}`}>
             {stat.label}
           </div>
           {stat.description && (
-            <div class={`text-sm ${backgroundType === 'gradient' ? currentTheme.statDesc : backgroundType === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
+            <div class={`text-xs leading-relaxed ${backgroundType === 'gradient' ? currentTheme.statDesc : backgroundType === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
               {stat.description}
             </div>
           )}
@@ -115,24 +115,32 @@ const textClasses: Record<string, string> = {
 </section>
 
 <script>
-  // Counter animation
-  function animateCounter(element: HTMLElement, target: number) {
+  // Improved counter animation
+  function animateCounter(element: HTMLElement, finalValue: string) {
+    const numericValue = parseInt(finalValue.replace(/[^\d]/g, '')) || 0;
+    const suffix = finalValue.replace(/[\d]/g, '');
+    
+    if (numericValue === 0) {
+      element.textContent = finalValue;
+      return;
+    }
+    
     let current = 0;
-    const increment = target / 50;
+    const increment = numericValue / 60; // 60 frames for 1.5 seconds at 40ms intervals
     const timer = setInterval(() => {
       current += increment;
-      if (current >= target) {
-        current = target;
+      if (current >= numericValue) {
+        current = numericValue;
         clearInterval(timer);
       }
-      element.textContent = Math.floor(current).toString();
-    }, 40);
+      element.textContent = Math.floor(current).toString() + suffix;
+    }, 25); // Slightly faster animation
   }
 
   // Intersection Observer for counter animation
   const observerOptions: IntersectionObserverInit = {
-    threshold: 0.5,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0.3,
+    rootMargin: '0px 0px -10px 0px'
   };
 
   const observer = new IntersectionObserver((entries) => {
@@ -140,21 +148,21 @@ const textClasses: Record<string, string> = {
       if (entry.isIntersecting) {
         const counters = entry.target.querySelectorAll('.counter');
         counters.forEach(counter => {
-          const target = parseInt((counter as HTMLElement).getAttribute('data-target') || '0');
-          if (target) {
-            animateCounter(counter as HTMLElement, target);
-          }
+          const finalValue = (counter as HTMLElement).getAttribute('data-value') || '0';
+          animateCounter(counter as HTMLElement, finalValue);
         });
         observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
 
-  // Observe stats sections
+  // Observe stats sections when DOM is ready
   document.addEventListener('DOMContentLoaded', () => {
-    const statsSection = document.querySelector('.grid');
-    if (statsSection) {
-      observer.observe(statsSection);
-    }
+    const statsGrids = document.querySelectorAll('[class*="grid-cols-1"]');
+    statsGrids.forEach(grid => {
+      if (grid.querySelector('.counter')) {
+        observer.observe(grid);
+      }
+    });
   });
 </script>

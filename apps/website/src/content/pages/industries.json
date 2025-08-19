@@ -51,23 +51,45 @@
       },
       {
         "id": "industry-casestudies",
-        "type": "CaseStudy",
+        "type": "RichText",
         "props": {
           "heading": "Representative Success Stories",
-          "studies": [
+          "content": "<div class=\"max-w-6xl mx-auto\"><p class=\"text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto leading-relaxed\">Our industry expertise drives measurable results across diverse sectors. Explore how we've helped organizations find <span class=\"font-semibold text-blue-600\">transformational leaders</span> who deliver sustainable growth.</p><div class=\"space-y-12\"><div class=\"bg-gradient-to-r from-blue-50 to-cyan-50 rounded-3xl p-8 md:p-12\"><div class=\"grid md:grid-cols-2 gap-8 items-center\"><div class=\"space-y-6\"><div class=\"flex items-center gap-3 mb-4\"><span class=\"bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold\">Technology</span><span class=\"text-2xl\">💻</span></div><h3 class=\"text-2xl md:text-3xl font-bold text-gray-900 mb-4\">Scaling a SaaS Unicorn</h3><div class=\"space-y-4\"><div><span class=\"font-semibold text-red-600\">Challenge:</span> <span class=\"text-gray-700\">Rapid global expansion required seasoned VP Engineering with hyper-growth experience.</span></div><div><span class=\"font-semibold text-blue-600\">Solution:</span> <span class=\"text-gray-700\">Identified leader with proven track record scaling engineering teams 10x in similar environments.</span></div><div><span class=\"font-semibold text-green-600\">Results:</span> <span class=\"text-gray-700\">Accelerated product delivery by 40% and doubled R&D capacity within 12 months.</span></div></div></div><div class=\"relative\"><img src=\"/images/industry-energy.avif\" alt=\"Technology leadership success\" class=\"rounded-2xl shadow-xl w-full h-64 object-cover\" /><div class=\"absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-cyan-600/20 rounded-2xl\"></div></div></div></div><div class=\"bg-gradient-to-r from-emerald-50 to-teal-50 rounded-3xl p-8 md:p-12\"><div class=\"grid md:grid-cols-2 gap-8 items-center\"><div class=\"order-2 md:order-1 relative\"><img src=\"/images/testimonial-priya-sharma.avif\" alt=\"Healthcare digital transformation\" class=\"rounded-2xl shadow-xl w-full h-64 object-cover\" /><div class=\"absolute inset-0 bg-gradient-to-tr from-emerald-600/20 to-teal-600/20 rounded-2xl\"></div></div><div class=\"order-1 md:order-2 space-y-6\"><div class=\"flex items-center gap-3 mb-4\"><span class=\"bg-emerald-100 text-emerald-600 px-4 py-2 rounded-full text-sm font-semibold\">Healthcare</span><span class=\"text-2xl\">🏥</span></div><h3 class=\"text-2xl md:text-3xl font-bold text-gray-900 mb-4\">Digital Transformation in Healthcare</h3><div class=\"space-y-4\"><div><span class=\"font-semibold text-red-600\">Challenge:</span> <span class=\"text-gray-700\">Hospital network needed CTO to modernize legacy patient systems and workflows.</span></div><div><span class=\"font-semibold text-blue-600\">Solution:</span> <span class=\"text-gray-700\">Recruited healthcare technology veteran with EMR implementation expertise.</span></div><div><span class=\"font-semibold text-green-600\">Results:</span> <span class=\"text-gray-700\">Improved patient engagement by 60% and reduced operational costs by $2M annually.</span></div></div></div></div></div><div class=\"bg-gradient-to-r from-amber-50 to-orange-50 rounded-3xl p-8 md:p-12\"><div class=\"grid md:grid-cols-2 gap-8 items-center\"><div class=\"space-y-6\"><div class=\"flex items-center gap-3 mb-4\"><span class=\"bg-amber-100 text-amber-600 px-4 py-2 rounded-full text-sm font-semibold\">Financial Services</span><span class=\"text-2xl\">🏦</span></div><h3 class=\"text-2xl md:text-3xl font-bold text-gray-900 mb-4\">Fintech Innovation Leadership</h3><div class=\"space-y-4\"><div><span class=\"font-semibold text-red-600\">Challenge:</span> <span class=\"text-gray-700\">Traditional bank sought Chief Innovation Officer to compete with fintech startups.</span></div><div><span class=\"font-semibold text-blue-600\">Solution:</span> <span class=\"text-gray-700\">Found leader combining traditional banking expertise with startup agility.</span></div><div><span class=\"font-semibold text-green-600\">Results:</span> <span class=\"text-gray-700\">Launched 3 digital products generating $50M revenue and 200K new customers.</span></div></div></div><div class=\"relative\"><img src=\"/images/testimonial-rajesh-patel.avif\" alt=\"Financial services innovation\" class=\"rounded-2xl shadow-xl w-full h-64 object-cover\" /><div class=\"absolute inset-0 bg-gradient-to-tr from-amber-600/20 to-orange-600/20 rounded-2xl\"></div></div></div></div></div></div>",
+          "align": "center"
+        }
+      },
+      {
+        "id": "industry-stats",
+        "type": "Statistics",
+        "props": {
+          "heading": "Cross-Industry Impact",
+          "description": "Measurable results across diverse sectors and leadership levels.",
+          "backgroundType": "light",
+          "theme": "default",
+          "stats": [
             {
-              "title": "Scaling a SaaS Unicorn",
-              "industry": "Technology",
-              "challenge": "Rapid global expansion required seasoned leadership.",
-              "solution": "Placed a VP Engineering with hyper-growth experience.",
-              "results": "Accelerated product delivery and doubled R&D capacity."
+              "value": "250+",
+              "label": "Industry Placements",
+              "description": "Executive and senior leadership roles filled across 8+ core industries",
+              "icon": "🎯"
             },
             {
-              "title": "Digital Transformation in Healthcare",
-              "industry": "Healthcare",
-              "challenge": "Hospital network needed to modernize patient systems.",
-              "solution": "Recruited a CTO to lead multi-year transformation.",
-              "results": "Improved patient engagement and operational efficiency."
+              "value": "95%",
+              "label": "Success Rate",
+              "description": "Successful placements with 18+ month retention across all sectors",
+              "icon": "📈"
+            },
+            {
+              "value": "25",
+              "label": "Avg Days to Hire",
+              "description": "From initial consultation to successful candidate placement",
+              "icon": "⚡"
+            },
+            {
+              "value": "8+",
+              "label": "Core Industries",
+              "description": "Deep expertise across technology, healthcare, finance, and more",
+              "icon": "🌐"
             }
           ]
         }

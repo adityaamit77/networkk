@@ -1,83 +1,233 @@
 {
   "slug": "industries/healthcare",
-  "title": "Healthcare & Life Sciences",
+  "title": "Healthcare & Life Sciences Leadership",
   "status": "published",
   "seo": {
-    "title": "Healthcare & Life Sciences Industry - Networkk",
-      "description": "Executive search and advisory for hospitals, pharma companies and biotech innovators building patient-centric, compliant and growth-ready leadership teams.",
+    "title": "Healthcare & Life Sciences Industry Leadership - Networkk",
+    "description": "Executive search and advisory for hospitals, pharma companies, and biotech innovators building patient-centric, compliant, and growth-ready leadership teams.",
     "canonical": "https://networkk.com/industries/healthcare/",
     "noindex": false,
-    "keywords": ["healthcare", "life sciences", "biotech"]
+    "keywords": ["healthcare executives", "life sciences leadership", "biotech CEO", "pharmaceutical executives", "hospital leadership"]
   },
-    "blocks": [
-      {
-        "id": "hero-industry",
-        "type": "Hero",
-        "props": {
-          "title": "Healthcare & Life Sciences",
-          "subtitle": "Industry Expertise",
-          "description": "Connecting patient-focused organizations with visionary leaders.",
-          "backgroundType": "gradient",
-          "textAlign": "center",
-          "fullHeight": false
-        }
-      },
-      {
-        "id": "overview",
-        "type": "RichText",
-        "props": {
-          "heading": "Overview",
-          "content": "<p>We partner with hospitals, pharma and biotech firms to build leadership that advances patient outcomes. Our <a href=\"/services/talent-advisory\">Talent Advisory</a> and <a href=\"/services/executive-search\">Executive Search</a> solutions address complex regulatory and growth challenges.</p>"
-        }
-      },
-      {
-        "id": "trends",
-        "type": "RichText",
-        "props": {
-          "heading": "Trends",
-          "content": "<ul><li>Shift toward value-based care models</li><li>Biotech innovation accelerating treatment pipelines</li><li>Digital health driving patient engagement</li></ul>"
-        }
-      },
-      {
-        "id": "roles",
-        "type": "TilesGrid",
-        "props": {
-          "heading": "Typical Mandates",
-          "columns": "3",
-          "items": [
-            { "title": "Chief Medical Officer", "description": "Clinical leadership for care delivery." },
-            { "title": "R&D Head", "description": "Advance research and innovation." },
-            { "title": "Regulatory Affairs Director", "description": "Navigate global compliance." }
-          ]
-        }
-      },
-      {
-        "id": "case-studies",
-        "type": "CaseStudy",
-        "props": {
-          "heading": "Representative Case Studies",
-          "studies": [
-            {
-              "title": "Biotech Commercialization",
-              "industry": "Healthcare",
-              "challenge": "Late-stage biotech needed go-to-market leadership.",
-              "solution": "Placed a Chief Commercial Officer with global launch experience.",
-              "results": "Achieved successful FDA approval and international expansion."
-            }
-          ]
-        }
-      },
-      {
-        "id": "cta",
-        "type": "CTA",
-        "props": {
-          "heading": "Hire Healthcare Leaders",
-          "description": "Partner with us to build patient-first teams.",
-          "backgroundType": "gradient",
-          "primaryCta": { "label": "Request Talent", "href": "/contact" }
-        }
+  "blocks": [
+    {
+      "id": "hero-healthcare",
+      "type": "Hero",
+      "props": {
+        "title": "Transforming Healthcare Through Exceptional Leadership",
+        "subtitle": "Healthcare & Life Sciences",
+        "description": "From breakthrough medical research to patient care excellence, we connect visionary healthcare leaders who drive innovation and improve lives around the world.",
+        "media": {
+          "image": "/images/testimonial-priya-sharma.avif",
+          "alt": "Healthcare leadership and medical innovation",
+          "ratio": "16:9"
+        },
+        "ctas": [
+          {
+            "label": "Find Healthcare Leaders",
+            "href": "/contact",
+            "variant": "primary"
+          },
+          {
+            "label": "View Healthcare Success Stories",
+            "href": "/success-stories",
+            "variant": "outline"
+          }
+        ],
+        "backgroundType": "image",
+        "textAlign": "center",
+        "fullHeight": false,
+        "overlay": true
       }
-    ],
+    },
+    {
+      "id": "healthcare-overview",
+      "type": "RichText",
+      "props": {
+        "heading": "Advancing Patient Care Through Leadership Excellence",
+        "content": "<div class=\"max-w-6xl mx-auto\"><div class=\"grid lg:grid-cols-2 gap-12 items-center\"><div class=\"space-y-6\"><p class=\"text-lg text-gray-600 leading-relaxed\">Healthcare organizations face unprecedented challenges requiring <span class=\"font-semibold text-emerald-600\">visionary leaders</span> who can navigate complex regulatory landscapes, drive medical innovation, and deliver exceptional patient outcomes.</p><div class=\"bg-gradient-to-r from-emerald-50 to-green-50 rounded-2xl p-6 border border-emerald-100\"><p class=\"text-gray-700 font-medium mb-2\">🏥 Healthcare Expertise</p><p class=\"text-sm text-gray-600\">Deep understanding of healthcare delivery, pharmaceutical development, and life sciences innovation across global markets.</p></div></div><div class=\"relative\"><img src=\"/images/service-executive-search.avif\" alt=\"Healthcare leadership excellence\" class=\"rounded-2xl shadow-xl w-full\" /><div class=\"absolute inset-0 bg-gradient-to-tr from-emerald-600/10 to-green-600/10 rounded-2xl\"></div><div class=\"absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg\"><p class=\"text-sm font-semibold text-gray-800\">Patient-First</p><p class=\"text-xs text-gray-600\">Innovation Leaders</p></div></div></div></div>",
+        "align": "center"
+      }
+    },
+    {
+      "id": "healthcare-sectors",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Healthcare Sectors We Serve",
+        "description": "Specialized leadership recruitment across the healthcare ecosystem.",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Pharmaceuticals",
+            "description": "Drug development, clinical trials, regulatory affairs, and commercial operations leadership.",
+            "icon": "💊",
+            "image": "/images/service-executive-search.avif"
+          },
+          {
+            "title": "Biotechnology",
+            "description": "Biotech startups, gene therapy, precision medicine, and innovative therapeutic platforms.",
+            "icon": "🧬",
+            "image": "/images/service-leadership-hiring.avif"
+          },
+          {
+            "title": "Medical Devices",
+            "description": "Device manufacturing, diagnostics, surgical equipment, and digital health technology.",
+            "icon": "🏥",
+            "image": "/images/service-talent-advisory.avif"
+          },
+          {
+            "title": "Healthcare Systems",
+            "description": "Hospitals, health networks, ambulatory care, and integrated delivery systems.",
+            "icon": "🏢",
+            "image": "/images/service-diversity-inclusion.avif"
+          },
+          {
+            "title": "Digital Health",
+            "description": "Telemedicine, health apps, AI diagnostics, and healthcare technology platforms.",
+            "icon": "📱",
+            "image": "/images/testimonial-priya-sharma.avif"
+          },
+          {
+            "title": "Life Sciences Services",
+            "description": "CROs, clinical research, laboratory services, and healthcare consulting organizations.",
+            "icon": "🔬",
+            "image": "/images/testimonial-sarah-chen.avif"
+          }
+        ]
+      }
+    },
+    {
+      "id": "healthcare-roles",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Healthcare Leadership Roles",
+        "description": "From clinical excellence to commercial success across all healthcare verticals.",
+        "columns": "2",
+        "items": [
+          {
+            "title": "Clinical Leadership",
+            "description": "Chief Medical Officer, VP Clinical Development, Medical Directors driving clinical excellence and patient outcomes.",
+            "icon": "👩‍⚕️"
+          },
+          {
+            "title": "Research & Development",
+            "description": "Head of R&D, VP Drug Development, Chief Scientific Officers leading breakthrough medical innovations.",
+            "icon": "🔬"
+          },
+          {
+            "title": "Commercial & Market Access",
+            "description": "Chief Commercial Officer, VP Sales, Market Access Directors driving revenue and patient access.",
+            "icon": "📈"
+          },
+          {
+            "title": "Regulatory & Compliance",
+            "description": "VP Regulatory Affairs, Compliance Directors, Quality Assurance leaders ensuring global regulatory success.",
+            "icon": "📋"
+          }
+        ]
+      }
+    },
+    {
+      "id": "healthcare-trends",
+      "type": "RichText",
+      "props": {
+        "heading": "Healthcare Industry Trends Driving Leadership Needs",
+        "content": "<div class=\"max-w-4xl mx-auto\"><div class=\"grid md:grid-cols-2 gap-8\"><div class=\"space-y-6\"><h3 class=\"text-xl font-semibold text-gray-900 mb-4\">🚀 Innovation Areas</h3><ul class=\"space-y-3\"><li class=\"flex items-start gap-3\"><span class=\"text-emerald-500 font-medium\">•</span><span class=\"text-gray-700\">Value-based care models transforming payment and delivery systems</span></li><li class=\"flex items-start gap-3\"><span class=\"text-emerald-500 font-medium\">•</span><span class=\"text-gray-700\">AI and machine learning revolutionizing diagnostics and treatment</span></li><li class=\"flex items-start gap-3\"><span class=\"text-emerald-500 font-medium\">•</span><span class=\"text-gray-700\">Personalized medicine and precision therapy development</span></li></ul></div><div class=\"space-y-6\"><h3 class=\"text-xl font-semibold text-gray-900 mb-4\">⚡ Leadership Challenges</h3><ul class=\"space-y-3\"><li class=\"flex items-start gap-3\"><span class=\"text-blue-500 font-medium\">•</span><span class=\"text-gray-700\">Digital transformation in healthcare delivery and operations</span></li><li class=\"flex items-start gap-3\"><span class=\"text-blue-500 font-medium\">•</span><span class=\"text-gray-700\">Complex global regulatory environments and compliance requirements</span></li><li class=\"flex items-start gap-3\"><span class=\"text-blue-500 font-medium\">•</span><span class=\"text-gray-700\">Patient-centric care models and improved health outcomes</span></li></ul></div></div></div>",
+        "align": "center"
+      }
+    },
+    {
+      "id": "healthcare-success-story",
+      "type": "RichText",
+      "props": {
+        "heading": "Healthcare Success Story",
+        "content": "<div class=\"max-w-4xl mx-auto bg-gradient-to-r from-emerald-50 to-teal-50 rounded-3xl p-8 md:p-12\"><div class=\"text-center mb-8\"><span class=\"bg-emerald-100 text-emerald-600 px-4 py-2 rounded-full text-sm font-semibold\">Digital Health Transformation</span></div><h3 class=\"text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center\">Chief Technology Officer for Hospital Network</h3><div class=\"grid md:grid-cols-3 gap-6 text-center mb-8\"><div><span class=\"text-2xl font-bold text-red-600 block\">Challenge</span><p class=\"text-sm text-gray-700 mt-2\">Large hospital network needed CTO to lead $100M digital transformation initiative</p></div><div><span class=\"text-2xl font-bold text-blue-600 block\">Solution</span><p class=\"text-sm text-gray-700 mt-2\">Identified healthcare technology veteran with EMR implementation and patient portal expertise</p></div><div><span class=\"text-2xl font-bold text-green-600 block\">Results</span><p class=\"text-sm text-gray-700 mt-2\">Improved patient engagement by 60% and reduced operational costs by $2M annually</p></div></div><div class=\"text-center\"><a href=\"/success-stories/healthcare-digital-transformation\" class=\"inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium\">Read Full Case Study <span class=\"ml-2\">→</span></a></div></div>",
+        "align": "center"
+      }
+    },
+    {
+      "id": "healthcare-stats",
+      "type": "Statistics",
+      "props": {
+        "heading": "Healthcare Sector Impact",
+        "description": "Our proven track record in connecting healthcare leaders with life-changing opportunities.",
+        "backgroundType": "light",
+        "theme": "emerald",
+        "stats": [
+          {
+            "value": "75+",
+            "label": "Healthcare Leaders Placed",
+            "description": "CMOs, CTOs, and R&D leaders across pharmaceutical, biotech, and health systems",
+            "icon": "👩‍⚕️"
+          },
+          {
+            "value": "96%",
+            "label": "Success Rate",
+            "description": "Successful placements with strong performance in complex healthcare environments",
+            "icon": "🎯"
+          },
+          {
+            "value": "$1B+",
+            "label": "R&D Programs Led",
+            "description": "Combined value of research and development programs led by placed executives",
+            "icon": "💰"
+          },
+          {
+            "value": "15M+",
+            "label": "Patients Impacted",
+            "description": "Lives touched by healthcare organizations where we've placed key leaders",
+            "icon": "❤️"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-services",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Related Services",
+        "description": "Comprehensive talent solutions for healthcare organizations.",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Executive Search",
+            "description": "Find transformational healthcare and life sciences executives.",
+            "icon": "🎯",
+            "href": "/services/executive-search"
+          },
+          {
+            "title": "Leadership Hiring",
+            "description": "Recruit specialized clinical and commercial directors.",
+            "icon": "👥",
+            "href": "/services/leadership-hiring"
+          },
+          {
+            "title": "Talent Advisory",
+            "description": "Strategic guidance on healthcare talent and regulatory compliance.",
+            "icon": "💡",
+            "href": "/services/talent-advisory"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-cta-healthcare",
+      "type": "CTA",
+      "props": {
+        "heading": "Ready to Advance Your Healthcare Leadership?",
+        "description": "Connect with our healthcare specialists to discuss your leadership needs and find the exceptional medical and life sciences leaders who will transform patient care.",
+        "primaryCta": {
+          "label": "Schedule Healthcare Consultation",
+          "href": "/contact"
+        },
+        "secondaryCta": {
+          "label": "View Our Methodology",
+          "href": "/our-approach"
+        },
+        "backgroundType": "gradient"
+      }
+    }
+  ],
   "publishedAt": "2025-01-15T10:00:00Z",
   "createdAt": "2025-01-15T10:00:00Z",
   "updatedAt": "2025-01-15T10:00:00Z"

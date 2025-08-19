@@ -27,8 +27,8 @@ const cs = frontmatter;
   <Hero
     title={cs.hero?.title || cs.title}
     subtitle={cs.title}
-    media={cs.hero?.image && { image: cs.hero.image, alt: cs.hero.title }}
-    backgroundType="image"
+    media={cs.hero?.image ? { image: cs.hero.image, alt: cs.hero?.title || cs.title, ratio: "16:9" } : undefined}
+    backgroundType={cs.hero?.image ? "image" : "gradient"}
     textAlign="left"
     fullHeight={false}
   />

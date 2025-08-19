@@ -1,25 +1,221 @@
 {
   "slug": "industries/energy",
-  "title": "Energy & Sustainability",
+  "title": "Energy & Sustainability Leadership",
   "status": "published",
-    "seo": {
-      "title": "Energy & Sustainability Industry - Networkk",
-      "description": "Strategic leadership for oil & gas, utilities and renewable innovators navigating the transition to a sustainable, low-carbon future across global markets.",
-      "canonical": "https://networkk.com/industries/energy/",
-      "noindex": false,
-      "keywords": ["energy", "sustainability", "renewables"]
-    },
+  "seo": {
+    "title": "Energy & Sustainability Industry Leadership - Networkk",
+    "description": "Strategic leadership recruitment for oil & gas, utilities, and renewable energy innovators navigating the transition to a sustainable, low-carbon future.",
+    "canonical": "https://networkk.com/industries/energy/",
+    "noindex": false,
+    "keywords": ["energy leadership", "sustainability executives", "renewables CEO", "utility executives", "green energy hiring"]
+  },
   "blocks": [
     {
-      "id": "hero-industry",
+      "id": "hero-energy",
       "type": "Hero",
       "props": {
-        "title": "Energy & Sustainability",
-        "subtitle": "Industry Expertise",
-        "description": "Connecting energy pioneers with visionary leadership.",
-        "backgroundType": "gradient",
+        "title": "Powering the Future with Exceptional Leadership",
+        "subtitle": "Energy & Sustainability",
+        "description": "From traditional energy giants to renewable pioneers, we connect visionary leaders who drive the transformation toward sustainable energy solutions.",
+        "media": {
+          "image": "/images/industry-energy.avif",
+          "alt": "Renewable energy leadership and wind turbines",
+          "ratio": "16:9"
+        },
+        "ctas": [
+          {
+            "label": "Find Energy Leaders",
+            "href": "/contact",
+            "variant": "primary"
+          },
+          {
+            "label": "View Success Stories",
+            "href": "/success-stories",
+            "variant": "outline"
+          }
+        ],
+        "backgroundType": "image",
         "textAlign": "center",
-        "fullHeight": false
+        "fullHeight": false,
+        "overlay": true
+      }
+    },
+    {
+      "id": "energy-overview",
+      "type": "RichText",
+      "props": {
+        "heading": "Leading the Energy Transition",
+        "content": "<div class=\"max-w-6xl mx-auto\"><div class=\"grid lg:grid-cols-2 gap-12 items-center\"><div class=\"space-y-6\"><p class=\"text-lg text-gray-600 leading-relaxed\">The energy sector is undergoing unprecedented transformation. Organizations need <span class=\"font-semibold text-green-600\">visionary leaders</span> who can navigate complex regulatory environments, drive technological innovation, and build sustainable business models for the future.</p><div class=\"bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6 border border-green-100\"><p class=\"text-gray-700 font-medium mb-2\">⚡ Industry Expertise</p><p class=\"text-sm text-gray-600\">We understand the unique challenges of energy transition, from traditional oil & gas to cutting-edge renewable technologies.</p></div></div><div class=\"relative\"><img src=\"/images/service-executive-search.avif\" alt=\"Energy sector leadership\" class=\"rounded-2xl shadow-xl w-full\" /><div class=\"absolute inset-0 bg-gradient-to-tr from-green-600/10 to-emerald-600/10 rounded-2xl\"></div><div class=\"absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg\"><p class=\"text-sm font-semibold text-gray-800\">Energy Innovation</p><p class=\"text-xs text-gray-600\">Sustainable Leadership</p></div></div></div></div>",
+        "align": "center"
+      }
+    },
+    {
+      "id": "energy-sectors",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Sectors We Serve",
+        "description": "Specialized leadership recruitment across the energy value chain.",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Renewable Energy",
+            "description": "Solar, wind, hydro, and emerging clean energy technologies driving the sustainable future.",
+            "icon": "🌱",
+            "image": "/images/industry-energy.avif"
+          },
+          {
+            "title": "Oil & Gas",
+            "description": "Traditional energy companies adapting to new market realities and sustainability goals.",
+            "icon": "⚡",
+            "image": "/images/service-leadership-hiring.avif"
+          },
+          {
+            "title": "Utilities & Power",
+            "description": "Grid modernization, smart cities, and distributed energy management leaders.",
+            "icon": "🔌",
+            "image": "/images/service-talent-advisory.avif"
+          },
+          {
+            "title": "Energy Storage",
+            "description": "Battery technology, grid storage, and energy management systems innovation.",
+            "icon": "🔋",
+            "image": "/images/service-diversity-inclusion.avif"
+          },
+          {
+            "title": "Carbon Management",
+            "description": "Carbon capture, trading, and sustainability consulting leadership.",
+            "icon": "🌍",
+            "image": "/images/testimonial-priya-sharma.avif"
+          },
+          {
+            "title": "Energy Technology",
+            "description": "Clean tech, energy software, and digital transformation in energy sectors.",
+            "icon": "💡",
+            "image": "/images/testimonial-sarah-chen.avif"
+          }
+        ]
+      }
+    },
+    {
+      "id": "energy-roles",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Leadership Roles We Fill",
+        "description": "From C-suite to specialized technical leadership across all energy sectors.",
+        "columns": "2",
+        "items": [
+          {
+            "title": "C-Suite Executives",
+            "description": "CEO, CTO, CFO, and Chief Sustainability Officers driving energy transformation strategies and organizational change.",
+            "icon": "👑"
+          },
+          {
+            "title": "Operations Leadership",
+            "description": "VP Operations, Plant Managers, and Project Directors ensuring efficient and safe energy production.",
+            "icon": "⚙️"
+          },
+          {
+            "title": "Technology Leaders",
+            "description": "Chief Technology Officers and VP Engineering leading innovation in clean energy and grid technologies.",
+            "icon": "🚀"
+          },
+          {
+            "title": "Commercial Directors",
+            "description": "Sales, Business Development, and Market Strategy leaders driving revenue growth in competitive energy markets.",
+            "icon": "📈"
+          }
+        ]
+      }
+    },
+    {
+      "id": "energy-success-story",
+      "type": "RichText",
+      "props": {
+        "heading": "Energy Sector Success Story",
+        "content": "<div class=\"max-w-4xl mx-auto bg-gradient-to-r from-emerald-50 to-green-50 rounded-3xl p-8 md:p-12\"><div class=\"text-center mb-8\"><span class=\"bg-emerald-100 text-emerald-600 px-4 py-2 rounded-full text-sm font-semibold\">Renewable Energy</span></div><h3 class=\"text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center\">Chief Sustainability Officer Placement</h3><div class=\"grid md:grid-cols-3 gap-6 text-center mb-8\"><div><span class=\"text-2xl font-bold text-red-600 block\">Challenge</span><p class=\"text-sm text-gray-700 mt-2\">Traditional energy company needed CSO to lead $2B green transition strategy</p></div><div><span class=\"text-2xl font-bold text-blue-600 block\">Solution</span><p class=\"text-sm text-gray-700 mt-2\">Identified leader with renewable energy experience and corporate transformation expertise</p></div><div><span class=\"text-2xl font-bold text-green-600 block\">Results</span><p class=\"text-sm text-gray-700 mt-2\">Launched 5 renewable projects and reduced carbon footprint by 35% in first year</p></div></div><div class=\"text-center\"><a href=\"/success-stories/energy-sustainability-head\" class=\"inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium\">Read Full Case Study <span class=\"ml-2\">→</span></a></div></div>",
+        "align": "center"
+      }
+    },
+    {
+      "id": "energy-stats",
+      "type": "Statistics",
+      "props": {
+        "heading": "Energy Sector Impact",
+        "description": "Our track record in connecting energy leaders with transformative opportunities.",
+        "backgroundType": "light",
+        "theme": "emerald",
+        "stats": [
+          {
+            "value": "50+",
+            "label": "Energy Leaders Placed",
+            "description": "Across renewable, traditional, and emerging energy sectors",
+            "icon": "⚡"
+          },
+          {
+            "value": "98%",
+            "label": "Success Rate",
+            "description": "Successful placements with long-term retention in energy roles",
+            "icon": "🎯"
+          },
+          {
+            "value": "$5B+",
+            "label": "Projects Led",
+            "description": "Combined value of energy projects led by our placed executives",
+            "icon": "💰"
+          },
+          {
+            "value": "12",
+            "label": "Countries",
+            "description": "Global energy placements across diverse markets",
+            "icon": "🌍"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-services",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Related Services",
+        "description": "Comprehensive talent solutions for energy sector organizations.",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Executive Search",
+            "description": "Find transformational C-suite leaders for your energy organization.",
+            "icon": "🎯",
+            "href": "/services/executive-search"
+          },
+          {
+            "title": "Leadership Hiring",
+            "description": "Recruit specialized directors and VPs for energy sector roles.",
+            "icon": "👥",
+            "href": "/services/leadership-hiring"
+          },
+          {
+            "title": "Talent Advisory",
+            "description": "Strategic guidance on energy sector talent and succession planning.",
+            "icon": "💡",
+            "href": "/services/talent-advisory"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-cta-energy",
+      "type": "CTA",
+      "props": {
+        "heading": "Ready to Power Your Energy Leadership?",
+        "description": "Connect with our energy sector specialists to discuss your leadership needs and find the visionary leaders who will drive your sustainable energy future.",
+        "primaryCta": {
+          "label": "Schedule Energy Consultation",
+          "href": "/contact"
+        },
+        "secondaryCta": {
+          "label": "View Our Approach",
+          "href": "/our-approach"
+        },
+        "backgroundType": "gradient"
       }
     }
   ],

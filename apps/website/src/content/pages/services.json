@@ -33,7 +33,44 @@
       "type": "RichText",
       "props": {
         "heading": "Strategic Talent Solutions",
-        "content": "<p>Networkk offers end-to-end services that help organizations identify, attract, and develop the leaders they need to thrive.</p>"
+        "content": "<div class=\"max-w-6xl mx-auto\"><div class=\"grid lg:grid-cols-2 gap-12 items-center\"><div class=\"space-y-6\"><p class=\"text-lg text-gray-600 leading-relaxed\">Networkk offers <span class=\"font-semibold text-blue-600\">end-to-end services</span> that help organizations identify, attract, and develop the leaders they need to thrive. Our comprehensive approach ensures <span class=\"font-bold text-green-600\">strategic alignment</span> between talent and business objectives.</p><div class=\"bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-6 border border-blue-100\"><p class=\"text-gray-700 font-medium mb-2\">🎯 Precision Approach</p><p class=\"text-sm text-gray-600\">Every engagement is tailored to your unique culture, challenges, and growth aspirations, ensuring sustainable leadership success.</p></div></div><div class=\"relative\"><img src=\"/images/service-executive-search.avif\" alt=\"Strategic leadership solutions\" class=\"rounded-2xl shadow-xl w-full\" /><div class=\"absolute inset-0 bg-gradient-to-tr from-blue-600/10 to-cyan-600/10 rounded-2xl\"></div><div class=\"absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg\"><p class=\"text-sm font-semibold text-gray-800\">Proven Solutions</p><p class=\"text-xs text-gray-600\">Trusted Methodology</p></div></div></div></div>",
+        "align": "center"
+      }
+    },
+    {
+      "id": "services-overview-stats",
+      "type": "Statistics",
+      "props": {
+        "heading": "Service Excellence Metrics",
+        "description": "Discover our comprehensive suite of leadership services designed to accelerate organizational growth.",
+        "backgroundType": "light",
+        "theme": "gold",
+        "stats": [
+          {
+            "value": "6",
+            "label": "Core Services",
+            "description": "Executive Search, Leadership Hiring, Talent Advisory, Career Transition, Workforce Planning & D&I",
+            "icon": "🎯"
+          },
+          {
+            "value": "30",
+            "label": "Average Days to Hire",
+            "description": "From initial consultation to successful candidate placement and integration",
+            "icon": "⏱️"
+          },
+          {
+            "value": "100%",
+            "label": "Client-Focused Approach",
+            "description": "Every engagement tailored to your unique culture, challenges, and growth objectives",
+            "icon": "🤝"
+          },
+          {
+            "value": "24/7",
+            "label": "Partnership Support",
+            "description": "Continuous support throughout the entire recruitment and onboarding process",
+            "icon": "🔄"
+          }
+        ]
       }
     },
     {
@@ -72,7 +109,7 @@
       "type": "CaseStudy",
       "props": {
         "heading": "Success Stories",
-        "description": "A snapshot of how we have helped clients build leadership strength.",
+        "description": "Real results from our strategic talent partnerships across diverse industries.",
         "studies": [
           {
             "title": "Global Retail Expansion",
@@ -80,7 +117,7 @@
             "challenge": "Needed regional CEOs for rapid Asia growth.",
             "solution": "Targeted search across emerging markets.",
             "results": "Placed three leaders who opened 50+ stores in 18 months.",
-            "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/service-executive-search.avif"
           },
           {
             "title": "Healthcare Digital Pivot",
@@ -88,7 +125,15 @@
             "challenge": "Required technology leadership to drive digital transformation.",
             "solution": "Sourced CIO and CTO with hospital systems expertise.",
             "results": "Enabled rollout of telehealth platform adopted by 70% of patients.",
-            "image": "https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+            "image": "/images/service-talent-advisory.avif"
+          },
+          {
+            "title": "Financial Services Innovation",
+            "industry": "Financial Services",
+            "challenge": "Sought Chief Innovation Officer to lead fintech initiatives.",
+            "solution": "Identified leader with traditional banking and startup experience.",
+            "results": "Launched 3 digital products generating $50M revenue in first year.",
+            "image": "/images/service-leadership-hiring.avif"
           }
         ]
       }

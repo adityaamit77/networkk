@@ -32,8 +32,44 @@
       "type": "RichText",
       "props": {
         "heading": "Expert Perspectives and Research",
-        "content": "<p>Our insights explore the trends shaping executive leadership and talent strategy.</p><img src=\"/images/insight-diversity-hiring.jpg\" alt=\"Diversity hiring discussion\" class=\"rounded-lg my-8\" /><p>From market analyses to leadership playbooks, each resource is crafted by specialists with hands-on experience.</p><p>Access exclusive interviews, step-by-step guides and benchmark reports to inform your next strategic move.</p>",
+        "content": "<div class=\"max-w-6xl mx-auto\"><div class=\"grid lg:grid-cols-2 gap-12 items-center\"><div class=\"space-y-6\"><p class=\"text-lg text-gray-600 leading-relaxed\">Our insights explore the <span class=\"font-semibold text-indigo-600\">trends shaping executive leadership</span> and talent strategy. From market analyses to leadership playbooks, each resource is crafted by <span class=\"font-bold text-green-600\">specialists with hands-on experience</span>.</p><div class=\"bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-6 border border-indigo-100\"><p class=\"text-gray-700 font-medium mb-2\">📈 Strategic Intelligence</p><p class=\"text-sm text-gray-600\">Access exclusive interviews, step-by-step guides and benchmark reports to inform your next strategic move with data-driven insights.</p></div></div><div class=\"relative\"><img src=\"/images/insight-diversity-hiring.avif\" alt=\"Strategic leadership insights\" class=\"rounded-2xl shadow-xl w-full\" /><div class=\"absolute inset-0 bg-gradient-to-tr from-indigo-600/10 to-purple-600/10 rounded-2xl\"></div><div class=\"absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg\"><p class=\"text-sm font-semibold text-gray-800\">Expert Analysis</p><p class=\"text-xs text-gray-600\">Trusted by Leaders</p></div></div></div></div>",
         "align": "center"
+      }
+    },
+    {
+      "id": "insights-overview-stats",
+      "type": "Statistics",
+      "props": {
+        "heading": "Research Library Overview",
+        "description": "Discover actionable strategies and industry benchmarks from our comprehensive research collection.",
+        "backgroundType": "light",
+        "theme": "emerald",
+        "stats": [
+          {
+            "value": "150+",
+            "label": "Expert Articles",
+            "description": "In-depth analysis covering leadership trends, market insights, and strategic frameworks",
+            "icon": "📝"
+          },
+          {
+            "value": "25+",
+            "label": "Research Reports",
+            "description": "Comprehensive market studies and industry benchmarks published annually",
+            "icon": "📊"
+          },
+          {
+            "value": "4",
+            "label": "Content Categories",
+            "description": "Technology, Leadership, Diversity & Inclusion, and Strategic Planning focus areas",
+            "icon": "🎯"
+          },
+          {
+            "value": "1000+",
+            "label": "Monthly Downloads",
+            "description": "Resources accessed by executives and HR professionals worldwide",
+            "icon": "📥"
+          }
+        ]
       }
     },
     {
@@ -44,11 +80,20 @@
       }
     },
     {
+      "id": "insights-grid-intro",
+      "type": "RichText",
+      "props": {
+        "heading": "",
+        "content": "<div class=\"bg-gradient-to-r from-slate-50 via-indigo-50 to-purple-50 rounded-3xl p-8 mb-16 border border-indigo-100\"><div class=\"text-center max-w-4xl mx-auto\"><h2 class=\"text-3xl md:text-4xl font-bold text-gray-900 mb-4\">Latest Insights & Research</h2><p class=\"text-lg text-gray-600 mb-6\">Deep-dive analysis, market trends, and strategic frameworks to elevate your leadership approach</p><div class=\"flex justify-center space-x-4 text-sm\"><div class=\"inline-flex items-center bg-white rounded-full px-4 py-2 shadow-sm\"><span class=\"w-2 h-2 bg-indigo-500 rounded-full mr-2\"></span>Technology</div><div class=\"inline-flex items-center bg-white rounded-full px-4 py-2 shadow-sm\"><span class=\"w-2 h-2 bg-purple-500 rounded-full mr-2\"></span>Leadership</div><div class=\"inline-flex items-center bg-white rounded-full px-4 py-2 shadow-sm\"><span class=\"w-2 h-2 bg-green-500 rounded-full mr-2\"></span>Diversity</div><div class=\"inline-flex items-center bg-white rounded-full px-4 py-2 shadow-sm\"><span class=\"w-2 h-2 bg-blue-500 rounded-full mr-2\"></span>Strategy</div></div></div></div>",
+        "align": "center"
+      }
+    },
+    {
       "id": "insights-grid",
       "type": "InsightsGrid",
       "props": {
-        "heading": "All Insights",
-        "description": "Browse our latest articles and research."
+        "heading": "",
+        "description": ""
       }
     },
     {
@@ -56,10 +101,44 @@
       "type": "Statistics",
       "props": {
         "heading": "Insight Highlights",
+        "description": "Comprehensive resources to guide your talent strategy",
         "stats": [
-          { "value": "250+", "label": "Articles", "icon": "📝" },
-          { "value": "40+", "label": "Reports", "icon": "📊" },
-          { "value": "15", "label": "Industries", "icon": "🌐" }
+          {
+            "value": "150+",
+            "label": "Expert Articles",
+            "icon": "📝",
+            "description": "In-depth analysis and guidance"
+          },
+          {
+            "value": "25+",
+            "label": "Research Reports",
+            "icon": "📊",
+            "description": "Industry benchmarks and trends"
+          },
+          {
+            "value": "8",
+            "label": "Content Categories",
+            "icon": "🎯",
+            "description": "Leadership, Strategy, Technology & More"
+          },
+          {
+            "value": "500+",
+            "label": "Actionable Insights",
+            "icon": "💡",
+            "description": "Practical strategies you can implement"
+          },
+          {
+            "value": "50+",
+            "label": "Case Studies",
+            "icon": "✅",
+            "description": "Real success stories and outcomes"
+          },
+          {
+            "value": "1000+",
+            "label": "Downloads",
+            "icon": "📥",
+            "description": "Resources accessed by professionals"
+          }
         ]
       }
     },

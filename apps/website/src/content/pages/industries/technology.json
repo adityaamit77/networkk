@@ -1,80 +1,230 @@
 {
   "slug": "industries/technology",
-  "title": "Technology & Software",
+  "title": "Technology & Software Leadership",
   "status": "published",
   "seo": {
-    "title": "Technology & Software Industry - Networkk",
-      "description": "Executive talent solutions for software developers, SaaS providers and digital innovators seeking experienced leadership to scale products and teams globally.",
+    "title": "Technology & Software Industry Leadership - Networkk",
+    "description": "Executive talent solutions for software companies, SaaS providers, and digital innovators seeking experienced leadership to scale products and teams globally.",
     "canonical": "https://networkk.com/industries/technology/",
     "noindex": false,
-    "keywords": ["technology", "software", "digital"]
+    "keywords": ["technology executives", "software leadership", "CTO recruitment", "VP engineering", "tech startup hiring"]
   },
   "blocks": [
     {
-      "id": "hero-industry",
+      "id": "hero-technology",
       "type": "Hero",
       "props": {
-        "title": "Technology & Software",
-        "subtitle": "Industry Expertise",
-        "description": "We connect tech innovators with transformative leaders.",
-        "backgroundType": "gradient",
+        "title": "Accelerating Innovation with World-Class Leadership",
+        "subtitle": "Technology & Software",
+        "description": "From AI pioneers to enterprise software giants, we connect visionary technology leaders who transform ideas into scalable, market-defining solutions.",
+        "media": {
+          "image": "/images/hero-main.avif",
+          "alt": "Technology innovation and software development leadership",
+          "ratio": "16:9"
+        },
+        "ctas": [
+          {
+            "label": "Find Tech Leaders",
+            "href": "/contact",
+            "variant": "primary"
+          },
+          {
+            "label": "View Tech Success Stories",
+            "href": "/success-stories",
+            "variant": "outline"
+          }
+        ],
+        "backgroundType": "image",
         "textAlign": "center",
-        "fullHeight": false
+        "fullHeight": false,
+        "overlay": true
       }
     },
     {
-      "id": "overview",
+      "id": "tech-overview",
       "type": "RichText",
       "props": {
-        "heading": "Overview",
-        "content": "<p>From early-stage disruptors to global platforms, we help technology companies secure leadership that drives innovation. Our services span <a href=\"/services/executive-search\">Executive Search</a> and <a href=\"/services/leadership-hiring\">Leadership Hiring</a> to build resilient teams.</p>"
+        "heading": "Leading the Digital Revolution",
+        "content": "<div class=\"max-w-6xl mx-auto\"><div class=\"grid lg:grid-cols-2 gap-12 items-center\"><div class=\"space-y-6\"><p class=\"text-lg text-gray-600 leading-relaxed\">The technology landscape evolves at breakneck speed. Organizations need <span class=\"font-semibold text-blue-600\">exceptional leaders</span> who can navigate technical complexity, build world-class teams, and deliver products that define markets.</p><div class=\"bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-6 border border-blue-100\"><p class=\"text-gray-700 font-medium mb-2\">🚀 Tech Expertise</p><p class=\"text-sm text-gray-600\">Deep understanding of technology trends, from AI/ML to cloud architecture and scaling engineering organizations.</p></div></div><div class=\"relative\"><img src=\"/images/service-executive-search.avif\" alt=\"Technology leadership excellence\" class=\"rounded-2xl shadow-xl w-full\" /><div class=\"absolute inset-0 bg-gradient-to-tr from-blue-600/10 to-cyan-600/10 rounded-2xl\"></div><div class=\"absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg\"><p class=\"text-sm font-semibold text-gray-800\">Tech Innovation</p><p class=\"text-xs text-gray-600\">Scaling Excellence</p></div></div></div></div>",
+        "align": "center"
       }
     },
     {
-      "id": "trends",
-      "type": "RichText",
-      "props": {
-        "heading": "Trends",
-        "content": "<ul><li>AI and automation reshaping product roadmaps</li><li>Global competition for engineering leadership</li><li>Focus on scalable, secure cloud infrastructure</li></ul>"
-      }
-    },
-    {
-      "id": "roles",
+      "id": "tech-sectors",
       "type": "TilesGrid",
       "props": {
-        "heading": "Typical Mandates",
+        "heading": "Technology Sectors We Serve",
+        "description": "Specialized leadership recruitment across the technology ecosystem.",
         "columns": "3",
         "items": [
-          { "title": "CTO", "description": "Technology vision and architecture." },
-          { "title": "VP Engineering", "description": "Scale development teams and processes." },
-          { "title": "Product Head", "description": "Lead product strategy and execution." }
-        ]
-      }
-    },
-    {
-      "id": "case-studies",
-      "type": "CaseStudy",
-      "props": {
-        "heading": "Representative Case Studies",
-        "studies": [
           {
-            "title": "Scaling a SaaS Unicorn",
-            "industry": "Technology",
-            "challenge": "Series D startup needed seasoned leadership to manage hyper-growth.",
-            "solution": "Delivered a VP Engineering with global scaling experience.",
-            "results": "Reduced release cycles and doubled engineering capacity within a year."
+            "title": "SaaS & Cloud",
+            "description": "Software-as-a-Service platforms, cloud infrastructure, and enterprise software solutions.",
+            "icon": "☁️",
+            "image": "/images/hero-main.avif"
+          },
+          {
+            "title": "AI & Machine Learning",
+            "description": "Artificial intelligence, machine learning platforms, and data science organizations.",
+            "icon": "🤖",
+            "image": "/images/service-leadership-hiring.avif"
+          },
+          {
+            "title": "Fintech & Digital Banking",
+            "description": "Financial technology, digital payments, blockchain, and cryptocurrency platforms.",
+            "icon": "💳",
+            "image": "/images/service-talent-advisory.avif"
+          },
+          {
+            "title": "E-commerce & Marketplaces",
+            "description": "Online retail platforms, digital marketplaces, and omnichannel commerce solutions.",
+            "icon": "🛒",
+            "image": "/images/service-diversity-inclusion.avif"
+          },
+          {
+            "title": "Cybersecurity",
+            "description": "Information security, threat detection, and enterprise security solution providers.",
+            "icon": "🔐",
+            "image": "/images/testimonial-priya-sharma.avif"
+          },
+          {
+            "title": "Developer Tools",
+            "description": "DevOps platforms, development frameworks, and software engineering productivity tools.",
+            "icon": "⚡",
+            "image": "/images/testimonial-sarah-chen.avif"
           }
         ]
       }
     },
     {
-      "id": "cta",
+      "id": "tech-roles",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Technology Leadership Roles",
+        "description": "From technical visionaries to engineering managers who build world-class products.",
+        "columns": "2",
+        "items": [
+          {
+            "title": "C-Suite Technology Leaders",
+            "description": "CTO, Chief Product Officer, Chief Data Officer, and Chief Innovation Officer roles driving technical strategy.",
+            "icon": "👨‍💻"
+          },
+          {
+            "title": "Engineering Leadership",
+            "description": "VP Engineering, Engineering Directors, and Technical Leads scaling development teams and architecture.",
+            "icon": "⚙️"
+          },
+          {
+            "title": "Product Leadership",
+            "description": "VP Product, Product Directors, and Head of Product roles defining product strategy and roadmaps.",
+            "icon": "📱"
+          },
+          {
+            "title": "Data & AI Leaders",
+            "description": "Head of Data Science, AI Directors, and Machine Learning Engineering leaders driving data strategy.",
+            "icon": "📊"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tech-trends",
+      "type": "RichText",
+      "props": {
+        "heading": "Current Technology Trends Shaping Leadership Needs",
+        "content": "<div class=\"max-w-4xl mx-auto\"><div class=\"grid md:grid-cols-2 gap-8\"><div class=\"space-y-6\"><h3 class=\"text-xl font-semibold text-gray-900 mb-4\">🔥 Hot Areas</h3><ul class=\"space-y-3\"><li class=\"flex items-start gap-3\"><span class=\"text-blue-500 font-medium\">•</span><span class=\"text-gray-700\">AI and automation reshaping product roadmaps and customer experiences</span></li><li class=\"flex items-start gap-3\"><span class=\"text-blue-500 font-medium\">•</span><span class=\"text-gray-700\">Cloud-native architecture and microservices leadership expertise</span></li><li class=\"flex items-start gap-3\"><span class=\"text-blue-500 font-medium\">•</span><span class=\"text-gray-700\">DevSecOps and security-first development methodologies</span></li></ul></div><div class=\"space-y-6\"><h3 class=\"text-xl font-semibold text-gray-900 mb-4\">💡 Leadership Challenges</h3><ul class=\"space-y-3\"><li class=\"flex items-start gap-3\"><span class=\"text-green-500 font-medium\">•</span><span class=\"text-gray-700\">Global competition for top engineering and product talent</span></li><li class=\"flex items-start gap-3\"><span class=\"text-green-500 font-medium\">•</span><span class=\"text-gray-700\">Scaling technical teams while maintaining innovation velocity</span></li><li class=\"flex items-start gap-3\"><span class=\"text-green-500 font-medium\">•</span><span class=\"text-gray-700\">Remote-first leadership and distributed team management</span></li></ul></div></div></div>",
+        "align": "center"
+      }
+    },
+    {
+      "id": "tech-success-story",
+      "type": "RichText",
+      "props": {
+        "heading": "Technology Success Story",
+        "content": "<div class=\"max-w-4xl mx-auto bg-gradient-to-r from-blue-50 to-cyan-50 rounded-3xl p-8 md:p-12\"><div class=\"text-center mb-8\"><span class=\"bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold\">SaaS Scale-Up</span></div><h3 class=\"text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center\">VP Engineering for Hyper-Growth Startup</h3><div class=\"grid md:grid-cols-3 gap-6 text-center mb-8\"><div><span class=\"text-2xl font-bold text-red-600 block\">Challenge</span><p class=\"text-sm text-gray-700 mt-2\">Series D startup needed VP Engineering to scale from 50 to 300 engineers</p></div><div><span class=\"text-2xl font-bold text-blue-600 block\">Solution</span><p class=\"text-sm text-gray-700 mt-2\">Found leader with hyper-growth experience and proven track record building engineering culture</p></div><div><span class=\"text-2xl font-bold text-green-600 block\">Results</span><p class=\"text-sm text-gray-700 mt-2\">Reduced release cycles by 60% and successfully scaled team 5x in 18 months</p></div></div><div class=\"text-center\"><a href=\"/success-stories/tech-scale-up\" class=\"inline-flex items-center text-blue-600 hover:text-blue-700 font-medium\">Read Full Case Study <span class=\"ml-2\">→</span></a></div></div>",
+        "align": "center"
+      }
+    },
+    {
+      "id": "tech-stats",
+      "type": "Statistics",
+      "props": {
+        "heading": "Technology Sector Impact",
+        "description": "Our proven track record connecting technology leaders with breakthrough opportunities.",
+        "backgroundType": "light",
+        "theme": "default",
+        "stats": [
+          {
+            "value": "150+",
+            "label": "Tech Leaders Placed",
+            "description": "CTOs, VPs Engineering, and Product Leaders across all technology sectors",
+            "icon": "👨‍💻"
+          },
+          {
+            "value": "97%",
+            "label": "Success Rate",
+            "description": "Successful placements with strong performance and retention",
+            "icon": "🎯"
+          },
+          {
+            "value": "$2B+",
+            "label": "Company Valuations",
+            "description": "Combined valuation of companies where we've placed key technology leaders",
+            "icon": "💰"
+          },
+          {
+            "value": "30",
+            "label": "Days Average",
+            "description": "Time to shortlist for critical technology leadership roles",
+            "icon": "⚡"
+          }
+        ]
+      }
+    },
+    {
+      "id": "related-services",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Related Services",
+        "description": "Comprehensive talent solutions for technology organizations.",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Executive Search",
+            "description": "Find transformational CTOs and technology executives.",
+            "icon": "🎯",
+            "href": "/services/executive-search"
+          },
+          {
+            "title": "Leadership Hiring",
+            "description": "Recruit VP Engineering, Product Leaders, and Directors.",
+            "icon": "👥",
+            "href": "/services/leadership-hiring"
+          },
+          {
+            "title": "Talent Advisory",
+            "description": "Strategic guidance on technical team building and scaling.",
+            "icon": "💡",
+            "href": "/services/talent-advisory"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-cta-technology",
       "type": "CTA",
       "props": {
-        "heading": "Need Tech Talent?",
-        "description": "Let's discuss your next strategic hire.",
-        "backgroundType": "gradient",
-        "primaryCta": { "label": "Start a Search", "href": "/contact" }
+        "heading": "Ready to Scale Your Technology Leadership?",
+        "description": "Connect with our technology specialists to discuss your leadership needs and find the exceptional technical leaders who will drive your innovation forward.",
+        "primaryCta": {
+          "label": "Schedule Tech Consultation",
+          "href": "/contact"
+        },
+        "secondaryCta": {
+          "label": "Explore Our Process",
+          "href": "/our-approach"
+        },
+        "backgroundType": "gradient"
       }
     }
   ],
