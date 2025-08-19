@@ -32,7 +32,7 @@
       "type": "RichText",
       "props": {
         "heading": "Expert Perspectives and Research",
-        "content": "<p>Our insights explore the trends shaping executive leadership and talent strategy.</p><img src=\"/images/insight-diversity-hiring.jpg\" alt=\"Diversity hiring discussion\" class=\"rounded-lg my-8\" /><p>From market analyses to leadership playbooks, each resource is crafted by specialists with hands-on experience.</p>",
+        "content": "<p>Our insights explore the trends shaping executive leadership and talent strategy.</p><img src=\"/images/insight-diversity-hiring.jpg\" alt=\"Diversity hiring discussion\" class=\"rounded-lg my-8\" /><p>From market analyses to leadership playbooks, each resource is crafted by specialists with hands-on experience.</p><p>Access exclusive interviews, step-by-step guides and benchmark reports to inform your next strategic move.</p>",
         "align": "center"
       }
     },
