@@ -15,8 +15,22 @@
       "props": {
         "title": "See How We've Delivered Success",
         "subtitle": "Client Success Stories",
-        "backgroundType": "gradient",
-        "textAlign": "center"
+        "backgroundType": "image",
+        "textAlign": "left",
+        "media": {
+          "image": "/images/hero-executive-search.jpg",
+          "alt": "Executives celebrating success",
+          "ratio": "16:9"
+        }
+      }
+    },
+    {
+      "id": "success-intro",
+      "type": "RichText",
+      "props": {
+        "heading": "Real Results from Real Partners",
+        "content": "<p>Each engagement delivers measurable outcomes for our clients.</p><img src=\"/images/industry-energy.jpg\" alt=\"Executives discussing strategy\" class=\"rounded-lg my-8\" /><p>Explore how organizations across industries achieved their goals with Networkk.</p>",
+        "align": "center"
       }
     },
     {
@@ -24,6 +38,19 @@
       "type": "CaseStudyList",
       "props": {
         "heading": "Recent Success Stories"
+      }
+    },
+    {
+      "id": "success-stats",
+      "type": "Statistics",
+      "props": {
+        "heading": "Proven Outcomes",
+        "description": "Our searches deliver leaders who drive impact.",
+        "stats": [
+          { "value": "200%", "label": "Average growth", "icon": "📈" },
+          { "value": "30", "label": "Day time-to-fill", "icon": "⏱️" },
+          { "value": "95%", "label": "Retention", "icon": "🤝" }
+        ]
       }
     },
     {

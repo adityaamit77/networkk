@@ -17,9 +17,23 @@
         "title": "Stay Ahead with Expert Insights",
         "subtitle": "Insights & Resources",
         "description": "Articles, guides and research to inform your talent strategy.",
-        "backgroundType": "gradient",
-        "textAlign": "center",
-        "fullHeight": false
+        "backgroundType": "split",
+        "textAlign": "left",
+        "fullHeight": false,
+        "media": {
+          "image": "/images/insight-cxo-trends.jpg",
+          "alt": "Leaders reviewing market data",
+          "ratio": "16:9"
+        }
+      }
+    },
+    {
+      "id": "insights-intro",
+      "type": "RichText",
+      "props": {
+        "heading": "Expert Perspectives and Research",
+        "content": "<p>Our insights explore the trends shaping executive leadership and talent strategy.</p><img src=\"/images/insight-diversity-hiring.jpg\" alt=\"Diversity hiring discussion\" class=\"rounded-lg my-8\" /><p>From market analyses to leadership playbooks, each resource is crafted by specialists with hands-on experience.</p>",
+        "align": "center"
       }
     },
     {
@@ -35,6 +49,18 @@
       "props": {
         "heading": "All Insights",
         "description": "Browse our latest articles and research."
+      }
+    },
+    {
+      "id": "insights-stats",
+      "type": "Statistics",
+      "props": {
+        "heading": "Insight Highlights",
+        "stats": [
+          { "value": "250+", "label": "Articles", "icon": "📝" },
+          { "value": "40+", "label": "Reports", "icon": "📊" },
+          { "value": "15", "label": "Industries", "icon": "🌐" }
+        ]
       }
     },
     {
@@ -55,4 +81,3 @@
   "createdAt": "2025-01-15T10:00:00Z",
   "updatedAt": "2025-01-15T10:00:00Z"
 }
-
