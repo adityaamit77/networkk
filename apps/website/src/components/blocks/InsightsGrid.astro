@@ -8,7 +8,7 @@ export interface Props {
 
 const { heading = 'All Insights', description } = Astro.props as Props;
 
-let modules: Record<string, any> = await Astro.glob('../../content/insights/*.{json,mdx}', { eager: true });
+const modules: Record<string, any> = import.meta.glob('../../content/insights/*.{json,mdx}', { eager: true });
 
 const posts = Object.entries(modules).map(([path, mod]) => {
   const slug = path.replace('../../content/insights/', '').replace(/\.(json|mdx)$/,'');
