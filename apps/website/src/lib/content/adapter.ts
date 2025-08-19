@@ -115,11 +115,11 @@ export async function getSiteConfig() {
     navigation: {
       header: [
         { label: 'Home', href: '/' },
-        { label: 'Services', href: '/services' },
-        { label: 'Industries', href: '/industries' },
-        { label: 'Insights', href: '/insights' },
-        { label: 'Success Stories', href: '/success-stories' },
         { label: 'About', href: '/about' },
+        { label: 'Services', href: '/services' },
+        { label: 'Insights', href: '/insights' },
+        { label: 'Industries', href: '/industries' },
+        { label: 'Success Stories', href: '/success-stories' },
         { label: 'Contact', href: '/contact', cta: true }
       ],
       footer: [
