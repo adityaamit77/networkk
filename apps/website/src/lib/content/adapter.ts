@@ -46,8 +46,19 @@ export async function loadPageBySlug(slug: string): Promise<PageContent | null> 
     const content = module.default || module;
     const seoResult = SEOSchema.safeParse(content.seo);
     if (!seoResult.success) {
-      console.error(`Invalid SEO data for page: ${slug}`, seoResult.error.flatten());
-      throw new Error(`Invalid SEO data for page: ${slug}`);
+      // Don't fail the whole build for invalid/missing SEO frontmatter.
+      // Log details and synthesize a minimal fallback SEO object so pages can render.
+      console.warn(`Invalid SEO data for page: ${slug}`, seoResult.error.flatten());
+      const site = await getSiteConfig();
+      const fallbackSeo: Partial<SEO> = {
+        title: content.title ? `${content.title} - ${site.name}` : site.name,
+        description: (content.excerpt ?? site.description ?? '').toString(),
+        canonical: `${site.url.replace(/\/$/, '')}/${slug}/`,
+        noindex: false,
+        image: undefined,
+        keywords: (content.seo && (content.seo as any).keywords) ?? []
+      };
+      return { ...content, seo: { ...fallbackSeo, ...(content.seo || {}) } as SEO } as PageContent;
     }
     return { ...content, seo: seoResult.data } as PageContent;
   } catch (error) {
@@ -62,8 +73,17 @@ export async function loadInsightBySlug(slug: string): Promise<InsightContent | 
     const content = contentModule.default;
     const seoResult = SEOSchema.safeParse(content.seo);
     if (!seoResult.success) {
-      console.error(`Invalid SEO data for insight: ${slug}`, seoResult.error.flatten());
-      throw new Error(`Invalid SEO data for insight: ${slug}`);
+      console.warn(`Invalid SEO data for insight: ${slug}`, seoResult.error.flatten());
+      const site = await getSiteConfig();
+      const fallbackSeo: Partial<SEO> = {
+        title: content.title ? `${content.title} - ${site.name}` : site.name,
+        description: (content.excerpt ?? site.description ?? '').toString(),
+        canonical: `${site.url.replace(/\/$/, '')}/insights/${slug}/`,
+        noindex: false,
+        image: undefined,
+        keywords: (content.seo && (content.seo as any).keywords) ?? []
+      };
+      return { ...content, seo: { ...fallbackSeo, ...(content.seo || {}) } as SEO } as InsightContent;
     }
     return { ...content, seo: seoResult.data } as InsightContent;
   } catch (error: any) {

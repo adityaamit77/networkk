@@ -52,6 +52,7 @@ const {
       id="contact-form"
       method="post"
       action="/api/contact"
+      data-redirect-to={redirectTo ?? ''}
       class="bg-white rounded-xl shadow-sm p-8 md:p-10"
     >
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -147,29 +148,8 @@ const {
       </div>
     </form>
   </div>
+    </form>
+  </div>
 </section>
-<script>
-  import { trackEvent } from '../../lib/analytics';
-  // Simple form handling
-  const form = document.getElementById('contact-form');
-  const successMessage = document.getElementById('form-success');
-  const redirectTo = {JSON.stringify(redirectTo)};
-  
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      trackEvent('form_submit', { form: 'contact' });
 
-      // In a real implementation, you would send the form data to your backend
-      if (redirectTo) {
-        window.location.href = redirectTo;
-        return;
-      }
-      // For now, we'll just show the success message
-      if (successMessage) {
-        successMessage.classList.remove('hidden');
-        (form as HTMLFormElement).reset();
-      }
-    });
-  }
-</script>
+<script type="module" src="./ContactForm.client.ts"></script>

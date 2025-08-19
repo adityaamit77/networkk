@@ -32,6 +32,9 @@ export interface Props {
 
 const { page, showPageTitle = true, theme } = Astro.props;
 
+// Ensure seo object exists to avoid runtime errors when pages lack SEO metadata
+const seo = page?.seo ?? {};
+
 const themeStyles = {
   default: { headingBg: 'bg-gray-50', headingText: 'text-gray-900' },
   gold: { headingBg: 'bg-amber-50', headingText: 'text-amber-900' },
@@ -55,13 +58,14 @@ if (page.slug !== 'home') {
     accumulated += (i > 0 ? '/' : '') + segments[i];
     const parent = await loadPageBySlug(accumulated);
     if (parent) {
-      breadcrumbItems.push({ name: parent.title, url: parent.seo.canonical });
+      // parent.seo may be undefined for older content; guard access and provide a sensible fallback
+      breadcrumbItems.push({ name: parent.title, url: parent.seo?.canonical ?? `${Astro.url.href}${accumulated}/` });
     }
   }
 
   breadcrumbItems.push({
     name: page.title,
-    url: page.seo.canonical
+    url: page.seo?.canonical ?? seo.canonical ?? Astro.url.href
   });
 }
 
@@ -75,19 +79,20 @@ const combinedJsonLd = [
 
 // Debug logging
 console.log('Page object:', page);
-console.log('Page SEO:', page?.seo);
-console.log('Page SEO image:', page?.seo?.image);
-console.log('Page SEO keywords:', page?.seo?.keywords);
+console.log('Page SEO:', seo);
+console.log('Page SEO image:', seo?.image);
+console.log('Page SEO keywords:', seo?.keywords);
 
 // Build props for BaseLayout conditionally
 const baseLayoutProps = {
-  title: page.seo.title,
-  description: page.seo.description,
-  canonical: page.seo.canonical,
-  noindex: page.seo.noindex,
+  // Fallback to page.title when seo.title is missing
+  title: seo.title ?? page.title,
+  description: seo.description ?? '',
+  canonical: seo.canonical ?? Astro.url.href,
+  noindex: seo.noindex ?? false,
   footerTheme: theme,
-  ...(page.seo?.keywords && { keywords: page.seo.keywords }),
-  ...(page.seo?.image && { image: page.seo.image })
+  ...(seo?.keywords && { keywords: seo.keywords }),
+  ...(seo?.image && { image: seo.image })
 };
 
 console.log('BaseLayout props:', baseLayoutProps);

@@ -98,12 +98,12 @@ const currentTheme = themeConfig[theme as keyof typeof themeConfig];
 
                     <!-- Author -->
                     <div class="flex items-center justify-center">
-                      {testimonial.author.image && (
-                        <Image
-                          src={testimonial.author.image}
-                          alt={testimonial.author.name}
-                          width={64}
-                          height={64}
+                      {testimonial.author?.image && (
+                          <Image
+                            src={testimonial.author?.image}
+                            alt={testimonial.author?.name}
+                            width={64}
+                            height={64}
                           class={`w-16 h-16 rounded-full object-cover mr-4 ring-4 ${
                             theme === 'gold' ? 'ring-amber-100' : 
                             theme === 'emerald' ? 'ring-emerald-100' : 
@@ -113,13 +113,13 @@ const currentTheme = themeConfig[theme as keyof typeof themeConfig];
                       )}
                       <div class="text-left">
                         <div class="font-semibold text-gray-900 text-lg">
-                          {testimonial.author.name}
+                          {testimonial.author?.name}
                         </div>
                         <div class="text-gray-600">
-                          {testimonial.author.title}
+                          {testimonial.author?.title}
                         </div>
                         <div class={`${currentTheme.accent} font-medium`}>
-                          {testimonial.author.company}
+                          {testimonial.author?.company}
                         </div>
                       </div>
                     </div>
@@ -176,11 +176,11 @@ const currentTheme = themeConfig[theme as keyof typeof themeConfig];
             
             <!-- Author -->
             <div class="flex items-center">
-              {testimonial.author.image && (
+              {testimonial.author?.image && (
                 <div class="flex-shrink-0 mr-4">
                   <Image
-                    src={testimonial.author.image}
-                    alt={`Portrait of ${testimonial.author.name}`}
+                    src={testimonial.author?.image}
+                    alt={`Portrait of ${testimonial.author?.name}`}
                     width={48}
                     height={48}
                     class={`w-12 h-12 rounded-full object-cover ring-2 ${
@@ -193,13 +193,13 @@ const currentTheme = themeConfig[theme as keyof typeof themeConfig];
               )}
               <div>
                 <div class="font-semibold text-gray-900">
-                  {testimonial.author.name}
+                  {testimonial.author?.name}
                 </div>
                 <div class="text-gray-600 text-sm">
-                  {testimonial.author.title}
+                  {testimonial.author?.title}
                 </div>
                 <div class={`${currentTheme.accent} text-sm font-medium`}>
-                  {testimonial.author.company}
+                  {testimonial.author?.company}
                 </div>
               </div>
             </div>

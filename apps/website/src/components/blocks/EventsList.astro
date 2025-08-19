@@ -102,11 +102,11 @@ const sortedEvents = [...filteredEvents].sort((a, b) => {
                   <div class="flex flex-wrap gap-4">
                     {event.speakers.map(speaker => (
                       <div class="flex items-center">
-                        {speaker.image && (
+                        {speaker?.image && (
                           <div class="flex-shrink-0 mr-3">
                             <Image 
-                              src={speaker.image} 
-                              alt={speaker.name}
+                              src={speaker?.image} 
+                              alt={speaker?.name}
                               width={40}
                               height={40}
                               class="rounded-full object-cover"
@@ -114,8 +114,8 @@ const sortedEvents = [...filteredEvents].sort((a, b) => {
                           </div>
                         )}
                         <div>
-                          <p class="font-medium">{speaker.name}</p>
-                          {speaker.title && <p class="text-sm text-gray-600">{speaker.title}</p>}
+                          <p class="font-medium">{speaker?.name}</p>
+                          {speaker?.title && <p class="text-sm text-gray-600">{speaker?.title}</p>}
                         </div>
                       </div>
                     ))}
