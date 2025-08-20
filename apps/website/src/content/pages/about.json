@@ -30,37 +30,46 @@
     },
     {
       "id": "our-story-journey",
-      "type": "TilesGrid",
+      "type": "JourneyFunnel",
       "props": {
         "heading": "Our Journey",
         "description": "Founded with the belief that great leadership transforms organizations, we've spent over a decade perfecting the art and science of executive search.",
-        "columns": "2",
         "items": [
           {
-            "title": "2013 - The Beginning",
+            "title": "The Beginning",
             "description": "Founded in Mumbai with a vision to transform executive search in India through personalized service and deep industry expertise.",
+            "year": "2013",
             "icon": "🚀",
-            "image": "/images/service-executive-search.avif"
+            "image": "/images/service-executive-search.avif",
+            "milestone": "Company Founded"
           },
           {
-            "title": "2016 - Regional Expansion", 
+            "title": "Regional Expansion", 
             "description": "Expanded across Southeast Asia, establishing partnerships with leading organizations and building our network of exceptional talent.",
+            "year": "2016",
             "icon": "🌏",
-            "image": "/images/service-leadership-hiring.avif"
+            "image": "/images/service-leadership-hiring.avif",
+            "milestone": "Multi-Country Presence"
           },
           {
-            "title": "2019 - Technology Integration",
+            "title": "Technology Integration",
             "description": "Pioneered the use of AI and data analytics in executive search, enhancing our ability to identify and assess top talent.",
+            "year": "2019",
             "icon": "🤖",
-            "image": "/images/service-talent-advisory.avif"
+            "image": "/images/service-talent-advisory.avif",
+            "milestone": "Innovation Leader"
           },
           {
-            "title": "2022 - Industry Recognition",
+            "title": "Industry Recognition",
             "description": "Recognized as 'Best Executive Search Firm' by HR Excellence Awards, cementing our position as industry leaders.",
+            "year": "2022",
             "icon": "🏆", 
-            "image": "/images/service-diversity-inclusion.avif"
+            "image": "/images/service-diversity-inclusion.avif",
+            "milestone": "Award Winning"
           }
-        ]
+        ],
+        "theme": "funnel",
+        "backgroundType": "gradient"
       }
     },
     {
