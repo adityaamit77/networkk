@@ -167,6 +167,22 @@ export const InsightSchema = z.object({
 
 // ... existing code ...
 
+// Journey Funnel Schema for unique timeline visualization
+export const JourneyFunnelSchema = z.object({
+  heading: z.string().min(5).max(50),
+  description: z.string().max(200).optional(),
+  items: z.array(z.object({
+    title: z.string().max(50),
+    description: z.string().max(300),
+    year: z.string().optional(),
+    icon: z.string().optional(),
+    image: z.string().url().optional(),
+    milestone: z.string().max(50).optional(),
+  })).min(2).max(6),
+  theme: z.enum(['funnel', 'timeline', 'flow']).default('funnel'),
+  backgroundType: z.enum(['none', 'light', 'dark', 'gradient']).default('gradient'),
+});
+
 // Timeline Schema for company history, methodology steps
 export const TimelineSchema = z.object({
   heading: z.string().min(5).max(50),
@@ -338,6 +354,7 @@ export const BlockInstanceSchema: z.ZodType = BaseBlockSchema.extend({
     'RichText',
     'LogosStrip',
     'Timeline',
+    'JourneyFunnel',
     'CaseStudyList',
     'TeamProfiles',
     'ProcessSteps',
@@ -372,6 +389,7 @@ export const BlockInstanceSchema: z.ZodType = BaseBlockSchema.extend({
 // ... existing code ...
 
 // Add new types exports
+export type JourneyFunnelProps = z.infer<typeof JourneyFunnelSchema>;
 export type TimelineProps = z.infer<typeof TimelineSchema>;
 export type TeamProfilesProps = z.infer<typeof TeamProfilesSchema>;
 export type ProcessStepsProps = z.infer<typeof ProcessStepsSchema>;
