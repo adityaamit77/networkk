@@ -37,19 +37,19 @@
         "items": [
           {
             "title": "The Beginning",
-            "description": "Founded in Mumbai with a vision to transform executive search in India through personalized service and deep industry expertise.",
+            "description": "Founded in NCR with a vision to transform executive search in India through personalized service and deep industry expertise.",
             "year": "2013",
             "icon": "🚀",
             "image": "/images/service-executive-search.avif",
             "milestone": "Company Founded"
           },
           {
-            "title": "Regional Expansion", 
-            "description": "Expanded across Southeast Asia, establishing partnerships with leading organizations and building our network of exceptional talent.",
+            "title": "Market Leadership", 
+            "description": "Established strong presence across major Indian metros, building deep partnerships with leading organizations and expanding our network of exceptional talent.",
             "year": "2016",
             "icon": "🌏",
             "image": "/images/service-leadership-hiring.avif",
-            "milestone": "Multi-Country Presence"
+            "milestone": "Pan-India Presence"
           },
           {
             "title": "Technology Integration",
@@ -108,19 +108,19 @@
         "items": [
           {
             "title": "Anupama Singh", 
-            "description": "Co Founder and CEO - Leading strategic vision and client relationships with 15+ years in executive search and talent advisory.",
+            "description": "Co-Founder & Chief Executive Officer\n\nLeading strategic vision and client relationships with 15+ years of expertise in executive search and talent advisory. Anupama specializes in C-suite placements and organizational transformation across technology, finance, and healthcare sectors.",
             "image": "/images/profile/anupama.jpg",
             "href": "/team"
           },
           {
             "title": "Sudha Patni", 
-            "description": "Co Manager - Talent Acquisition and Operations - Managing operations and talent acquisition processes with expertise in scaling recruitment systems.",
+            "description": "Co-Manager & Head of Operations\n\nOverseeing talent acquisition processes and operational excellence with deep expertise in scaling recruitment systems. Sudha drives our delivery capabilities and ensures seamless client experiences across all engagements.",
             "image": "/images/profile/sudha.jpg",
             "href": "/team"
           },
           {
-            "title": "Join Our Team",
-            "description": "Senior Partner - Executive Search - We're looking for an experienced executive search professional to join our leadership team.",
+            "title": "Join Our Leadership",
+            "description": "Senior Partner - Executive Search\n\nWe're seeking an experienced executive search professional to join our leadership team. Lead high-impact searches, mentor junior consultants, and help shape the future of executive recruitment in India.",
             "image": "/images/placeholder.svg",
             "href": "/careers"
           }
