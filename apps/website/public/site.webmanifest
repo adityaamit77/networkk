@@ -1,0 +1,33 @@
+{
+  "name": "Networkk - Executive Search & Leadership Hiring",
+  "short_name": "Networkk",
+  "description": "Transform your business with top-tier executive talent. Networkk connects organizations with exceptional leaders through proven search methodologies.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#3B82F6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["business", "professional"],
+  "lang": "en",
+  "scope": "/",
+  "id": "/"
+}

@@ -1,0 +1,16 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="16" fill="#3B82F6"/>
+  
+  <!-- Letter N -->
+  <path d="M8 8 L12 8 L20 20 L20 8 L24 8 L24 24 L20 24 L12 12 L12 24 L8 24 Z" fill="white"/>
+  
+  <!-- Small connecting nodes to represent network -->
+  <circle cx="6" cy="6" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="26" cy="6" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="6" cy="26" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="26" cy="26" r="1.5" fill="white" opacity="0.8"/>
+  
+  <!-- Connecting lines -->
+  <path d="M6 6 L8 8 M26 6 L24 8 M6 26 L8 24 M26 26 L24 24" stroke="white" stroke-width="0.5" opacity="0.6"/>
+</svg>
