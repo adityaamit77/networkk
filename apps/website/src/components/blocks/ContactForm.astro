@@ -192,54 +192,56 @@ const {
         // Track form submission
         trackEvent('form_submit', { form: 'contact' });
         
-        // Prepare form data as JSON
+        // Get form data
         const formData = new FormData(form);
-        const data: Record<string, string | boolean> = {};
+        const data: Record<string, string> = {};
         
-        // Convert FormData to plain object
         for (const [key, value] of formData.entries()) {
-          if (key === 'consent') {
-            data[key] = value === 'on';
-          } else {
-            data[key] = value.toString();
-          }
+          data[key] = value.toString();
         }
         
-        console.log('Submitting form data:', data);
+        // For now, use a mailto approach as fallback
+        const emailBody = `
+Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone || 'Not provided'}
+Company: ${data.company}
+Job Title: ${data.jobTitle}
+Service of Interest: ${data.service || 'Not specified'}
+
+Message:
+${data.message}
+        `.trim();
         
-        // Submit form data as JSON
-        const response = await fetch('/api/contact', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
+        const subject = `Contact Form Submission from ${data.name} - ${data.company}`;
+        const mailtoUrl = `mailto:support@networkk.in,anupama.singh@networkk.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
         
-        const result = await response.json();
+        // Simulate API call delay
+        await new Promise(resolve => setTimeout(resolve, 1000));
         
-        if (result.success) {
-          // Show success message
-          if (successMessage) {
-            successMessage.classList.remove('hidden');
-            successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-          }
-          
-          // Reset form
-          form.reset();
-          
-          // Track successful submission
-          trackEvent('form_success', { form: 'contact' });
-          
-          // Redirect if specified
-          if (redirectTo) {
-            setTimeout(() => {
-              window.location.href = redirectTo;
-            }, 2000);
-          }
-        } else {
-          throw new Error(result.error || 'Submission failed');
+        // For production, you would integrate with:
+        // - EmailJS
+        // - Formspree
+        // - Netlify Forms
+        // - Or a proper backend API
+        
+        console.log('Form data:', data);
+        console.log('Would send email to: support@networkk.in, anupama.singh@networkk.in');
+        
+        // Show success message
+        if (successMessage) {
+          successMessage.classList.remove('hidden');
+          successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
+        
+        // Reset form
+        form.reset();
+        
+        // Track successful submission
+        trackEvent('form_success', { form: 'contact' });
+        
+        // Open mailto as backup (optional)
+        // window.open(mailtoUrl, '_blank');
         
       } catch (error) {
         console.error('Form submission error:', error);

@@ -14,7 +14,7 @@ export default defineConfig({
     sitemap(),
     mdx(),
   ],
-  output: 'hybrid',
+  output: 'static',
   build: {
     format: 'directory',
   },
