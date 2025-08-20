@@ -157,7 +157,6 @@ const {
       </div>
     </form>
   </div>
-    </form>
   </div>
 </section>
 
@@ -194,63 +193,75 @@ const {
         
         // Get form data
         const formData = new FormData(form);
-        const data: Record<string, string> = {};
         
-        for (const [key, value] of formData.entries()) {
-          data[key] = value.toString();
+        // Submit to API endpoint
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          body: formData
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+          // Show success message
+          if (successMessage) {
+            successMessage.classList.remove('hidden');
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+          
+          // Reset form
+          form.reset();
+          
+          // Track successful submission
+          trackEvent('form_success', { form: 'contact' });
+          
+        } else {
+          throw new Error(result.error || 'Submission failed');
         }
-        
-        // For now, use a mailto approach as fallback
-        const emailBody = `
-Name: ${data.name}
-Email: ${data.email}
-Phone: ${data.phone || 'Not provided'}
-Company: ${data.company}
-Job Title: ${data.jobTitle}
-Service of Interest: ${data.service || 'Not specified'}
-
-Message:
-${data.message}
-        `.trim();
-        
-        const subject = `Contact Form Submission from ${data.name} - ${data.company}`;
-        const mailtoUrl = `mailto:support@networkk.in,anupama.singh@networkk.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
-        
-        // Simulate API call delay
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        
-        // For production, you would integrate with:
-        // - EmailJS
-        // - Formspree
-        // - Netlify Forms
-        // - Or a proper backend API
-        
-        console.log('Form data:', data);
-        console.log('Would send email to: support@networkk.in, anupama.singh@networkk.in');
-        
-        // Show success message
-        if (successMessage) {
-          successMessage.classList.remove('hidden');
-          successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-        
-        // Reset form
-        form.reset();
-        
-        // Track successful submission
-        trackEvent('form_success', { form: 'contact' });
-        
-        // Open mailto as backup (optional)
-        // window.open(mailtoUrl, '_blank');
         
       } catch (error) {
         console.error('Form submission error:', error);
         
-        // Show error message
+        // Get form data for mailto fallback
+        const formData = new FormData(form);
+        const data: Record<string, string> = {};
+        for (const [key, value] of formData.entries()) {
+          data[key] = value.toString();
+        }
+        
+        // Create mailto fallback
+        const emailSubject = `Contact Form Submission from ${data.name} - ${data.company || 'Networkk Website'}`;
+        const emailBody = `
+Contact Form Details:
+
+Name: ${data.name || 'Not provided'}
+Email: ${data.email || 'Not provided'}
+Phone: ${data.phone || 'Not provided'}
+Company: ${data.company || 'Not provided'}
+Job Title: ${data.jobTitle || 'Not provided'}
+Service Interest: ${data.service || 'Not specified'}
+
+Message:
+${data.message || 'No message provided'}
+
+---
+Submitted on: ${new Date().toLocaleString()}
+From: Networkk Website Contact Form
+        `.trim();
+        
+        const mailtoUrl = `mailto:support@networkk.in?cc=anupama.singh@networkk.in&subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+        
+        // Show error message with fallback options
         if (errorMessage && errorMessageText) {
-          errorMessageText.textContent = error instanceof Error 
-            ? error.message 
-            : 'Something went wrong. Please try again or contact us directly at support@networkk.in';
+          errorMessageText.innerHTML = `
+            <strong>Form submission failed.</strong><br>
+            <button onclick="window.open('${mailtoUrl}', '_blank')" class="mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
+              Send via Email Client
+            </button><br>
+            <small class="mt-2 block">Or contact us directly:<br>
+            Email: <a href="mailto:support@networkk.in" class="underline">support@networkk.in</a><br>
+            Phone: <a href="tel:+919266721935" class="underline">+91 92667 21935</a></small>
+          `;
           errorMessage.classList.remove('hidden');
           errorMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
