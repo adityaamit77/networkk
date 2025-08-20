@@ -4,7 +4,7 @@
   "status": "published",
   "seo": {
     "title": "Thank You — We've Received Your Message",
-    "description": "Thanks for reaching out to Networkk. We've received your message and a member of our team will contact you shortly with next steps. For urgent inquiries call +91 22 4123 4567.",
+    "description": "Thanks for reaching out to Networkk. We've received your message and a member of our team will contact you shortly with next steps. For urgent inquiries call +91 92667 21935.",
     "canonical": "https://networkk.com/thank-you/",
     "noindex": true
   },
@@ -15,7 +15,7 @@
       "props": {
         "title": "Thank You",
         "subtitle": "We've received your message",
-        "description": "Our team will get back to you soon. For urgent inquiries, call +91 22 4123 4567 or email info@networkk.com.",
+        "description": "Our team will get back to you soon. For urgent inquiries, call +91 92667 21935 or email info@networkk.com.",
         "backgroundType": "gradient",
         "textAlign": "center",
         "fullHeight": false
