@@ -37,37 +37,17 @@
       "id": "office-locations",
       "type": "LocationMap",
       "props": {
-        "heading": "Our Offices",
+        "heading": "Our Office",
         "locations": [
           {
-            "name": "Mumbai Headquarters",
-            "address": "Level 30, One World Center, Lower Parel, Mumbai 400013, India",
+            "name": "Head Office",
+            "address": "37, Central Plaza, Greater Noida West - 201308, India",
             "coordinates": {
-              "lat": 19.0128,
-              "lng": 72.8154
+              "lat": 28.62,
+              "lng": 77.36
             },
-            "phone": "+91 22 4123 4567",
-            "email": "mumbai@networkk.com"
-          },
-          {
-            "name": "Singapore Office",
-            "address": "One Raffles Place, #20-61, Singapore 048616",
-            "coordinates": {
-              "lat": 1.2847,
-              "lng": 103.8509
-            },
-            "phone": "+65 6812 7890",
-            "email": "singapore@networkk.com"
-          },
-          {
-            "name": "Dubai Office",
-            "address": "Emirates Towers, Level 41, Sheikh Zayed Road, Dubai, UAE",
-            "coordinates": {
-              "lat": 25.2182,
-              "lng": 55.2816
-            },
-            "phone": "+971 4 319 7800",
-            "email": "dubai@networkk.com"
+            "phone": "+91 92667 21935",
+            "email": "info@networkk.com"
           }
         ],
         "mapHeight": "500px"
@@ -83,13 +63,13 @@
         "items": [
           {
             "title": "General Inquiries",
-            "description": "For general questions about our services and approach.\nEmail: info@networkk.com\nPhone: +91 22 4123 4567",
+            "description": "For general questions about our services and approach.\nEmail: info@networkk.com\nPhone: +91 92667 21935",
             "icon": "📧",
             "href": "mailto:info@networkk.com"
           },
           {
             "title": "Media Relations",
-            "description": "For press inquiries, interview requests, and media opportunities.\nEmail: media@networkk.com\nPhone: +91 22 4123 4568",
+            "description": "For press inquiries, interview requests, and media opportunities.\nEmail: media@networkk.com\nPhone: +91 92667 21935",
             "icon": "📰",
             "href": "mailto:media@networkk.com"
           },
@@ -145,17 +125,26 @@
             "type": "select",
             "required": true,
             "options": [
-              { "label": "Executive Search", "value": "executive-search" },
+              {
+                "label": "Executive Search",
+                "value": "executive-search"
+              },
               {
                 "label": "Leadership Advisory",
                 "value": "leadership-advisory"
               },
-              { "label": "Board Services", "value": "board-services" },
+              {
+                "label": "Board Services",
+                "value": "board-services"
+              },
               {
                 "label": "Diversity & Inclusion",
                 "value": "diversity-inclusion"
               },
-              { "label": "Other", "value": "other" }
+              {
+                "label": "Other",
+                "value": "other"
+              }
             ]
           },
           {
@@ -214,8 +203,14 @@
         "heading": "Start Your Leadership Journey",
         "description": "Discover how our services can help you build an exceptional team.",
         "backgroundType": "gradient",
-        "primaryCta": { "label": "Explore Services", "href": "/services" },
-        "secondaryCta": { "label": "Why Choose Us", "href": "/why-choose-us" }
+        "primaryCta": {
+          "label": "Explore Services",
+          "href": "/services"
+        },
+        "secondaryCta": {
+          "label": "Why Choose Us",
+          "href": "/why-choose-us"
+        }
       }
     }
   ],
