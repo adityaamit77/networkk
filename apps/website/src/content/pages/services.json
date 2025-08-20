@@ -1,13 +1,13 @@
 {
   "slug": "services",
-  "title": "Our Executive Search & Leadership Services",
+  "title": "Our Leadership & Executive Hiring Services",
   "status": "published",
   "seo": {
-    "title": "Executive Search & Leadership Services - Networkk",
-    "description": "Discover Networkk's comprehensive executive search and leadership advisory services designed to connect organizations with exceptional talent.",
+    "title": "Leadership & Executive Hiring Services - Networkk",
+    "description": "Discover Networkk's comprehensive leadership and executive hiring services designed to connect organizations with exceptional talent at every level.",
     "canonical": "https://networkk.com/services/",
     "noindex": false,
-    "keywords": ["executive search services", "leadership advisory", "talent acquisition", "C-suite recruitment", "succession planning"]
+    "keywords": ["leadership hiring services", "executive hiring", "talent acquisition", "C-suite recruitment", "management hiring"]
   },
   "blocks": [
     {
@@ -92,8 +92,8 @@
         "description": "Explore our suite of offerings designed to meet every leadership challenge.",
         "columns": "3",
         "items": [
-          {"title": "Executive Search", "description": "Identify and secure C-suite leaders who align with your vision.", "href": "/services/executive-search", "icon": "🎯"},
-          {"title": "Leadership Hiring", "description": "Recruit directors and VPs positioned for growth.", "href": "/services/leadership-hiring", "icon": "👥"},
+          {"title": "Leadership Hiring", "description": "Find C-suite executives, CTOs, and VPs who set strategic direction and drive organizational transformation.", "href": "/services/leadership-hiring", "icon": "🎯"},
+          {"title": "Executive Hiring", "description": "Recruit exceptional managers, team leads, and department heads who deliver operational excellence and execute strategy.", "href": "/services/executive-search", "icon": "👥"},
           {"title": "Talent Advisory", "description": "Assess and develop leadership capabilities across the organization.", "href": "/services/talent-advisory", "icon": "💡"},
           {"title": "Career Transition", "description": "Provide dignified support for employees in transition.", "href": "/services/career-transition", "icon": "🔄"},
           {"title": "Workforce Planning", "description": "Forecast talent needs with market intelligence.", "href": "/services/workforce-planning", "icon": "📊"},

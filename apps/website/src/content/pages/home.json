@@ -55,18 +55,18 @@
         "columns": "2",
         "items": [
           {
-            "title": "Executive Search",
-            "description": "Find C-suite and senior leadership talent who align with your vision and drive transformational growth through proven methodologies.",
-            "icon": "🎯",
-            "href": "/services/executive-search",
-            "image": "/images/service-executive-search.avif"
-          },
-          {
             "title": "Leadership Hiring",
-            "description": "Strategic recruitment for directors, VPs, and emerging leaders who will shape your organization's future and cultural evolution.",
-            "icon": "👥",
+            "description": "Find visionary C-suite leaders, CTOs, and VPs who drive strategic transformation, set organizational direction, and inspire teams to achieve breakthrough results.",
+            "icon": "🎯",
             "href": "/services/leadership-hiring",
             "image": "/images/service-leadership-hiring.avif"
+          },
+          {
+            "title": "Executive Hiring",
+            "description": "Recruit exceptional managers, team leads, and project managers who execute strategy, deliver operational excellence, and build high-performing teams.",
+            "icon": "👥",
+            "href": "/services/executive-search",
+            "image": "/images/service-executive-search.avif"
           },
           {
             "title": "Talent Advisory",

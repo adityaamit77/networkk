@@ -4,19 +4,19 @@
   "status": "published",
   "seo": {
     "title": "Leadership Hiring - Networkk",
-    "description": "Strategic recruitment for directors, VPs, and future executives who drive operational excellence and organizational growth across all business functions.",
+    "description": "Find visionary C-suite executives, CTOs, and VPs who set strategic direction, drive organizational transformation, and inspire teams to achieve breakthrough results.",
     "canonical": "https://networkk.com/services/leadership-hiring/",
     "noindex": false,
-    "keywords": ["leadership hiring", "senior recruitment", "director search"]
+    "keywords": ["leadership hiring", "C-suite recruitment", "CEO search", "CTO hiring", "VP recruitment"]
   },
   "blocks": [
     {
       "id": "hero-leadership-hiring",
       "type": "Hero",
       "props": {
-        "title": "Build Tomorrow's Leaders Today",
-        "subtitle": "Leadership Hiring Excellence",
-        "description": "Strategic recruitment for directors, VPs, and emerging executives who will drive your organization's next chapter of growth and innovation.",
+        "title": "Find Visionary Leaders Who Transform Organizations",
+        "subtitle": "C-Suite & VP Leadership Hiring",
+        "description": "Connect with exceptional CEOs, CTOs, Chief Officers, and VPs who drive strategic transformation, set organizational vision, and deliver breakthrough results.",
         "media": {
           "image": "/images/service-leadership-hiring.avif",
           "alt": "Professional leadership team collaboration",
@@ -44,24 +44,24 @@
       "id": "leadership-impact-grid",
       "type": "TilesGrid",
       "props": {
-        "heading": "Why Leadership Hiring Matters",
-        "description": "Strong mid-level and senior leaders create the pipeline for tomorrow's executives and drive organizational transformation.",
+        "heading": "Why C-Suite Leadership Matters",
+        "description": "Visionary leaders at the helm create strategic direction, inspire organizational transformation, and drive sustainable competitive advantage.",
         "columns": "3",
         "backgroundType": "gradient",
         "items": [
           {
-            "title": "Cultural Alignment",
-            "description": "Leaders who embody your values and drive cultural evolution while maintaining organizational DNA.",
+            "title": "Strategic Vision",
+            "description": "Leaders who set long-term direction, anticipate market shifts, and position organizations for sustained growth and innovation.",
             "icon": "🎯"
           },
           {
-            "title": "Growth Catalyst",
-            "description": "Professionals who accelerate growth through strategic thinking and operational excellence.",
+            "title": "Transformation Driver",
+            "description": "Executives who lead digital transformation, organizational change, and cultural evolution to achieve competitive advantage.",
             "icon": "🚀"
           },
           {
-            "title": "Future Pipeline",
-            "description": "Building your bench of future C-suite executives through strategic leadership development.",
+            "title": "Stakeholder Influence",
+            "description": "Leaders who excel at board relations, investor communication, and building strategic partnerships that accelerate business outcomes.",
             "icon": "🌟"
           }
         ]

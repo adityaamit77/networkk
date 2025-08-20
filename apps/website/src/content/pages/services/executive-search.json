@@ -1,22 +1,22 @@
 {
   "slug": "executive-search",
-  "title": "Executive Search",
+  "title": "Executive Hiring",
   "status": "published",
   "seo": {
-    "title": "Executive Search - Networkk",
-    "description": "Partner with Networkk to recruit transformative C-suite and senior leaders who drive strategic growth and organizational transformation across industries.",
+    "title": "Executive Hiring - Networkk",
+    "description": "Recruit exceptional managers, team leads, project managers, and department heads who execute strategy, deliver operational excellence, and build high-performing teams.",
     "canonical": "https://networkk.com/services/executive-search/",
     "noindex": false,
-    "keywords": ["executive search", "c-suite hiring", "leadership recruitment"]
+    "keywords": ["executive hiring", "management recruitment", "team lead hiring", "project manager search", "department head recruitment"]
   },
   "blocks": [
     {
       "id": "hero-executive-search",
       "type": "Hero",
       "props": {
-        "title": "Start Your Executive Search",
-        "subtitle": "Find transformative leaders",
-        "description": "We identify and secure top-tier executives who drive strategic growth.",
+        "title": "Find Exceptional Executives Who Deliver Results",
+        "subtitle": "Management & Executive Hiring",
+        "description": "Connect with outstanding managers, team leads, project managers, and department heads who execute strategy with precision and build winning teams.",
         "backgroundType": "gradient",
         "textAlign": "center",
         "fullHeight": false
@@ -26,36 +26,36 @@
       "id": "why-executive-search",
       "type": "RichText",
       "props": {
-        "heading": "Why Executive Search?",
-        "content": "<p>Our dedicated researchers and consultants map the market to uncover leaders others overlook. We tailor every search to your culture, strategy, and growth goals.</p>"
+        "heading": "Why Executive Hiring Matters",
+        "content": "<p>Strong executives at the management level are the backbone of organizational success. They translate strategy into action, build high-performing teams, and ensure operational excellence. Our executive hiring process identifies professionals who excel at execution, team building, and delivering measurable results in complex business environments.</p>"
       }
     },
     {
       "id": "methodology-executive-search",
       "type": "TilesGrid",
       "props": {
-        "heading": "Our Methodology",
-        "description": "A proven 4-step process that ensures precision, discretion, and partnership in every executive search.",
+        "heading": "Our Executive Hiring Process",
+        "description": "A comprehensive approach that identifies executives who excel at team building, strategy execution, and operational delivery.",
         "columns": "4",
         "items": [
           {
-            "title": "1. Briefing",
-            "description": "Deep dive into organizational goals and role requirements.",
+            "title": "1. Role Definition",
+            "description": "Map team dynamics, success metrics, and management requirements for the executive role.",
             "icon": "📋"
           },
           {
-            "title": "2. Research", 
-            "description": "Comprehensive market mapping and candidate outreach.",
+            "title": "2. Talent Sourcing", 
+            "description": "Identify proven managers and executives with relevant industry and functional experience.",
             "icon": "🔍"
           },
           {
-            "title": "3. Assessment",
-            "description": "Behavioral and competency-based evaluation of shortlisted leaders.",
+            "title": "3. Skills Assessment",
+            "description": "Evaluate leadership capabilities, team management skills, and execution track record.",
             "icon": "⚖️"
           },
           {
-            "title": "4. Selection",
-            "description": "Presentation of finalists and support through offer negotiation.",
+            "title": "4. Integration",
+            "description": "Support successful onboarding and team integration for immediate impact.",
             "icon": "✅"
           }
         ]
@@ -82,44 +82,44 @@
       "id": "metrics-executive-search",
       "type": "Statistics",
       "props": {
-        "heading": "Executive Search Excellence",
-        "description": "Comprehensive performance metrics that demonstrate our commitment to finding exceptional leadership talent.",
+        "heading": "Executive Hiring Excellence",
+        "description": "Performance metrics demonstrating our success in placing exceptional management and executive talent.",
         "stats": [
           {
-            "value": "98%",
-            "label": "Placement Success",
-            "description": "Completed searches",
+            "value": "96%",
+            "label": "Team Integration Success",
+            "description": "Executives who excel with teams",
             "icon": "🎯"
           },
           {
-            "value": "15",
+            "value": "12",
             "label": "Days Average",
-            "description": "Time to shortlist",
+            "description": "Time to final selection",
             "icon": "⚡"
           },
           {
-            "value": "95%",
-            "label": "Retention Rate",
-            "description": "Two-year success",
+            "value": "92%",
+            "label": "Performance Rating",
+            "description": "Exceed expectations in first year",
             "icon": "📈"
           },
           {
-            "value": "150+",
-            "label": "C-Suite Leaders",
-            "description": "Successfully placed",
-            "icon": "👑"
+            "value": "300+",
+            "label": "Executives Placed",
+            "description": "Managers to department heads",
+            "icon": "�"
           },
           {
-            "value": "25+",
-            "label": "Countries",
-            "description": "Global reach",
-            "icon": "🌍"
+            "value": "20+",
+            "label": "Functions",
+            "description": "Cross-functional expertise",
+            "icon": "�"
           },
           {
-            "value": "12",
-            "label": "Years Experience",
-            "description": "Market expertise",
-            "icon": "⭐"
+            "value": "88%",
+            "label": "Promotion Rate",
+            "description": "Advanced within 24 months",
+            "icon": "🚀"
           }
         ],
         "backgroundType": "light"
@@ -132,7 +132,7 @@
         "heading": "Client Feedback",
         "items": [
           {
-            "quote": "Networkk delivered exceptional candidates quickly and professionally.",
+            "quote": "The manager they placed transformed our team dynamics and delivery performance within three months. Outstanding cultural fit and execution skills.",
             "author": {
               "name": "Anita Patel",
               "title": "CEO",
@@ -204,8 +204,8 @@
       "id": "final-cta",
       "type": "CTA",
       "props": {
-        "heading": "Request a Search Consultation",
-        "description": "Connect with our team to begin your executive search journey.",
+        "heading": "Start Your Executive Hiring Journey",
+        "description": "Connect with our team to discuss your management and executive hiring needs.",
         "backgroundType": "gradient",
         "primaryCta": { "label": "Request Consultation", "href": "/contact" }
       }
