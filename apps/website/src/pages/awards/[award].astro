@@ -1,0 +1,29 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { loadPageBySlug } from '../../lib/content/adapter';
+
+export async function getStaticPaths() {
+  const modules = import.meta.glob('../../content/awards/*.json', { eager: true });
+  return Object.entries(modules)
+    .map(([filePath, module]) => {
+      const award = filePath
+        .replace('../../content/awards/', '')
+        .replace('.json', '');
+      const status = (module as any).status || 'published';
+      if (status !== 'published') return null;
+      return { params: { award } };
+    })
+    .filter(Boolean);
+}
+
+const award = Astro.params.award as string;
+const page = await loadPageBySlug(award, 'awards');
+
+if (!page) {
+  return new Response(null, {
+    status: 404,
+    statusText: 'Award page not found'
+  });
+}
+---
+<PageLayout page={page} theme="default" />

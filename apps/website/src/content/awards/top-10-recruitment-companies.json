@@ -1,0 +1,161 @@
+{
+  "slug": "top-10-recruitment-companies",
+  "title": "Top 10 Recruitment Companies - Leadership Category",
+  "status": "published",
+  "seo": {
+    "title": "Top 10 Recruitment Companies - Leadership Category - Business Today - Networkk",
+    "description": "Networkk featured in Business Today's Top 10 Recruitment Companies in Leadership Category, recognizing excellence in C-suite and senior executive placements.",
+    "canonical": "https://networkk.com/awards/top-10-recruitment-companies/",
+    "noindex": false,
+    "keywords": ["Business Today", "top 10 recruitment companies", "leadership category", "executive recruitment award"]
+  },
+  "blocks": [
+    {
+      "id": "hero-business-today",
+      "type": "Hero",
+      "props": {
+        "title": "Top 10 Recruitment Companies",
+        "subtitle": "Business Today Magazine - Leadership Category",
+        "description": "Featured among India's leading recruitment firms specializing in leadership and C-suite executive placements, based on market performance, client satisfaction, and placement quality.",
+        "media": {
+          "image": "/images/service-leadership-hiring.avif",
+          "alt": "Business Today Top 10 Recruitment Companies Leadership Category",
+          "ratio": "16:9"
+        },
+        "backgroundType": "image",
+        "textAlign": "center",
+        "fullHeight": false,
+        "overlay": true
+      }
+    },
+    {
+      "id": "recognition-details",
+      "type": "RichText",
+      "props": {
+        "heading": "Business Today Recognition",
+        "content": "<div class=\"max-w-4xl mx-auto space-y-6\"><p class=\"text-lg text-gray-600 leading-relaxed\"><strong>Business Today Magazine</strong> is India's leading business publication, known for its comprehensive industry analysis and recognition of market leaders. Being featured in their <strong>Top 10 Recruitment Companies - Leadership Category</strong> positions us among the elite executive search firms in India.</p><div class=\"grid md:grid-cols-2 gap-8 mt-8\"><div class=\"bg-green-50 border-l-4 border-green-600 p-6 rounded-r-lg\"><h3 class=\"text-xl font-semibold text-green-900 mb-3\">Selection Process</h3><ul class=\"text-green-800 space-y-2\"><li>• Market research and industry analysis</li><li>• Client feedback and testimonials</li><li>• Placement volume and success rates</li><li>• Industry expertise evaluation</li><li>• Innovation in recruitment practices</li></ul></div><div class=\"bg-purple-50 border-l-4 border-purple-600 p-6 rounded-r-lg\"><h3 class=\"text-xl font-semibold text-purple-900 mb-3\">Leadership Category Focus</h3><ul class=\"text-purple-800 space-y-2\"><li>• C-suite executive placements</li><li>• Board and advisory positions</li><li>• Strategic transformation leaders</li><li>• VP and SVP level roles</li><li>• Industry veteran recruitment</li></ul></div></div></div>",
+        "align": "center"
+      }
+    },
+    {
+      "id": "leadership-focus",
+      "type": "Statistics",
+      "props": {
+        "heading": "Leadership Placement Excellence",
+        "description": "Our performance in the leadership category that earned this recognition.",
+        "stats": [
+          {
+            "value": "200+",
+            "label": "C-Suite Placements",
+            "description": "CEO, CTO, CFO roles filled",
+            "icon": "👑"
+          },
+          {
+            "value": "85%",
+            "label": "Internal Promotions",
+            "description": "Candidates promoted within 2 years",
+            "icon": "📊"
+          },
+          {
+            "value": "6 months",
+            "label": "Average Impact",
+            "description": "Time to business transformation",
+            "icon": "⚡"
+          },
+          {
+            "value": "40+",
+            "label": "Industries",
+            "description": "Sectors where we've placed leaders",
+            "icon": "🌐"
+          }
+        ],
+        "backgroundType": "light"
+      }
+    },
+    {
+      "id": "case-study-highlight",
+      "type": "RichText",
+      "props": {
+        "heading": "Signature Success Story",
+        "content": "<div class=\"max-w-4xl mx-auto\"><div class=\"bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-8 text-white\"><div class=\"mb-6\"><h3 class=\"text-2xl font-bold mb-3\">Fintech Transformation Leadership</h3><p class=\"text-blue-100 text-lg\">How we placed a transformational CEO who scaled a fintech startup from Series A to IPO readiness.</p></div><div class=\"grid md:grid-cols-3 gap-6\"><div class=\"text-center\"><div class=\"text-3xl font-bold text-yellow-300\">18 months</div><div class=\"text-blue-100\">Placement to IPO readiness</div></div><div class=\"text-center\"><div class=\"text-3xl font-bold text-yellow-300\">50x</div><div class=\"text-blue-100\">Valuation growth</div></div><div class=\"text-center\"><div class=\"text-3xl font-bold text-yellow-300\">500+</div><div class=\"text-blue-100\">Team scaling</div></div></div></div></div>",
+        "align": "center"
+      }
+    },
+    {
+      "id": "industry-testimonial",
+      "type": "Testimonials",
+      "props": {
+        "heading": "Industry Recognition",
+        "description": "What business leaders say about our leadership placement expertise.",
+        "items": [
+          {
+            "quote": "Networkk understands what it takes to find leaders who can drive transformation. Their deep industry knowledge and rigorous vetting process delivered exactly the caliber of executive we needed.",
+            "author": {
+              "name": "Anjali Reddy",
+              "title": "Board Member & Former CEO",
+              "company": "Growth Ventures"
+            }
+          },
+          {
+            "quote": "The leadership talent they identified wasn't just qualified—they were visionary leaders who fundamentally changed our business trajectory. That's the difference between recruitment and true executive search.",
+            "author": {
+              "name": "Suresh Menon",
+              "title": "Chairman",
+              "company": "InfraTech Solutions"
+            }
+          }
+        ],
+        "layout": "grid"
+      }
+    },
+    {
+      "id": "related-recognition",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Additional Recognition",
+        "description": "Other awards that validate our leadership in executive search.",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Best Executive Search Firm 2024",
+            "description": "HR Excellence Awards - India",
+            "icon": "🏆",
+            "href": "/awards/best-executive-search-firm-2024"
+          },
+          {
+            "title": "Excellence in Leadership Hiring",
+            "description": "APAC Business Awards 2023",
+            "icon": "⭐",
+            "href": "/awards/excellence-in-leadership-hiring"
+          },
+          {
+            "title": "Client Choice Award",
+            "description": "Executive Search Excellence",
+            "icon": "❤️",
+            "href": "/awards/client-choice-award"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cta-leadership",
+      "type": "CTA",
+      "props": {
+        "heading": "Find Your Next Leadership Game-Changer",
+        "description": "Experience the difference that award-winning leadership recruitment makes. Let us help you find executives who don't just fill roles—they transform businesses.",
+        "primaryCta": {
+          "label": "Discuss Leadership Needs",
+          "href": "/contact"
+        },
+        "secondaryCta": {
+          "label": "View Leadership Hiring",
+          "href": "/services/leadership-hiring"
+        },
+        "backgroundType": "gradient"
+      }
+    }
+  ],
+  "publishedAt": "2024-02-20T10:00:00Z",
+  "createdAt": "2024-02-20T10:00:00Z",
+  "updatedAt": "2024-02-20T10:00:00Z"
+}

@@ -1,0 +1,218 @@
+{
+  "slug": "client-choice-award",
+  "title": "Client Choice Award - Executive Search Excellence",
+  "status": "published",
+  "seo": {
+    "title": "Client Choice Award - Executive Search Excellence - APAC Awards - Networkk",
+    "description": "Networkk receives Client Choice Award for Executive Search Excellence, voted by clients across APAC for outstanding service quality and placement satisfaction.",
+    "canonical": "https://networkk.com/awards/client-choice-award/",
+    "noindex": false,
+    "keywords": ["Client Choice Award", "executive search excellence", "APAC awards", "client satisfaction award"]
+  },
+  "blocks": [
+    {
+      "id": "hero-client-choice",
+      "type": "Hero",
+      "props": {
+        "title": "Client Choice Award",
+        "subtitle": "Executive Search Excellence - APAC Awards",
+        "description": "Voted by our clients as the preferred executive search partner, recognizing exceptional service quality, communication excellence, and superior placement outcomes that exceed expectations.",
+        "media": {
+          "image": "/images/service-executive-search.avif",
+          "alt": "Client Choice Award Executive Search Excellence APAC",
+          "ratio": "16:9"
+        },
+        "backgroundType": "image",
+        "textAlign": "center",
+        "fullHeight": false,
+        "overlay": true
+      }
+    },
+    {
+      "id": "client-voice-recognition",
+      "type": "RichText",
+      "props": {
+        "heading": "Recognition Voted by Our Clients",
+        "content": "<div class=\"max-w-4xl mx-auto space-y-6\"><p class=\"text-lg text-gray-600 leading-relaxed\">The <strong>Client Choice Award</strong> is unique—it's not judged by industry panels or expert committees, but voted directly by the clients who work with us every day. This recognition reflects our unwavering commitment to <strong>client-first service excellence</strong> and the trust we've built through consistent delivery of exceptional results.</p><div class=\"bg-rose-50 border-l-4 border-rose-600 p-6 rounded-r-lg mt-6\"><h3 class=\"text-xl font-semibold text-rose-900 mb-3\">What Makes Us Client Choice</h3><ul class=\"text-rose-800 space-y-2\"><li>• <strong>White-glove service</strong> from initial consultation through placement integration</li><li>• <strong>Transparent communication</strong> with regular updates and honest feedback</li><li>• <strong>Cultural alignment</strong> ensuring candidates fit not just the role, but the organization</li><li>• <strong>Long-term partnership</strong> with ongoing support beyond placement</li><li>• <strong>Rapid response time</strong> and flexible engagement models</li></ul></div></div>",
+        "align": "center"
+      }
+    },
+    {
+      "id": "client-satisfaction-metrics",
+      "type": "Statistics",
+      "props": {
+        "heading": "Client Satisfaction Excellence",
+        "description": "The client satisfaction metrics that earned us this recognition.",
+        "stats": [
+          {
+            "value": "98.5%",
+            "label": "Client Satisfaction",
+            "description": "Average rating across all engagements",
+            "icon": "⭐"
+          },
+          {
+            "value": "95%",
+            "label": "Client Retention",
+            "description": "Return for additional searches",
+            "icon": "🔄"
+          },
+          {
+            "value": "4.9/5",
+            "label": "Communication Score",
+            "description": "Client feedback on responsiveness",
+            "icon": "💬"
+          },
+          {
+            "value": "24hrs",
+            "label": "Average Response",
+            "description": "Time to client inquiries",
+            "icon": "⚡"
+          }
+        ],
+        "backgroundType": "light"
+      }
+    },
+    {
+      "id": "client-service-pillars",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Client-First Service Pillars",
+        "description": "The service excellence principles that drive our client choice recognition.",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Partnership Approach",
+            "description": "We become an extension of your team, understanding your business deeply to find leaders who drive your specific objectives.",
+            "icon": "🤝"
+          },
+          {
+            "title": "Transparent Process",
+            "description": "Complete visibility into our search methodology, candidate pipeline, and progress updates throughout the engagement.",
+            "icon": "🔍"
+          },
+          {
+            "title": "Cultural Intelligence",
+            "description": "Deep assessment of cultural fit alongside technical qualifications to ensure sustainable long-term placement success.",
+            "icon": "🎯"
+          },
+          {
+            "title": "Rapid Deployment",
+            "description": "Flexible engagement models that adapt to urgent needs while maintaining quality standards and thoroughness.",
+            "icon": "🚀"
+          },
+          {
+            "title": "Executive Integration",
+            "description": "Post-placement support including onboarding guidance, 90-day check-ins, and ongoing success coaching.",
+            "icon": "📈"
+          },
+          {
+            "title": "Market Intelligence",
+            "description": "Continuous sharing of market insights, compensation trends, and competitive landscape analysis beyond active searches.",
+            "icon": "📊"
+          }
+        ]
+      }
+    },
+    {
+      "id": "client-testimonials-award",
+      "type": "Testimonials",
+      "props": {
+        "heading": "In Their Own Words",
+        "description": "Direct feedback from clients who voted for our Client Choice Award recognition.",
+        "items": [
+          {
+            "quote": "Networkk doesn't just fill positions—they become strategic partners in our growth journey. Their understanding of our culture and values makes every placement feel perfectly aligned.",
+            "author": {
+              "name": "Sarah Mitchell",
+              "title": "Chief People Officer",
+              "company": "InnovateTech Solutions"
+            }
+          },
+          {
+            "quote": "What sets them apart is the level of personal attention and communication. We're never left wondering about progress, and every candidate presented is thoroughly vetted and aligned with our needs.",
+            "author": {
+              "name": "David Kumar",
+              "title": "CEO & Founder",
+              "company": "NextGen Logistics"
+            }
+          },
+          {
+            "quote": "The post-placement support has been exceptional. Six months later, they're still checking in to ensure our new CTO is thriving and offering additional market insights.",
+            "author": {
+              "name": "Lisa Zhang",
+              "title": "Board Chair",
+              "company": "GreenTech Ventures"
+            }
+          },
+          {
+            "quote": "In 15 years of working with executive search firms, I've never experienced this level of professionalism and results. They truly understand what 'client choice' means.",
+            "author": {
+              "name": "Rajesh Gupta",
+              "title": "Managing Director",
+              "company": "Digital Transformation Group"
+            }
+          }
+        ],
+        "layout": "grid"
+      }
+    },
+    {
+      "id": "service-commitment",
+      "type": "RichText",
+      "props": {
+        "heading": "Our Client Service Commitment",
+        "content": "<div class=\"max-w-4xl mx-auto\"><div class=\"bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl p-8 text-white\"><div class=\"text-center mb-8\"><h3 class=\"text-2xl font-bold mb-3\">The Networkk Client Promise</h3><p class=\"text-blue-100 text-lg\">What every client can expect from our award-winning service approach.</p></div><div class=\"grid md:grid-cols-2 gap-8\"><div class=\"space-y-4\"><div class=\"flex items-start space-x-3\"><div class=\"text-yellow-300 text-xl\">✓</div><div class=\"text-blue-100\"><strong>24/7 Responsiveness:</strong> Questions answered within 24 hours, urgent matters addressed immediately</div></div><div class=\"flex items-start space-x-3\"><div class=\"text-yellow-300 text-xl\">✓</div><div class=\"text-blue-100\"><strong>Weekly Progress Reports:</strong> Detailed updates on search progress, market insights, and candidate pipeline</div></div><div class=\"flex items-start space-x-3\"><div class=\"text-yellow-300 text-xl\">✓</div><div class=\"text-blue-100\"><strong>Quality Guarantee:</strong> Every candidate presented meets your exact specifications and cultural requirements</div></div></div><div class=\"space-y-4\"><div class=\"flex items-start space-x-3\"><div class=\"text-yellow-300 text-xl\">✓</div><div class=\"text-blue-100\"><strong>Executive Onboarding:</strong> Support through first 90 days including integration coaching and feedback</div></div><div class=\"flex items-start space-x-3\"><div class=\"text-yellow-300 text-xl\">✓</div><div class=\"text-blue-100\"><strong>Market Intelligence:</strong> Ongoing competitive analysis and talent market insights beyond active searches</div></div><div class=\"flex items-start space-x-3\"><div class=\"text-yellow-300 text-xl\">✓</div><div class=\"text-blue-100\"><strong>Long-term Partnership:</strong> Relationship extends far beyond placement with strategic talent advisory</div></div></div></div></div></div>",
+        "align": "center"
+      }
+    },
+    {
+      "id": "related-client-awards",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Additional Recognition",
+        "description": "Other awards that validate our commitment to excellence and client satisfaction.",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Best Executive Search Firm 2024",
+            "description": "HR Excellence Awards - India",
+            "icon": "🏆",
+            "href": "/awards/best-executive-search-firm-2024"
+          },
+          {
+            "title": "Excellence in Leadership Hiring",
+            "description": "APAC Business Awards 2023",
+            "icon": "⭐",
+            "href": "/awards/excellence-in-leadership-hiring"
+          },
+          {
+            "title": "Innovation in Talent Tech",
+            "description": "TechHR Singapore 2023",
+            "icon": "🚀",
+            "href": "/awards/innovation-in-talent-tech"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cta-client-choice",
+      "type": "CTA",
+      "props": {
+        "heading": "Experience Client Choice Excellence",
+        "description": "Join the clients who chose us as their preferred executive search partner. Experience the difference that award-winning service makes in your leadership recruitment success.",
+        "primaryCta": {
+          "label": "Start Partnership Discussion",
+          "href": "/contact"
+        },
+        "secondaryCta": {
+          "label": "Read Client Success Stories",
+          "href": "/case-studies"
+        },
+        "backgroundType": "gradient"
+      }
+    }
+  ],
+  "publishedAt": "2023-12-05T10:00:00Z",
+  "createdAt": "2023-12-05T10:00:00Z",
+  "updatedAt": "2023-12-05T10:00:00Z"
+}

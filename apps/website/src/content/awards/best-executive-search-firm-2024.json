@@ -1,0 +1,152 @@
+{
+  "slug": "best-executive-search-firm-2024",
+  "title": "Best Executive Search Firm 2024",
+  "status": "published",
+  "seo": {
+    "title": "Best Executive Search Firm 2024 - HR Excellence Awards - Networkk",
+    "description": "Networkk wins Best Executive Search Firm 2024 at HR Excellence Awards India, recognizing outstanding performance in leadership recruitment and client satisfaction.",
+    "canonical": "https://networkk.com/awards/best-executive-search-firm-2024/",
+    "noindex": false,
+    "keywords": ["HR Excellence Awards", "best executive search firm", "leadership recruitment award", "client satisfaction award"]
+  },
+  "blocks": [
+    {
+      "id": "hero-award",
+      "type": "Hero",
+      "props": {
+        "title": "Best Executive Search Firm 2024",
+        "subtitle": "HR Excellence Awards - India",
+        "description": "Recognized for outstanding performance in leadership recruitment, exceptional client satisfaction scores, and innovative search methodologies that deliver transformative results.",
+        "media": {
+          "image": "/images/service-executive-search.avif",
+          "alt": "HR Excellence Awards Best Executive Search Firm 2024",
+          "ratio": "16:9"
+        },
+        "backgroundType": "image",
+        "textAlign": "center",
+        "fullHeight": false,
+        "overlay": true
+      }
+    },
+    {
+      "id": "award-details",
+      "type": "RichText",
+      "props": {
+        "heading": "Award Recognition",
+        "content": "<div class=\"max-w-4xl mx-auto space-y-6\"><p class=\"text-lg text-gray-600 leading-relaxed\">The <strong>HR Excellence Awards</strong> recognize organizations and professionals who demonstrate exceptional performance in human resources and talent management across India. Our selection as <strong>Best Executive Search Firm 2024</strong> validates our commitment to excellence in leadership recruitment.</p><div class=\"bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg\"><h3 class=\"text-xl font-semibold text-blue-900 mb-3\">Evaluation Criteria</h3><ul class=\"text-blue-800 space-y-2\"><li>• Client satisfaction and retention rates</li><li>• Quality and speed of executive placements</li><li>• Innovation in search methodologies</li><li>• Long-term placement success rates</li><li>• Industry expertise and market knowledge</li></ul></div></div>",
+        "align": "center"
+      }
+    },
+    {
+      "id": "award-metrics",
+      "type": "Statistics",
+      "props": {
+        "heading": "Award-Winning Performance",
+        "description": "The metrics that earned us this prestigious recognition in 2024.",
+        "stats": [
+          {
+            "value": "98%",
+            "label": "Client Satisfaction",
+            "description": "Based on feedback surveys",
+            "icon": "😊"
+          },
+          {
+            "value": "95%",
+            "label": "24-Month Retention",
+            "description": "Placement success rate",
+            "icon": "📈"
+          },
+          {
+            "value": "12",
+            "label": "Days Average",
+            "description": "Time to quality shortlist",
+            "icon": "⚡"
+          },
+          {
+            "value": "150+",
+            "label": "Leaders Placed",
+            "description": "In 2024 alone",
+            "icon": "👥"
+          }
+        ],
+        "backgroundType": "light"
+      }
+    },
+    {
+      "id": "testimonials-award",
+      "type": "Testimonials",
+      "props": {
+        "heading": "Client Recognition",
+        "description": "Feedback from clients that contributed to our award recognition.",
+        "items": [
+          {
+            "quote": "Networkk's professionalism and deep understanding of our industry made all the difference. They delivered exactly what we needed, when we needed it.",
+            "author": {
+              "name": "Ravi Kumar",
+              "title": "Chief People Officer",
+              "company": "TechScale Solutions"
+            }
+          },
+          {
+            "quote": "The quality of candidates was exceptional. Every shortlisted candidate was interview-ready and culturally aligned with our organization.",
+            "author": {
+              "name": "Meera Joshi",
+              "title": "Head of Talent Acquisition",
+              "company": "InnovateCorp"
+            }
+          }
+        ],
+        "layout": "grid"
+      }
+    },
+    {
+      "id": "related-awards",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Other Recognition",
+        "description": "Additional awards and recognition that demonstrate our excellence.",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Top 10 Recruitment Companies",
+            "description": "Business Today Magazine - Leadership Category",
+            "icon": "⭐",
+            "href": "/awards/top-10-recruitment-companies"
+          },
+          {
+            "title": "Innovation in Talent Tech",
+            "description": "TechHR Singapore 2023",
+            "icon": "🚀",
+            "href": "/awards/innovation-in-talent-tech"
+          },
+          {
+            "title": "Client Choice Award",
+            "description": "APAC Executive Search Awards",
+            "icon": "❤️",
+            "href": "/awards/client-choice-award"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cta-award",
+      "type": "CTA",
+      "props": {
+        "heading": "Experience Award-Winning Service",
+        "description": "See why we're recognized as the best executive search firm. Let us help you find exceptional leadership talent.",
+        "primaryCta": {
+          "label": "Start Your Search",
+          "href": "/contact"
+        },
+        "secondaryCta": {
+          "label": "View All Services",
+          "href": "/services"
+        },
+        "backgroundType": "gradient"
+      }
+    }
+  ],
+  "publishedAt": "2024-03-15T10:00:00Z",
+  "createdAt": "2024-03-15T10:00:00Z",
+  "updatedAt": "2024-03-15T10:00:00Z"
+}

@@ -27,7 +27,8 @@
       "type": "RichText",
       "props": {
         "heading": "Why Executive Hiring Matters",
-        "content": "<p>Strong executives at the management level are the backbone of organizational success. They translate strategy into action, build high-performing teams, and ensure operational excellence. Our executive hiring process identifies professionals who excel at execution, team building, and delivering measurable results in complex business environments.</p>"
+        "content": "<p>Strong executives at the management level are the backbone of organizational success. They translate strategy into action, build high-performing teams, and ensure operational excellence. Our executive hiring process identifies professionals who excel at execution, team building, and delivering measurable results in complex business environments.</p>",
+        "align": "center"
       }
     },
     {

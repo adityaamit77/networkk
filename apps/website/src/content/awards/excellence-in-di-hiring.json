@@ -1,0 +1,219 @@
+{
+  "slug": "excellence-in-di-hiring",
+  "title": "Excellence in Diversity & Inclusion Hiring Award",
+  "status": "published",
+  "seo": {
+    "title": "Excellence in Diversity & Inclusion Hiring Award - D&I Council India - Networkk",
+    "description": "Networkk recognized for Excellence in D&I Hiring by Diversity & Inclusion Council of India, leading efforts in building diverse executive teams and inclusive cultures.",
+    "canonical": "https://networkk.com/awards/excellence-in-di-hiring/",
+    "noindex": false,
+    "keywords": ["diversity inclusion award", "diverse executive teams", "inclusive hiring", "D&I Council India", "workplace diversity"]
+  },
+  "blocks": [
+    {
+      "id": "hero-di-excellence",
+      "type": "Hero",
+      "props": {
+        "title": "Excellence in Diversity & Inclusion Hiring",
+        "subtitle": "Diversity & Inclusion Council of India Award",
+        "description": "Recognized for leadership in building diverse executive teams, implementing bias-free hiring processes, and fostering inclusive workplace cultures that drive innovation and business success.",
+        "media": {
+          "image": "/images/service-diversity-inclusion.avif",
+          "alt": "Excellence in Diversity & Inclusion Hiring Award",
+          "ratio": "16:9"
+        },
+        "backgroundType": "image",
+        "textAlign": "center",
+        "fullHeight": false,
+        "overlay": true
+      }
+    },
+    {
+      "id": "di-award-recognition",
+      "type": "RichText",
+      "props": {
+        "heading": "Leading Change in Executive Diversity",
+        "content": "<div class=\"max-w-4xl mx-auto space-y-6\"><p class=\"text-lg text-gray-600 leading-relaxed\">The <strong>Diversity & Inclusion Council of India</strong> recognizes organizations making significant contributions to workplace diversity and inclusive leadership. Our <strong>Excellence in D&I Hiring Award</strong> reflects our commitment to building diverse executive teams that better represent the communities they serve and unlock the innovation that comes from inclusive leadership.</p><div class=\"bg-purple-50 border-l-4 border-purple-600 p-6 rounded-r-lg mt-6\"><h3 class=\"text-xl font-semibold text-purple-900 mb-3\">Our D&I Approach</h3><ul class=\"text-purple-800 space-y-2\"><li>• <strong>Bias-Free Search Processes:</strong> Structured methodologies that eliminate unconscious bias</li><li>• <strong>Diverse Candidate Pipelines:</strong> Proactive sourcing from underrepresented communities</li><li>• <strong>Inclusive Leadership Assessment:</strong> Evaluating candidates' ability to build inclusive cultures</li><li>• <strong>Cultural Competency:</strong> Matching leaders who champion diversity and belonging</li><li>• <strong>Long-term Partnership:</strong> Supporting clients in building sustainable D&I strategies</li></ul></div></div>",
+        "align": "center"
+      }
+    },
+    {
+      "id": "diversity-metrics",
+      "type": "Statistics",
+      "props": {
+        "heading": "Diversity Impact Metrics",
+        "description": "Measurable outcomes from our commitment to diversity and inclusion in executive search.",
+        "stats": [
+          {
+            "value": "45%",
+            "label": "Diverse Placements",
+            "description": "Women and underrepresented groups",
+            "icon": "🌈"
+          },
+          {
+            "value": "89%",
+            "label": "Inclusive Leaders",
+            "description": "Executives with proven D&I track record",
+            "icon": "🤝"
+          },
+          {
+            "value": "150+",
+            "label": "Organizations",
+            "description": "Helped improve leadership diversity",
+            "icon": "🏢"
+          },
+          {
+            "value": "300%",
+            "label": "Pipeline Diversity",
+            "description": "Increase in underrepresented candidates",
+            "icon": "📈"
+          }
+        ],
+        "backgroundType": "light"
+      }
+    },
+    {
+      "id": "di-initiatives",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Our D&I Excellence Programs",
+        "description": "Comprehensive initiatives that drive diversity and inclusion in executive leadership.",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Bias-Free Search Technology",
+            "description": "AI-powered tools that remove identifying information during initial candidate screening to eliminate unconscious bias.",
+            "icon": "🤖"
+          },
+          {
+            "title": "Diverse Sourcing Networks",
+            "description": "Partnerships with professional organizations, HBCUs, and diversity-focused communities to expand candidate pipelines.",
+            "icon": "🌐"
+          },
+          {
+            "title": "Inclusive Leadership Assessment",
+            "description": "Comprehensive evaluation framework that measures candidates' ability to build and lead diverse, high-performing teams.",
+            "icon": "📊"
+          },
+          {
+            "title": "D&I Executive Coaching",
+            "description": "Post-placement support helping leaders develop inclusive management styles and implement diversity strategies.",
+            "icon": "🎯"
+          },
+          {
+            "title": "Cultural Competency Evaluation",
+            "description": "Assessment of candidates' cross-cultural communication skills and ability to work effectively in diverse environments.",
+            "icon": "🗣️"
+          },
+          {
+            "title": "Board Diversity Initiative",
+            "description": "Specialized focus on increasing diversity in board compositions and C-suite leadership teams.",
+            "icon": "👥"
+          }
+        ]
+      }
+    },
+    {
+      "id": "di-case-study",
+      "type": "RichText",
+      "props": {
+        "heading": "Transformation Through Inclusive Leadership",
+        "content": "<div class=\"max-w-4xl mx-auto\"><div class=\"bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl p-8 text-white\"><div class=\"mb-6\"><h3 class=\"text-2xl font-bold mb-3\">Tech Company Culture Transformation</h3><p class=\"text-indigo-100 text-lg\">How we helped a traditional tech company build an inclusive leadership team that drove innovation and employee engagement.</p></div><div class=\"grid md:grid-cols-2 gap-8\"><div><h4 class=\"text-lg font-semibold text-yellow-300 mb-3\">The Challenge</h4><ul class=\"text-indigo-100 space-y-2\"><li>• Homogeneous leadership team lacking diverse perspectives</li><li>• Low employee engagement scores from underrepresented groups</li><li>• Innovation stagnation and groupthink in decision-making</li><li>• Difficulty attracting and retaining diverse talent</li><li>• Pressure from investors for better ESG performance</li></ul></div><div><h4 class=\"text-lg font-semibold text-yellow-300 mb-3\">Our D&I Solution</h4><ul class=\"text-indigo-100 space-y-2\"><li>• Placed Chief Diversity Officer with tech industry expertise</li><li>• Recruited diverse VP of Engineering from underrepresented background</li><li>• Found Head of People with inclusive culture-building experience</li><li>• Established diverse advisory board with varied perspectives</li><li>• Implemented bias-free hiring processes across all levels</li></ul></div></div><div class=\"mt-6 grid grid-cols-3 gap-4 text-center\"><div><div class=\"text-2xl font-bold text-yellow-300\">60%</div><div class=\"text-indigo-100\">Increase in diverse hires</div></div><div><div class=\"text-2xl font-bold text-yellow-300\">35%</div><div class=\"text-indigo-100\">Improvement in innovation metrics</div></div><div><div class=\"text-2xl font-bold text-yellow-300\">25%</div><div class=\"text-indigo-100\">Higher employee satisfaction</div></div></div></div></div>",
+        "align": "center"
+      }
+    },
+    {
+      "id": "di-testimonials",
+      "type": "Testimonials",
+      "props": {
+        "heading": "D&I Leadership Success Stories",
+        "description": "Testimonials from leaders and organizations benefiting from our diversity-focused approach.",
+        "items": [
+          {
+            "quote": "Networkk's commitment to diversity went beyond just checking boxes. They found us leaders who genuinely understand how to build inclusive cultures that drive business results.",
+            "author": {
+              "name": "Dr. Maya Patel",
+              "title": "CEO",
+              "company": "InnovateHealth Systems"
+            }
+          },
+          {
+            "quote": "Their bias-free search process gave me confidence that I was being evaluated on merit. As a woman of color in tech leadership, that made all the difference in my career trajectory.",
+            "author": {
+              "name": "Keerthi Reddy",
+              "title": "Chief Technology Officer",
+              "company": "CloudScale Technologies"
+            }
+          },
+          {
+            "quote": "The diverse leadership team they helped us build has fundamentally changed our company culture and innovation capacity. Our employee engagement scores have never been higher.",
+            "author": {
+              "name": "James Rodriguez",
+              "title": "Chief People Officer",
+              "company": "Digital Dynamics Corp"
+            }
+          }
+        ],
+        "layout": "grid"
+      }
+    },
+    {
+      "id": "industry-partnerships-di",
+      "type": "RichText",
+      "props": {
+        "heading": "Strategic D&I Partnerships",
+        "content": "<div class=\"max-w-4xl mx-auto\"><div class=\"bg-gradient-to-r from-pink-600 to-purple-600 rounded-xl p-8 text-white text-center\"><h3 class=\"text-2xl font-bold mb-4\">Collaborative Ecosystem for Change</h3><p class=\"text-pink-100 text-lg mb-6\">Working with organizations committed to advancing diversity and inclusion in leadership.</p><div class=\"grid md:grid-cols-2 gap-8\"><div><h4 class=\"text-lg font-semibold text-yellow-300 mb-4\">D&I Organizations</h4><ul class=\"text-pink-100 space-y-2 text-left\"><li>• Diversity & Inclusion Council of India</li><li>• Indian Women Network (IWN)</li><li>• National Association of Black Professionals</li><li>• LGBTQ+ Professional Networks</li><li>• Disability Employment Networks</li><li>• Indigenous Business Leaders Alliance</li></ul></div><div><h4 class=\"text-lg font-semibold text-yellow-300 mb-4\">Academic Partners</h4><ul class=\"text-pink-100 space-y-2 text-left\"><li>• Historically Black Colleges and Universities</li><li>• Women's Leadership Programs</li><li>• Minority MBA Networks</li><li>• International Student Organizations</li><li>• Professional Diversity Associations</li><li>• Inclusive Leadership Research Centers</li></ul></div></div></div></div>",
+        "align": "center"
+      }
+    },
+    {
+      "id": "related-di-awards",
+      "type": "TilesGrid",
+      "props": {
+        "heading": "Related Recognition",
+        "description": "Additional awards that validate our commitment to excellence and inclusive leadership.",
+        "columns": "3",
+        "items": [
+          {
+            "title": "Best Executive Search Firm 2024",
+            "description": "HR Excellence Awards - India",
+            "icon": "🏆",
+            "href": "/awards/best-executive-search-firm-2024"
+          },
+          {
+            "title": "Women in Leadership Champion",
+            "description": "Supporting advancement of women executives",
+            "icon": "👩‍💼",
+            "href": "/csr/women-in-leadership"
+          },
+          {
+            "title": "Client Choice Award",
+            "description": "APAC Executive Search Awards",
+            "icon": "❤️",
+            "href": "/awards/client-choice-award"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cta-diversity",
+      "type": "CTA",
+      "props": {
+        "heading": "Build Your Diverse Leadership Team",
+        "description": "Partner with award-winning experts in diversity and inclusion. Let us help you find leaders who not only excel at their roles but also champion inclusive cultures that drive innovation and growth.",
+        "primaryCta": {
+          "label": "Discuss D&I Strategy",
+          "href": "/contact"
+        },
+        "secondaryCta": {
+          "label": "View Our Approach",
+          "href": "/services/diversity-inclusion"
+        },
+        "backgroundType": "gradient"
+      }
+    }
+  ],
+  "publishedAt": "2023-10-20T10:00:00Z",
+  "createdAt": "2023-10-20T10:00:00Z",
+  "updatedAt": "2023-10-20T10:00:00Z"
+}

@@ -186,37 +186,43 @@
             "title": "Best Executive Search Firm 2024",
             "description": "HR Excellence Awards - India, recognizing our outstanding performance in leadership recruitment and client satisfaction.",
             "icon": "🏆",
-            "image": "/images/service-executive-search.avif"
+            "image": "/images/service-executive-search.avif",
+            "href": "/awards/best-executive-search-firm-2024"
           },
           {
             "title": "Top 10 Recruitment Companies",
             "description": "Business Today Magazine - Leadership Category, highlighting our innovative approach to executive search and talent advisory.",
             "icon": "⭐",
-            "image": "/images/service-leadership-hiring.avif"
+            "image": "/images/service-leadership-hiring.avif",
+            "href": "/awards/top-10-recruitment-companies"
           },
           {
             "title": "Excellence in D&I Hiring",
             "description": "Diversity & Inclusion Council of India, recognizing our leadership in building diverse executive teams and inclusive cultures.",
             "icon": "🌟",
-            "image": "/images/service-diversity-inclusion.avif"
+            "image": "/images/service-diversity-inclusion.avif",
+            "href": "/awards/excellence-in-di-hiring"
           },
           {
             "title": "Innovation in Talent Tech",
             "description": "TechHR Singapore 2023, for our pioneering use of AI and analytics in executive assessment and matching.",
             "icon": "🚀",
-            "image": "/images/service-talent-advisory.avif"
+            "image": "/images/service-talent-advisory.avif",
+            "href": "/awards/innovation-in-talent-tech"
           },
           {
             "title": "Client Choice Award",
             "description": "APAC Executive Search Awards, based on client feedback scores and long-term partnership success rates.",
             "icon": "❤️",
-            "image": "/images/testimonial-priya-sharma.avif"
+            "image": "/images/testimonial-priya-sharma.avif",
+            "href": "/awards/client-choice-award"
           },
           {
             "title": "Sustainable Business Practice",
             "description": "Green Business Certification 2024, for our commitment to sustainable recruitment practices and social responsibility.",
             "icon": "🌱",
-            "image": "/images/industry-energy.avif"
+            "image": "/images/industry-energy.avif",
+            "href": "/awards/sustainable-business-practice"
           }
         ]
       }
@@ -233,25 +239,29 @@
             "title": "Education & Skill Development",
             "description": "Partnerships with leading universities and institutions to develop next-generation leaders through mentorship programs, scholarships, and executive education initiatives.",
             "icon": "🎓",
-            "image": "/images/service-executive-search.avif"
+            "image": "/images/service-executive-search.avif",
+            "href": "/csr/education-skill-development"
           },
           {
             "title": "Women in Leadership",
             "description": "Dedicated initiatives to advance women into senior executive roles, including mentorship networks, leadership development programs, and bias-free search processes.",
             "icon": "👩‍💼",
-            "image": "/images/testimonial-priya-sharma.avif"
+            "image": "/images/testimonial-priya-sharma.avif",
+            "href": "/csr/women-in-leadership"
           },
           {
             "title": "Environmental Sustainability", 
             "description": "Carbon-neutral operations, paperless processes, and partnerships with organizations driving environmental innovation and sustainable business practices.",
             "icon": "🌍",
-            "image": "/images/industry-energy.avif"
+            "image": "/images/industry-energy.avif",
+            "href": "/csr/environmental-sustainability"
           },
           {
             "title": "Pro Bono Services",
             "description": "Free executive search services for non-profit organizations, social enterprises, and startups addressing critical social and environmental challenges.",
             "icon": "🤲",
-            "image": "/images/service-diversity-inclusion.avif"
+            "image": "/images/service-diversity-inclusion.avif",
+            "href": "/csr/pro-bono-services"
           }
         ]
       }

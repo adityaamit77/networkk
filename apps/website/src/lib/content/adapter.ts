@@ -32,14 +32,34 @@ export interface InsightContent {
 // Simplified content loading for Phase 1
 export async function loadPageBySlug(
   slug: string,
+  contentType?: string,
 ): Promise<PageContent | null> {
   try {
-    const modules = import.meta.glob("../../content/pages/**/*.json", {
-      eager: true,
-    }) as Record<string, any>;
+    let modules: Record<string, any>;
+    let basePath: string;
+    
+    if (contentType === 'awards') {
+      modules = import.meta.glob("../../content/awards/*.json", {
+        eager: true,
+      }) as Record<string, any>;
+      basePath = "../../content/awards/";
+    } else if (contentType === 'csr') {
+      modules = import.meta.glob("../../content/csr/*.json", {
+        eager: true,
+      }) as Record<string, any>;
+      basePath = "../../content/csr/";
+    } else {
+      modules = import.meta.glob("../../content/pages/**/*.json", {
+        eager: true,
+      }) as Record<string, any>;
+      basePath = "../../content/pages/";
+    }
+    
     const match = Object.entries(modules).find(
-      ([path]) =>
-        path.replace("../../content/pages/", "").replace(".json", "") === slug,
+      ([path]) => {
+        const fileSlug = path.replace(basePath, "").replace(".json", "");
+        return fileSlug === slug || fileSlug === slug.split('/').pop();
+      }
     );
 
     if (!match) {
