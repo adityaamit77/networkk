@@ -32,29 +32,31 @@
     },
     {
       "id": "methodology-executive-search",
-      "type": "ProcessSteps",
+      "type": "TilesGrid",
       "props": {
-        "heading": "Methodology",
-        "steps": [
+        "heading": "Our Methodology",
+        "description": "A proven 4-step process that ensures precision, discretion, and partnership in every executive search.",
+        "columns": "4",
+        "items": [
           {
-            "number": 1,
-            "title": "Briefing",
-            "description": "Deep dive into organizational goals and role requirements."
+            "title": "1. Briefing",
+            "description": "Deep dive into organizational goals and role requirements.",
+            "icon": "📋"
           },
           {
-            "number": 2,
-            "title": "Research",
-            "description": "Comprehensive market mapping and candidate outreach."
+            "title": "2. Research", 
+            "description": "Comprehensive market mapping and candidate outreach.",
+            "icon": "🔍"
           },
           {
-            "number": 3,
-            "title": "Assessment",
-            "description": "Behavioral and competency-based evaluation of shortlisted leaders."
+            "title": "3. Assessment",
+            "description": "Behavioral and competency-based evaluation of shortlisted leaders.",
+            "icon": "⚖️"
           },
           {
-            "number": 4,
-            "title": "Selection",
-            "description": "Presentation of finalists and support through offer negotiation."
+            "title": "4. Selection",
+            "description": "Presentation of finalists and support through offer negotiation.",
+            "icon": "✅"
           }
         ]
       }
@@ -78,14 +80,49 @@
     },
     {
       "id": "metrics-executive-search",
-      "type": "MetricsBand",
+      "type": "Statistics",
       "props": {
-        "heading": "Search Success Metrics",
-        "items": [
-          { "value": "98%", "label": "Placement Completion" },
-          { "value": "45", "label": "Days to Shortlist" },
-          { "value": "95%", "label": "Two-Year Retention" }
-        ]
+        "heading": "Executive Search Excellence",
+        "description": "Comprehensive performance metrics that demonstrate our commitment to finding exceptional leadership talent.",
+        "stats": [
+          {
+            "value": "98%",
+            "label": "Placement Success",
+            "description": "Completed searches",
+            "icon": "🎯"
+          },
+          {
+            "value": "15",
+            "label": "Days Average",
+            "description": "Time to shortlist",
+            "icon": "⚡"
+          },
+          {
+            "value": "95%",
+            "label": "Retention Rate",
+            "description": "Two-year success",
+            "icon": "📈"
+          },
+          {
+            "value": "150+",
+            "label": "C-Suite Leaders",
+            "description": "Successfully placed",
+            "icon": "👑"
+          },
+          {
+            "value": "25+",
+            "label": "Countries",
+            "description": "Global reach",
+            "icon": "🌍"
+          },
+          {
+            "value": "12",
+            "label": "Years Experience",
+            "description": "Market expertise",
+            "icon": "⭐"
+          }
+        ],
+        "backgroundType": "light"
       }
     },
     {
@@ -106,6 +143,53 @@
         ],
         "layout": "carousel",
         "slider": true
+      }
+    },
+    {
+      "id": "key-metrics",
+      "type": "Statistics",
+      "props": {
+        "heading": "Our Impact in Numbers",
+        "description": "Measurable results that demonstrate our commitment to excellence and the trust our partners place in us.",
+        "stats": [
+          {
+            "value": "500+",
+            "label": "Leaders Placed",
+            "description": "Across all sectors",
+            "icon": "👥"
+          },
+          {
+            "value": "95%",
+            "label": "Success Rate", 
+            "description": "24-month retention",
+            "icon": "📈"
+          },
+          {
+            "value": "200+",
+            "label": "Partner Companies",
+            "description": "From startups to Fortune 500",
+            "icon": "🤝"
+          },
+          {
+            "value": "15+",
+            "label": "Industries",
+            "description": "Specialized expertise",
+            "icon": "🏭"
+          },
+          {
+            "value": "12+", 
+            "label": "Years",
+            "description": "Market experience",
+            "icon": "⭐"
+          },
+          {
+            "value": "15",
+            "label": "Days Average",
+            "description": "Time to placement",
+            "icon": "⚡"
+          }
+        ],
+        "backgroundType": "light"
       }
     },
     {

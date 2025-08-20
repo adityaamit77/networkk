@@ -59,39 +59,50 @@
         }
       },
       {
-        "id": "industry-stats",
+        "id": "key-metrics",
         "type": "Statistics",
         "props": {
-          "heading": "Cross-Industry Impact",
-          "description": "Measurable results across diverse sectors and leadership levels.",
-          "backgroundType": "light",
-          "theme": "default",
+          "heading": "Our Impact in Numbers",
+          "description": "Measurable results that demonstrate our commitment to excellence and the trust our partners place in us.",
           "stats": [
             {
-              "value": "250+",
-              "label": "Industry Placements",
-              "description": "Executive and senior leadership roles filled across 8+ core industries",
-              "icon": "🎯"
+              "value": "500+",
+              "label": "Leaders Placed",
+              "description": "Across all sectors",
+              "icon": "👥"
             },
             {
               "value": "95%",
-              "label": "Success Rate",
-              "description": "Successful placements with 18+ month retention across all sectors",
+              "label": "Success Rate", 
+              "description": "24-month retention",
               "icon": "📈"
             },
             {
-              "value": "25",
-              "label": "Avg Days to Hire",
-              "description": "From initial consultation to successful candidate placement",
-              "icon": "⚡"
+              "value": "200+",
+              "label": "Partner Companies",
+              "description": "From startups to Fortune 500",
+              "icon": "🤝"
             },
             {
-              "value": "8+",
-              "label": "Core Industries",
-              "description": "Deep expertise across technology, healthcare, finance, and more",
-              "icon": "🌐"
+              "value": "15+",
+              "label": "Industries",
+              "description": "Specialized expertise",
+              "icon": "🏭"
+            },
+            {
+              "value": "12+", 
+              "label": "Years",
+              "description": "Market experience",
+              "icon": "⭐"
+            },
+            {
+              "value": "15",
+              "label": "Days Average",
+              "description": "Time to placement",
+              "icon": "⚡"
             }
-          ]
+          ],
+          "backgroundType": "light"
         }
       },
       {

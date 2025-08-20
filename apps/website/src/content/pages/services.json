@@ -38,39 +38,50 @@
       }
     },
     {
-      "id": "services-overview-stats",
+      "id": "key-metrics",
       "type": "Statistics",
       "props": {
-        "heading": "Service Excellence Metrics",
-        "description": "Discover our comprehensive suite of leadership services designed to accelerate organizational growth.",
-        "backgroundType": "light",
-        "theme": "gold",
+        "heading": "Our Impact in Numbers",
+        "description": "Measurable results that demonstrate our commitment to excellence and the trust our partners place in us.",
         "stats": [
           {
-            "value": "6",
-            "label": "Core Services",
-            "description": "Executive Search, Leadership Hiring, Talent Advisory, Career Transition, Workforce Planning & D&I",
-            "icon": "🎯"
+            "value": "500+",
+            "label": "Leaders Placed",
+            "description": "Across all sectors",
+            "icon": "👥"
           },
           {
-            "value": "30",
-            "label": "Average Days to Hire",
-            "description": "From initial consultation to successful candidate placement and integration",
-            "icon": "⏱️"
+            "value": "95%",
+            "label": "Success Rate", 
+            "description": "24-month retention",
+            "icon": "📈"
           },
           {
-            "value": "100%",
-            "label": "Client-Focused Approach",
-            "description": "Every engagement tailored to your unique culture, challenges, and growth objectives",
+            "value": "200+",
+            "label": "Partner Companies",
+            "description": "From startups to Fortune 500",
             "icon": "🤝"
           },
           {
-            "value": "24/7",
-            "label": "Partnership Support",
-            "description": "Continuous support throughout the entire recruitment and onboarding process",
-            "icon": "🔄"
+            "value": "15+",
+            "label": "Industries",
+            "description": "Specialized expertise",
+            "icon": "🏭"
+          },
+          {
+            "value": "12+", 
+            "label": "Years",
+            "description": "Market experience",
+            "icon": "⭐"
+          },
+          {
+            "value": "15",
+            "label": "Days Average",
+            "description": "Time to placement",
+            "icon": "⚡"
           }
-        ]
+        ],
+        "backgroundType": "light"
       }
     },
     {

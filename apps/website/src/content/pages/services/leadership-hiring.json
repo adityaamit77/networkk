@@ -14,116 +14,199 @@
       "id": "hero-leadership-hiring",
       "type": "Hero",
       "props": {
-        "title": "Build Your Leadership Bench",
-        "subtitle": "Leadership Hiring",
-        "description": "We help you recruit high-potential leaders across functions.",
-        "backgroundType": "gradient",
+        "title": "Build Tomorrow's Leaders Today",
+        "subtitle": "Leadership Hiring Excellence",
+        "description": "Strategic recruitment for directors, VPs, and emerging executives who will drive your organization's next chapter of growth and innovation.",
+        "media": {
+          "image": "/images/service-leadership-hiring.avif",
+          "alt": "Professional leadership team collaboration",
+          "ratio": "16:9"
+        },
+        "ctas": [
+          {
+            "label": "Start Your Search",
+            "href": "/contact",
+            "variant": "primary"
+          },
+          {
+            "label": "View Success Stories",
+            "href": "#testimonials-leadership-hiring",
+            "variant": "outline"
+          }
+        ],
+        "backgroundType": "image",
         "textAlign": "center",
-        "fullHeight": false
+        "fullHeight": true,
+        "overlay": true
       }
     },
     {
-      "id": "why-leadership-hiring",
-      "type": "RichText",
+      "id": "leadership-impact-grid",
+      "type": "TilesGrid",
       "props": {
-        "heading": "Why It Matters",
-        "content": "<p>Strong mid-level and senior leaders create the pipeline for tomorrow's executives. Our team identifies talent that aligns with your culture and future vision.</p>"
-      }
-    },
-    {
-      "id": "methodology-leadership-hiring",
-      "type": "ProcessSteps",
-      "props": {
-        "heading": "Our Approach",
-        "steps": [
+        "heading": "Why Leadership Hiring Matters",
+        "description": "Strong mid-level and senior leaders create the pipeline for tomorrow's executives and drive organizational transformation.",
+        "columns": "3",
+        "backgroundType": "gradient",
+        "items": [
           {
-            "number": 1,
-            "title": "Role Scoping",
-            "description": "Clarify success profiles and competencies."
+            "title": "Cultural Alignment",
+            "description": "Leaders who embody your values and drive cultural evolution while maintaining organizational DNA.",
+            "icon": "🎯"
           },
           {
-            "number": 2,
-            "title": "Candidate Sourcing",
-            "description": "Blend database research with targeted outreach."
+            "title": "Growth Catalyst",
+            "description": "Professionals who accelerate growth through strategic thinking and operational excellence.",
+            "icon": "🚀"
           },
           {
-            "number": 3,
-            "title": "Evaluation",
-            "description": "Structured interviews and reference checks."
-          },
-          {
-            "number": 4,
-            "title": "Onboarding Support",
-            "description": "Guidance through offer and integration."
+            "title": "Future Pipeline",
+            "description": "Building your bench of future C-suite executives through strategic leadership development.",
+            "icon": "🌟"
           }
         ]
       }
     },
     {
-      "id": "confidentiality-leadership-hiring",
-      "type": "FAQ",
+      "id": "unique-approach-cards",
+      "type": "TilesGrid",
       "props": {
-        "heading": "Ethics & Confidentiality",
+        "heading": "Our Distinctive Approach",
+        "description": "A comprehensive methodology that goes beyond traditional recruitment to ensure lasting leadership success.",
+        "columns": "2",
         "items": [
           {
-            "question": "How are candidates vetted?",
-            "answer": "We conduct thorough background and reference checks before recommendation."
+            "title": "Deep Role Architecture",
+            "description": "We map success profiles, competencies, and cultural fit requirements to create a comprehensive leadership blueprint that guides every aspect of our search.",
+            "image": "/images/service-talent-advisory.avif",
+            "href": "/our-approach"
           },
           {
-            "question": "Is the search confidential?",
-            "answer": "Yes, we keep both client and candidate information protected."
+            "title": "Hybrid Sourcing Excellence",
+            "description": "Combining proprietary database insights with targeted market outreach to identify both active and passive candidates who match your leadership vision.",
+            "image": "/images/service-executive-search.avif",
+            "href": "/our-approach"
+          },
+          {
+            "title": "360° Evaluation Process",
+            "description": "Multi-stage assessment including behavioral interviews, leadership simulations, and comprehensive reference validation to ensure the right leadership fit.",
+            "image": "/images/service-diversity-inclusion.avif",
+            "href": "/our-approach"
+          },
+          {
+            "title": "Seamless Integration Support",
+            "description": "Post-placement guidance including offer negotiation, onboarding strategy, and 90-day integration support to maximize leadership effectiveness.",
+            "image": "/images/hero-main.avif",
+            "href": "/our-approach"
           }
         ]
       }
     },
     {
       "id": "metrics-leadership-hiring",
-      "type": "MetricsBand",
+      "type": "Statistics",
       "props": {
-        "heading": "Hiring Metrics",
-        "items": [
-          { "value": "90%", "label": "First-Year Retention" },
-          { "value": "60", "label": "Days to Placement" },
-          { "value": "200+", "label": "Leaders Hired" }
-        ]
+        "heading": "Leadership Success Metrics",
+        "description": "Measurable outcomes that demonstrate our commitment to finding leaders who deliver lasting impact.",
+        "stats": [
+          {
+            "value": "90%",
+            "label": "First-Year Retention",
+            "description": "Leaders who stay and thrive",
+            "icon": "📈"
+          },
+          {
+            "value": "15",
+            "label": "Average Days",
+            "description": "Time to successful placement",
+            "icon": "⚡"
+          },
+          {
+            "value": "200+",
+            "label": "Leaders Hired",
+            "description": "Across all industries",
+            "icon": "👥"
+          },
+          {
+            "value": "15+",
+            "label": "Functional Areas",
+            "description": "Specialized expertise",
+            "icon": "🎯"
+          }
+        ],
+        "backgroundType": "light"
       }
     },
     {
       "id": "testimonials-leadership-hiring",
       "type": "Testimonials",
       "props": {
-        "heading": "Success Stories",
+        "heading": "Leadership Success Stories",
+        "description": "Real results from our strategic leadership placements across diverse industries and functions.",
         "items": [
           {
-            "quote": "Their understanding of our culture made every hire a perfect fit.",
+            "quote": "Their understanding of our culture made every hire a perfect fit. The VP they placed not only exceeded performance expectations but also became instrumental in our digital transformation initiative.",
             "author": {
               "name": "Ravi Shah",
               "title": "HR Director",
-              "company": "FinEdge"
+              "company": "FinEdge Solutions"
+            },
+            "rating": 5
+          },
+          {
+            "quote": "The leadership bench they helped us build has been crucial to our expansion. Three of their placements have already been promoted to C-suite roles within 18 months.",
+            "author": {
+              "name": "Meera Patel",
+              "title": "Chief People Officer", 
+              "company": "TechScale Inc"
             },
             "rating": 5
           }
         ],
-        "layout": "carousel",
-        "slider": true
+        "layout": "grid",
+        "slider": false
       }
     },
     {
-      "id": "related-links",
-      "type": "RichText",
+      "id": "leadership-faq",
+      "type": "FAQ",
       "props": {
-        "heading": "Explore More",
-        "content": "<p>See how we helped a <a href='/success-stories/tech-scale-up'>tech scale-up</a> accelerate growth and discover our <a href='/industries/technology'>technology industry expertise</a>. Ready to start? <a href='/contact'>Contact us</a>.</p>"
+        "heading": "Leadership Hiring Insights",
+        "items": [
+          {
+            "question": "How do you assess leadership potential beyond current experience?",
+            "answer": "We use behavioral interviewing, leadership simulations, and psychometric assessments to evaluate adaptability, strategic thinking, and cultural fit alongside proven track records."
+          },
+          {
+            "question": "What's your approach to diversity in leadership hiring?",
+            "answer": "We actively source from diverse talent pools, use bias-free assessment criteria, and partner with organizations to expand their diversity networks while focusing on merit-based selection."
+          },
+          {
+            "question": "How do you ensure confidentiality during the search process?",
+            "answer": "We maintain strict confidentiality protocols, use coded communications, and only reveal client information after mutual interest and signed agreements."
+          },
+          {
+            "question": "What support do you provide after placement?",
+            "answer": "We offer 90-day integration support, regular check-ins, performance feedback facilitation, and replacement guarantees to ensure long-term success."
+          }
+        ]
       }
     },
     {
-      "id": "final-cta",
+      "id": "next-steps-cta",
       "type": "CTA",
       "props": {
-        "heading": "Discuss Your Leadership Needs",
-        "description": "Speak with our specialists about upcoming leadership roles.",
+        "heading": "Ready to Build Your Leadership Pipeline?",
+        "description": "Let's discuss your leadership needs and create a customized search strategy that aligns with your organizational goals and culture.",
         "backgroundType": "gradient",
-        "primaryCta": { "label": "Start Hiring", "href": "/contact" }
+        "primaryCta": {
+          "label": "Schedule a Strategy Session",
+          "href": "/contact"
+        },
+        "secondaryCta": {
+          "label": "Explore Our Process",
+          "href": "/our-approach"
+        }
       }
     }
   ],

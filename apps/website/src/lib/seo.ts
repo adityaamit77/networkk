@@ -69,7 +69,7 @@ export function createOrganizationSchema() {
       "@type": "ContactPoint",
       telephone: "+91 92667 21935",
       contactType: "customer service",
-      email: "hello@networkk.com",
+      email: "support@networkk.in",
     },
     address: {
       "@type": "PostalAddress",

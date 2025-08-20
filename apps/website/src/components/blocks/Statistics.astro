@@ -80,14 +80,14 @@ const textClasses: Record<string, string> = {
           </h2>
         )}
         {description && (
-          <p class={`text-xl max-w-3xl mx-auto ${backgroundType === 'gradient' ? currentTheme.accent : backgroundType === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
+          <p class={`text-xl ${backgroundType === 'gradient' ? currentTheme.accent : backgroundType === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
             {description}
           </p>
         )}
       </div>
     )}
 
-    <div class="flex flex-wrap justify-center items-start gap-4 lg:gap-8">
+    <div class="flex flex-wrap justify-center items-start gap-8 lg:gap-8">
       {stats.map((stat: Props['stats'][0], index: number) => (
         <div class="text-center group max-w-[200px] flex-shrink-0">
           {stat.icon && (

@@ -78,14 +78,49 @@
     },
     {
       "id": "metrics-di",
-      "type": "MetricsBand",
+      "type": "Statistics",
       "props": {
-        "heading": "Impact Metrics",
-        "items": [
-          { "value": "40%", "label": "Leadership Diversity Increase" },
-          { "value": "3x", "label": "Retention Improvement" },
-          { "value": "25", "label": "Countries Served" }
-        ]
+        "heading": "Diversity & Inclusion Impact",
+        "description": "Measurable outcomes that demonstrate our commitment to building diverse, high-performing leadership teams.",
+        "stats": [
+          {
+            "value": "40%",
+            "label": "Diversity Increase",
+            "description": "Leadership representation",
+            "icon": "📈"
+          },
+          {
+            "value": "3x",
+            "label": "Retention Boost",
+            "description": "Diverse leader success",
+            "icon": "🔄"
+          },
+          {
+            "value": "25",
+            "label": "Countries Served",
+            "description": "Global D&I reach",
+            "icon": "🌍"
+          },
+          {
+            "value": "60%",
+            "label": "Women Leaders",
+            "description": "Placed in C-suite roles",
+            "icon": "👩‍💼"
+          },
+          {
+            "value": "85%",
+            "label": "Cultural Alignment",
+            "description": "Successful integration",
+            "icon": "🎯"
+          },
+          {
+            "value": "200+",
+            "label": "D&I Assessments",
+            "description": "Organizational audits",
+            "icon": "📊"
+          }
+        ],
+        "backgroundType": "light"
       }
     },
     {

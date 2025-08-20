@@ -28,12 +28,16 @@ if (alt === undefined) {
 // Check if this is a local image that should be optimized
 const isLocalImage = src.startsWith('/') && !src.startsWith('//');
 
+// Only generate picture element for images that have explicit WebP/AVIF versions
+// For now, we'll use simple img tags until we have optimized versions
+const shouldOptimize = src.includes('/profile/'); // Enable optimization for profile images
+
 const base = src.replace(/\.[^/.]+$/, '');
 const avif = `${base}.avif`;
 const webp = `${base}.webp`;
 ---
 
-{isLocalImage ? (
+{isLocalImage && shouldOptimize ? (
   <picture>
     <source srcset={avif} type="image/avif" />
     <source srcset={webp} type="image/webp" />

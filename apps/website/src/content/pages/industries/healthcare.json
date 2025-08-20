@@ -146,39 +146,50 @@
       }
     },
     {
-      "id": "healthcare-stats",
+      "id": "key-metrics",
       "type": "Statistics",
       "props": {
-        "heading": "Healthcare Sector Impact",
-        "description": "Our proven track record in connecting healthcare leaders with life-changing opportunities.",
-        "backgroundType": "light",
-        "theme": "emerald",
+        "heading": "Our Impact in Numbers",
+        "description": "Measurable results that demonstrate our commitment to excellence and the trust our partners place in us.",
         "stats": [
           {
-            "value": "75+",
-            "label": "Healthcare Leaders Placed",
-            "description": "CMOs, CTOs, and R&D leaders across pharmaceutical, biotech, and health systems",
-            "icon": "👩‍⚕️"
+            "value": "500+",
+            "label": "Leaders Placed",
+            "description": "Across all sectors",
+            "icon": "�"
           },
           {
-            "value": "96%",
-            "label": "Success Rate",
-            "description": "Successful placements with strong performance in complex healthcare environments",
-            "icon": "🎯"
+            "value": "95%",
+            "label": "Success Rate", 
+            "description": "24-month retention",
+            "icon": "📈"
           },
           {
-            "value": "$1B+",
-            "label": "R&D Programs Led",
-            "description": "Combined value of research and development programs led by placed executives",
-            "icon": "💰"
+            "value": "200+",
+            "label": "Partner Companies",
+            "description": "From startups to Fortune 500",
+            "icon": "🤝"
           },
           {
-            "value": "15M+",
-            "label": "Patients Impacted",
-            "description": "Lives touched by healthcare organizations where we've placed key leaders",
-            "icon": "❤️"
+            "value": "15+",
+            "label": "Industries",
+            "description": "Specialized expertise",
+            "icon": "🏭"
+          },
+          {
+            "value": "12+", 
+            "label": "Years",
+            "description": "Market experience",
+            "icon": "⭐"
+          },
+          {
+            "value": "15",
+            "label": "Days Average",
+            "description": "Time to placement",
+            "icon": "⚡"
           }
-        ]
+        ],
+        "backgroundType": "light"
       }
     },
     {

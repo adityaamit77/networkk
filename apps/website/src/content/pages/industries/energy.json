@@ -137,39 +137,50 @@
       }
     },
     {
-      "id": "energy-stats",
+      "id": "key-metrics",
       "type": "Statistics",
       "props": {
-        "heading": "Energy Sector Impact",
-        "description": "Our track record in connecting energy leaders with transformative opportunities.",
-        "backgroundType": "light",
-        "theme": "emerald",
+        "heading": "Our Impact in Numbers",
+        "description": "Measurable results that demonstrate our commitment to excellence and the trust our partners place in us.",
         "stats": [
           {
-            "value": "50+",
-            "label": "Energy Leaders Placed",
-            "description": "Across renewable, traditional, and emerging energy sectors",
+            "value": "500+",
+            "label": "Leaders Placed",
+            "description": "Across all sectors",
+            "icon": "👥"
+          },
+          {
+            "value": "95%",
+            "label": "Success Rate", 
+            "description": "24-month retention",
+            "icon": "📈"
+          },
+          {
+            "value": "200+",
+            "label": "Partner Companies",
+            "description": "From startups to Fortune 500",
+            "icon": "🤝"
+          },
+          {
+            "value": "15+",
+            "label": "Industries",
+            "description": "Specialized expertise",
+            "icon": "🏭"
+          },
+          {
+            "value": "12+", 
+            "label": "Years",
+            "description": "Market experience",
+            "icon": "⭐"
+          },
+          {
+            "value": "15",
+            "label": "Days Average",
+            "description": "Time to placement",
             "icon": "⚡"
-          },
-          {
-            "value": "98%",
-            "label": "Success Rate",
-            "description": "Successful placements with long-term retention in energy roles",
-            "icon": "🎯"
-          },
-          {
-            "value": "$5B+",
-            "label": "Projects Led",
-            "description": "Combined value of energy projects led by our placed executives",
-            "icon": "💰"
-          },
-          {
-            "value": "12",
-            "label": "Countries",
-            "description": "Global energy placements across diverse markets",
-            "icon": "🌍"
           }
-        ]
+        ],
+        "backgroundType": "light"
       }
     },
     {

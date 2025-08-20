@@ -47,7 +47,7 @@
               "lng": 77.36
             },
             "phone": "+91 92667 21935",
-            "email": "info@networkk.com"
+            "email": "support@networkk.in"
           }
         ],
         "mapHeight": "500px"
@@ -63,19 +63,19 @@
         "items": [
           {
             "title": "General Inquiries",
-            "description": "For general questions about our services and approach.\nEmail: info@networkk.com\nPhone: +91 92667 21935",
+            "description": "For general questions about our services and approach.\nEmail: support@networkk.in\nPhone: +91 92667 21935",
             "icon": "📧",
-            "href": "mailto:info@networkk.com"
+            "href": "mailto:support@networkk.in"
           },
           {
             "title": "Media Relations",
-            "description": "For press inquiries, interview requests, and media opportunities.\nEmail: media@networkk.com\nPhone: +91 92667 21935",
+            "description": "For press inquiries, interview requests, and media opportunities.\nEmail: support@networkk.in\nPhone: +91 92667 21935",
             "icon": "📰",
-            "href": "mailto:media@networkk.com"
+            "href": "mailto:support@networkk.in"
           },
           {
             "title": "Careers at Networkk",
-            "description": "Interested in joining our team? Explore current opportunities.\nEmail: careers@networkk.com\nCareers Page: networkk.com/careers",
+            "description": "Interested in joining our team? Explore current opportunities.\nEmail: support@networkk.in\nCareers Page: networkk.com/careers",
             "icon": "💼",
             "href": "/careers"
           }
@@ -163,6 +163,53 @@
         "submitLabel": "Submit Inquiry",
         "successMessage": "Thank you for contacting Networkk. One of our consultants will be in touch with you shortly.",
         "redirectTo": "/thank-you"
+      }
+    },
+    {
+      "id": "key-metrics",
+      "type": "Statistics",
+      "props": {
+        "heading": "Our Impact in Numbers",
+        "description": "Measurable results that demonstrate our commitment to excellence and the trust our partners place in us.",
+        "stats": [
+          {
+            "value": "500+",
+            "label": "Leaders Placed",
+            "description": "Across all sectors",
+            "icon": "👥"
+          },
+          {
+            "value": "95%",
+            "label": "Success Rate", 
+            "description": "24-month retention",
+            "icon": "📈"
+          },
+          {
+            "value": "200+",
+            "label": "Partner Companies",
+            "description": "From startups to Fortune 500",
+            "icon": "🤝"
+          },
+          {
+            "value": "15+",
+            "label": "Industries",
+            "description": "Specialized expertise",
+            "icon": "🏭"
+          },
+          {
+            "value": "12+", 
+            "label": "Years",
+            "description": "Market experience",
+            "icon": "⭐"
+          },
+          {
+            "value": "15",
+            "label": "Days Average",
+            "description": "Time to placement",
+            "icon": "⚡"
+          }
+        ],
+        "backgroundType": "light"
       }
     },
     {

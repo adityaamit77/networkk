@@ -46,14 +46,49 @@
     },
     {
       "id": "why-metrics",
-      "type": "MetricsBand",
+      "type": "Statistics",
       "props": {
-        "heading": "Results That Matter",
-        "items": [
-          { "value": "92%", "label": "C-suite retention" },
-          { "value": "150+", "label": "Leadership hires yearly" },
-          { "value": "4.9/5", "label": "Client satisfaction" }
-        ]
+        "heading": "Why Clients Choose Networkk",
+        "description": "Performance metrics and client satisfaction that demonstrate our exceptional value and proven track record.",
+        "stats": [
+          {
+            "value": "92%",
+            "label": "C-Suite Retention",
+            "description": "Long-term success rate",
+            "icon": "👑"
+          },
+          {
+            "value": "150+",
+            "label": "Annual Placements",
+            "description": "Leadership hires yearly",
+            "icon": "📊"
+          },
+          {
+            "value": "4.9/5",
+            "label": "Client Satisfaction",
+            "description": "Average rating",
+            "icon": "⭐"
+          },
+          {
+            "value": "85%",
+            "label": "Repeat Clients",
+            "description": "Return engagement rate",
+            "icon": "🔄"
+          },
+          {
+            "value": "30",
+            "label": "Industry Awards",
+            "description": "Recognition received",
+            "icon": "🏆"
+          },
+          {
+            "value": "48hrs",
+            "label": "Response Time",
+            "description": "Initial client contact",
+            "icon": "⚡"
+          }
+        ],
+        "backgroundType": "gradient"
       }
     },
     {

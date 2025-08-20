@@ -56,7 +56,7 @@ const gridClass = gridClasses[columns as keyof typeof gridClasses] || gridClasse
     {(heading || description) && (
       <div class="text-center max-w-3xl mx-auto mb-16">
         {heading && (
-          <Heading level={2} class={`mb-4 ${textClass}`}>
+          <Heading level={3} class={`mb-4 ${textClass}`}>
             {heading}
           </Heading>
         )}
@@ -69,52 +69,98 @@ const gridClass = gridClasses[columns as keyof typeof gridClasses] || gridClasse
     )}
     
     <!-- Grid -->
-    <div class={`grid ${gridClass} gap-8`}>
+    <div class={`grid ${gridClass} gap-6`}>
       {items.map((item: any) => (
-        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-          {item.image && (
-            <div class="relative h-48 overflow-hidden">
-              <Image
-                src={item.image}
-                alt={item.title}
-                class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                width={400}
-                height={200}
-              />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
+        <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 relative group">
+          {item.href ? (
+            <a href={item.href} class="block cursor-pointer">
+              {item.image && (
+                <div class="relative h-80 overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                    width={400}
+                    height={320}
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                  
+                  {/* Text overlay at bottom */}
+                  <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                    <Heading level={5} class="mb-1 text-white text-lg font-semibold leading-tight">
+                      {item.title}
+                    </Heading>
+                    
+                    <p class="text-white/90 text-sm leading-tight line-clamp-2">
+                      {item.description}
+                    </p>
+                    
+                    {/* Learn More indicator */}
+                    <div class="flex items-center mt-2 text-white/80 group-hover:text-white transition-colors">
+                      <span class="text-xs font-medium">Learn More</span>
+                      <svg class="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </a>
+          ) : (
+            <div>
+              {item.image && (
+                <div class="relative h-80 overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                    width={400}
+                    height={320}
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                  
+                  {/* Text overlay at bottom */}
+                  <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                    <Heading level={5} class="mb-1 text-white text-lg font-semibold leading-tight">
+                      {item.title}
+                    </Heading>
+                    
+                    <p class="text-white/90 text-sm leading-tight line-clamp-2">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              )}
             </div>
           )}
           
-          <div class="p-6 lg:p-8">
-            {item.icon && !item.image && (
-              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                <span class="text-2xl">{item.icon}</span>
-              </div>
-            )}
-            
-            <Heading level={3} class="mb-4 text-gray-900">
-              {item.title}
-            </Heading>
-            
-            <p class="text-gray-600 mb-6 leading-relaxed">
-              {item.description}
-            </p>
-            
-            {item.href && (
-              <Button
-                href={item.href}
-                variant="outline"
-                size="sm"
-                class="group"
-                onClick={() => trackEvent('tile_click', { title: item.title, href: item.href })}
-              >
-                Learn More
-                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </Button>
-            )}
-          </div>
+          {/* Fallback for items without images */}
+          {!item.image && (
+            <div class="h-80 bg-gray-100 flex flex-col items-center justify-center p-4">
+              {item.icon && (
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <span class="text-2xl">{item.icon}</span>
+                </div>
+              )}
+              
+              <Heading level={5} class="mb-2 text-gray-900 text-lg font-semibold text-center">
+                {item.title}
+              </Heading>
+              
+              <p class="text-gray-600 text-sm leading-tight text-center mb-4">
+                {item.description}
+              </p>
+              
+              {item.href && (
+                <a href={item.href} class="text-blue-600 hover:text-blue-700 font-medium text-sm inline-flex items-center">
+                  Learn More
+                  <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              )}
+            </div>
+          )}
         </div>
       ))}
     </div>

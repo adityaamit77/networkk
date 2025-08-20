@@ -78,14 +78,49 @@
     },
     {
       "id": "metrics-career-transition",
-      "type": "MetricsBand",
+      "type": "Statistics",
       "props": {
-        "heading": "Program Outcomes",
-        "items": [
-          { "value": "85%", "label": "Land New Roles" },
-          { "value": "3 mo", "label": "Average Transition" },
-          { "value": "500+", "label": "Participants Supported" }
-        ]
+        "heading": "Career Transition Outcomes",
+        "description": "Comprehensive support results that demonstrate our commitment to helping leaders navigate career changes successfully.",
+        "stats": [
+          {
+            "value": "85%",
+            "label": "Success Rate",
+            "description": "Participants landing new roles",
+            "icon": "🎯"
+          },
+          {
+            "value": "3",
+            "label": "Months Average",
+            "description": "Transition timeline",
+            "icon": "📅"
+          },
+          {
+            "value": "500+",
+            "label": "Leaders Supported",
+            "description": "Career transitions facilitated",
+            "icon": "👥"
+          },
+          {
+            "value": "90%",
+            "label": "Satisfaction Rate",
+            "description": "Program effectiveness",
+            "icon": "⭐"
+          },
+          {
+            "value": "40%",
+            "label": "Salary Increase",
+            "description": "Average compensation boost",
+            "icon": "📈"
+          },
+          {
+            "value": "95%",
+            "label": "Network Growth",
+            "description": "Professional connections expanded",
+            "icon": "🤝"
+          }
+        ],
+        "backgroundType": "gradient"
       }
     },
     {

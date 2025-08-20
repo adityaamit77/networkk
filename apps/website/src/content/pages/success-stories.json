@@ -34,39 +34,50 @@
       }
     },
     {
-      "id": "success-overview-stats",
+      "id": "key-metrics",
       "type": "Statistics",
       "props": {
-        "heading": "Our Impact at a Glance",
-        "description": "Explore how organizations across industries achieved their strategic goals with Networkk's leadership talent.",
-        "backgroundType": "light",
-        "theme": "default",
+        "heading": "Our Impact in Numbers",
+        "description": "Measurable results that demonstrate our commitment to excellence and the trust our partners place in us.",
         "stats": [
           {
-            "value": "5+",
-            "label": "Industries Served",
-            "description": "Technology, Financial Services, Healthcare, Energy, Manufacturing & More",
-            "icon": "🏭"
-          },
-          {
-            "value": "200+",
-            "label": "Executive Placements",
-            "description": "Senior leadership roles successfully filled across diverse organizations",
+            "value": "500+",
+            "label": "Leaders Placed",
+            "description": "Across all sectors",
             "icon": "👥"
           },
           {
             "value": "95%",
-            "label": "Client Success Rate",
-            "description": "Executives still thriving in their roles after 24 months",
+            "label": "Success Rate", 
+            "description": "24-month retention",
+            "icon": "📈"
+          },
+          {
+            "value": "200+",
+            "label": "Partner Companies",
+            "description": "From startups to Fortune 500",
+            "icon": "🤝"
+          },
+          {
+            "value": "15+",
+            "label": "Industries",
+            "description": "Specialized expertise",
+            "icon": "🏭"
+          },
+          {
+            "value": "12+", 
+            "label": "Years",
+            "description": "Market experience",
             "icon": "⭐"
           },
           {
-            "value": "25",
-            "label": "Average Days to Hire",
-            "description": "From initial brief to successful placement and onboarding",
+            "value": "15",
+            "label": "Days Average",
+            "description": "Time to placement",
             "icon": "⚡"
           }
-        ]
+        ],
+        "backgroundType": "light"
       }
     },
     {
@@ -83,52 +94,6 @@
       "type": "CaseStudyList",
       "props": {
         "heading": ""
-      }
-    },
-    {
-      "id": "success-stats",
-      "type": "Statistics",
-      "props": {
-        "heading": "Proven Outcomes",
-        "description": "Our executive placements consistently deliver measurable business impact across industries.",
-        "stats": [
-          {
-            "value": "200+",
-            "label": "Executive Placements",
-            "icon": "👥",
-            "description": "Senior leaders placed across industries"
-          },
-          {
-            "value": "25",
-            "label": "Average Days to Hire",
-            "icon": "⏱️",
-            "description": "Faster than industry average"
-          },
-          {
-            "value": "95%",
-            "label": "Retention Rate",
-            "icon": "🤝",
-            "description": "Leaders still thriving after 2 years"
-          },
-          {
-            "value": "180%",
-            "label": "Average Growth Impact",
-            "icon": "📈",
-            "description": "Revenue growth attributed to placements"
-          },
-          {
-            "value": "15+",
-            "label": "Industries Served",
-            "icon": "🏭",
-            "description": "Cross-sector expertise and knowledge"
-          },
-          {
-            "value": "100%",
-            "label": "Client Satisfaction",
-            "icon": "⭐",
-            "description": "Every client would recommend us"
-          }
-        ]
       }
     },
     {

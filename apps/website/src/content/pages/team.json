@@ -4,7 +4,7 @@
   "status": "published",
   "seo": {
     "title": "Meet Our Leadership Team - Networkk",
-    "description": "Meet the experienced professionals behind Networkk's executive search excellence. Our leadership team brings decades of expertise.",
+    "description": "Meet the professionals behind Networkk executive search excellence. Our leadership team brings decades of expertise.",
     "canonical": "https://networkk.com/team/",
     "noindex": false,
     "keywords": ["leadership team", "executive search experts", "talent advisors", "recruitment leadership"]
@@ -62,33 +62,31 @@
         "description": "Meet the experienced professionals who guide our mission and strategy.",
         "members": [
           {
-            "name": "Rajesh Kumar",
-            "title": "Founder & CEO",
-            "bio": "With over 25 years in executive search and leadership advisory, Rajesh founded Networkk with a vision to transform how organizations build exceptional leadership teams. Former Partner at a global executive search firm and advisor to numerous Fortune 500 CEOs.",
-            "image": "/images/testimonial-rajesh-patel.avif",
-            "socialLinks": {
-              "linkedin": "#",
-              "twitter": "#",
-              "email": "/contact"
-            }
-          },
-          {
-            "name": "Priya Sharma",
-            "title": "Managing Director",
-            "bio": "Priya leads our global operations and client strategy. With a background in management consulting at McKinsey and leadership roles at Fortune 100 companies, she brings strategic insight and operational excellence to our executive search practice.",
-            "image": "/images/testimonial-priya-sharma.avif",
+            "name": "Anupama Singh",
+            "title": "Co Founder and CEO",
+            "bio": "Leading strategic vision and client relationships with 15+ years in executive search and talent advisory.",
+            "image": "/images/profile/anupama.jpg",
             "socialLinks": {
               "linkedin": "#",
               "email": "/contact"
             }
           },
           {
-            "name": "David Chen",
-            "title": "Chief Financial Officer",
-            "bio": "David oversees Networkk's financial strategy and operations. Former investment banker and CFO at high-growth technology companies, he brings financial acumen and strategic planning expertise to our leadership team.",
-            "image": "/images/testimonial-sarah-chen.avif",
+            "name": "Sudha Patni",
+            "title": "Co Manager - Talent Acquisition and Operations",
+            "bio": "Managing operations and talent acquisition processes with expertise in scaling recruitment systems.",
+            "image": "/images/profile/sudha.jpg",
             "socialLinks": {
               "linkedin": "#",
+              "email": "/contact"
+            }
+          },
+          {
+            "name": "Join Our Team",
+            "title": "Senior Partner - Executive Search",
+            "bio": "We're looking for an experienced executive search professional to join our leadership team.",
+            "image": "",
+            "socialLinks": {
               "email": "/contact"
             }
           }
@@ -97,74 +95,50 @@
       }
     },
     {
-      "id": "practice-leaders",
-      "type": "TeamProfiles",
+      "id": "key-metrics",
+      "type": "Statistics",
       "props": {
-        "heading": "Practice Leaders",
-        "description": "Specialized experts who lead our industry and functional practice areas.",
-        "members": [
+        "heading": "Our Impact in Numbers",
+        "description": "Measurable results that demonstrate our commitment to excellence and the trust our partners place in us.",
+        "stats": [
           {
-            "name": "Sarah Wong",
-            "title": "Technology Practice Leader",
-            "bio": "Sarah leads our Technology Practice, specializing in C-suite placements for software, fintech, and digital transformation companies. Former CTO and advisor to multiple tech unicorns.",
-            "image": "/images/testimonial-sarah-chen.avif",
-            "socialLinks": {
-              "linkedin": "#",
-              "email": "/contact"
-            }
+            "value": "500+",
+            "label": "Leaders Placed",
+            "description": "Across all sectors",
+            "icon": "👥"
           },
           {
-            "name": "Michael Rodriguez",
-            "title": "Financial Services Practice Leader",
-            "bio": "Michael specializes in executive search for banking, asset management, and fintech organizations. Former investment banker and board advisor with deep expertise in financial leadership.",
-            "image": "/images/testimonial-rajesh-patel.avif",
-            "socialLinks": {
-              "linkedin": "#",
-              "email": "/contact"
-            }
+            "value": "95%",
+            "label": "Success Rate", 
+            "description": "24-month retention",
+            "icon": "📈"
           },
           {
-            "name": "Dr. Anita Gupta",
-            "title": "Healthcare & Life Sciences Practice Leader",
-            "bio": "Dr. Gupta leads our Healthcare Practice, focusing on leadership for hospitals, pharmaceutical companies, and health tech organizations. MD with executive experience in global healthcare organizations.",
-            "image": "/images/testimonial-priya-sharma.avif",
-            "socialLinks": {
-              "linkedin": "#",
-              "email": "/contact"
-            }
+            "value": "200+",
+            "label": "Partner Companies",
+            "description": "From startups to Fortune 500",
+            "icon": "🤝"
           },
           {
-            "name": "James Wilson",
-            "title": "Industrial & Manufacturing Practice Leader",
-            "bio": "James specializes in executive search for manufacturing, automotive, and industrial technology companies. Former COO with extensive operational leadership experience in global manufacturing.",
-            "image": "/images/testimonial-rajesh-patel.avif",
-            "socialLinks": {
-              "linkedin": "#",
-              "email": "/contact"
-            }
+            "value": "15+",
+            "label": "Industries",
+            "description": "Specialized expertise",
+            "icon": "🏭"
           },
           {
-            "name": "Elena Martinez",
-            "title": "Consumer & Retail Practice Leader",
-            "bio": "Elena leads executive search for consumer products, retail, and e-commerce companies. Former CMO with expertise in digital transformation and consumer-centric leadership.",
-            "image": "/images/testimonial-sarah-chen.avif",
-            "socialLinks": {
-              "linkedin": "#",
-              "email": "/contact"
-            }
+            "value": "12+", 
+            "label": "Years",
+            "description": "Market experience",
+            "icon": "⭐"
           },
           {
-            "name": "Robert Kim",
-            "title": "Board Services Practice Leader",
-            "bio": "Robert specializes in board director placements and board effectiveness consulting. Former board member of multiple public companies and governance expert.",
-            "image": "/images/testimonial-priya-sharma.avif",
-            "socialLinks": {
-              "linkedin": "#",
-              "email": "/contact"
-            }
+            "value": "15",
+            "label": "Days Average",
+            "description": "Time to placement",
+            "icon": "⚡"
           }
         ],
-        "layout": "grid"
+        "backgroundType": "light"
       }
     },
     {
@@ -207,20 +181,6 @@
             "icon": "🎯"
           }
         ]
-      }
-    },
-    {
-      "id": "team-stats",
-      "type": "Statistics",
-      "props": {
-        "heading": "Team by the Numbers",
-        "stats": [
-          { "value": "12", "label": "Partners", "icon": "\uD83D\uDC65" },
-          { "value": "8", "label": "Countries", "icon": "\uD83C\uDF0E" },
-          { "value": "25+", "label": "Years Avg Experience", "icon": "\uD83C\uDF93" }
-        ],
-        "backgroundType": "light",
-        "theme": "emerald"
       }
     },
     {

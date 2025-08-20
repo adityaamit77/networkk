@@ -24,6 +24,14 @@ const {
 
 // Generate a unique ID for the map
 const mapId = `map-${Math.random().toString(36).substring(2, 9)}`;
+
+// Get the Google Maps API key from environment
+const googleMapsApiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY;
+
+// Check if API key is properly configured
+if (!googleMapsApiKey || googleMapsApiKey === 'YOUR_API_KEY') {
+  console.warn('Google Maps API key not configured. Please set PUBLIC_GOOGLE_MAPS_API_KEY in your .env file');
+}
 ---
 
 <section class="section bg-white py-16 md:py-24">
@@ -78,7 +86,7 @@ const mapId = `map-${Math.random().toString(36).substring(2, 9)}`;
   </div>
 </section>
 
-<script define:vars={{ locations, mapId }}>
+<script define:vars={{ locations, mapId, googleMapsApiKey }}>
   // Initialize the map when the page loads
   window.initMap = function() {
     if (locations.length === 0) return;
@@ -87,11 +95,13 @@ const mapId = `map-${Math.random().toString(36).substring(2, 9)}`;
     const map = new google.maps.Map(document.getElementById(mapId), {
       zoom: 12,
       center: { lat: locations[0].coordinates.lat, lng: locations[0].coordinates.lng },
+      mapId: 'DEMO_MAP_ID', // Using demo map ID for AdvancedMarkerElement
     });
     
     // Add markers for each location
     const markers = locations.map((location, index) => {
-      const marker = new google.maps.Marker({
+      // Use AdvancedMarkerElement (recommended by Google)
+      const marker = new google.maps.marker.AdvancedMarkerElement({
         position: { lat: location.coordinates.lat, lng: location.coordinates.lng },
         map: map,
         title: location.name,
@@ -133,8 +143,26 @@ const mapId = `map-${Math.random().toString(36).substring(2, 9)}`;
   
   // Load Google Maps API
   if (typeof google === 'undefined' || typeof google.maps === 'undefined') {
+    // Check if API key is configured
+    if (!googleMapsApiKey || googleMapsApiKey === 'YOUR_API_KEY') {
+      console.error('Google Maps API key not configured. Map will not load.');
+      // Show an error message in the map container
+      const mapContainer = document.getElementById(mapId);
+      if (mapContainer) {
+        mapContainer.innerHTML = `
+          <div class="flex items-center justify-center h-full bg-gray-100 text-gray-600">
+            <div class="text-center p-4">
+              <h3 class="font-semibold mb-2">Map Configuration Required</h3>
+              <p>Please configure your Google Maps API key to display the map.</p>
+            </div>
+          </div>
+        `;
+      }
+      return;
+    }
+    
     const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${googleMapsApiKey}&callback=initMap&loading=async&libraries=marker`;
     script.async = true;
     script.defer = true;
     document.head.appendChild(script);

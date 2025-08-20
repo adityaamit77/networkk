@@ -32,44 +32,55 @@
       "type": "RichText",
       "props": {
         "heading": "Expert Perspectives and Research",
-        "content": "<div class=\"max-w-6xl mx-auto\"><div class=\"grid lg:grid-cols-2 gap-12 items-center\"><div class=\"space-y-6\"><p class=\"text-lg text-gray-600 leading-relaxed\">Our insights explore the <span class=\"font-semibold text-indigo-600\">trends shaping executive leadership</span> and talent strategy. From market analyses to leadership playbooks, each resource is crafted by <span class=\"font-bold text-green-600\">specialists with hands-on experience</span>.</p><div class=\"bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-6 border border-indigo-100\"><p class=\"text-gray-700 font-medium mb-2\">📈 Strategic Intelligence</p><p class=\"text-sm text-gray-600\">Access exclusive interviews, step-by-step guides and benchmark reports to inform your next strategic move with data-driven insights.</p></div></div><div class=\"relative\"><img src=\"/images/insight-diversity-hiring.avif\" alt=\"Strategic leadership insights\" class=\"rounded-2xl shadow-xl w-full\" /><div class=\"absolute inset-0 bg-gradient-to-tr from-indigo-600/10 to-purple-600/10 rounded-2xl\"></div><div class=\"absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg\"><p class=\"text-sm font-semibold text-gray-800\">Expert Analysis</p><p class=\"text-xs text-gray-600\">Trusted by Leaders</p></div></div></div></div>",
+        "content": "<div class=\"max-w-6xl mx-auto\"><div class=\"grid lg:grid-cols-2 gap-12 items-center\"><div class=\"space-y-6\"><p class=\"text-lg text-gray-600 leading-relaxed\">We are a dedicated executive search firm focused exclusively on identifying and placing top-tier talent. Our firm is built on three principles: <span class=\"font-semibold text-indigo-600\">precision</span>, <span class=\"font-semibold text-indigo-600\">discretion</span>, and <span class=\"font-semibold text-indigo-600\">partnership</span>. Our methodology ensures a precise match between candidate and organizational culture, values, and strategic objectives.</p><div class=\"bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-6 border border-indigo-100\"><p class=\"text-gray-700 font-medium mb-2\">📈 Strategic Intelligence</p><p class=\"text-sm text-gray-600\">Access exclusive interviews, step-by-step guides and benchmark reports to inform your next strategic move with data-driven insights.</p></div></div><div class=\"relative\"><img src=\"/images/insight-diversity-hiring.avif\" alt=\"Strategic leadership insights\" class=\"rounded-2xl shadow-xl w-full\" /><div class=\"absolute inset-0 bg-gradient-to-tr from-indigo-600/10 to-purple-600/10 rounded-2xl\"></div><div class=\"absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg\"><p class=\"text-sm font-semibold text-gray-800\">Expert Analysis</p><p class=\"text-xs text-gray-600\">Trusted by Leaders</p></div></div></div></div>",
         "align": "center"
       }
     },
     {
-      "id": "insights-overview-stats",
+      "id": "key-metrics",
       "type": "Statistics",
       "props": {
-        "heading": "Research Library Overview",
-        "description": "Discover actionable strategies and industry benchmarks from our comprehensive research collection.",
-        "backgroundType": "light",
-        "theme": "emerald",
+        "heading": "Our Impact in Numbers",
+        "description": "Measurable results that demonstrate our commitment to excellence and the trust our partners place in us.",
         "stats": [
           {
-            "value": "150+",
-            "label": "Expert Articles",
-            "description": "In-depth analysis covering leadership trends, market insights, and strategic frameworks",
-            "icon": "📝"
+            "value": "500+",
+            "label": "Leaders Placed",
+            "description": "Across all sectors",
+            "icon": "👥"
           },
           {
-            "value": "25+",
-            "label": "Research Reports",
-            "description": "Comprehensive market studies and industry benchmarks published annually",
-            "icon": "📊"
+            "value": "95%",
+            "label": "Success Rate", 
+            "description": "24-month retention",
+            "icon": "�"
           },
           {
-            "value": "4",
-            "label": "Content Categories",
-            "description": "Technology, Leadership, Diversity & Inclusion, and Strategic Planning focus areas",
-            "icon": "🎯"
+            "value": "200+",
+            "label": "Partner Companies",
+            "description": "From startups to Fortune 500",
+            "icon": "🤝"
           },
           {
-            "value": "1000+",
-            "label": "Monthly Downloads",
-            "description": "Resources accessed by executives and HR professionals worldwide",
-            "icon": "📥"
+            "value": "15+",
+            "label": "Industries",
+            "description": "Specialized expertise",
+            "icon": "�"
+          },
+          {
+            "value": "12+", 
+            "label": "Years",
+            "description": "Market experience",
+            "icon": "⭐"
+          },
+          {
+            "value": "15",
+            "label": "Days Average",
+            "description": "Time to placement",
+            "icon": "⚡"
           }
-        ]
+        ],
+        "backgroundType": "light"
       }
     },
     {
@@ -94,52 +105,6 @@
       "props": {
         "heading": "",
         "description": ""
-      }
-    },
-    {
-      "id": "insights-stats",
-      "type": "Statistics",
-      "props": {
-        "heading": "Insight Highlights",
-        "description": "Comprehensive resources to guide your talent strategy",
-        "stats": [
-          {
-            "value": "150+",
-            "label": "Expert Articles",
-            "icon": "📝",
-            "description": "In-depth analysis and guidance"
-          },
-          {
-            "value": "25+",
-            "label": "Research Reports",
-            "icon": "📊",
-            "description": "Industry benchmarks and trends"
-          },
-          {
-            "value": "8",
-            "label": "Content Categories",
-            "icon": "🎯",
-            "description": "Leadership, Strategy, Technology & More"
-          },
-          {
-            "value": "500+",
-            "label": "Actionable Insights",
-            "icon": "💡",
-            "description": "Practical strategies you can implement"
-          },
-          {
-            "value": "50+",
-            "label": "Case Studies",
-            "icon": "✅",
-            "description": "Real success stories and outcomes"
-          },
-          {
-            "value": "1000+",
-            "label": "Downloads",
-            "icon": "📥",
-            "description": "Resources accessed by professionals"
-          }
-        ]
       }
     },
     {

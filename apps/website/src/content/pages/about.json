@@ -3,7 +3,7 @@
   "title": "Who We Are",
   "status": "published", 
   "seo": {
-    "title": "About Networkk — Executive Search & Leadership Advisory",
+    "title": "Executive Search & Leadership Advisory",
     "description": "Learn how Networkk connects exceptional leaders with transformative opportunities across India and Southeast Asia. Meet our team and our approach.",
     "canonical": "https://networkk.com/about/",
     "noindex": false,
@@ -98,40 +98,22 @@
         "columns": "3",
         "items": [
           {
-            "title": "Rajesh Kumar",
-            "description": "Founder & Managing Director with 20+ years in executive search. Former consultant at McKinsey, specializing in C-suite placements across technology and financial services.",
-            "image": "/images/testimonial-rajesh-patel.avif",
-            "href": "/contact"
+            "title": "Anupama Singh", 
+            "description": "Co Founder and CEO - Leading strategic vision and client relationships with 15+ years in executive search and talent advisory.",
+            "image": "/images/profile/anupama.jpg",
+            "href": "/team"
           },
           {
-            "title": "Priya Sharma", 
-            "description": "Director of Executive Search with deep expertise in healthcare and life sciences. Previously led talent acquisition at leading pharmaceutical companies across Asia-Pacific.",
-            "image": "/images/testimonial-priya-sharma.avif",
-            "href": "/contact"
+            "title": "Sudha Patni", 
+            "description": "Co Manager - Talent Acquisition and Operations - Managing operations and talent acquisition processes with expertise in scaling recruitment systems.",
+            "image": "/images/profile/sudha.jpg",
+            "href": "/team"
           },
           {
-            "title": "Arjun Patel",
-            "description": "Director of Leadership Advisory specializing in organizational development and succession planning. Former partner at global management consulting firm.",
-            "image": "/images/testimonial-rajesh-patel.avif",
-            "href": "/contact"
-          },
-          {
-            "title": "Sarah Chen",
-            "description": "Head of Technology Practice with expertise in digital transformation and AI leadership. Previously CTO at two successful fintech startups.",
-            "image": "/images/testimonial-sarah-chen.avif",
-            "href": "/contact"
-          },
-          {
-            "title": "Michael Rodriguez",
-            "description": "Director of Diversity & Inclusion initiatives, former CHRO at Fortune 500 companies, passionate about building inclusive leadership teams.",
-            "image": "/images/testimonial-rajesh-patel.avif",
-            "href": "/contact"
-          },
-          {
-            "title": "Dr. Anita Gupta",
-            "description": "Senior Research Director leading our market intelligence and talent analytics initiatives. PhD in Organizational Psychology from IIM Ahmedabad.",
-            "image": "/images/testimonial-priya-sharma.avif",
-            "href": "/contact"
+            "title": "Join Our Team",
+            "description": "Senior Partner - Executive Search - We're looking for an experienced executive search professional to join our leadership team.",
+            "image": "/images/placeholder.svg",
+            "href": "/careers"
           }
         ]
       }
@@ -174,7 +156,7 @@
             "icon": "⭐"
           },
           {
-            "value": "45",
+            "value": "15", 
             "label": "Days Average",
             "description": "Time to placement",
             "icon": "⚡"

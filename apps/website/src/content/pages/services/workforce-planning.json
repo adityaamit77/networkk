@@ -78,14 +78,49 @@
     },
     {
       "id": "metrics-workforce-planning",
-      "type": "MetricsBand",
+      "type": "Statistics",
       "props": {
-        "heading": "Planning Metrics",
-        "items": [
-          { "value": "30%", "label": "Hiring Cost Saved" },
-          { "value": "50+", "label": "Markets Analyzed" },
-          { "value": "10 yrs", "label": "Average Data Span" }
-        ]
+        "heading": "Workforce Planning Results",
+        "description": "Strategic outcomes that showcase our ability to forecast talent needs and optimize organizational capabilities.",
+        "stats": [
+          {
+            "value": "30%",
+            "label": "Cost Reduction",
+            "description": "Hiring efficiency savings",
+            "icon": "💰"
+          },
+          {
+            "value": "50+",
+            "label": "Markets Analyzed",
+            "description": "Global talent insights",
+            "icon": "🌍"
+          },
+          {
+            "value": "10+",
+            "label": "Years Data",
+            "description": "Historical trend analysis",
+            "icon": "📊"
+          },
+          {
+            "value": "75%",
+            "label": "Accuracy Rate",
+            "description": "Talent forecasting precision",
+            "icon": "🎯"
+          },
+          {
+            "value": "120",
+            "label": "Organizations",
+            "description": "Strategic planning clients",
+            "icon": "🏢"
+          },
+          {
+            "value": "25%",
+            "label": "Time Savings",
+            "description": "Recruitment cycle reduction",
+            "icon": "⚡"
+          }
+        ],
+        "backgroundType": "light"
       }
     },
     {

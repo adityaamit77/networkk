@@ -7,7 +7,13 @@
     "description": "Transform your business with top-tier executive talent. Networkk connects organizations with exceptional leaders through proven search methodologies.",
     "canonical": "https://networkk.com/",
     "noindex": false,
-    "keywords": ["executive search", "leadership hiring", "CEO recruitment", "C-suite hiring", "talent acquisition"]
+    "keywords": [
+      "executive search",
+      "leadership hiring",
+      "CEO recruitment",
+      "C-suite hiring",
+      "talent acquisition"
+    ]
   },
   "blocks": [
     {
@@ -42,7 +48,7 @@
     },
     {
       "id": "services-overview",
-      "type": "TilesGrid", 
+      "type": "TilesGrid",
       "props": {
         "heading": "Core Services",
         "description": "Comprehensive talent solutions designed to meet your organization's unique leadership needs and strategic objectives.",
@@ -148,7 +154,7 @@
           {
             "quote": "The quality of candidates and the thoroughness of the search process exceeded our expectations. We found our new CTO in just 8 weeks, and she's been instrumental in scaling our team from 50 to 500 engineers.",
             "author": {
-              "name": "Rajesh Patel", 
+              "name": "Rajesh Patel",
               "title": "Founder & CEO",
               "company": "DataFlow Analytics",
               "image": "/images/testimonial-rajesh-patel.avif"
@@ -181,17 +187,49 @@
     },
     {
       "id": "key-metrics",
-      "type": "MetricsBand",
+      "type": "Statistics",
       "props": {
-        "heading": "Our Impact",
-        "items": [
-          { "value": "500+", "label": "Executives Placed", "description": "Across all industries" },
-          { "value": "95%", "label": "Retention Rate", "description": "After 24 months" },
-          { "value": "45", "label": "Days Average", "description": "Time to placement" },
-          { "value": "200+", "label": "Organizations", "description": "Trusted partners" },
-          { "value": "15+", "label": "Industries", "description": "Specialized sectors" },
-          { "value": "10+", "label": "Years", "description": "Market expertise" }
-        ]
+        "heading": "Our Impact in Numbers",
+        "description": "Measurable results that demonstrate our commitment to excellence and the trust our partners place in us.",
+        "stats": [
+          {
+            "value": "500+",
+            "label": "Leaders Placed",
+            "description": "Across all sectors",
+            "icon": "👥"
+          },
+          {
+            "value": "95%",
+            "label": "Success Rate", 
+            "description": "24-month retention",
+            "icon": "📈"
+          },
+          {
+            "value": "200+",
+            "label": "Partner Companies",
+            "description": "From startups to Fortune 500",
+            "icon": "🤝"
+          },
+          {
+            "value": "15+",
+            "label": "Industries",
+            "description": "Specialized expertise",
+            "icon": "🏭"
+          },
+          {
+            "value": "12+", 
+            "label": "Years",
+            "description": "Market experience",
+            "icon": "⭐"
+          },
+          {
+            "value": "15", 
+            "label": "Days Average",
+            "description": "Time to placement",
+            "icon": "⚡"
+          }
+        ],
+        "backgroundType": "light"
       }
     },
     {
@@ -227,7 +265,7 @@
             "color": "#059669"
           },
           {
-            "name": "Enterprise Dynamics", 
+            "name": "Enterprise Dynamics",
             "textLogo": true,
             "color": "#EA580C"
           }

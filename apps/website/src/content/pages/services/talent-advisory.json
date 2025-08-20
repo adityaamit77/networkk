@@ -82,14 +82,49 @@
     },
     {
       "id": "metrics-talent-advisory",
-      "type": "MetricsBand",
+      "type": "Statistics",
       "props": {
-        "heading": "Advisory Impact",
-        "items": [
-          { "value": "80%", "label": "Bench Strength Improved" },
-          { "value": "150", "label": "Leaders Assessed" },
-          { "value": "12", "label": "Weeks Avg. Engagement" }
-        ]
+        "heading": "Talent Advisory Impact",
+        "description": "Strategic outcomes that demonstrate the value of our leadership development and succession planning expertise.",
+        "stats": [
+          {
+            "value": "80%",
+            "label": "Bench Strength",
+            "description": "Leadership pipeline improved",
+            "icon": "📈"
+          },
+          {
+            "value": "150+",
+            "label": "Leaders Assessed",
+            "description": "Comprehensive evaluations",
+            "icon": "👥"
+          },
+          {
+            "value": "12",
+            "label": "Week Engagements",
+            "description": "Average project duration",
+            "icon": "📅"
+          },
+          {
+            "value": "90%",
+            "label": "Succession Success",
+            "description": "Internal promotion rate",
+            "icon": "🎯"
+          },
+          {
+            "value": "65%",
+            "label": "Performance Boost",
+            "description": "Team effectiveness increase",
+            "icon": "⚡"
+          },
+          {
+            "value": "50+",
+            "label": "Organizations",
+            "description": "Strategic partnerships",
+            "icon": "🤝"
+          }
+        ],
+        "backgroundType": "gradient"
       }
     },
     {

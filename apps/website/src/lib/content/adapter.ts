@@ -161,7 +161,7 @@ export async function getSiteConfig() {
       twitter: "https://twitter.com/networkk",
     },
     contact: {
-      email: "hello@networkk.com",
+      email: "support@networkk.in",
       phone: "+91 92667 21935",
       address: "37, Central Plaza, Greater Noida West - 201308, India",
     },
