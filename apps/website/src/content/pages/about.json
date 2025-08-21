@@ -1,13 +1,19 @@
 {
   "slug": "about",
   "title": "Who We Are",
-  "status": "published", 
+  "status": "published",
   "seo": {
     "title": "Executive Search & Leadership Advisory",
     "description": "Learn how Networkk connects exceptional leaders with transformative opportunities across India and Southeast Asia. Meet our team and our approach.",
     "canonical": "https://networkk.com/about/",
     "noindex": false,
-    "keywords": ["about networkk", "executive search team", "leadership experts", "company history", "our story"]
+    "keywords": [
+      "about networkk",
+      "executive search team",
+      "leadership experts",
+      "company history",
+      "our story"
+    ]
   },
   "blocks": [
     {
@@ -44,7 +50,7 @@
             "milestone": "Company Founded"
           },
           {
-            "title": "Market Leadership", 
+            "title": "Market Leadership",
             "description": "Established strong presence across major Indian metros, building deep partnerships with leading organizations and expanding our network of exceptional talent.",
             "year": "2016",
             "icon": "🌏",
@@ -63,7 +69,7 @@
             "title": "Industry Recognition",
             "description": "Recognized as 'Best Executive Search Firm' by HR Excellence Awards, cementing our position as industry leaders.",
             "year": "2022",
-            "icon": "🏆", 
+            "icon": "🏆",
             "image": "/images/service-diversity-inclusion.avif",
             "milestone": "Award Winning"
           }
@@ -86,7 +92,7 @@
             "icon": "🎯"
           },
           {
-            "title": "Our Vision", 
+            "title": "Our Vision",
             "description": "To be the most trusted partner for exceptional leaders and visionary organizations, creating lasting impact through strategic talent connections.",
             "icon": "🌟"
           },
@@ -104,25 +110,31 @@
       "props": {
         "heading": "Leadership Team",
         "description": "Meet the experienced professionals who lead our mission to connect exceptional talent with transformative opportunities.",
-        "columns": "3",
+        "columns": "4",
         "items": [
           {
-            "title": "Anupama Singh", 
+            "title": "Anupama Singh",
             "description": "Co-Founder & Chief Executive Officer\n\nLeading strategic vision and client relationships with 15+ years of expertise in executive search and talent advisory. Anupama specializes in C-suite placements and organizational transformation across technology, finance, and healthcare sectors.",
             "image": "/images/profile/anupama.jpg",
             "href": "/team"
           },
           {
-            "title": "Sudha Patni", 
+            "title": "Sudha Patni",
             "description": "Co-Manager & Head of Operations\n\nOverseeing talent acquisition processes and operational excellence with deep expertise in scaling recruitment systems. Sudha drives our delivery capabilities and ensures seamless client experiences across all engagements.",
             "image": "/images/profile/sudha.jpg",
             "href": "/team"
           },
           {
-            "title": "Join Our Leadership",
-            "description": "Senior Partner - Executive Search\n\nWe're seeking an experienced executive search professional to join our leadership team. Lead high-impact searches, mentor junior consultants, and help shape the future of executive recruitment in India.",
-            "image": "/images/placeholder.svg",
-            "href": "/careers"
+            "title": "Amit Kumar",
+            "description": "Director\n\nAssuring transformation success through testing discipline and talent strategy. Amit enables executives to deliver large-scale transformations with confidence. He combines 25+ years of test leadership with expertise in recruiting and shaping high-performing teams.",
+            "image": "/images/profile/amit.jpg",
+            "href": "/team"
+          },
+          {
+            "title": "Elina Hamal",
+            "description": "Advisor, Retail IT & Point of Sale\n\nDelivering retail transformation through POS expertise and building the right teams to sustain it. Elina brings 15 years of experience leading IT Point of Sale programs across greenfield and brownfield implementations.",
+            "image": "/images/profile/elina.jpg",
+            "href": "/team"
           }
         ]
       }
@@ -142,7 +154,7 @@
           },
           {
             "value": "95%",
-            "label": "Success Rate", 
+            "label": "Success Rate",
             "description": "24-month retention",
             "icon": "📈"
           },
@@ -159,13 +171,13 @@
             "icon": "🏭"
           },
           {
-            "value": "12+", 
+            "value": "12+",
             "label": "Years",
             "description": "Market experience",
             "icon": "⭐"
           },
           {
-            "value": "15", 
+            "value": "15",
             "label": "Days Average",
             "description": "Time to placement",
             "icon": "⚡"
@@ -233,7 +245,7 @@
       "props": {
         "heading": "Corporate Social Responsibility",
         "description": "Our commitment to creating positive impact beyond business success, contributing to communities and sustainable development.",
-        "columns": "2", 
+        "columns": "2",
         "items": [
           {
             "title": "Education & Skill Development",
@@ -250,7 +262,7 @@
             "href": "/csr/women-in-leadership"
           },
           {
-            "title": "Environmental Sustainability", 
+            "title": "Environmental Sustainability",
             "description": "Carbon-neutral operations, paperless processes, and partnerships with organizations driving environmental innovation and sustainable business practices.",
             "icon": "🌍",
             "image": "/images/industry-energy.avif",
@@ -268,7 +280,7 @@
     },
     {
       "id": "final-cta-about",
-      "type": "CTA", 
+      "type": "CTA",
       "props": {
         "heading": "Partner with Networkk Today",
         "description": "Ready to transform your leadership team? Let's discuss how our expertise, network, and commitment to excellence can help you find the exceptional leaders who will drive your organization forward.",
@@ -285,6 +297,6 @@
     }
   ],
   "publishedAt": "2025-01-15T10:00:00Z",
-  "createdAt": "2025-01-15T09:00:00Z", 
+  "createdAt": "2025-01-15T09:00:00Z",
   "updatedAt": "2025-01-15T10:00:00Z"
 }

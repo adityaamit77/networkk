@@ -58,9 +58,11 @@ const {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         {fields.map((field) => (
           <div class={field.type === 'textarea' ? 'md:col-span-2' : ''}>
-            <label for={field.name} class="block text-sm font-medium text-gray-700 mb-1">
-              {field.label} {field.required && <span class="text-red-500">*</span>}
-            </label>
+            {field.type !== 'checkbox' && (
+              <label for={field.name} class="block text-sm font-medium text-gray-700 mb-1">
+                {field.label} {field.required && <span class="text-red-500">*</span>}
+              </label>
+            )}
             
             {field.type === 'text' && (
               <input 
@@ -222,43 +224,12 @@ const {
       } catch (error) {
         console.error('Form submission error:', error);
         
-        // Get form data for mailto fallback
-        const formData = new FormData(form);
-        const data: Record<string, string> = {};
-        for (const [key, value] of formData.entries()) {
-          data[key] = value.toString();
-        }
-        
-        // Create mailto fallback
-        const emailSubject = `Contact Form Submission from ${data.name} - ${data.company || 'Networkk Website'}`;
-        const emailBody = `
-Contact Form Details:
-
-Name: ${data.name || 'Not provided'}
-Email: ${data.email || 'Not provided'}
-Phone: ${data.phone || 'Not provided'}
-Company: ${data.company || 'Not provided'}
-Job Title: ${data.jobTitle || 'Not provided'}
-Service Interest: ${data.service || 'Not specified'}
-
-Message:
-${data.message || 'No message provided'}
-
----
-Submitted on: ${new Date().toLocaleString()}
-From: Networkk Website Contact Form
-        `.trim();
-        
-        const mailtoUrl = `mailto:support@networkk.in?cc=anupama.singh@networkk.in&subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
-        
-        // Show error message with fallback options
+        // Show simple error message
         if (errorMessage && errorMessageText) {
           errorMessageText.innerHTML = `
             <strong>Form submission failed.</strong><br>
-            <button onclick="window.open('${mailtoUrl}', '_blank')" class="mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
-              Send via Email Client
-            </button><br>
-            <small class="mt-2 block">Or contact us directly:<br>
+            Please try again or contact us directly:<br>
+            <small class="mt-2 block">
             Email: <a href="mailto:support@networkk.in" class="underline">support@networkk.in</a><br>
             Phone: <a href="tel:+919266721935" class="underline">+91 92667 21935</a></small>
           `;
