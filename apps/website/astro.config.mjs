@@ -6,7 +6,7 @@ import mdx from '@astrojs/mdx';
 import node from '@astrojs/node';
 
 export default defineConfig({
-  site: 'https://networkk.com',
+  site: 'https://www.networkk.in',
   output: 'hybrid',
   adapter: node({
     mode: 'standalone'
