@@ -410,10 +410,11 @@ const {
             throw new Error('API not available');
           }
         } catch (error) {
-          // Fallback: Submit to Formspree for static deployment
-          console.log('API not available, using Formspree fallback');
+          // Fallback: Submit to a working contact form service
+          console.log('API not available, using contact form fallback');
           
-          const formspreeData = {
+          // Create a simple form submission to Formspree (create account first)
+          const contactData = {
             name: formData.get('name'),
             email: formData.get('email'),
             phone: formData.get('phone'),
@@ -421,22 +422,59 @@ const {
             jobTitle: formData.get('jobTitle'),
             service: formData.get('service'),
             message: formData.get('message'),
-            consent: formData.get('consent'),
-            _subject: 'New Contact Form Submission - Networkk'
+            _subject: `New Contact Form Submission from ${formData.get('name')} - Networkk`,
+            _template: 'table'
           };
           
-          response = await fetch('https://formspree.io/f/xpznzzzg', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formspreeData)
-          });
-          
-          if (response.ok) {
-            result = { success: true, message: 'Thank you for your message. We will get back to you within 24 hours.' };
-          } else {
-            throw new Error('Form submission failed');
+          // Try Formspree with proper setup
+          try {
+            response = await fetch('https://formspree.io/f/mdknnddj', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(contactData)
+            });
+            
+            if (response.ok) {
+              result = { success: true, message: 'Thank you for your message. We will get back to you within 24 hours.' };
+            } else {
+              throw new Error('Formspree submission failed');
+            }
+          } catch (formspreeError) {
+            // Final fallback: mailto link
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            const company = formData.get('company');
+            const jobTitle = formData.get('jobTitle');
+            const service = formData.get('service');
+            const message = formData.get('message');
+            
+            const emailBody = `New Contact Form Submission from Networkk Website
+
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Company: ${company}
+Job Title: ${jobTitle}
+Service of Interest: ${service}
+
+Message:
+${message}
+
+--
+This inquiry was submitted through the contact form at https://www.networkk.in/contact`;
+            
+            const mailtoUrl = `mailto:support@networkk.in?subject=New Contact Form Submission - ${name}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Open email client
+            window.open(mailtoUrl, '_blank');
+            
+            result = { 
+              success: true, 
+              message: 'Your email client will open with your inquiry. Please send the email to complete your submission.' 
+            };
           }
         }
         
