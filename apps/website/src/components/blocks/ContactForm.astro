@@ -51,7 +51,7 @@ const {
     <form
       id="contact-form"
       method="post"
-      action="/api/contact"
+      action="/api/contact-new"
       data-redirect-to={redirectTo ?? ''}
       class="bg-white rounded-xl shadow-sm p-8 md:p-10"
     >
@@ -65,71 +65,99 @@ const {
             )}
             
             {field.type === 'text' && (
-              <input 
-                type="text" 
-                id={field.name} 
-                name={field.name} 
-                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                required={field.required}
-              />
+              <div>
+                <input 
+                  type="text" 
+                  id={field.name} 
+                  name={field.name} 
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  required={field.required}
+                  minlength={field.name === 'name' || field.name === 'company' || field.name === 'jobTitle' ? 2 : undefined}
+                  placeholder={field.name === 'name' ? 'Enter your full name' : 
+                             field.name === 'company' ? 'Your company name' :
+                             field.name === 'jobTitle' ? 'Your job title' : undefined}
+                />
+                <div id={`${field.name}-error`} class="hidden mt-1 text-sm text-red-600"></div>
+              </div>
             )}
             
             {field.type === 'email' && (
-              <input 
-                type="email" 
-                id={field.name} 
-                name={field.name} 
-                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                required={field.required}
-              />
+              <div>
+                <input 
+                  type="email" 
+                  id={field.name} 
+                  name={field.name} 
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  required={field.required}
+                  placeholder="your.email@company.com"
+                />
+                <div id={`${field.name}-error`} class="hidden mt-1 text-sm text-red-600"></div>
+              </div>
             )}
             
             {field.type === 'tel' && (
-              <input 
-                type="tel" 
-                id={field.name} 
-                name={field.name} 
-                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                required={field.required}
-              />
+              <div>
+                <input 
+                  type="tel" 
+                  id={field.name} 
+                  name={field.name} 
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  required={field.required}
+                  placeholder="+91 98765 43210 or 9876543210"
+                  title="Please enter a valid phone number (optional)"
+                />
+                <div id={`${field.name}-error`} class="hidden mt-1 text-sm text-red-600"></div>
+              </div>
             )}
             
             {field.type === 'textarea' && (
-              <textarea 
-                id={field.name} 
-                name={field.name} 
-                rows="5"
-                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                required={field.required}
-              ></textarea>
+              <div>
+                <textarea 
+                  id={field.name} 
+                  name={field.name} 
+                  rows="5"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  required={field.required}
+                  minlength="5"
+                  placeholder="Tell us about your requirements..."
+                ></textarea>
+                <div id={`${field.name}-error`} class="hidden mt-1 text-sm text-red-600"></div>
+              </div>
             )}
             
             {field.type === 'select' && field.options && (
-              <select 
-                id={field.name} 
-                name={field.name} 
-                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                required={field.required}
-              >
-                <option value="">Please select</option>
-                {field.options.map((option) => (
-                  <option value={option.value}>{option.label}</option>
-                ))}
-              </select>
+              <div>
+                <select 
+                  id={field.name} 
+                  name={field.name} 
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  required={field.required}
+                >
+                  <option value="">Please select</option>
+                  {field.options.map((option) => (
+                    <option value={option.value}>{option.label}</option>
+                  ))}
+                </select>
+                <div id={`${field.name}-error`} class="hidden mt-1 text-sm text-red-600"></div>
+              </div>
             )}
             
             {field.type === 'checkbox' && (
-              <div class="flex items-start mt-2">
-                <input 
-                  type="checkbox" 
-                  id={field.name} 
-                  name={field.name} 
-                  class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded mt-1"
-                  required={field.required}
-                />
-                <label for={field.name} class="ml-2 block text-sm text-gray-700">
-                  {field.label}
-                </label>
+              <div class="mt-2">
+                <div class="flex items-start">
+                  <input 
+                    type="checkbox" 
+                    id={field.name} 
+                    name={field.name} 
+                    value="true"
+                    class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded mt-1"
+                    required={field.required}
+                  />
+                  <label for={field.name} class="ml-2 block text-sm text-gray-700">
+                    {field.label}
+                  </label>
+                </div>
+                <div id={`${field.name}-error`} class="hidden mt-1 text-sm text-red-600"></div>
               </div>
             )}
           </div>
@@ -177,12 +205,181 @@ const {
   if (form && submitButton) {
     const redirectTo = (form.getAttribute('data-redirect-to') || '').trim() || null;
 
+    // Validation functions for each field
+    const showFieldError = (fieldName: string, message: string) => {
+      const errorDiv = document.getElementById(`${fieldName}-error`);
+      const field = form.querySelector(`[name="${fieldName}"]`) as HTMLElement;
+      
+      if (errorDiv) {
+        errorDiv.textContent = message;
+        errorDiv.classList.remove('hidden');
+      }
+      
+      if (field) {
+        field.classList.add('border-red-500');
+        field.classList.remove('border-gray-300');
+      }
+    };
+    
+    const hideFieldError = (fieldName: string) => {
+      const errorDiv = document.getElementById(`${fieldName}-error`);
+      const field = form.querySelector(`[name="${fieldName}"]`) as HTMLElement;
+      
+      if (errorDiv) {
+        errorDiv.classList.add('hidden');
+      }
+      
+      if (field) {
+        field.classList.remove('border-red-500');
+        field.classList.add('border-gray-300');
+      }
+    };
+    
+    const validateField = (fieldName: string, value: string) => {
+      switch (fieldName) {
+        case 'name':
+          if (!value.trim() || value.trim().length < 2) {
+            showFieldError('name', 'Name must be at least 2 characters long');
+            return false;
+          }
+          break;
+          
+        case 'email':
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!value.trim() || !emailRegex.test(value.trim())) {
+            showFieldError('email', 'Please provide a valid email address');
+            return false;
+          }
+          break;
+          
+        case 'phone':
+          if (value.trim()) {
+            const cleaned = value.replace(/[^\d+]/g, '');
+            const phoneRegex = /^(\+91|91)?[6-9]\d{9}$|^\+?[1-9]\d{7,14}$/;
+            if (!phoneRegex.test(cleaned)) {
+              showFieldError('phone', 'Please provide a valid phone number (e.g., +91 98765 43210)');
+              return false;
+            }
+          }
+          break;
+          
+        case 'company':
+          if (!value.trim() || value.trim().length < 2) {
+            showFieldError('company', 'Company name is required (at least 2 characters)');
+            return false;
+          }
+          break;
+          
+        case 'jobTitle':
+          if (!value.trim() || value.trim().length < 2) {
+            showFieldError('jobTitle', 'Job title is required (at least 2 characters)');
+            return false;
+          }
+          break;
+          
+        case 'service':
+          if (!value.trim()) {
+            showFieldError('service', 'Please select a service of interest');
+            return false;
+          }
+          break;
+          
+        case 'message':
+          if (!value.trim() || value.trim().length < 5) {
+            showFieldError('message', 'Message must be at least 5 characters long');
+            return false;
+          }
+          break;
+      }
+      
+      hideFieldError(fieldName);
+      return true;
+    };
+    
+    const validateConsent = () => {
+      const consentCheckbox = form.querySelector('input[name="consent"]') as HTMLInputElement;
+      if (!consentCheckbox?.checked) {
+        showFieldError('consent', 'Please agree to the privacy policy to continue');
+        return false;
+      }
+      hideFieldError('consent');
+      return true;
+    };
+
+    // Add real-time validation listeners
+    const addValidationListeners = () => {
+      const fields = ['name', 'email', 'phone', 'company', 'jobTitle', 'service', 'message'];
+      
+      fields.forEach(fieldName => {
+        const field = form.querySelector(`[name="${fieldName}"]`) as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
+        if (field) {
+          // Validate on blur (when user leaves the field)
+          field.addEventListener('blur', () => {
+            validateField(fieldName, field.value);
+          });
+          
+          // Validate on input for immediate feedback (with debounce)
+          let timeout: NodeJS.Timeout;
+          field.addEventListener('input', () => {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+              if (field.value.trim()) { // Only validate if field has content
+                validateField(fieldName, field.value);
+              } else if (fieldName !== 'phone') { // Phone is optional
+                hideFieldError(fieldName); // Clear error if field is empty (except required fields will show error on blur)
+              }
+            }, 500); // 500ms debounce
+          });
+        }
+      });
+      
+      // Special handling for consent checkbox
+      const consentCheckbox = form.querySelector('input[name="consent"]') as HTMLInputElement;
+      if (consentCheckbox) {
+        consentCheckbox.addEventListener('change', validateConsent);
+      }
+    };
+    
+    // Initialize validation listeners
+    addValidationListeners();
+
+    // Complete form validation function
+    const validateCompleteForm = () => {
+      const fields = ['name', 'email', 'phone', 'company', 'jobTitle', 'service', 'message'];
+      let isValid = true;
+      
+      fields.forEach(fieldName => {
+        const field = form.querySelector(`[name="${fieldName}"]`) as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
+        if (field && !validateField(fieldName, field.value)) {
+          isValid = false;
+        }
+      });
+      
+      if (!validateConsent()) {
+        isValid = false;
+      }
+      
+      return isValid;
+    };
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       
       // Reset messages
       successMessage?.classList.add('hidden');
       errorMessage?.classList.add('hidden');
+      
+      // Client-side validation
+      if (!validateCompleteForm()) {
+        if (errorMessage && errorMessageText) {
+          errorMessageText.innerHTML = `
+            <strong>Please fix the errors shown above and try again.</strong>
+          `;
+          errorMessage.classList.remove('hidden');
+          errorMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        return;
+      }
       
       // Show loading state
       submitButton.disabled = true;
@@ -197,7 +394,7 @@ const {
         const formData = new FormData(form);
         
         // Submit to API endpoint
-        const response = await fetch('/api/contact', {
+        const response = await fetch('/api/contact-new', {
           method: 'POST',
           body: formData
         });
