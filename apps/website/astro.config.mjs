@@ -7,10 +7,10 @@ import node from '@astrojs/node';
 
 export default defineConfig({
   site: 'https://www.networkk.in',
-  output: 'hybrid',
-  adapter: node({
-    mode: 'standalone'
-  }),
+  output: 'static',
+  // adapter: node({
+  //   mode: 'standalone'
+  // }),
   integrations: [
     react(),
     tailwind({

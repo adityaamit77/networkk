@@ -393,13 +393,52 @@ const {
         // Get form data
         const formData = new FormData(form);
         
-        // Submit to API endpoint
-        const response = await fetch('/api/contact-new', {
-          method: 'POST',
-          body: formData
-        });
+        // For static deployment, try multiple submission methods
+        let response;
+        let result;
         
-        const result = await response.json();
+        try {
+          // Try the API endpoint first (for hybrid mode)
+          response = await fetch('/api/contact-new', {
+            method: 'POST',
+            body: formData
+          });
+          
+          if (response.ok) {
+            result = await response.json();
+          } else {
+            throw new Error('API not available');
+          }
+        } catch (error) {
+          // Fallback: Submit to Formspree for static deployment
+          console.log('API not available, using Formspree fallback');
+          
+          const formspreeData = {
+            name: formData.get('name'),
+            email: formData.get('email'),
+            phone: formData.get('phone'),
+            company: formData.get('company'),
+            jobTitle: formData.get('jobTitle'),
+            service: formData.get('service'),
+            message: formData.get('message'),
+            consent: formData.get('consent'),
+            _subject: 'New Contact Form Submission - Networkk'
+          };
+          
+          response = await fetch('https://formspree.io/f/xpznzzzg', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formspreeData)
+          });
+          
+          if (response.ok) {
+            result = { success: true, message: 'Thank you for your message. We will get back to you within 24 hours.' };
+          } else {
+            throw new Error('Form submission failed');
+          }
+        }
         
         if (result.success) {
           // Show success message
