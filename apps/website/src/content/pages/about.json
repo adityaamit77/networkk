@@ -110,7 +110,7 @@
       "props": {
         "heading": "Leadership Team",
         "description": "Meet the experienced professionals who lead our mission to connect exceptional talent with transformative opportunities.",
-        "columns": "4",
+        "columns": "5",
         "items": [
           {
             "title": "Anupama Singh",
@@ -119,21 +119,26 @@
             "href": "/team"
           },
           {
-            "title": "Sudha Patni",
-            "description": "Co-Manager & Head of Operations\n\nOverseeing talent acquisition processes and operational excellence with deep expertise in scaling recruitment systems. Sudha drives our delivery capabilities and ensures seamless client experiences across all engagements.",
-            "image": "/images/profile/sudha.webp",
-            "href": "/team"
-          },
-          {
             "title": "Amit Kumar",
-            "description": "Advisor, Retail IT & Point of Sale\n\nAssuring transformation success through testing discipline and talent strategy. Amit enables executives to deliver large-scale transformations with confidence. He combines 25+ years of test leadership with expertise in recruiting and shaping high-performing teams.",
+            "description": "Advisor\n\nAssuring transformation success through testing discipline and talent strategy. Amit enables executives to deliver large-scale transformations with confidence. He combines 25+ years of test leadership with expertise in recruiting and shaping high-performing teams.",
             "image": "/images/profile/amit.webp",
+            "href": "/team"
+          },{
+            "title": "Kirti Kusum",
+            "description": "Business Advisor\n\nAssuring transformation success through testing discipline and talent strategy. Kirti enables executives to deliver large-scale transformations with confidence. He combines 25+ years of test leadership with expertise in recruiting and shaping high-performing teams.",
+            "image": "/images/profile/kirti.webp",
             "href": "/team"
           },
           {
             "title": "Elina Hamal",
             "description": "Advisor, Retail IT & Point of Sale\n\nDelivering retail transformation through POS expertise and building the right teams to sustain it. Elina brings 15 years of experience leading IT Point of Sale programs across greenfield and brownfield implementations.",
             "image": "/images/profile/elina.webp",
+            "href": "/team"
+          },
+          {
+            "title": "Sudha Patni",
+            "description": "Co-Manager & Head of Operations\n\nOverseeing talent acquisition processes and operational excellence with deep expertise in scaling recruitment systems. Sudha drives our delivery capabilities and ensures seamless client experiences across all engagements.",
+            "image": "/images/profile/sudha.webp",
             "href": "/team"
           }
         ]
