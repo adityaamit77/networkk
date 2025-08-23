@@ -5,7 +5,7 @@
   "seo": {
     "title": "Executive Leadership Events & Webinars - Networkk",
     "description": "Join Networkk's executive leadership events, webinars, and roundtables. Connect with industry leaders and gain insights on talent strategy.",
-    "canonical": "https://networkk.com/events/",
+    "canonical": "https://www.networkk.in/events/",
     "noindex": false,
     "keywords": [
       "executive leadership events",
@@ -63,7 +63,7 @@
                 "image": "/images/speakers/amit-sharma.jpg"
               }
             ],
-            "registrationLink": "https://networkk.com/events/future-of-work-ai",
+            "registrationLink": "https://www.networkk.in/events/future-of-work-ai",
             "isPast": false
           },
           {
@@ -84,7 +84,7 @@
                 "image": "/images/speakers/priya-sharma.jpg"
               }
             ],
-            "registrationLink": "https://networkk.com/events/diversity-roundtable",
+            "registrationLink": "https://www.networkk.in/events/diversity-roundtable",
             "isPast": false
           },
           {
@@ -115,7 +115,7 @@
                 "image": "/images/speakers/leena-nair.jpg"
               }
             ],
-            "registrationLink": "https://networkk.com/events/leadership-summit-2025",
+            "registrationLink": "https://www.networkk.in/events/leadership-summit-2025",
             "isPast": false
           },
           {
@@ -136,7 +136,7 @@
                 "image": "/images/speakers/anita-gupta.jpg"
               }
             ],
-            "registrationLink": "https://networkk.com/events/succession-planning-webinar",
+            "registrationLink": "https://www.networkk.in/events/succession-planning-webinar",
             "isPast": false
           }
         ],
@@ -168,17 +168,17 @@
                 "image": "/images/speakers/sanjay-gupta.jpg"
               }
             ],
-            "registrationLink": "https://networkk.com/events/compensation-trends-2025",
+            "registrationLink": "https://www.networkk.in/events/compensation-trends-2025",
             "isPast": true,
-            "recordingUrl": "https://networkk.com/events/compensation-trends-2025/recording",
+            "recordingUrl": "https://www.networkk.in/events/compensation-trends-2025/recording",
             "resources": [
               {
                 "title": "Presentation Slides",
-                "url": "https://networkk.com/events/compensation-trends-2025/slides.pdf"
+                "url": "https://www.networkk.in/events/compensation-trends-2025/slides.pdf"
               },
               {
                 "title": "Executive Summary",
-                "url": "https://networkk.com/events/compensation-trends-2025/summary.pdf"
+                "url": "https://www.networkk.in/events/compensation-trends-2025/summary.pdf"
               }
             ]
           }
