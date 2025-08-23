@@ -3,9 +3,14 @@ import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
+import node from '@astrojs/node';
 
 export default defineConfig({
   site: 'https://networkk.com',
+  output: 'hybrid',
+  adapter: node({
+    mode: 'standalone'
+  }),
   integrations: [
     react(),
     tailwind({
@@ -14,7 +19,6 @@ export default defineConfig({
     sitemap(),
     mdx(),
   ],
-  output: 'hybrid',
   build: {
     format: 'directory',
   },
